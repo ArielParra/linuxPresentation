@@ -37,7 +37,11 @@ es un kernel
 | gentoo       | openrc/systemd   | portage     | no     |
 | debian       | systemd          | apt         | no     |
 | devuan       | openrc           | apt         | debian |
-| suse         | systemd          | yum         | no     |
+| Slackware    | sysV             | yum         | no     |
+| SUSE         | systemd          | yum         | no     |
+| openSUSE     | systemd          | yum         | Suse   |
+| openSUSE     | systemd          | yum         | no     |
+
 
 
 
