@@ -75,7 +75,57 @@ rapidez de ejecucion
 estabilidad
 comuninidad 
 etc et
+
+-
+-
+-
+-
  
+---
+# desventajas de linux
+---
+
+- no puedes correr ciertos juegos: rainbow six, roblox, etc.
+- no puedes correr ciertas aplicaciones: photoshop, ms office, flstudio,etc.
+- tienes que aprender temas nuevos, aprender a buscar soluciones y leer.
+
+---
+
+# ventajas macos
+
+- [posix certfied](https://www.opengroup.org/openbrand/register/apple.htm)
+- sistema unix
+- paqueteria de usuarios [brew](https://brew.sh/)
+- interfaz y animaciones
+- tiene aplicaciones como photoshop, ms
+- heic/hecv integrado al sistema
+- apple ecosistem
+- mejor procesador arm
+
+---
+
+# desventajas macos
+
+- no puede correr ciertos juegos
+- no puede correr ciertas apps
+- hardware limitado
+- ocupas una cuenta apple
+- precio
+- privacidad
+- sin compatibilidad con apliaciones antiguas de macos
+
+---
+
+# ok tienes que usar macos
+
+---
+
+# ventajas de windows
+- compatibilidad perfecta con [directX](https://www.microsoft.com/en-us/download/details.aspx?id=35)
+- [compatibilidad](https://support.microsoft.com/en-us/windows/make-older-apps-or-programs-compatible-with-windows-783d6dd7-b439-bdb0-0490-54eea0f45938) con aplicaciones antiguas de windows
+- juegos salen directo para windows
+- las empresas les importa la distribucion del mercado
+
 ---
 
 # **Desventajas de windows**
@@ -101,13 +151,14 @@ etc et
 
 - no puedes nombrar archivos con ciertos [nombres](https://yewtu.be/watch?v=bC6tngl0PTI)
 - windows pro cuesta [$6399](https://www.microsoft.com/es-mx/d/windows-11-pro/dg7gmgf0d8h4) pesos MXN
-- windows 11 te obliga a tener una cuenta microsoft y usarla en tu sistema
-- el sistema se expande, el puro sistema operativo ocupa masomenos 40gb base pero se  expande con uso como 15gb
+- windows 11 [requiere](https://learn.microsoft.com/en-us/windows/whats-new/windows-11-requirements) a tener una cuenta microsoft y usarla en tu sistema
+- el sistema operativo se expande hasta más de [40gb](https://superuser.com/questions/1467359/windows-takes-up-40gb-of-disk-space)
 - el buscador de windows es [ineficiente](https://computerinfobits.com/why-is-windows-10-search-so-bad/)
 - prefetch y superfetch (SysMain), suelen tener el disco duro al [100%](https://yewtu.be/watch?v=MmH4tjH2yMc) de uso 
 
 ---
 
+- suele haber más [virus](https://www.howtogeek.com/141944/htg-explains-why-windows-has-the-most-viruses/) que macOS o linux 
 - aplicaciones freeware pueden tener virus como [atubecatcher](https://old.reddit.com/r/antivirus/comments/snqipr/is_atube_catcher_a_virus/), etc.
 - la microsoft store tiene aplicaciones más aplicacioens [.appx](https://learn.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/schema-root
 ) que .exe
@@ -119,17 +170,16 @@ etc et
 - la solucion a la mayoria de errores es [reistalar](https://answers.microsoft.com/en-us/windows/forum/all/windows-update-system-restore-and-repair-failed/aaf28405-55c0-4ee2-b4b4-f13571680b32) el sistema operativo
 - las [apps](https://www.pcmag.com/how-to/stop-windows-10-apps-from-launching-at-startup) se ejecutan al inicio o crean servicios que se ejecutan al inicio
 - fondos de pantalla en slidehow puede no [funcionar](https://answers.microsoft.com/en-us/windows/forum/all/background-slideshow-stops-working/acfcabe4-56fb-436a-afc6-42bdd877ca29)
-- pocas opciones open source de customizacion [ModernFlyouts](https://github.com/ModernFlyouts-Community/ModernFlyouts), [rainmeter](https://github.com/rainmeter/rainmeter), [RoundedTB](https://github.com/Erisa/RoundedTB),etc.
-- algunas opciones de customizacion cuestan [wallpaperengine](https://store.steampowered.com/app/431960/Wallpaper_Engine/), [taskbarX](https://apps.microsoft.com/store/detail/taskbarx/9PCMZ6BXK8GH?hl=en-us&gl=us), [start11](https://www.stardock.com/products/start11/), etc.
+- pocas opciones open source de customizacion y algunas opciones privadas cuestan [wallpaperengine](https://store.steampowered.com/app/431960/Wallpaper_Engine/), [taskbarX](https://apps.microsoft.com/store/detail/taskbarx/9PCMZ6BXK8GH?hl=en-us&gl=us), [start11](https://www.stardock.com/products/start11/), etc.
 
 ---
 
 # hardware
-- Device encryption Requires modern hardware (InstantGo/AOAC/HSTI-compliant).
-- TPM, requicito para windows 11, bitlocker
+- Device encryption ocupa hardware [moderno](https://www.microsoft.com/en-us/windows/compare-windows-10-home-vs-pro) ([InstantGo](https://blogs.windows.com/windowsexperience/2014/06/19/instantgo-a-better-way-to-sleep/#RXGeiruxOD7f3V0q.97)/[AOAC](https://www.microsoft.com/en-us/store/b/alwaysconnectedfaq)/[HSTI-compliant](https://learn.microsoft.com/en-us/windows-hardware/test/hlk/testref/hardware-security-testability-specification)), basicamente de 2014 en adelante.
+- los [requisitos](https://www.microsoft.com/en-us/windows/windows-11-specifications) de Windows 11, procesador de 64 bits, UEFI, TPM v2.0 y una grafica compatible con DirectX12.
 - los discos duros con ntfs tienen que [defragmentarse](https://learn.microsoft.com/en-us/previous-versions/cc767961(v=technet.10))
-- windows automaticamente desfragmenta los ssd dañando su vita util
-- los drivers oficiales de nvidia tienen [telemetria](https://www.geeks3d.com/20161107/nvidia-telemetry-in-geforce-drivers/), la alternativa es usar [nvcleaninstall](https://www.techpowerup.com/download/techpowerup-nvcleanstall/) de techpowerup
+
+- los drivers oficiales de nvidia tienen [telemetria](https://www.geeks3d.com/20161107/nvidia-telemetry-in-geforce-drivers/)
 
 ---
 
@@ -150,13 +200,16 @@ etc et
 
 ---
 
-# mas lecturas
-https://old.reddit.com/r/webdev/comments/132eql/why_many_people_dislike_windows_as_an_development/
-https://old.reddit.com/r/linuxmasterrace/comments/u19uee/what_is_your_worst_experience_with_ms_windows/
-https://en.wikipedia.org/wiki/Criticism_of_Microsoft
-https://wiki.installgentoo.com/wiki/Windows
-https://wiki.installgentoo.com/wiki/Windows_10
-https://itvision.altervista.org/why-windows-10-sucks.html
+# mas referencias de las desventajas de windows
+- [GNU: Microsoft's Software is Malware](https://www.gnu.org/proprietary/malware-microsoft.en.html)
+- [reddit: why many people dislike windows as an development environment?](https://old.reddit.com/r/webdev/comments/132eql/why_many_people_dislike_windows_as_an_development/)
+- [reddit: what is your worst experience with ms windows?](https://old.reddit.com/r/linuxmasterrace/comments/u19uee/what_is_your_worst_experience_with_ms_windows/)
+- [reddit: why so much hate to windows?](https://old.reddit.com/r/linuxmasterrace/comments/qi370x/why_so_much_hate_to_windows/)
+- [Wikipedia: Criticism of Microsoft](https://en.wikipedia.org/wiki/Criticism_of_Microsoft)
+- [installgentoo wiki: Windows](https://wiki.installgentoo.com/wiki/Windows)
+- [installgentoo wiki: Windows 10](https://wiki.installgentoo.com/wiki/Windows_10)
+- [itvision blog: why windows 10 sucks](https://itvision.altervista.org/why-windows-10-sucks.html)
+- [itvision blog: why windows 11 sucks](https://itvision.altervista.org/why-windows-11-sucks.html)
 
 ---
 
@@ -164,6 +217,8 @@ https://itvision.altervista.org/why-windows-10-sucks.html
 razones: juegos, photoshop,flvstudio, ms office ,etc
 recomendaciones:
 scoop como package manager
+no pongas tu cuenta de ms
+descarga apps de la ms store con https://store.rg-adguard.net/
 usalo en una vm con NAT
 nvclean install
 usa christitus debloat
@@ -190,15 +245,15 @@ y su filosofia (uso,caracteristicas,orientacion,etc.)
 
 | distribucion | init           | pkg manager | filosofia    |
 |--------------|----------------|-------------|--------------|
-| alpine       | openrc         | apk         | no gnu       |
-| arch         | systemd        | pacman      | bleeding edge|
-| debian       | systemd        | apt         | community    |
-| Slackware    | sysV           | slackpkg    | kiss         |
-| SUSE LE      | systemd        | zipper      | enterprise   |
-| gentoo       | openrc/systemd | portage     | compile      |
-| void         | runit          | xbps        | BSD-feel     |
-| nixos        | systemd        | nix         | portability  |
-| RHEL         | systemd        | yum         | enterprise   |
+| [alpine](https://alpinelinux.org/)       | openrc         | apk         | no gnu       |
+| [arch](https://archlinux.org/)         | systemd        | pacman      | bleeding edge|
+| [debian](https://www.debian.org/)       | systemd        | apt         | community    |
+| [slackware](http://www.slackware.com/)    | sysV           | slackpkg    | kiss         |
+| [SUSE](https://www.suse.com/products/server/) LE S/D      | systemd        | zipper      | enterprise   |
+| [gentoo](https://www.gentoo.org/)       | OpenRC/systemd | portage     | compile      |
+| [void](https://voidlinux.org/)         | runit          | xbps        | BSD-feel     |
+| [nixos](https://nixos.org/)        | systemd        | nix         | portability  |
+| [RHEL](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux)         | systemd        | yum         | enterprise   |
 
 ---
 
@@ -210,13 +265,13 @@ y su filosofia (uso,caracteristicas,orientacion,etc.)
 
 | distribucion | init             | basado en   | filosofia 
 |--------------|------------------|-------------|-----------
-| artix        | runit/openrc/etc | arch        | no systemd
-| devuan       | openrc           | debian      | no systemd
-| Ubuntu       | systemd          | debian      | enterprise
-| Uaabuntu     | systemd          | ubuntu      | educacion
-| openSUSE     | systemd          | SUSE        | community
-| parabola     | runit/openrc/etc | arch        | no systemd
-| Fedora       | systemd          | RHEL        | comunitty
+| [artix](https://artixlinux.org/)        | OpenRC/runit/etc. | arch        | no systemd
+| [devuan](https://www.devuan.org/)       | sysV/OpenRC/etc.           | debian      | no systemd
+| [Ubuntu](https://ubuntu.com/)       | systemd          | debian      | enterprise
+| [Uaabuntu](https://uaabuntu.uaa.mx/)     | systemd          | ubuntu      | educacion
+| [openSUSE](https://opensuse.org/)     | systemd          | SUSE        | community
+| [parabola](https://www.parabola.nu/)     | systemd/OpenRC/etc. | arch        | Linux-libre
+| [Fedora](https://fedoraproject.org/)       | systemd          | RHEL        | comunitty
 
 ---
 
@@ -255,10 +310,8 @@ todos son archivos
 ---
 
 
-*filosofia o descripcion por sistema :v*
-https://docs.slackware.com/slackware:philosophy
 
 
-
+https://www.apple.com/legal/sla/docs/macOSVentura.pdf
 https://privacy.microsoft.com/en-us/privacystatement
 - Jody Bruchon Tech . *Windows 11 Must Be Stopped - A Veteran PC Repair Shop Owner's Dire Warning - Jody Bruchon* [Video]. https://yewtu.be/watch?v=LcafzHL8iBQ
