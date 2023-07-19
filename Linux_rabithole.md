@@ -22,14 +22,12 @@ ol{ columns: 2; }
 2. sistemas operativos
 2.1 porque usar linux
 2.2 problemas de windows
-3.
-4.
-5.
-6.
-7.  
-8.
-9.
-10.
+3. Linux avanzado
+3.1 directorios
+3.2 bla bla
+4. usando linux
+4.1 comandos
+
 
 
 ---
@@ -57,7 +55,6 @@ Fue creado en 1991 por el estudiante de la universidad de Helsinki Linus Torvald
 # aunque antes tendria que hablar de distros y  tambien que los compone
 # 1.3 Filosofias relacionadas
 
-posix   
 Free/libre opensource software
 Privacy 
 secure selinux hardenkernel
@@ -65,26 +62,42 @@ minimalism/anti bloat
     anti gnu
     anti systemd
 
+# temas relacionados
+# freeBSD 
+es un proyecto ["grande"](https://svnweb.freebsd.org/base/stable/12/) con muchos sistemas operativos forkeados de el
+
+# openBSD
+es un proyecto relativamente mas ["chico"](https://cvsweb.openbsd.org/src/) que freebsd 
+es [inovador](https://www.openbsd.org/innovations.html
+), crean nuevas herramientas usadas en toda la comunidad de unix
+
+ambos pueden tener incompatibilidades de hardware
+ambos pueden tener algunas incompatibilidades de software, pero hay capas traduccion y emulacion para solucionarlo
+# posix   
+
+
+
+
 ---
 
-# 1.4 ventajas o pq usarlo
-el audio es mejor con pipewire 
-rapidez de boot
-rapidez de compilacion
-rapidez de ejecucion
-estabilidad
-comuninidad 
+# 1.4 ventajas de linux
+- superioridad en cuestion de audio con [pipewire](https://pipewire.org/)
+    - Capture and playback of audio and video with minimal latency.
+    - Real-time multimedia processing on audio and video.
+    - Multiprocess architecture to let applications share multimedia content.
+    - Seamless support for PulseAudio, JACK, ALSA, and GStreamer applications.
+    - Sandboxed applications support. 
+- puede arrancar [rapidamente](https://www.forbes.com/sites/jasonevangelho/2019/06/19/infographics-linux-mint-challenges-windows-10-in-small-business-speed-tests-laptop/#7a560d2369bb) el sistema y las aplicaciones
+- tiempos menores de [compilacion](https://medium.com/aedm/windows-wsl-and-linux-a-build-time-benchmark-for-java-rust-go-and-node-43188a9c77d6)
+- rapidez de ejecucion
+- estabilidad
+- comuninidad 
 
--
--
--
--
- 
 ---
 # desventajas de linux
 ---
 
-- no puedes correr ciertos juegos: rainbow six, roblox, etc.
+- no puedes correr ciertos juegos: [rainbow six](https://www.protondb.com/app/359550), [roblox](https://news.itsfoss.com/roblox-linux-end/), [etc.](https://www.protondb.com/explore?sort=fixWanted)
 - no puedes correr ciertas aplicaciones: photoshop, ms office, flstudio,etc.
 - tienes que aprender temas nuevos, aprender a buscar soluciones y leer.
 
@@ -94,6 +107,7 @@ comuninidad
 
 - [posix certfied](https://www.opengroup.org/openbrand/register/apple.htm)
 - sistema unix
+- ciertos juegos que no corren en linux como [roblox](https://www.roblox.com/download) o juegos de Blizzard como [WOW](https://www.blizzard.com/en-sg/download?platform=macos)
 - paqueteria de usuarios [brew](https://brew.sh/)
 - interfaz y animaciones
 - tiene aplicaciones como photoshop, ms
@@ -116,16 +130,15 @@ comuninidad
 ---
 
 # ok tienes que usar macos
-razones: xcode, photoshop,etc
-https://github.com/drduh/macOS-Security-and-Privacy-Guide
+talvez quieras usar xcode o tienes una computadora Mac
+- sigue esta [guia](https://github.com/drduh/macOS-Security-and-Privacy-Guide) de privacidad
 
 ---
 
 # ventajas de windows
 - compatibilidad perfecta con [directX](https://www.microsoft.com/en-us/download/details.aspx?id=35)
 - [compatibilidad](https://support.microsoft.com/en-us/windows/make-older-apps-or-programs-compatible-with-windows-783d6dd7-b439-bdb0-0490-54eea0f45938) con aplicaciones antiguas de windows
-- juegos salen directo para windows
-- las empresas les importa la distribucion del mercado
+- las empresas les importa la distribucion del [mercado](https://gs.statcounter.com/os-market-share/desktop/worldwide/#monthly-202306-202306-bar) de sistmas operativos, por lo que ciertas aplicaciones y juegos estan pensados para windows 
 
 ---
 
@@ -139,10 +152,11 @@ https://github.com/drduh/macOS-Security-and-Privacy-Guide
 - [.NET](https://michaelscodingspot.com/dotnet-dll-hell/) y [dll](https://www.partech.nl/en/publications/2022/03/what-is-dll-hell-problem-and-how-to-solve-it) [hell](https://www.baeldung.com/cs/dll-hell-problem)
 - Hyper-V solo esta disponible para [Windows Pro](https://www.microsoft.com/en-us/windows/compare-windows-10-home-vs-pro)
 - Virtual Machine Platform, Hyper-V, Windows hypervisor platform y WSL2 interfieren con aplicaciones: [dell alienware control](https://www.dell.com/community/Alienware-Desktops/AWCC-OC-Controls-incompatible-with-Virtual-Machine-Platform/m-p/8239494#M60811), [throttle stop](https://www.techpowerup.com/forums/threads/throttlestop-dead-on-windows-11.284102/), etc.
-- los hosts en windows son [read-only](https://superuser.com/questions/958991/windows-10-cant-edit-hosts-file) 
+- los hosts en windows son [read-only](https://superuser.com/questions/958991/windows-10-cant-edit-hosts-file) y modificarlo puede alertar al [antivirus](https://support.microsoft.com/en-au/topic/hosts-file-is-detected-as-malware-in-windows-defender-4320fa8b-0d54-1129-db85-61f095144521)
 - para correr un [hello world!](https://stackoverflow.com/questions/55603111/unable-to-compile-rust-hello-world-on-windows-linker-link-exe-not-found) de rust ocupas que descargar visual studio community junto con 1gb para los c++ build tools y el Windows SDK 
 - visual studio community usa como [10gb](https://developercommunity.visualstudio.com/t/visual-studio-uses-too-disk-much-space/145475) o [más](https://developercommunity.visualstudio.com/t/hard-disk-space-loss/585904)
 - problemas con librerias, aveces tienes que compilarlas manualmente como [pycripto](https://old.reddit.com/r/webdev/comments/132eql/owhy_many_people_dislike_windows_as_an_development/) o en mi caso librespot de rust 
+- Problemas de velocidad con [I/O y ntfs](https://github.com/Microsoft/WSL/issues/873)
 ---
 
 # uso
@@ -185,7 +199,7 @@ https://github.com/drduh/macOS-Security-and-Privacy-Guide
 ---
 
 # juegos
-- descargas [muchas versiones](https://www.howtogeek.com/256245/why-are-there-so-many-microsoft-visual-c-redistributables-installed-on-my-pc/) de microsoft visual c++ redistributable por cada juego, una solucion es descargar todos desde [techpowerup](https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/)
+- descargas [muchas versiones](https://www.howtogeek.com/256245/why-are-there-so-many-microsoft-visual-c-redistributables-installed-on-my-pc/) de microsoft visual c++ redistributable por cada juego, 
 - los juegos de la microsoft store (xbox app) suelen correr [peor](https://old.reddit.com/r/techsupport/comments/v4nhaf/so_ive_been_wondering_if_its_just_me_or_windows/) y dar [input lag](https://www.reddit.com/r/roblox/comments/oahvsf/roblox_player_vs_microsoft_store_app_input_lag/)
 - no puedes acceder a las [carpetas](https://www.makeuseof.com/windows-access-windowsapps-folder/) de juegos de la microsoft store (xbox app) aun siendo administrador
 
@@ -201,7 +215,7 @@ https://github.com/drduh/macOS-Security-and-Privacy-Guide
 
 ---
 
-# mas referencias de las desventajas de windows
+# mas lecturas de las desventajas de windows
 - [GNU: Microsoft's Software is Malware](https://www.gnu.org/proprietary/malware-microsoft.en.html)
 - [reddit: why many people dislike windows as an development environment?](https://old.reddit.com/r/webdev/comments/132eql/why_many_people_dislike_windows_as_an_development/)
 - [reddit: what is your worst experience with ms windows?](https://old.reddit.com/r/linuxmasterrace/comments/u19uee/what_is_your_worst_experience_with_ms_windows/)
@@ -216,18 +230,18 @@ https://github.com/drduh/macOS-Security-and-Privacy-Guide
 
 # ok tienes que usar windows
 razones: juegos, photoshop,flvstudio, ms office ,etc
-recomendaciones:
-scoop como package manager
-no pongas tu cuenta de ms
-descarga apps de la ms store con https://store.rg-adguard.net/
-usalo en una vm con NAT
-nvclean install
-usa christitus debloat
-bloquea hosts
-shut up windows 10 ++
-desactiva antivirus 
-autoruns para desactivar apps/servicios al inicio del sistema 
-
+- scoop como package manager
+- no pongas tu cuenta de ms
+- descarga apps de la ms store con https://store.rg-adguard.net/
+- usa windows  en una vm  con NAT
+- instala drivers de nvidia sin telemetria con [nvclean](https://www.techpowerup.com/download/techpowerup-nvcleanstall/) 
+- si es para jugar preinstala todos los Visual C++ Redistributable desde [techpowerup](https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/)
+- [Chris Titus Tech's Windows Utility](https://github.com/ChrisTitusTech/winutil)
+- bloquea paginas en el archivo [hosts](https://gist.github.com/VirtuBox/f09968a2d27bc00ba58b3617c61dc54e)
+- si descargas software de otro lado pruebalo con [virustotal](https://www.virustotal.com/gui/)
+- si corrers software con posible virus, correlo en [sandboxie](https://sandboxie-plus.com/)
+- desactiva antivirus 
+- [autoruns](https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns) para desactivar apps/servicios al inicio del sistema 
 
 ---
 
@@ -235,7 +249,7 @@ autoruns para desactivar apps/servicios al inicio del sistema
 
 ---
 
-que son, quien sabe
+
 las distribuciones se pueden diferenciar por tres partes principales:
 el sistema de arranque (init system (PID 1)), gestor de paquetes (package manager) 
 y su filosofia (uso,caracteristicas,orientacion,etc.)
@@ -283,19 +297,6 @@ todos son archivos
 
 ---
 
-# freeBSD 
-es un proyecto []"grande"](https://svnweb.freebsd.org/base/stable/12/) con muchos sistemas operativos forkeados de el
-
-# openBSD
-es un proyecto relativamente mas ["chico"](https://cvsweb.openbsd.org/src/) que freebsd 
-es inovador, crean nuevas herramientas usadas en toda la comunidad de unix
-https://www.openbsd.org/innovations.html
-
-ambos pueden tener incompatibilidades de hardware
-ambos pueden tener algunas incompatibilidades de software, pero hay capas traduccion y emulacion para solucionarlo
-
----
-
 # Referencias
 
 ---
@@ -323,11 +324,13 @@ ambos pueden tener algunas incompatibilidades de software, pero hay capas traduc
 
 ---
 
+<style scoped>{font-size: 21px;}</style>
 
-
-
-https://www.apple.com/legal/sla/docs/macOSVentura.pdf
-https://privacy.microsoft.com/en-us/privacystatement
+ - Michael Tunnell. (2023). *Explaining Linux Family Trees: Why Are There So Many Linux Distros?* [Video]. https://yewtu.be/watch?v=kF8CRt05s6A
+- APPLE INC. (2023). *Software License Agreements*. https://www.apple.com/legal/sla/
+- Microsoft. (2023). *Microsoft Privacy Statement*. https://privacy.microsoft.com/en-us/privacystatement
 - Jody Bruchon Tech . *Windows 11 Must Be Stopped - A Veteran PC Repair Shop Owner's Dire Warning - Jody Bruchon* [Video]. https://yewtu.be/watch?v=LcafzHL8iBQ
-
 - Adekotujo, A., Odumabo, A., Adedokun, A., & Aiyeniko, O. (2020). *A Comparative Study of Operating Systems: Case of Windows, UNIX, Linux, Mac, Android and iOS*. https://www.researchgate.net/profile/Adedoyin-Odumabo/publication/343013056_A_Comparative_Study_of_Operating_Systems_Case_of_Windows_UNIX_Linux_Mac_Android_and_iOS/links/61f2b50a9a753545e2fe8300/A-Comparative-Study-of-Operating-Systems-Case-of-Windows-UNIX-Linux-Mac-Android-and-iOS.pdf
+- The Open Group. (2008). *The Single UNIX Specification, Version 4*. https://unix.org/version4/overview.html
+- IEEE. (2017). *IEEE Std 1003.1™-2017*. https://pubs.opengroup.org/onlinepubs/9699919799/
+
