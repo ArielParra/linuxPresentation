@@ -72,18 +72,14 @@ duckduckgo
 starpage
 [proton](https://techcrunch.com/2021/09/06/protonmail-logged-ip-address-of-french-activist-after-order-by-swiss-authorities/)
 
-# freeBSD 
-es un proyecto ["grande"](https://svnweb.freebsd.org/base/stable/12/) con muchos sistemas operativos forkeados de el
+freeBSD: es un proyecto ["grande"](https://svnweb.freebsd.org/base/stable/12/) con muchos sistemas operativos forkeados de el
 
-# openBSD
-es un proyecto relativamente mas ["chico"](https://cvsweb.openbsd.org/src/) que freebsd 
+openBSD: es un proyecto relativamente mas ["chico"](https://cvsweb.openbsd.org/src/) que freebsd 
 es [inovador](https://www.openbsd.org/innovations.html
 ), crean nuevas herramientas usadas en toda la comunidad de unix
 
 ambos pueden tener incompatibilidades de hardware
 ambos pueden tener algunas incompatibilidades de software, pero hay capas traduccion y emulacion para solucionarlo
-
-
 
 
 ---
@@ -119,6 +115,8 @@ ambos pueden tener algunas incompatibilidades de software, pero hay capas traduc
 - no puedes correr ciertos juegos: [rainbow six](https://www.protondb.com/app/359550), [roblox](https://news.itsfoss.com/roblox-linux-end/), [etc.](https://www.protondb.com/explore?sort=fixWanted)
 - no puedes correr ciertas aplicaciones: [Adobe Photoshop](https://appdb.winehq.org/objectManager.php?sClass=application&iId=17), [MS Office](https://appdb.winehq.org/objectManager.php?sClass=application&iId=31), [etc](https://appdb.winehq.org/).
 - sin soporte completo para [HDR](https://wiki.archlinux.org/title/HDR_monitor_support) 
+- problemas con [variable refresh rate](https://wiki.archlinux.org/title/Variable_refresh_rate)
+- problemas con [fractional scaling](https://wiki.archlinux.org/title/HiDPI)
 - problemas con [impresoras](https://opensource.com/article/21/8/add-printer-linux)
 - screen tearing en [X11 (xorg)](https://christitus.com/fix-screen-tearing-linux/) 
 - problemas al compartir pantalla con audio en [discord](https://wiki.archlinux.org/title/Discord#Screen_sharing_with_audio) y [MS Teams](https://answers.microsoft.com/en-us/msteams/forum/all/sharing-system-sound-in-teams-for-linux/f1c70d83-e9bd-41b4-abde-d78fae764d5c)
@@ -146,11 +144,10 @@ ambos pueden tener algunas incompatibilidades de software, pero hay capas traduc
 
 # desventajas MacOS
 
-- no puede correr ciertos [juegos](https://www.protondb.com/explore?sort=fixWanted)
-- quitaron el soporte de [32-bits](https://support.apple.com/en-us/HT208436)
-- no puede correr ciertas [apps](https://gist.github.com/stevemoser/a4388df17633beae5bc3fb07d38373e2)
-- hardware [oficial](https://everymac.com/systems/apple/index-apple-specs-applespec.html) y [no oficial](https://hackintosh.com/#hackintosh_compatible) limitados
 - Appple ID es un requisito para instalar MacOS
+- no puede correr ciertos [juegos](https://www.protondb.com/explore?sort=fixWanted)
+- quitaron el soporte de [32-bits](https://support.apple.com/en-us/HT208436) y con eso muchas  [apps](https://gist.github.com/stevemoser/a4388df17633beae5bc3fb07d38373e2)
+- hardware [oficial](https://everymac.com/systems/apple/index-apple-specs-applespec.html) y [no oficial](https://hackintosh.com/#hackintosh_compatible) limitados
 - las computadoras Mac son [costosas](https://everymac.com/global-mac-prices/mac-prices-mexico-mx.html)
 - la existencia de [OCSP](https://blog.jacopo.io/en/post/apple-ocsp/)
 - multiples problemas de [privacidad](https://sneak.berlin/20201112/your-computer-isnt-yours/)
@@ -158,6 +155,7 @@ ambos pueden tener algunas incompatibilidades de software, pero hay capas traduc
 - posibles conexiones con NSA e implicacion con [PRISM](https://www.washingtonpost.com/investigations/us-intelligence-mining-data-from-nine-us-internet-companies-in-broad-secret-program/013/06/06/3a0c0da8-cebf-11e2-8845-d970ccb04497_story.html)
 - no suele haber drivers opensource
 - la capa de compatibilidad con windows wine puede correr [malware](https://wiki.winehq.org/FAQ#Is_Wine_malware-compatible.3F)
+- no tiene controles de volumen por [aplicacion](https://apple.stackexchange.com/questions/381397/is-it-possible-to-set-an-individual-sound-volume-for-each-program-on-a-mac)
 
 ---
 
@@ -167,7 +165,6 @@ ambos pueden tener algunas incompatibilidades de software, pero hay capas traduc
 - lee esta [guia](https://github.com/drduh/macOS-Security-and-Privacy-Guide) de privacidad
 - usa [brew](https://brew.sh/) como package manager
 
-
 ---
 
 # ventajas de windows
@@ -175,9 +172,10 @@ ambos pueden tener algunas incompatibilidades de software, pero hay capas traduc
 - [compatibilidad](https://support.microsoft.com/en-us/windows/make-older-apps-or-programs-compatible-with-windows-783d6dd7-b439-bdb0-0490-54eea0f45938) con aplicaciones antiguas de windows
 - las empresas les importa la distribucion del [mercado](https://gs.statcounter.com/os-market-share/desktop/worldwide/#monthly-202306-202306-bar) de sistmas operativos, por lo que ciertas aplicaciones y juegos estan pensados para windows 
 - soporte de [HDR](https://support.microsoft.com/en-us/windows/hdr-settings-in-windows-2d767185-38ec-7fdc-6f97-bbc6c5ef24e6)
+
 ---
 
-# **Desventajas de windows**
+# Desventajas de windows
 
 ---
 
@@ -188,7 +186,7 @@ ambos pueden tener algunas incompatibilidades de software, pero hay capas traduc
 - Hyper-V y Windows hypervisor platform solo disponibles para [Windows Pro](https://www.microsoft.com/en-us/windows/compare-windows-10-home-vs-pro)
 - Virtual Machine Platform, Hyper-V, Windows hypervisor platform y WSL2 interfieren con aplicaciones: [dell alienware control](https://www.dell.com/community/Alienware-Desktops/AWCC-OC-Controls-incompatible-with-Virtual-Machine-Platform/m-p/8239494#M60811), [throttle stop](https://www.techpowerup.com/forums/threads/throttlestop-dead-on-windows-11.284102/), etc.
 - los hosts en windows son [read-only](https://superuser.com/questions/958991/windows-10-cant-edit-hosts-file) y modificarlo puede alertar al [antivirus](https://support.microsoft.com/en-au/topic/hosts-file-is-detected-as-malware-in-windows-defender-4320fa8b-0d54-1129-db85-61f095144521)
-- para correr un [hello world!](https://stackoverflow.com/questions/55603111/unable-to-compile-rust-hello-world-on-windows-linker-link-exe-not-found) de rust ocupas que descargar visual studio community junto con 1gb para los c++ build tools y el Windows SDK 
+- para correr un ["hello world!"](https://stackoverflow.com/questions/55603111/unable-to-compile-rust-hello-world-on-windows-linker-link-exe-not-found) de rust ocupas que descargar visual studio community junto con 1gb para los c++ build tools y el Windows SDK 
 - visual studio community usa como [10gb](https://developercommunity.visualstudio.com/t/visual-studio-uses-too-disk-much-space/145475) o [más](https://developercommunity.visualstudio.com/t/hard-disk-space-loss/585904)
 - problemas con librerias, aveces tienes que compilarlas manualmente como [pycripto](https://old.reddit.com/r/webdev/comments/132eql/owhy_many_people_dislike_windows_as_an_development/) o en mi caso librespot de rust 
 - Problemas de velocidad con [I/O y ntfs](https://github.com/Microsoft/WSL/issues/873)
@@ -254,6 +252,7 @@ ambos pueden tener algunas incompatibilidades de software, pero hay capas traduc
 
 # más referencias de las desventajas de windows
 - [GNU: Microsoft's Software is Malware](https://www.gnu.org/proprietary/malware-microsoft.en.html)
+- [Jody Bruchon Tech: Windows 11 Must Be Stopped - A Veteran PC Repair Shop Owner's Dire Warning](https://yewtu.be/watch?v=LcafzHL8iBQ)
 - [reddit: why many people dislike windows as an development environment?](https://old.reddit.com/r/webdev/comments/132eql/why_many_people_dislike_windows_as_an_development/)
 - [reddit: what is your worst experience with ms windows?](https://old.reddit.com/r/linuxmasterrace/comments/u19uee/what_is_your_worst_experience_with_ms_windows/)
 - [reddit: why so much hate to windows?](https://old.reddit.com/r/linuxmasterrace/comments/qi370x/why_so_much_hate_to_windows/)
@@ -262,7 +261,6 @@ ambos pueden tener algunas incompatibilidades de software, pero hay capas traduc
 - [installgentoo wiki: Windows 10](https://wiki.installgentoo.com/wiki/Windows_10)
 - [itvision blog: why windows 10 sucks](https://itvision.altervista.org/why-windows-10-sucks.html)
 - [itvision blog: why windows 11 sucks](https://itvision.altervista.org/why-windows-11-sucks.html)
-- [Jody Bruchon Tech: Windows 11 Must Be Stopped - A Veteran PC Repair Shop Owner's Dire Warning](https://yewtu.be/watch?v=LcafzHL8iBQ)
 
 ---
 
@@ -270,10 +268,10 @@ ambos pueden tener algunas incompatibilidades de software, pero hay capas traduc
 - usa windows 10 sin iniciar sesion en una cuenta de microsoft
 - descarga apps de la ms store con https://store.rg-adguard.net/
 - usa windows  en una vm  con NAT activado
-- instala drivers de nvidia sin telemetria con [nvclean](https://www.techpowerup.com/download/techpowerup-nvcleanstall/) 
+- instala drivers de nvidia sin telemetria con [nvcleanstall](https://www.techpowerup.com/download/techpowerup-nvcleanstall/) 
 - si es para jugar, preinstala todos los Visual C++ desde [techpowerup](https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/)
-- usa [Chris Titus Tech's Windows Utility](https://github.com/ChrisTitusTech/winutil) para desactivar facilemente telemetria y otras funcionalidades como activar UTC para usar windows en dual-boot
-- bloquea paginas en el archivo de [hosts](https://gist.github.com/VirtuBox/f09968a2d27bc00ba58b3617c61dc54e)
+- usa [Chris Titus Tech's Windows Utility](https://github.com/ChrisTitusTech/winutil) para desactivar facilemente telemetria o tambien para activar UTC si se usa windows en dual-boot
+- bloquea las direcciones a donde se envian telemetrias en el archivo de [hosts](https://gist.github.com/VirtuBox/f09968a2d27bc00ba58b3617c61dc54e)
 - prueba que el software descargado de internet no tenga virus con [virustotal](https://www.virustotal.com/gui/)
 -  usa aplicaciones con posibles virus en [sandboxie](https://sandboxie-plus.com/)
 - [autoruns](https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns) para desactivar apps/servicios al inicio del sistema 
@@ -285,8 +283,37 @@ ambos pueden tener algunas incompatibilidades de software, pero hay capas traduc
 
 ---
 
-una distribucion de linux es:
-las distribuciones se pueden diferenciar por tres partes principales:
+una distribucion (tambien llamada distro) de linux es un sistema operativo completo con muchos 
+componentes opensource como utilidades, aplicaiones, escriotrios, etc.
+
+
+los componentes que construyen a una distribucion de linux es: 
+- filosofia : free/libre, utilitarism, bsd feel, etc.
+- Release model : fix, rolling release, lts, bleeding edge
+- Boot Loader: GRUB, LILO
+- tipo de kernel: git, linux-free, linux-zen, linux-LTS, etc.
+- init system / daemon manager: runit, OpenRC, systemd, SysV, s6, etc.
+- systema de archivos (File system): ext2/3/4, XFS, Btrfs, ZFS, etc.    
+- interfaz de shell: bash, zsh, fish, dash, ash, etc.
+- libreria de c: glibc / musl /ulibc
+- utilidades basicas: gnu core utils / busybox
+- servidor grafico: Xorg(X11) / protocolo grafico: Wayland 
+- tecnologia de audio: pulseaudio, Jack, Alsa, pipewire.
+- login manager: ssdm (KDE)
+- window manager: dwm, sway, i3, xmonad, etc.    
+- Desktop environment: Gnome, Plasma, xfce4, etc. 
+- Graphics Toolkits: GTK+, Qt
+- gestor de paquetes (package manager): apt, XBPS, pacman, yum, yay,
+- compatibilidad de formato de paquetes (Package Management): deb, RPM, source code, install scripts, etc.
+- aplicaciones graficas incluidas: 
+    - navegador: firefox, chromium, etc.
+    - Office Suite: libreoffice, onlyoffice, Calligra etc.
+    - emulador de terminal: konsole, gnome-terminal, alacritty, kitty, st, etc. 
+    - editor de textos: vscodium, vim, gvim, neovim, emacs, etc.
+    - explorador de archivos: nautilus (gnome), dolphin (KDE)
+    - visualizador de imagenes: feh, gwenviwer, etc.
+
+hay cinco partes que definen y diferencian a una distribucion de linux son:
 el sistema de arranque (init system (PID 1)), gestor de paquetes (package manager) y su filosofia (uso,caracteristicas,orientacion,etc.)
 
 categorias de distribuciones:
@@ -300,6 +327,8 @@ tipos de distribuciones deribadas:
  remix/respin: agregando un objetivo especifico 
  fork
  clone/repackage: copian el codigo y tienen otra infrestructura para la distribucion, por ejemplo para RHEL hay repackages como Rocky linux, Oracle Linux, etc.
+
+---
 
 rolling release
 bleeding edge
@@ -316,7 +345,6 @@ bleeding edge
 | [arch](https://archlinux.org/)         | systemd        | pacman      | bleeding edge|
 | [debian](https://www.debian.org/)       | systemd        | apt         | community    |
 | [slackware](http://www.slackware.com/)    | sysV           | slackpkg    | kiss         |
-| [SUSE](https://www.suse.com/products/server/) LE S/D      | systemd        | zipper      | enterprise   |
 | [gentoo](https://www.gentoo.org/)       | OpenRC/systemd | portage     | compile      |
 | [void](https://voidlinux.org/)         | runit          | xbps        | BSD-feel     |
 | [nixos](https://nixos.org/)        | systemd        | nix         | portability  |
@@ -361,29 +389,15 @@ todos son archivos
 - Red Hat. (2019). *What is the Linux kernel?*. https://www.redhat.com/en/topics/linux/what-is-the-linux-kernel 
 - Roch, B. (2004). *Monolithic kernel vs. Microkernel*. https://web.cs.wpi.edu/~cs3013/c12/Papers/Roch_Microkernels.pdf 
 - The Linux Kernel Organization. (2019). *Is Linux Kernel Free Software?*. https://www.kernel.org/category/faq.html
-
----
-
-<style scoped>{font-size: 21px;}</style>
-
 - Britannica, T. Editors of Encyclopaedia (2023). *Linux*. Encyclopedia Britannica. https://www.britannica.com/technology/Linux
 - Fireship. (2022). *Linux in 100 Seconds* [Video]. YouTube. https://yewtu.be/watch?v=rrB13utjYV4
 - The Linux Information Project. (2006). *What is Linux?*. http://www.linfo.org/newbies.html
 - The Linux Kernel Organization. (2019). *About Linux Kernel*. https://www.kernel.org/linux.html
 - Wheeler, D. (2003). *History of Unix, Linux, and Open Source / Free Software*. https://tldp.org/HOWTO/Secure-Programs-HOWTO/history.html
-
----
-
-<style scoped>{font-size: 21px;}</style>
-
- - Michael Tunnell. (2023). *Explaining Linux Family Trees: Why Are There So Many Linux Distros?* [Video]. https://yewtu.be/watch?v=kF8CRt05s6A
+- Michael Tunnell. (2023). *Explaining Linux Family Trees: Why Are There So Many Linux Distros?* [Video]. https://yewtu.be/watch?v=kF8CRt05s6A
 - The Linux Information Project. (2005). *Flavors of UNIX Definition*. http://www.linfo.org/flavors.html
-
-
-
-
-
-
 - Adekotujo, A., Odumabo, A., Adedokun, A., & Aiyeniko, O. (2020). *A Comparative Study of Operating Systems: Case of Windows, UNIX, Linux, Mac, Android and iOS*. https://www.researchgate.net/profile/Adedoyin-Odumabo/publication/343013056_A_Comparative_Study_of_Operating_Systems_Case_of_Windows_UNIX_Linux_Mac_Android_and_iOS/links/61f2b50a9a753545e2fe8300/A-Comparative-Study-of-Operating-Systems-Case-of-Windows-UNIX-Linux-Mac-Android-and-iOS.pdf
 - The Open Group. (2008). *The Single UNIX Specification, Version 4*. https://unix.org/version4/overview.html
 - IEEE. (2017). *IEEE Std 1003.1™-2017*. https://pubs.opengroup.org/onlinepubs/9699919799/
+SUSE. (s.f.). *Linux Distribution*. https://www.suse.com/suse-defines/definition/linux-distribution/ 
+- ezeelinux. (2018). *Linux Distributions Deconstructed*. https://www.ezeelinux.com/news/linux-distributions-deconstructed/
