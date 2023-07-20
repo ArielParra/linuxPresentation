@@ -70,7 +70,7 @@ minimalism/anti bloat
 avoid honey pots
 duckduckgo
 starpage
-proton email revels to fbi
+[proton](https://techcrunch.com/2021/09/06/protonmail-logged-ip-address-of-french-activist-after-order-by-swiss-authorities/)
 
 # freeBSD 
 es un proyecto ["grande"](https://svnweb.freebsd.org/base/stable/12/) con muchos sistemas operativos forkeados de el
@@ -89,56 +89,75 @@ ambos pueden tener algunas incompatibilidades de software, pero hay capas traduc
 ---
 
 # 1.4 ventajas de linux
+- es gratuito
 - superioridad en cuestion de audio con [pipewire](https://pipewire.org/)
-    - Capture and playback of audio and video with minimal latency.
-    - Real-time multimedia processing on audio and video.
-    - Multiprocess architecture to let applications share multimedia content.
-    - Seamless support for PulseAudio, JACK, ALSA, and GStreamer applications.
-    - Sandboxed applications support. 
 - puede arrancar [rapidamente](https://www.forbes.com/sites/jasonevangelho/2019/06/19/infographics-linux-mint-challenges-windows-10-in-small-business-speed-tests-laptop/#7a560d2369bb) el sistema y las aplicaciones
 - tiempos menores de [compilacion](https://medium.com/aedm/windows-wsl-and-linux-a-build-time-benchmark-for-java-rust-go-and-node-43188a9c77d6)
-- rapidez de ejecucion
+- mejores resultados en [geekbench](https://yewtu.be/watch?v=7BreeFlhP78)
+- usa menos memoria [RAM](https://yewtu.be/watch?v=L3d9okxKcjM)
 - estabilidad
-- comuninidad 
-- promueve open source,
+- tiene multiples [comunidades](https://www.makeuseof.com/tag/4-helpful-communities-new-linux-users/) para soporte
+- altamente [customizable](https://www.reddit.com/r/unixporn/)
+- tiene drivers opensource oficiales de [AMD](https://gpuopen.com/amd-open-source-driver-for-vulkan/) y no oficiales de [nVidia](https://nouveau.freedesktop.org/)
+- puedes [revivir](https://itsfoss.com/mystory-linux-13-years-laptop/) laptops antiguas
+- promueve [open source](https://www.linuxfoundation.org/resources/open-source-guides/participating-in-open-source-communities)
+
+----
+
+# más referencias de las ventajas de linux 
+- [linfo: 25 Reasons to Convert to Linux](http://www.linfo.org/reasons_to_convert.html)
+- [Joe Collins: Linux vs. Windows | The Fundamental Differences](https://yewtu.be/watch?v=p4xA7GRmf6o)
+- [Dave's Garage: Linux vs Windows Round 1: Open Source vs Proprietary - From a Retired Microsoft Dev](https://yewtu.be/watch?v=a9ZADRy5W0c)
+- [DistroTube: How Linux Respects Your Privacy (And How Windows Does NOT!)](https://yewtu.be/watch?v=KarYADRAoTU)
+- [Average Linux User: Linux advantages](https://yewtu.be/watch?v=mJEWPqHXNzs)
+
 
 ---
 # desventajas de linux
 
+- tienes que aprender temas nuevos, aprender a buscar soluciones y leer.
 - no puedes correr ciertos juegos: [rainbow six](https://www.protondb.com/app/359550), [roblox](https://news.itsfoss.com/roblox-linux-end/), [etc.](https://www.protondb.com/explore?sort=fixWanted)
 - no puedes correr ciertas aplicaciones: [Adobe Photoshop](https://appdb.winehq.org/objectManager.php?sClass=application&iId=17), [MS Office](https://appdb.winehq.org/objectManager.php?sClass=application&iId=31), [etc](https://appdb.winehq.org/).
-- tienes que aprender temas nuevos, aprender a buscar soluciones y leer.
 - sin soporte completo para [HDR](https://wiki.archlinux.org/title/HDR_monitor_support) 
+- problemas con [impresoras](https://opensource.com/article/21/8/add-printer-linux)
+- screen tearing en [X11 (xorg)](https://christitus.com/fix-screen-tearing-linux/) 
+- problemas al compartir pantalla con audio en [discord](https://wiki.archlinux.org/title/Discord#Screen_sharing_with_audio) y [MS Teams](https://answers.microsoft.com/en-us/msteams/forum/all/sharing-system-sound-in-teams-for-linux/f1c70d83-e9bd-41b4-abde-d78fae764d5c)
+- el driver para nvidia nouveau tiene un [peor rendimiento](https://openbenchmarking.org/result/2106300-IB-NOUVEAU2060) que el oficial
+- la capa de compatibilidad con windows wine puede correr [malware](https://wiki.winehq.org/FAQ#Is_Wine_malware-compatible.3F)
+
 
 ---
 
 # ventajas MacOS
 
+- tiene interfaces con diseños [inovadores](https://design.tutsplus.com/tutorials/how-apple-ended-up-leading-the-icon-design-trends-and-whether-or-not-you-should-fight-it--cms-32201)
 - tiene una certificacion [posix](https://www.opengroup.org/openbrand/register/apple.htm)
 - usar [xcode](https://developer.apple.com/xcode/) para desarrollar aplicaciones de iOS/MacOS
 - juegos nativos como [roblox](https://www.roblox.com/download) o juegos de Blizzard como [WOW](https://www.blizzard.com/en-sg/download?platform=macos)
-- interfaz y animaciones " lindas"
 - aplicaciones nativas como [Adobe Photoshop](https://helpx.adobe.com/support/photoshop.html), [MS Office](https://www.microsoft.com/en-us/microsoft-365/mac/microsoft-365-for-mac), [FL Studio](https://www.image-line.com/), etc.
 - compatibilidad y uso de [heic/hecv](https://support.apple.com/en-us/HT207022) integrado al sistema
 - tienen el [ecosistema de apple](https://www.apple.com/macos/continuity/)
 - tienen de los mejores [procesadores arm](https://www.techspot.com/review/2499-apple-m2/) para escritorio
 - soporte de [HDR](https://support.apple.com/en-us/HT210980)
+- puedes compartir pantalla con sonido en discord y [MS Teams](https://answers.microsoft.com/en-us/msteams/forum/all/sharing-system-sound-in-teams-for-linux/f1c70d83-e9bd-41b4-abde-d78fae764d5c)
+- el driver opensource de nvidia novoue rinde peor que el p
 
 ---
 
 # desventajas MacOS
 
-- no puede correr ciertos juegos
-- no puede correr ciertas apps
+- no puede correr ciertos [juegos](https://www.protondb.com/explore?sort=fixWanted)
+- quitaron el soporte de [32-bits](https://support.apple.com/en-us/HT208436)
+- no puede correr ciertas [apps](https://gist.github.com/stevemoser/a4388df17633beae5bc3fb07d38373e2)
 - hardware [oficial](https://everymac.com/systems/apple/index-apple-specs-applespec.html) y [no oficial](https://hackintosh.com/#hackintosh_compatible) limitados
 - Appple ID es un requisito para instalar MacOS
 - las computadoras Mac son [costosas](https://everymac.com/global-mac-prices/mac-prices-mexico-mx.html)
 - la existencia de [OCSP](https://blog.jacopo.io/en/post/apple-ocsp/)
 - multiples problemas de [privacidad](https://sneak.berlin/20201112/your-computer-isnt-yours/)
-- no puedes usar aplicaciones de [32-bits](https://support.apple.com/en-us/HT208436)
 - los [contratos de licencia de software](https://www.apple.com/legal/sla/)
 - posibles conexiones con NSA e implicacion con [PRISM](https://www.washingtonpost.com/investigations/us-intelligence-mining-data-from-nine-us-internet-companies-in-broad-secret-program/013/06/06/3a0c0da8-cebf-11e2-8845-d970ccb04497_story.html)
-
+- no suele haber drivers opensource
+- la capa de compatibilidad con windows wine puede correr [malware](https://wiki.winehq.org/FAQ#Is_Wine_malware-compatible.3F)
 
 ---
 
@@ -162,7 +181,7 @@ ambos pueden tener algunas incompatibilidades de software, pero hay capas traduc
 
 ---
 
-# Desarrollador
+## Desarrollador
 - [java updater](https://www.java.com/en/download/help/java_update.html) esta siempre activo en segundo plano
 - ejecuta programas de manera lenta (a tirones) aunque sea pwsh
 - [.NET](https://michaelscodingspot.com/dotnet-dll-hell/) y [dll](https://www.partech.nl/en/publications/2022/03/what-is-dll-hell-problem-and-how-to-solve-it) [hell](https://www.baeldung.com/cs/dll-hell-problem)
@@ -176,7 +195,7 @@ ambos pueden tener algunas incompatibilidades de software, pero hay capas traduc
 
 ---
 
-# Uso general
+## Uso general
 - las apps por defecto se actualizan individualmente ya sea abriendo la aplicación o teniendo que descargar la nueva version de la pagina del creador
 
 - para usar winget ocupas una cuenta microsoft para descargar [App-Installer](https://apps.microsoft.com/store/detail/appinstaller/9NBLGGH4NNS1?hl=de-at&gl=at&rtc=1) de la microsoft store y para usarlo ocupas constantemente aceptar los [UAC](https://learn.microsoft.com/en-us/windows/package-manager/winget/) prompts, aparte de acepatar la [CLA](https://opensource.microsoft.com/cla/) 
@@ -206,14 +225,15 @@ ambos pueden tener algunas incompatibilidades de software, pero hay capas traduc
 
 ---
 
-# hardware
+## hardware
 - Device encryption ocupa hardware [moderno](https://www.microsoft.com/en-us/windows/compare-windows-10-home-vs-pro) ([InstantGo](https://blogs.windows.com/windowsexperience/2014/06/19/instantgo-a-better-way-to-sleep/#RXGeiruxOD7f3V0q.97)/[AOAC](https://www.microsoft.com/en-us/store/b/alwaysconnectedfaq)/[HSTI-compliant](https://learn.microsoft.com/en-us/windows-hardware/test/hlk/testref/hardware-security-testability-specification)), basicamente de 2014 en adelante.
 - los [requisitos](https://www.microsoft.com/en-us/windows/windows-11-specifications) de Windows 11, procesador de 64 bits, UEFI, TPM v2.0 y una grafica compatible con DirectX12.
 - los discos duros con ntfs tienen que [defragmentarse](https://learn.microsoft.com/en-us/previous-versions/cc767961(v=technet.10))
 - los drivers oficiales de nvidia tienen [telemetria](https://www.geeks3d.com/20161107/nvidia-telemetry-in-geforce-drivers/)
+- no suele haber drivers opensource
 
 
-# juegos
+## juegos
 - descargas [muchas versiones](https://www.howtogeek.com/256245/why-are-there-so-many-microsoft-visual-c-redistributables-installed-on-my-pc/) de microsoft visual c++ redistributable por juego
 - los juegos de la microsoft store (xbox app) suelen correr [peor](https://old.reddit.com/r/techsupport/comments/v4nhaf/so_ive_been_wondering_if_its_just_me_or_windows/) o dar [input lag](https://www.reddit.com/r/roblox/comments/oahvsf/roblox_player_vs_microsoft_store_app_input_lag/)
 - no puedes acceder a las [carpetas](https://www.makeuseof.com/windows-access-windowsapps-folder/) de juegos de la microsoft store (xbox app) aun siendo administrador
@@ -221,16 +241,18 @@ ambos pueden tener algunas incompatibilidades de software, pero hay capas traduc
 
 ---
 
-# privacidad
+## privacidad
+- botones de anti privacidad activados por [defecto](https://learn.microsoft.com/es-es/intune-education/media/rs5_choose_settings.png)
 - windows [phone home](https://yewtu.be/watch?v=IT4vDfA_4NI).
 - windows hace backdoors para [NSA](http://techrights.org/wiki/index.php/Microsoft_and_the_NSA) y esta involucrado con [PRISM](https://en.wikipedia.org/wiki/PRISM)
 - datos de diagnosticos [obligatorios](https://learn.microsoft.com/en-us/windows/privacy/required-windows-diagnostic-data-events-and-fields-2004)
 - [edge](https://learn.microsoft.com/en-us/microsoft-edge/privacy-whitepaper/) y [office](https://learn.microsoft.com/en-us/deployoffice/compat/data-that-the-telemetry-agent-collects-in-office) envian telemetria
 - [Delivery Optimization](https://learn.microsoft.com/en-us/windows/deployment/do/waas-delivery-optimization) esta activado por [defecto](https://www.dell.com/support/kbdoc/es-mx/000125580/information-on-the-windows-update-delivery-optimization-feature-within-windows-10?lang=en)
 - la [declaración de privacidad](https://privacy.microsoft.com/en-us/privacystatement)
+
 ---
 
-# mas lecturas de las desventajas de windows
+# más referencias de las desventajas de windows
 - [GNU: Microsoft's Software is Malware](https://www.gnu.org/proprietary/malware-microsoft.en.html)
 - [reddit: why many people dislike windows as an development environment?](https://old.reddit.com/r/webdev/comments/132eql/why_many_people_dislike_windows_as_an_development/)
 - [reddit: what is your worst experience with ms windows?](https://old.reddit.com/r/linuxmasterrace/comments/u19uee/what_is_your_worst_experience_with_ms_windows/)
@@ -240,6 +262,7 @@ ambos pueden tener algunas incompatibilidades de software, pero hay capas traduc
 - [installgentoo wiki: Windows 10](https://wiki.installgentoo.com/wiki/Windows_10)
 - [itvision blog: why windows 10 sucks](https://itvision.altervista.org/why-windows-10-sucks.html)
 - [itvision blog: why windows 11 sucks](https://itvision.altervista.org/why-windows-11-sucks.html)
+- [Jody Bruchon Tech: Windows 11 Must Be Stopped - A Veteran PC Repair Shop Owner's Dire Warning](https://yewtu.be/watch?v=LcafzHL8iBQ)
 
 ---
 
@@ -262,14 +285,30 @@ ambos pueden tener algunas incompatibilidades de software, pero hay capas traduc
 
 ---
 
-
+una distribucion de linux es:
 las distribuciones se pueden diferenciar por tres partes principales:
-el sistema de arranque (init system (PID 1)), gestor de paquetes (package manager) 
-y su filosofia (uso,caracteristicas,orientacion,etc.)
+el sistema de arranque (init system (PID 1)), gestor de paquetes (package manager) y su filosofia (uso,caracteristicas,orientacion,etc.)
+
+categorias de distribuciones:
+
+independiente: la ventaja de esta es tener otras opciones
+deribados: los deribados tienen compatibilidad con quien se deribaron
+
+tipos de distribuciones deribadas:
+
+ flavour: otros escritorios o temas oficiales de la distribucion, por ejemplo para ubuntu hay flavours como: edubuntu,kubuntu,lubuntu, etc.
+ remix/respin: agregando un objetivo especifico 
+ fork
+ clone/repackage: copian el codigo y tienen otra infrestructura para la distribucion, por ejemplo para RHEL hay repackages como Rocky linux, Oracle Linux, etc.
+
+rolling release
+bleeding edge
 
 ---
 
-<style scoped>table {font-size: 28px;}</style>
+<style scoped>table {font-size: 23px;}</style>
+
+## independentes 
 
 | distribucion | init           | pkg manager | filosofia    |
 |--------------|----------------|-------------|--------------|
@@ -285,11 +324,9 @@ y su filosofia (uso,caracteristicas,orientacion,etc.)
 
 ---
 
-<style scoped>table {font-size: 28px;}</style>
+<style scoped>table {font-size: 23px;}</style>
 
-# deribadas
-
-
+## deribadas
 
 | distribucion | init             | basado en   | filosofia 
 |--------------|------------------|-------------|-----------
@@ -340,9 +377,13 @@ todos son archivos
 <style scoped>{font-size: 21px;}</style>
 
  - Michael Tunnell. (2023). *Explaining Linux Family Trees: Why Are There So Many Linux Distros?* [Video]. https://yewtu.be/watch?v=kF8CRt05s6A
+- The Linux Information Project. (2005). *Flavors of UNIX Definition*. http://www.linfo.org/flavors.html
 
-- Jody Bruchon Tech . *Windows 11 Must Be Stopped - A Veteran PC Repair Shop Owner's Dire Warning - Jody Bruchon* [Video]. https://yewtu.be/watch?v=LcafzHL8iBQ
+
+
+
+
+
 - Adekotujo, A., Odumabo, A., Adedokun, A., & Aiyeniko, O. (2020). *A Comparative Study of Operating Systems: Case of Windows, UNIX, Linux, Mac, Android and iOS*. https://www.researchgate.net/profile/Adedoyin-Odumabo/publication/343013056_A_Comparative_Study_of_Operating_Systems_Case_of_Windows_UNIX_Linux_Mac_Android_and_iOS/links/61f2b50a9a753545e2fe8300/A-Comparative-Study-of-Operating-Systems-Case-of-Windows-UNIX-Linux-Mac-Android-and-iOS.pdf
 - The Open Group. (2008). *The Single UNIX Specification, Version 4*. https://unix.org/version4/overview.html
 - IEEE. (2017). *IEEE Std 1003.1™-2017*. https://pubs.opengroup.org/onlinepubs/9699919799/
-
