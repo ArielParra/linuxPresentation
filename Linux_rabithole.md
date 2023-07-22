@@ -16,7 +16,7 @@ paginate: true
 <style scoped>
 ol{ columns: 2; }
 </style>
-1. ¿Qué es Linux?   
+1. [¿Qué es linux?](#1.-¿Qué-es-Linux?)  
 1.1 Definición
 1.2 Historia
 2. sistemas operativos
@@ -53,24 +53,25 @@ Fue creado en 1991 por el estudiante de la universidad de Helsinki Linus Torvald
 
 ---
 # aunque antes tendria que hablar de distros y  tambien que los compone
-# 1.3 Filosofias relacionadas
+# 1.3 temas relacionadas
 
-Free/libre opensource software
-seguridad selinux hardenkernel
-minimalism/anti bloat
+
+Free/libre opensource software - licencias MIT, etc
+\minimalism/anti bloat
     anti gnu
     anti systemd
 
-# temas relacionados
 
-# posix   
+# unix
+- posix   
+- unix filosofy
+- sysV good old days
+- bsd is more like unix than linux
 
-# Privacy 
+ventajas y desventajas de BSD
+https://serverfault.com/questions/5267/what-is-good-about-the-bsds/5352#5352
 
-avoid honey pots
-duckduckgo
-starpage
-[proton](https://techcrunch.com/2021/09/06/protonmail-logged-ip-address-of-french-activist-after-order-by-swiss-authorities/)
+que es BSD: ya en las referencias
 
 freeBSD: es un proyecto ["grande"](https://svnweb.freebsd.org/base/stable/12/) con muchos sistemas operativos forkeados de el
 
@@ -81,17 +82,33 @@ es [inovador](https://www.openbsd.org/innovations.html
 ambos pueden tener incompatibilidades de hardware
 ambos pueden tener algunas incompatibilidades de software, pero hay capas traduccion y emulacion para solucionarlo
 
+# Privacy 
+
+avoid honey pots
+lee contrato de servicio en softwares "beta"
+duckduckgo relations with microsft
+starpage
+[proton](https://techcrunch.com/2021/09/06/protonmail-logged-ip-address-of-french-activist-after-order-by-swiss-authorities/)
+misconcepsiones de tor darkweb/deepwep
+usar whonix y/o qubes o tails
+
+# security
+harden linux kernel
+selinux admin
+linux guard o algo asi
+mentiras de hackeo y kali linux
+alch usa openBSD
 
 ---
 
-# 1.4 ventajas de linux
-- es gratuito
+# 1.4 ventajas de linux 
+- es gratuito y opensource
 - superioridad en cuestion de audio con [pipewire](https://pipewire.org/)
 - puede arrancar [rapidamente](https://www.forbes.com/sites/jasonevangelho/2019/06/19/infographics-linux-mint-challenges-windows-10-in-small-business-speed-tests-laptop/#7a560d2369bb) el sistema y las aplicaciones
 - tiempos menores de [compilacion](https://medium.com/aedm/windows-wsl-and-linux-a-build-time-benchmark-for-java-rust-go-and-node-43188a9c77d6)
 - mejores resultados en [geekbench](https://yewtu.be/watch?v=7BreeFlhP78)
 - usa menos memoria [RAM](https://yewtu.be/watch?v=L3d9okxKcjM)
-- estabilidad
+- es [portable](https://www.oreilly.com/library/view/linux-kernel-development/0672327201/ch19.html)
 - tiene multiples [comunidades](https://www.makeuseof.com/tag/4-helpful-communities-new-linux-users/) para soporte
 - altamente [customizable](https://www.reddit.com/r/unixporn/)
 - tiene drivers opensource oficiales de [AMD](https://gpuopen.com/amd-open-source-driver-for-vulkan/) y no oficiales de [nVidia](https://nouveau.freedesktop.org/)
@@ -106,7 +123,10 @@ ambos pueden tener algunas incompatibilidades de software, pero hay capas traduc
 - [Dave's Garage: Linux vs Windows Round 1: Open Source vs Proprietary - From a Retired Microsoft Dev](https://yewtu.be/watch?v=a9ZADRy5W0c)
 - [DistroTube: How Linux Respects Your Privacy (And How Windows Does NOT!)](https://yewtu.be/watch?v=KarYADRAoTU)
 - [Average Linux User: Linux advantages](https://yewtu.be/watch?v=mJEWPqHXNzs)
-
+- [The Linux Foundation: Why are Linux Jobs so In Demand?](https://training.linuxfoundation.org/blog/why-are-linux-jobs-so-in-demand/)
+- [The Linux Experiment: 
+Windows, macOS & Linux PRIVACY compared: why do they need ALL THIS DATA?!
+](https://yewtu.be/watch?v=MMc5zgALLiY)
 
 ---
 # desventajas de linux
@@ -137,8 +157,8 @@ ambos pueden tener algunas incompatibilidades de software, pero hay capas traduc
 - tienen el [ecosistema de apple](https://www.apple.com/macos/continuity/)
 - tienen de los mejores [procesadores arm](https://www.techspot.com/review/2499-apple-m2/) para escritorio
 - soporte de [HDR](https://support.apple.com/en-us/HT210980)
-- puedes compartir pantalla con sonido en discord y [MS Teams](https://answers.microsoft.com/en-us/msteams/forum/all/sharing-system-sound-in-teams-for-linux/f1c70d83-e9bd-41b4-abde-d78fae764d5c)
-- el driver opensource de nvidia novoue rinde peor que el p
+- puedes compartir pantalla con sonido en [discord](https://support.discord.com/hc/en-us/articles/1500006741102-macOS-Screen-Share-with-Audio-Update-FAQ) y [MS Teams](https://answers.microsoft.com/en-us/msteams/forum/all/sharing-system-sound-in-teams-for-linux/f1c70d83-e9bd-41b4-abde-d78fae764d5c)
+- buen rendimiento en juegos con [D3DMetal](https://developer.apple.com/metal/) y  [game porting toolkit](https://old.reddit.com/r/macgaming/comments/1446hj6/all_working_games_list_game_porting_toolkit/)
 
 ---
 
@@ -162,7 +182,8 @@ ambos pueden tener algunas incompatibilidades de software, pero hay capas traduc
 # Recomendaciones si tienes que usar MacOS
 - no uses una cuenta de Apple ID con tus datos personales
 - usa macOS en una vm con NAT activado
-- lee esta [guia](https://github.com/drduh/macOS-Security-and-Privacy-Guide) de privacidad
+- lee esta [guia](https://github.com/drduh/macOS-Security-and-Privacy-Guide) de privacidad en MacOS
+- usa [alacritty](https://alacritty.org/) como emualdor terminal
 - usa [brew](https://brew.sh/) como package manager
 
 ---
@@ -172,6 +193,7 @@ ambos pueden tener algunas incompatibilidades de software, pero hay capas traduc
 - [compatibilidad](https://support.microsoft.com/en-us/windows/make-older-apps-or-programs-compatible-with-windows-783d6dd7-b439-bdb0-0490-54eea0f45938) con aplicaciones antiguas de windows
 - las empresas les importa la distribucion del [mercado](https://gs.statcounter.com/os-market-share/desktop/worldwide/#monthly-202306-202306-bar) de sistmas operativos, por lo que ciertas aplicaciones y juegos estan pensados para windows 
 - soporte de [HDR](https://support.microsoft.com/en-us/windows/hdr-settings-in-windows-2d767185-38ec-7fdc-6f97-bbc6c5ef24e6)
+- Windows Subsystem for Linux [(WSL)](https://learn.microsoft.com/en-us/windows/wsl/about)  y Windows Subsystem for Android [(WSA)](https://learn.microsoft.com/en-us/windows/android/wsa/)
 
 ---
 
@@ -195,9 +217,7 @@ ambos pueden tener algunas incompatibilidades de software, pero hay capas traduc
 
 ## Uso general
 - las apps por defecto se actualizan individualmente ya sea abriendo la aplicación o teniendo que descargar la nueva version de la pagina del creador
-
 - para usar winget ocupas una cuenta microsoft para descargar [App-Installer](https://apps.microsoft.com/store/detail/appinstaller/9NBLGGH4NNS1?hl=de-at&gl=at&rtc=1) de la microsoft store y para usarlo ocupas constantemente aceptar los [UAC](https://learn.microsoft.com/en-us/windows/package-manager/winget/) prompts, aparte de acepatar la [CLA](https://opensource.microsoft.com/cla/) 
-
 - no puedes nombrar archivos con ciertos [nombres](https://yewtu.be/watch?v=bC6tngl0PTI)
 - windows pro cuesta [$6399](https://www.microsoft.com/es-mx/d/windows-11-pro/dg7gmgf0d8h4) pesos MXN
 - windows 11 [requiere](https://learn.microsoft.com/en-us/windows/whats-new/windows-11-requirements) a tener una cuenta microsoft y usarla en tu sistema
@@ -219,7 +239,7 @@ ambos pueden tener algunas incompatibilidades de software, pero hay capas traduc
 - la solucion a la mayoria de errores es [reistalar](https://answers.microsoft.com/en-us/windows/forum/all/windows-update-system-restore-and-repair-failed/aaf28405-55c0-4ee2-b4b4-f13571680b32) el sistema operativo
 - las [apps](https://www.pcmag.com/how-to/stop-windows-10-apps-from-launching-at-startup) se ejecutan al inicio o crean servicios que se ejecutan al inicio
 - fondos de pantalla en slidehow puede no [funcionar](https://answers.microsoft.com/en-us/windows/forum/all/background-slideshow-stops-working/acfcabe4-56fb-436a-afc6-42bdd877ca29)
-- pocas opciones open source de customizacion y algunas opciones privadas cuestan [wallpaperengine](https://store.steampowered.com/app/431960/Wallpaper_Engine/), [taskbarX](https://apps.microsoft.com/store/detail/taskbarx/9PCMZ6BXK8GH?hl=en-us&gl=us), [start11](https://www.stardock.com/products/start11/), etc.
+- pocas opciones open source de [customizacion](https://github.com/Awesome-Windows/Awesome#customization) y algunas opciones privadas cuestan [wallpaperengine](https://store.steampowered.com/app/431960/Wallpaper_Engine/), [taskbarX](https://apps.microsoft.com/store/detail/taskbarx/9PCMZ6BXK8GH?hl=en-us&gl=us), [start11](https://www.stardock.com/products/start11/), etc.
 
 ---
 
@@ -240,13 +260,12 @@ ambos pueden tener algunas incompatibilidades de software, pero hay capas traduc
 ---
 
 ## privacidad
-- botones de anti privacidad activados por [defecto](https://learn.microsoft.com/es-es/intune-education/media/rs5_choose_settings.png)
+- opciones anti privacidad activados por [defecto](https://learn.microsoft.com/es-es/intune-education/media/rs5_choose_settings.png)
 - windows [phone home](https://yewtu.be/watch?v=IT4vDfA_4NI).
-- windows hace backdoors para [NSA](http://techrights.org/wiki/index.php/Microsoft_and_the_NSA) y esta involucrado con [PRISM](https://en.wikipedia.org/wiki/PRISM)
+- windows esta implicacdo con la [NSA](http://techrights.org/wiki/index.php/Microsoft_and_the_NSA) y [PRISM](https://en.wikipedia.org/wiki/PRISM)
 - datos de diagnosticos [obligatorios](https://learn.microsoft.com/en-us/windows/privacy/required-windows-diagnostic-data-events-and-fields-2004)
 - [edge](https://learn.microsoft.com/en-us/microsoft-edge/privacy-whitepaper/) y [office](https://learn.microsoft.com/en-us/deployoffice/compat/data-that-the-telemetry-agent-collects-in-office) envian telemetria
 - [Delivery Optimization](https://learn.microsoft.com/en-us/windows/deployment/do/waas-delivery-optimization) esta activado por [defecto](https://www.dell.com/support/kbdoc/es-mx/000125580/information-on-the-windows-update-delivery-optimization-feature-within-windows-10?lang=en)
-- la [declaración de privacidad](https://privacy.microsoft.com/en-us/privacystatement)
 
 ---
 
@@ -268,14 +287,15 @@ ambos pueden tener algunas incompatibilidades de software, pero hay capas traduc
 - usa windows 10 sin iniciar sesion en una cuenta de microsoft
 - descarga apps de la ms store con https://store.rg-adguard.net/
 - usa windows  en una vm  con NAT activado
-- instala drivers de nvidia sin telemetria con [nvcleanstall](https://www.techpowerup.com/download/techpowerup-nvcleanstall/) 
+- si usas windows en una vm usa [WinApps](https://github.com/Fmstrat/winapps)
+- si usas una grafica nvidia, instala drivers sin telemetria con [nvcleanstall](https://www.techpowerup.com/download/techpowerup-nvcleanstall/) 
 - si es para jugar, preinstala todos los Visual C++ desde [techpowerup](https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/)
 - usa [Chris Titus Tech's Windows Utility](https://github.com/ChrisTitusTech/winutil) para desactivar facilemente telemetria o tambien para activar UTC si se usa windows en dual-boot
 - bloquea las direcciones a donde se envian telemetrias en el archivo de [hosts](https://gist.github.com/VirtuBox/f09968a2d27bc00ba58b3617c61dc54e)
 - prueba que el software descargado de internet no tenga virus con [virustotal](https://www.virustotal.com/gui/)
--  usa aplicaciones con posibles virus en [sandboxie](https://sandboxie-plus.com/)
+-  usa aplicaciones con posibles virus en [sandboxie plus](https://sandboxie-plus.com/)
 - [autoruns](https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns) para desactivar apps/servicios al inicio del sistema 
-- usa [scoop](https://scoop.sh/) como package manager
+- usa [alacritty](https://alacritty.org/) como emualdor terminal y usa [scoop](https://scoop.sh/) como package manager
 
 ---
 
@@ -287,92 +307,214 @@ una distribucion (tambien llamada distro) de linux es un sistema operativo compl
 componentes opensource como utilidades, aplicaiones, escriotrios, etc.
 
 
-los componentes que construyen a una distribucion de linux es: 
-- filosofia : free/libre, utilitarism, bsd feel, etc.
+los componentes y caracteristicas que construyen a una distribucion de linux es: 
+- filosofia: KISS, free/libre, utilitarism, bsd feel, unix feel,  etc.
+- licencia: BSD, gnu GPL v2, gnu GPL v3, MIT
+- uso:
+    - juegos: steamOS, ChimeraOS, popOS
+    - privacidad: whonix y/o qubes, tails, etc. 
 - Release model : fix, rolling release, lts, bleeding edge
 - Boot Loader: GRUB, LILO
-- tipo de kernel: git, linux-free, linux-zen, linux-LTS, etc.
+- tipo de kernel: Stable (vanilla), zen, libre, LTS, Realtime, etc.
 - init system / daemon manager: runit, OpenRC, systemd, SysV, s6, etc.
 - systema de archivos (File system): ext2/3/4, XFS, Btrfs, ZFS, etc.    
 - interfaz de shell: bash, zsh, fish, dash, ash, etc.
 - libreria de c: glibc / musl /ulibc
-- utilidades basicas: gnu core utils / busybox
+- utilidades basicas: gnu core utils + util-linux / busybox
 - servidor grafico: Xorg(X11) / protocolo grafico: Wayland 
 - tecnologia de audio: pulseaudio, Jack, Alsa, pipewire.
 - login manager: ssdm (KDE)
 - window manager: dwm, sway, i3, xmonad, etc.    
 - Desktop environment: Gnome, Plasma, xfce4, etc. 
-- Graphics Toolkits: GTK+, Qt
+- Graphics Toolkits: GTK+ / Qt
 - gestor de paquetes (package manager): apt, XBPS, pacman, yum, yay,
-- compatibilidad de formato de paquetes (Package Management): deb, RPM, source code, install scripts, etc.
+- repositorio de paquetes de la distribucion
+- formato de paquetes: deb, RPM, source code, install scripts, etc.
+- aplicaciones de terminal:
+    - editor de textos: nano, vim, neovim, emacs, etc.
 - aplicaciones graficas incluidas: 
     - navegador: firefox, chromium, etc.
     - Office Suite: libreoffice, onlyoffice, Calligra etc.
     - emulador de terminal: konsole, gnome-terminal, alacritty, kitty, st, etc. 
-    - editor de textos: vscodium, vim, gvim, neovim, emacs, etc.
+    - editor de textos: vscodium, gvim, etc.
     - explorador de archivos: nautilus (gnome), dolphin (KDE)
     - visualizador de imagenes: feh, gwenviwer, etc.
 
-hay cinco partes que definen y diferencian a una distribucion de linux son:
-el sistema de arranque (init system (PID 1)), gestor de paquetes (package manager) y su filosofia (uso,caracteristicas,orientacion,etc.)
+hay cuatro partes que definen y diferencian a una distribucion de linux son:
+el sistema de arranque (init system (PID 1)), gestor de paquetes (package manager), libreria de c y las core utils, esto se debe a que todo lo demas lo puedes modificar a tu gusto con facilidad.
 
 categorias de distribuciones:
 
 independiente: la ventaja de esta es tener otras opciones
 deribados: los deribados tienen compatibilidad con quien se deribaron
-
+ sinergia de distribuciones: debian - canonical ubuntu, SUSE - openSUSE, RHEL - fedora
 tipos de distribuciones deribadas:
 
  flavour: otros escritorios o temas oficiales de la distribucion, por ejemplo para ubuntu hay flavours como: edubuntu,kubuntu,lubuntu, etc.
  remix/respin: agregando un objetivo especifico 
- fork
+ fork: 
  clone/repackage: copian el codigo y tienen otra infrestructura para la distribucion, por ejemplo para RHEL hay repackages como Rocky linux, Oracle Linux, etc.
 
----
-
-rolling release
-bleeding edge
+linux distributios wikipedia
 
 ---
 
-<style scoped>table {font-size: 23px;}</style>
+<style scoped>table {font-size: 25px; text-align: center }</style>
 
 ## independentes 
 
-| distribucion | init           | pkg manager | filosofia    |
-|--------------|----------------|-------------|--------------|
-| [alpine](https://alpinelinux.org/)       | openrc         | apk         | no gnu       |
-| [arch](https://archlinux.org/)         | systemd        | pacman      | bleeding edge|
-| [debian](https://www.debian.org/)       | systemd        | apt         | community    |
-| [slackware](http://www.slackware.com/)    | sysV           | slackpkg    | kiss         |
-| [gentoo](https://www.gentoo.org/)       | OpenRC/systemd | portage     | compile      |
-| [void](https://voidlinux.org/)         | runit          | xbps        | BSD-feel     |
-| [nixos](https://nixos.org/)        | systemd        | nix         | portability  |
-| [RHEL](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux)         | systemd        | yum         | enterprise   |
+| Logo                           | distribucion                                                                   | init           | pkg manager | libreria c | core utils  |  
+|--------------------------------|--------------------------------------------------------------------------------|----------------|-------------|------------|-------------|
+| ![h:50](logos/alpine.png)      | [alpine](https://alpinelinux.org/)                                             | openrc         | apk         | musl       | busybox     |
+| ![h:50px](logos/arch.png)      | [arch](https://archlinux.org/)                                                 | systemd        | pacman      | glibc      | gnu         |
+| ![h:50px](logos/debian.png)    | [debian](https://www.debian.org/)                                              | systemd        | apt         | glibc      | gnu         |
+| ![h:50px](logos/slackware.png) | [slackware](http://www.slackware.com/)                                         | sysV           | slackpkg    | glibc      | gnu         |
+| ![h:50px](logos/gentoo.png)    | [gentoo](https://www.gentoo.org/)                                              | OpenRC/systemd | portage     | glibc/musl | gnu         |
+| ![h:50px](logos/void.png)      | [void](https://voidlinux.org/)                                                 | runit          | xbps        | glibc/musl | gnu         |
 
 ---
 
-<style scoped>table {font-size: 23px;}</style>
+<style scoped>table {font-size: 25px; text-align: center }</style>
+
+
+| Logo                       | distribucion                                                                   | init         | pkg manager | libreria c | core utils  |  
+|----------------------------|--------------------------------------------------------------------------------|--------------|-------------|------------|-------------|
+| ![h:50px](logos/nixos.png) | [nixos](https://nixos.org/)                                                    | systemd      | nix         | glibc      | gnu         |
+| ![h:50px](logos/RHEL.png)  | [RHEL](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux)| systemd      | DNF         | glibc      | gnu         |
+| ![h:70px](logos/SUSE.png)  | [SUSE LE S/D](https://www.suse.com/products/server/)                           | systemd      | ZYpp          | glibc      | gnu         | 
+| ![h:50px](logos/kiss.png)  | [kiss](https://kisslinux.org/)                                                 | runit        | kiss        | musl       | busybox     | 
+| ![h:50px](logos/LFS.png)   | [LFS](https://www.linuxfromscratch.org/lfs/)                                   | systemd/sysV | -           | glibc       | gnu     | 
+
+
+
+---
+
+<style scoped>table {font-size: 25px; text-align: center }</style>
 
 ## deribadas
 
-| distribucion | init             | basado en   | filosofia 
-|--------------|------------------|-------------|-----------
-| [artix](https://artixlinux.org/)        | OpenRC/runit/etc. | arch        | no systemd
-| [devuan](https://www.devuan.org/)       | sysV/OpenRC/etc.           | debian      | no systemd
-| [Ubuntu](https://ubuntu.com/)       | systemd          | debian      | enterprise
-| [Uaabuntu](https://uaabuntu.uaa.mx/)     | systemd          | ubuntu      | educacion
-| [openSUSE](https://opensuse.org/)     | systemd          | SUSE        | community
-| [parabola](https://www.parabola.nu/)     | systemd/OpenRC/etc. | arch        | Linux-libre
-| [Fedora](https://fedoraproject.org/)       | systemd          | RHEL        | comunitty
+
+| Logo                          | distribucion                          | init               | basado en   | libreria c | core utils  |  
+|-------------------------------|---------------------------------------|--------------------|-------------|------------|-------------|
+| ![h:50px](logos/artix.png)    |[artix](https://artixlinux.org/)       | OpenRC/runit/etc.  | arch        | glibc      | gnu         |
+| ![h:50px](logos/devuan.png)   |[devuan](https://www.devuan.org/)      | sysV/OpenRC/etc.   | debian      | glibc      | gnu         |
+| ![h:50px](logos/ubuntu.png)   |[Ubuntu](https://ubuntu.com/)          | systemd            | debian      | glibc      | gnu         |
+| ![h:50px](logos/uaabuntu.png) |[Uaabuntu](https://uaabuntu.uaa.mx/)   | systemd            | ubuntu      | glibc      | gnu         |
+| ![h:50px](logos/openSUSE.png) |[openSUSE](https://opensuse.org/)      | systemd            | SUSE        | glibc      | gnu         |
 
 ---
 
-# linux avanzado
+<style scoped>table {font-size: 25px; text-align: center }</style>
+
+| Logo                           | distribucion                           | init               | basado en     | libreria c | core utils  |  
+|--------------------------------|----------------------------------------|--------------------|---------------|------------|-------------|
+| ![h:50px](logos/fedora.png)    |[Fedora](https://fedoraproject.org/)    | systemd            | RHEL          | glibc      | gnu         |
+| ![h:50px](logos/endeavour.png) |[endeavour](https://endeavouros.com/)   | systemd            | arch          | glibc      | gnu         |
+| ![h:50px](logos/archcraft.png) |[archcraft](https://archcraft.io/)      | systemd            | arch          | glibc      | gnu         |
+| ![h:50px](logos/PopOS.png)     |[PopOS](https://pop.system76.com/)      | systemd            | ubuntu/debian | glibc      | gnu         |
+| ![h:50px](logos/mint.png)      |[Mint](https://linuxmint.com/)          | systemd            | ubuntu/debian | glibc      | gnu         |
+| ![h:50px](logos/elementary.png)|[elementary](https://elementary.io/)    | systemd            | ubuntu/debian | glibc      | gnu         |
+| ![h:50px](logos/zorin.png)|[zorin](https://zorin.com/os/)    | systemd            | ubuntu/debian | glibc      | gnu         |
+---
+
+<style scoped>table {font-size: 25px; text-align: center }</style>
+
+# Recomendadas por la FSF (linux-libre kernel)
+| Logo                          | distribucion                            | init               | basado en     | pkg manager | libreria c | core utils  |  
+|-------------------------------|-----------------------------------------|--------------------|---------------|-------------|------------|-------------|
+| ![h:50px](logos/parabola.png) | [parabola](https://www.parabola.nu/)    | systemd/OpenRC/etc.| arch          | pacman      | glibc      | gnu         |
+| ![h:50px](logos/Hyperbola.png)| [hyperbola](https://www.hyperbola.info/)| OpenRC             | debian/arch   | pacman      | glibc      | gnu         |
+| ![h:50px](logos/Guix.png)     | [Guix](https://guix.gnu.org/)           | shepherd           | independiente | Guix        | glibc      | gnu         | 
+| ![w:300px](logos/PureOS.png)  | [PureOs](https://pureos.net/)           | systemd            | debian        | apt         | glibc      | gnu         | 
+| ![h:50px](logos/trisquel.png) | [trsiquel](https://trisquel.info/)      | systemd            | ubuntu/debian | apt         | glibc      | gnu         | 
+
+
+---
+
+
+# que conforma linux
 sistema jerarquia 
 componentes
 todos son archivos
+# linux commands 
+https://wiki.archlinux.org/title/core_utilities
+gnu core utils https://wiki.debian.org/coreutils + util-linux   https://en.wikipedia.org/wiki/Util-linux
+busybox https://busybox.net/downloads/BusyBox.html
 
+posix https://en.wikipedia.org/wiki/Category:Unix_SUS2008_utilities
+
+# aplicaciones 
+
+aplicacion y dependencias
+
+portables:
+app image, snap, flatpak
+
+aplicaiones recomendadas:
+btop, vim, feh
+
+
+# hardware
+libreboot/coreboot para desabilitar AMD PSP, intel ME
+que es AMD PSP:
+que es intel ME:
+se puede eliminar completamente en procesadores intel core duo
+se puede deshabilitar en una gran parte con: [me_cleaner](https://github.com/system76/coreboot/tree/8c9e6ad9833bfdc522917200e0101c84fe0784c2/util/me_cleaner)
+si deshabilitar intel ME en procesadores de la 11 generacion (Tiger-Lake) en adelante, se usa el [triple de energia](https://github.com/system76/firmware-open/blob/master/docs/intel-me.md#tiger-lake-u) en estado de suspencion 
+
+microcode es un blob necesario para sacar el mejor rendimiento al procesador
+undervolting es una [vulnerabilidad](https://plundervolt.com/)
+fsf 
+
+vendedores de laptops/computadoras con coreboot: 
+[starlabs](https://mx.starlabs.systems/)
+[tuxedo](https://www.tuxedocomputers.com/index.php)
+[system76](https://system76.com/)
+
+hardware y computadoras sin ningun binario o software propietario:
+[libreboot list](https://libreboot.org/docs/hardware/)
+[h-node](https://h-node.org/hardware/catalogue/en)
+[FSF Recommended Complete Systems](https://www.fsf.org/resources/hw/systems)
+https://h-node.org/hardware/catalogue/en
+[Respects Your Freedom Certification](https://ryf.fsf.org/index.php/products)
+
+---
+
+
+# distribucion de mercado
+# servidores
+
+las distribuciones más usadas en la industria son las empresariales:
+RHEL, SLES y las basdas en debian: debian, ubuntu server y proxmox
+
+hardware para servidores:
+x64: intel xeon,amd epyc
+zimaboard,
+laptops : puertos limitados, maximo un mini nvmeen lugar de la tarjeta de red, un disco duro en el puerto ata de dvd drive, maximo 2.5 gb ethernet si tiene usb 3.0 ->, puertos usb limite de hubs sin energia externa 
+
+
+conteiners:
+docker, porteiner, conteinerd
+
+virtuaslizar:
+proxmox, qubes, QEMU
+
+
+---
+
+# aprender más de linux:
+[arch wiki](https://wiki.archlinux.org/)
+[gentoo wiki](https://wiki.gentoo.org/wiki/Main_Page)
+
+# youtubers de linux que recomiendo
+- [The linux experiment: noticias semanales](https://yewtu.be/channel/UC5UAwBUum7CPN5buc-_N1Fw)
+- [DistroTube: reviews de distros, opiniones y tutoriales](https://yewtu.be/channel/UCVls1GmFKf6WlTraIb_IaJg)
+- [Luke Smith: opiniones, recomendaciones y tutoriales ](https://yewtu.be/channel/UC2eYFnH61tmytImy1mTYvhA)
+- [Mental Outlaw: opiniones y noticias](https://yewtu.be/channel/UC7YOGHUfC1Tb6E4pudI9STA)
+- [Michael Horn: tips de linux](https://yewtu.be/channel/UC1s1OsWNYDFgbROPV-q5arg)
+- [Wolfgang's: servidores](https://yewtu.be/channel/UCsnGwSIHyoYN0kiINAGUKxg)
+- [Hardware Haven: servidores](https://yewtu.be/channel/UCgdTVe88YVSrOZ9qKumhULQ)
+- [y más](https://yewtu.be/watch?v=NybbsnDT5NI&t=316s)
 ---
 
 # Referencias
@@ -381,7 +523,7 @@ todos son archivos
 
 <style scoped>{font-size: 21px;}</style>
 
-- GeeksforGeeks. (2019). *Linux Tutorials | Getting Started | Introduction | GeeksforGeeks*. https://yewtu.be/watch?v=0EDwEQoui_g
+- GeeksforGeeks. (2019). *Linux Tutorials | Getting Started | Introduction | GeeksforGeeks* [Video]. https://yewtu.be/watch?v=0EDwEQoui_g
 - GNU. (2023). *GNU General Public License, version 2*. https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 - Opensource.com. (s.f.). *What is Linux?*. https://opensource.com/resources/linux
 - Opensource.com. (s.f). *What is open source?*.https://opensource.com/resources/what-open-source
@@ -395,9 +537,19 @@ todos son archivos
 - The Linux Kernel Organization. (2019). *About Linux Kernel*. https://www.kernel.org/linux.html
 - Wheeler, D. (2003). *History of Unix, Linux, and Open Source / Free Software*. https://tldp.org/HOWTO/Secure-Programs-HOWTO/history.html
 - Michael Tunnell. (2023). *Explaining Linux Family Trees: Why Are There So Many Linux Distros?* [Video]. https://yewtu.be/watch?v=kF8CRt05s6A
+
+---
+
+<style scoped>{font-size: 21px;}</style>
+
 - The Linux Information Project. (2005). *Flavors of UNIX Definition*. http://www.linfo.org/flavors.html
 - Adekotujo, A., Odumabo, A., Adedokun, A., & Aiyeniko, O. (2020). *A Comparative Study of Operating Systems: Case of Windows, UNIX, Linux, Mac, Android and iOS*. https://www.researchgate.net/profile/Adedoyin-Odumabo/publication/343013056_A_Comparative_Study_of_Operating_Systems_Case_of_Windows_UNIX_Linux_Mac_Android_and_iOS/links/61f2b50a9a753545e2fe8300/A-Comparative-Study-of-Operating-Systems-Case-of-Windows-UNIX-Linux-Mac-Android-and-iOS.pdf
 - The Open Group. (2008). *The Single UNIX Specification, Version 4*. https://unix.org/version4/overview.html
 - IEEE. (2017). *IEEE Std 1003.1™-2017*. https://pubs.opengroup.org/onlinepubs/9699919799/
 SUSE. (s.f.). *Linux Distribution*. https://www.suse.com/suse-defines/definition/linux-distribution/ 
 - ezeelinux. (2018). *Linux Distributions Deconstructed*. https://www.ezeelinux.com/news/linux-distributions-deconstructed/
+- Linus Torvalds. (1997). *Linux: a Portable Operating System*. https://www.cs.helsinki.fi/u/kutvonen/index_files/linus.pdf
+- freeBSD. (2023). *Explaining BSD*. https://docs.freebsd.org/en/articles/explaining-bsd/
+- intel. (2017). *What is Intel® Management Engine?*. https://www.intel.com/content/www/us/en/support/articles/000008927/software/chipset-software.html
+- coreboot. (2017). *1. AMD Platform Security Processor (PSP) Firmware Integration Guide*. https://doc.coreboot.org/soc/amd/psp_integration.html#platform-security-processor-psp-overview  
+- dayzerosec. (2023). *Reversing the AMD Secure Processor (PSP) - Part 1: Design and Overview*. https://dayzerosec.com/blog/2023/04/17/reversing-the-amd-secure-processor-psp.html
