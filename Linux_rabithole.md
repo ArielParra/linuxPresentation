@@ -303,45 +303,56 @@ Windows, macOS & Linux PRIVACY compared: why do they need ALL THIS DATA?!
 
 ---
 
-una distribucion (tambien llamada distro) de linux es un sistema operativo completo con muchos 
-componentes opensource como utilidades, aplicaiones, escriotrios, etc.
+# que es?
+una distribucion (tambien llamada distro) de linux es un sistema operativo completo con muchos componentes opensource.
 
+---
 
-los componentes y caracteristicas que construyen a una distribucion de linux es: 
+los componentes y caracteristicas que construyen a una distribucion de linux son: 
 - filosofia: KISS, free/libre, utilitarism, bsd feel, unix feel,  etc.
-- licencia: BSD, gnu GPL v2, gnu GPL v3, MIT
-- uso:
+- licencia: BSD, gnu GPL v2, gnu GPL v3, MIT, etc.
+- uso especifico:
     - juegos: steamOS, ChimeraOS, popOS
-    - privacidad: whonix y/o qubes, tails, etc. 
+    - privacidad/seguridad: whonix y/o qubes, tails, etc. 
 - Release model : fix, rolling release, lts, bleeding edge
-- Boot Loader: GRUB, LILO
+- Boot Loader: GRUB, Syslinux, LILO, systemd-boot, etc.
 - tipo de kernel: Stable (vanilla), zen, libre, LTS, Realtime, etc.
-- init system / daemon manager: runit, OpenRC, systemd, SysV, s6, etc.
-- systema de archivos (File system): ext2/3/4, XFS, Btrfs, ZFS, etc.    
+- init system / daemon manager: runit, OpenRC, systemd, SysV, s6, dinit, etc.
+- systema de archivos (File system): ext2/3/4, Btrfs, XFS, ZFS, etc. 
+- jerarquia de archivos: Linux File Hierarchy Structure o modificacion de este. 
+- libreria de c: glibc, musl, ulibc, etc.
+- utilidades basicas: gnu core utils + util-linux, busybox, etc.
+
+---
+
 - interfaz de shell: bash, zsh, fish, dash, ash, etc.
-- libreria de c: glibc / musl /ulibc
-- utilidades basicas: gnu core utils + util-linux / busybox
-- servidor grafico: Xorg(X11) / protocolo grafico: Wayland 
+- servidor grafico: Xorg (X11) / protocolo grafico: Wayland 
 - tecnologia de audio: pulseaudio, Jack, Alsa, pipewire.
 - login manager: ssdm (KDE)
 - window manager: dwm, sway, i3, xmonad, etc.    
 - Desktop environment: Gnome, Plasma, xfce4, etc. 
 - Graphics Toolkits: GTK+ / Qt
-- gestor de paquetes (package manager): apt, XBPS, pacman, yum, yay,
+- gestor de paquetes (package manager): apt, DNF, pacman, portage, yay, etc.
+- formato de paquetes: deb, RPM, .pkg.tar.zst, source code, install scripts, etc.
+
+---
+
 - repositorio de paquetes de la distribucion
-- formato de paquetes: deb, RPM, source code, install scripts, etc.
-- aplicaciones de terminal:
-    - editor de textos: nano, vim, neovim, emacs, etc.
-- aplicaciones graficas incluidas: 
-    - navegador: firefox, chromium, etc.
-    - Office Suite: libreoffice, onlyoffice, Calligra etc.
-    - emulador de terminal: konsole, gnome-terminal, alacritty, kitty, st, etc. 
-    - editor de textos: vscodium, gvim, etc.
-    - explorador de archivos: nautilus (gnome), dolphin (KDE)
-    - visualizador de imagenes: feh, gwenviwer, etc.
+- aplicaciones incluidas: 
+    - terminal (CLI/TUI):
+        - editor de textos: nano, vim, neovim, emacs, etc.
+    - graficas (GUI):
+        - navegador: firefox, chromium, etc.
+        - Office Suite: libreoffice, onlyoffice, Calligra etc.
+        - emulador de terminal: konsole, gnome-terminal, alacritty, kitty, st, etc. 
+        - editor de textos: vscodium, gvim, etc.
+        - explorador de archivos: nautilus (gnome), dolphin (KDE)
+        - visualizador de imagenes: feh, gwenviwer, etc.
+
+---
 
 hay cuatro partes que definen y diferencian a una distribucion de linux son:
-el sistema de arranque (init system (PID 1)), gestor de paquetes (package manager), libreria de c y las core utils, esto se debe a que todo lo demas lo puedes modificar a tu gusto con facilidad.
+el sistema de arranque (init system [PID 1]), gestor de paquetes (package manager), libreria de c y las core utils, esto se debe a que todo lo demas lo puedes modificar a tu gusto con facilidad.
 
 categorias de distribuciones:
 
@@ -352,10 +363,10 @@ tipos de distribuciones deribadas:
 
  flavour: otros escritorios o temas oficiales de la distribucion, por ejemplo para ubuntu hay flavours como: edubuntu,kubuntu,lubuntu, etc.
  remix/respin: agregando un objetivo especifico 
- fork: 
+ fork: pus forkean
  clone/repackage: copian el codigo y tienen otra infrestructura para la distribucion, por ejemplo para RHEL hay repackages como Rocky linux, Oracle Linux, etc.
 
-linux distributios wikipedia
+[Linea de tiempo](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg)
 
 ---
 
@@ -367,7 +378,7 @@ linux distributios wikipedia
 |--------------------------------|--------------------------------------------------------------------------------|----------------|-------------|------------|-------------|
 | ![h:50](logos/alpine.png)      | [alpine](https://alpinelinux.org/)                                             | openrc         | apk         | musl       | busybox     |
 | ![h:50px](logos/arch.png)      | [arch](https://archlinux.org/)                                                 | systemd        | pacman      | glibc      | gnu         |
-| ![h:50px](logos/debian.png)    | [debian](https://www.debian.org/)                                              | systemd        | apt         | glibc      | gnu         |
+| ![h:50px](logos/debian.png)    | [debian](https://www.debian.org/)                                              | systemd        | apt (dpkg)  | glibc      | gnu         |
 | ![h:50px](logos/slackware.png) | [slackware](http://www.slackware.com/)                                         | sysV           | slackpkg    | glibc      | gnu         |
 | ![h:50px](logos/gentoo.png)    | [gentoo](https://www.gentoo.org/)                                              | OpenRC/systemd | portage     | glibc/musl | gnu         |
 | ![h:50px](logos/void.png)      | [void](https://voidlinux.org/)                                                 | runit          | xbps        | glibc/musl | gnu         |
@@ -377,22 +388,20 @@ linux distributios wikipedia
 <style scoped>table {font-size: 25px; text-align: center }</style>
 
 
-| Logo                       | distribucion                                                                   | init         | pkg manager | libreria c | core utils  |  
-|----------------------------|--------------------------------------------------------------------------------|--------------|-------------|------------|-------------|
-| ![h:50px](logos/nixos.png) | [nixos](https://nixos.org/)                                                    | systemd      | nix         | glibc      | gnu         |
-| ![h:50px](logos/RHEL.png)  | [RHEL](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux)| systemd      | DNF         | glibc      | gnu         |
-| ![h:70px](logos/SUSE.png)  | [SUSE LE S/D](https://www.suse.com/products/server/)                           | systemd      | ZYpp          | glibc      | gnu         | 
-| ![h:50px](logos/kiss.png)  | [kiss](https://kisslinux.org/)                                                 | runit        | kiss        | musl       | busybox     | 
-| ![h:50px](logos/LFS.png)   | [LFS](https://www.linuxfromscratch.org/lfs/)                                   | systemd/sysV | -           | glibc       | gnu     | 
-
-
+| Logo                        | distribucion                                                                   | init         | pkg manager | libreria c | core utils  |  
+|-----------------------------|--------------------------------------------------------------------------------|--------------|-------------|------------|-------------|
+| ![h:50px](logos/nixos.png)  | [nixos](https://nixos.org/)                                                    | systemd      | nix         | glibc      | gnu         |
+| ![h:50px](logos/RHEL.png)   | [RHEL](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux)| systemd      | DNF (yum)   | glibc      | gnu         |
+| ![h:70px](logos/SUSE.png)   | [SUSE LE S/D](https://www.suse.com/products/server/)                           | systemd      | Zypper      | glibc      | gnu         | 
+| ![h:50px](logos/LFS.png)    | [LFS](https://www.linuxfromscratch.org/lfs/)                                   | systemd/sysV | -           | glibc      | gnu         | 
+| ![h:50px](logos/kiss.png)   | [kiss](https://kisslinux.org/)                                                 | runit        | kiss        | musl       | busybox     | 
+| ![h:50px](logos/chimera.png)| [chimera-linux](https://chimera-linux.org/)                                    | Dinit        | apk         | musl       | BSD-derived | 
 
 ---
 
 <style scoped>table {font-size: 25px; text-align: center }</style>
 
 ## deribadas
-
 
 | Logo                          | distribucion                          | init               | basado en   | libreria c | core utils  |  
 |-------------------------------|---------------------------------------|--------------------|-------------|------------|-------------|
@@ -415,6 +424,7 @@ linux distributios wikipedia
 | ![h:50px](logos/mint.png)      |[Mint](https://linuxmint.com/)          | systemd            | ubuntu/debian | glibc      | gnu         |
 | ![h:50px](logos/elementary.png)|[elementary](https://elementary.io/)    | systemd            | ubuntu/debian | glibc      | gnu         |
 | ![h:50px](logos/zorin.png)|[zorin](https://zorin.com/os/)    | systemd            | ubuntu/debian | glibc      | gnu         |
+
 ---
 
 <style scoped>table {font-size: 25px; text-align: center }</style>
@@ -428,9 +438,7 @@ linux distributios wikipedia
 | ![w:300px](logos/PureOS.png)  | [PureOs](https://pureos.net/)           | systemd            | debian        | apt         | glibc      | gnu         | 
 | ![h:50px](logos/trisquel.png) | [trsiquel](https://trisquel.info/)      | systemd            | ubuntu/debian | apt         | glibc      | gnu         | 
 
-
 ---
-
 
 # que conforma linux
 sistema jerarquia 
@@ -503,6 +511,12 @@ proxmox, qubes, QEMU
 ---
 
 # aprender más de linux:
+[wikibooks](https://en.wikibooks.org/wiki/Linux_Guide/How_Linux_Works)
+[linux journey](https://linuxjourney.com/)
+[endevoarOs wiki](https://discovery.endeavouros.com/)
+[hack the box](https://www.hackthebox.com/blog/learn-linux)
+[linux foundation curse](https://training.linuxfoundation.org/training/introduction-to-linux/)
+[wikipedia linux portal](https://en.wikipedia.org/wiki/Portal:Linux)
 [arch wiki](https://wiki.archlinux.org/)
 [gentoo wiki](https://wiki.gentoo.org/wiki/Main_Page)
 
@@ -553,3 +567,5 @@ SUSE. (s.f.). *Linux Distribution*. https://www.suse.com/suse-defines/definition
 - intel. (2017). *What is Intel® Management Engine?*. https://www.intel.com/content/www/us/en/support/articles/000008927/software/chipset-software.html
 - coreboot. (2017). *1. AMD Platform Security Processor (PSP) Firmware Integration Guide*. https://doc.coreboot.org/soc/amd/psp_integration.html#platform-security-processor-psp-overview  
 - dayzerosec. (2023). *Reversing the AMD Secure Processor (PSP) - Part 1: Design and Overview*. https://dayzerosec.com/blog/2023/04/17/reversing-the-amd-secure-processor-psp.html
+- The Linux Experiment. (2018). *Linux DISTRIBUTION: explained* [Video]. https://yewtu.be/watch?v=6gqLWTSz6ck
+- linuxfoundation. (2015). *Filesystem Hierarchy Standard*. https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.html
