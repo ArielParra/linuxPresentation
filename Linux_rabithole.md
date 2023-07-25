@@ -62,12 +62,11 @@ Free and open source software
 - creative commons: uso libre pero con atribucion obligatoria
 ![CC BY](https://licensebuttons.net/l/by/3.0/88x31.png), ![CC BY-SA](https://licensebuttons.net/l/by-sa/3.0/88x31.png), ![CC BY-ND](https://licensebuttons.net/l/by-nd/3.0/88x31.png), ![CC BY-NC](https://licensebuttons.net/l/by-nc/3.0/88x31.png), ![CC BY-NC-SA](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png) y ![CC BY-NC-ND](https://licensebuttons.net/l/by-nc-nd/3.0/88x31.png)
 - licencias más comunes:
-    - AGPL
     - Apache: incluya la nota de copyright  
     - BSD: incluya la nota de copyright 
     - GPL: codigo fuente disponible y trabajos deribados con la misma licencia 
     - MIT: incluya la nota de copyright  
-herramienta para elegir [licencia](https://choosealicense.com/) correcta
+herramienta para elegir una [licencia](https://choosealicense.com/) adecuada
 - Free/libre: la filosofia free tiene relacion con richard stallman y su proyecto GNU, esta se basa en software que respeta la libertad del usuario, libertad de distrubucion, libertad de uso, libertad de estudio, etc. llendo en contra del software privado de codigo cerrado, los binary blobs, las licencias y EULAs no permisivas, los  y el DRM.
 
 ---
@@ -87,26 +86,22 @@ Escribe programas que hagan una cosa muy bien, escribe programas que trabajen ju
 
 # bsd
 
-"Berkeley Software Distribution" es una distribucion de codigo abierto originalmente extension de AT&T’s Research UNIX, a diferencia de linux este tiene la BSD C library, aunque pueden compartir ciertas utilidades de GNU
+"Berkeley Software Distribution" es un sistema operativo creado en la universidad de Berkeley en California, de codigo abierto y originalmente extension de AT&T’s Research UNIX, a diferencia de linux este tiene la BSD C library, aunque pueden compartir ciertas utilidades de GNU
 
-freeBSD: es un proyecto ["grande"](https://svnweb.freebsd.org/base/stable/12/) con muchos sistemas operativos forkeados de el
+los dos forks más importantes son:
+- freeBSD: es un proyecto ["grande"](https://svnweb.freebsd.org/base/stable/12/) con muchos sistemas operativos forkeados apartir de el, como FreeNAS, pfsense, etc.
+- OpenBSD: es un proyecto relativamente mas ["chico"](https://cvsweb.openbsd.org/src/) que freebsd, es [inovador](https://www.openbsd.org/innovations.html
+) y crean nuevas herramientas usadas en toda la comunidad unix, mientras que es de los sistemas más seguros
 
-OpenBSD: es un proyecto relativamente mas ["chico"](https://cvsweb.openbsd.org/src/) que freebsd, es [inovador](https://www.openbsd.org/innovations.html
-) y crean nuevas herramientas usadas en toda la comunidad unix
+estos pueden tener ciertas [ventajas y desventajas](https://serverfault.com/questions/5267/what-is-good-about-the-bsds/5352#5352) a linux
 
-ventajas y desventajas de BSD
-https://serverfault.com/questions/5267/what-is-good-about-the-bsds/5352#5352
-ambos pueden tener incompatibilidades de hardware
-ambos pueden tener algunas incompatibilidades de software, pero hay capas traduccion y 
-emulacion para solucionarlo
 
 ---
 
-# minimalism
-- kiss (Keep it simple, stupid!)
-- anti gnu: [Luke Smith: GNU is bloated!](https://yewtu.be/watch?v=nTCHapo8QFM)
-- init freedom/anti systemd
-- anti bloat
+# minimalismo
+el minimalismo en cuestion de linux, se trata de usar y escribir programas simples siguiendo principios de UNIX y KISS (Keep it simple, stupid!),  dos ideas deribadas del minimalismo son:
+- gnuless: algunos programas de GNU pueden no ser los más eficientes o minimalistas, un video acerca del tema: [Luke Smith: GNU is bloated!](https://yewtu.be/watch?v=nTCHapo8QFM)
+- init freedom: systemd es el init system más usado, pero este no sigue la filosofia de unix ya que systemd no solo es el init ya que tiene muchas otras funcinoes y herramientas, por lo que usar alternativas es recomendado
 
 ---
 
