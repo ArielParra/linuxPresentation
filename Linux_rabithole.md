@@ -100,26 +100,26 @@ estos pueden tener ciertas [ventajas y desventajas](https://serverfault.com/ques
 
 # minimalismo
 el minimalismo en cuestion de linux, se trata de usar y escribir programas simples siguiendo principios de UNIX y KISS (Keep it simple, stupid!),  dos ideas deribadas del minimalismo son:
-- gnuless: algunos programas de GNU pueden no ser los más eficientes o minimalistas, un video acerca del tema: [Luke Smith: GNU is bloated!](https://yewtu.be/watch?v=nTCHapo8QFM)
+- gnuless: algunos programas de GNU pueden no ser los más eficientes o minimalistas, un video acerca del tema: [Luke Smith: GNU is bloated!](https://yewtu.be/watch?v=nTCHapo8QFM), donde se habla tambien de la pagina [harmfull cat -v](https://harmful.cat-v.org/software/) la cual tiene ideas algo extremas.
 - init freedom: systemd es el init system más usado, pero este no sigue la filosofia de unix ya que systemd no solo es el init ya que tiene muchas otras funcinoes y herramientas, por lo que usar alternativas es recomendado
 
 ---
 
 # Privacidad 
 
-te recominedo esta [guia](https://www.privacyguides.org/en/) de privacidad
-[duckduckgo](https://seonorth.ca/news/why-duckduckgo-is-bad/) no es bueno
-[proton](https://techcrunch.com/2021/09/06/protonmail-logged-ip-address-of-french-activist-after-order-by-swiss-authorities/) no es confiable
-las VPN no te dan [privacidad](https://gist.github.com/joepie91/5a9909939e6ce7d09e29)
-tor y sus [mitos](https://www.whonix.org/wiki/Tor_Myths_and_Misconceptions)
+te recominedo esta [guia](https://www.privacyguides.org/en/) de privacidad o tambien a la youtuber [Naomi Brockwell](https://yewtu.be/channel/UCSuHzQ3GrHSzoBbwrIq3LLA)
+- [duckduckgo](https://seonorth.ca/news/why-duckduckgo-is-bad/) no es bueno
+- [proton](https://techcrunch.com/2021/09/06/protonmail-logged-ip-address-of-french-activist-after-order-by-swiss-authorities/) no es confiable
+- las VPN no te dan [privacidad](https://gist.github.com/joepie91/5a9909939e6ce7d09e29)
+- la gente esta [desinformada](https://www.whonix.org/wiki/Tor_Myths_and_Misconceptions) acerca de tor
 
 # Seguridad
 
-te recomiendo esta [guia](https://wiki.archlinux.org/title/security) de seguridad
-[linux-hardened](https://github.com/anthraxx/linux-hardened) kernel
-[selinux](https://selinuxproject.org/page/Main_Page) o [AppArmor](https://apparmor.net/) para el control de acceso
-no uses [kali linux](https://www.kali.org/docs/introduction/should-i-use-kali-linux/)
-usa OpenBSD, ya que es el sistema unix más [seguro](https://www.openbsd.org/security.html)
+te recomiendo esta [guia](https://wiki.archlinux.org/title/security) de seguridad de la arch wiki
+- usa [linux-hardened](https://github.com/anthraxx/linux-hardened) kernel
+- [selinux](https://selinuxproject.org/page/Main_Page) o [AppArmor](https://apparmor.net/) para el control de acceso
+- no uses [kali linux](https://www.kali.org/docs/introduction/should-i-use-kali-linux/)
+- usa OpenBSD, ya que es el sistema unix más [seguro](https://www.openbsd.org/security.html)
 
 ---
 
@@ -342,7 +342,7 @@ los componentes y caracteristicas que construyen a una distribucion de linux son
 - uso especifico:
     - juegos: steamOS, ChimeraOS, popOS, Fedora Games spin, etc.
     - media: Ubuntu Studio, Fedora Design Suite, etc.
-    - escolar: uaabuntu, edubuntu, Zorin OS Education, etc.
+    - escolar: uaabuntu, edubuntu, Zorin OS 16 Education, etc.
     - privacidad/seguridad: whonix y/o qubes, tails, etc. 
 - Release model : fix, rolling release, lts, bleeding edge
 - Boot Loader: GRUB, Syslinux, LILO, systemd-boot, etc.
@@ -357,11 +357,11 @@ los componentes y caracteristicas que construyen a una distribucion de linux son
 
 - interfaz de shell: bash, zsh, fish, dash, ash, etc.
 - servidor grafico: Xorg (X11) / protocolo grafico: Wayland 
-- tecnologia de audio: pulseaudio, Jack, Alsa, pipewire.
-- login manager: ssdm (KDE)
+- tecnologia de audio: ALSA, pulseaudio, Jackaudio, pipewire.
+- login/display manager: ssdm (KDE), GDM (GNOME), LightDM, etc.
 - window manager: dwm, sway, i3, xmonad, etc.    
 - Desktop environment: Gnome, Plasma, xfce4, etc. 
-- Graphics Toolkits: GTK+ / Qt
+- Graphics Toolkits: GTK+ , Qt.
 - gestor de paquetes (package manager): apt, DNF, pacman, portage, yay, etc.
 - formato de paquetes: deb, RPM, .pkg.tar.zst, source code, install scripts, etc.
 
@@ -384,19 +384,20 @@ los componentes y caracteristicas que construyen a una distribucion de linux son
 hay cuatro partes que definen y diferencian a una distribucion de linux son:
 el sistema de arranque (init system [PID 1]), gestor de paquetes (package manager), libreria de c y las core utils, esto se debe a que todo lo demas lo puedes modificar a tu gusto con facilidad.
 
-categorias de distribuciones:
+hay dos tipos de distribuciones:
 - independiente: la ventaja de esta es tener otras opciones
- deribados: los deribados tienen compatibilidad con quien se deribaron
- sinergia de distribuciones: debian <-> ubuntu, SUSE <-> openSUSE,
- RHEL <-> fedora.
+- deribados: los deribados tienen compatibilidad con quien se deribaron y pueden crear una sinergia de distribuciones: debian <-> ubuntu,
+ SUSE <-> openSUSE, RHEL <-> fedora.
  
+ ---
+
 - tipos de distribuciones deribadas:
     - flavour: con otros escritorios,temas, y/o aplicaiones reconocidos por la distribucion, por ejemplo para ubuntu hay flavours como: edubuntu,kubuntu,lubuntu, etc.
     - remix/respin: modificacion ofreciendo algo nuevo, pero sin ser reconocidos por la distribución.
     - fork: hacen cambios grandes, cambiando el uso, filosofia, etc.
     - clone/repackage: copian el codigo y tienen otra infrestructura para la distribucion, por ejemplo para RHEL hay repackages como Rocky linux, Oracle Linux, etc.
 
-[Linea de tiempo](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg)
+han exisistido muchisimas [distribuciones](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg) a lo largo del tiempo, pero los que yo recomiendo o creo que son más relevantes son:
 
 ---
 
@@ -495,10 +496,15 @@ aplicaiones recomendadas:
 IDE: vscodium
 editor de texto: vim
 navegador: librewolf + arkenfox user.js o ungoogled-chromium
+extensiones de navegador: uBlock origin, bitwarden, libRedirect, decentraleyes.
 motor de busqueda: searXNG 
 torrents: qbitorrent-enhanced
 terminal: alacritty o st
 monitor de recursos: btop
+visualizador de imagenes: feh
+descargar videos de youtube: yt-dlp
+
+---
 
 # hardware
 libreboot/coreboot para desabilitar AMD PSP, intel ME
@@ -512,41 +518,57 @@ microcode es un blob necesario para sacar el mejor rendimiento al procesador
 undervolting es una [vulnerabilidad](https://plundervolt.com/)
 fsf 
 
-vendedores de laptops/computadoras con coreboot: 
-[starlabs](https://mx.starlabs.systems/)
-[tuxedo](https://www.tuxedocomputers.com/index.php)
-[system76](https://system76.com/)
+---
 
-hardware y computadoras sin ningun binario o software propietario:
-[libreboot list](https://libreboot.org/docs/hardware/)
-[h-node](https://h-node.org/hardware/catalogue/en)
-[FSF Recommended Complete Systems](https://www.fsf.org/resources/hw/systems)
-https://h-node.org/hardware/catalogue/en
-[Respects Your Freedom Certification](https://ryf.fsf.org/index.php/products)
+vendedores de laptops/computadoras con coreboot: 
+- [starlabs](https://mx.starlabs.systems/)
+- [tuxedo](https://www.tuxedocomputers.com/index.php)
+- [system76](https://system76.com/)
+
+hardware y computadoras sin binarios o software propietario:
+- [libreboot list](https://libreboot.org/docs/hardware/)
+- [h-node](https://h-node.org/hardware/catalogue/en)
+- [FSF Recommended Complete Systems](https://www.fsf.org/resources/hw/systems)
+- [Respects Your Freedom Certification](https://ryf.fsf.org/index.php/products)
+
+---
+# servidores
+
+las distribuciones [más usadas](https://w3techs.com/technologies/details/os-linux) en servidores son las basdas en debian como: ubuntu server y debian o las empresariales como: RHEL y SLES, aunque tambien se usa Proxmox para VMs 
+
+hardware para servidores caseros:
+SBC: las recomendadas por la [FSF](https://www.fsf.org/resources/hw/single-board-computers) son Rockchip, FreeScale y Allwinner
+yo recomiendo: orange Pi 5 Plus, orange pi 5, ROCKPro64 y Quartz64 Model A
+de x86: zimaboard, Fujitsu Futro ThinClient, Dell OptiPlex
+
+ventajas: precios accesibles, usan muy poca electricidad, buen rendimiento, opcion de hacer clusters, 
+
+ puertos limitados, maximo un mini nvmeen lugar de la tarjeta de red, un disco duro en el puerto ata de dvd drive, maximo 2.5 gb ethernet apartir de usb 3.0 , puertos usb limite de hubs sin energia externa 
 
 ---
 
-
-# distribucion de mercado
-# servidores
-
-las distribuciones más usadas en la industria son las empresariales:
-RHEL, SLES y las basdas en debian: debian, ubuntu server y proxmox
-
-hardware para servidores:
-x64: intel xeon,amd epyc
-zimaboard,
-laptops : puertos limitados, maximo un mini nvmeen lugar de la tarjeta de red, un disco duro en el puerto ata de dvd drive, maximo 2.5 gb ethernet apartir de usb 3.0 , puertos usb limite de hubs sin energia externa 
-
 los firewalls son inecesarios 
 
-nginx superior a apache
+nginx es usado por el [34.4%](https://w3techs.com/technologies/overview/web_server) de websites, y este es superior a [Apache](https://www.digitalocean.com/community/tutorials/apache-vs-nginx-practical-considerations)
 
-conteiners:
-docker, porteiner, conteinerd
+conteiners: docker, porteiner, conteinerd
 
-virtuaslizar:
-proxmox, qubes, QEMU
+pagina web sin servidor ni dominio: [Github Pages](https://pages.github.com/), [neocities](https://neocities.org/), [etc.](https://www.geeksforgeeks.org/7-best-sites-for-free-web-hosting/)
+
+
+DDNS: es bla bla
+cloudflare ddns, duckDNS, freeDNS.
+
+dominios gratis por un año c/u con GitHub Student Developer Pack:
+[.tech](https://get.tech/github-student-developer-pack), [.me](https://nc.me/landing/github), [.engenieer, etc.](https://www.name.com/partner/github-students)
+
+certificados SSL: lets encrypt
+
+reverse proxy: es bla bla
+cloudflare tunnels, [Nginx Proxy Manager](nginxproxymanager.com)
+
+proyectos web:
+pagina web, vaultwarden, nextcloud, photoprism, searxng, [etc](https://landchad.net/).
 
 ---
 
@@ -613,3 +635,5 @@ SUSE. (s.f.). *Linux Distribution*. https://www.suse.com/suse-defines/definition
 - GNU. (s.f). *What is Free Software?*. https://www.gnu.org/philosophy/free-sw.html
 - opensource initiative. (s.f). *OSI Approved Licenses*. https://opensource.org/licenses/
 - Eric Steven Raymond. (2003). *Basics of the Unix Philosophy*. http://www.catb.org/~esr/writings/taoup/html/ch01s06.html
+- NGINX. (s.f). *What Is a Reverse Proxy Server?*. https://www.nginx.com/resources/glossary/reverse-proxy-server/
+*What is dynamic DNS (DDNS)?*. https://www.cloudflare.com/learning/dns/glossary/dynamic-dns/
