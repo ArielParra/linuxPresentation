@@ -16,7 +16,7 @@ paginate: true
 <style scoped>
 ol{ columns: 2; }
 </style>
-1. [¿Qué es linux?](#1.-¿Qué-es-Linux?)  
+1. ¿Qué es linux?
 1.1 Definición
 1.2 Historia
 2. sistemas operativos
@@ -52,52 +52,85 @@ Es un kernel monolitico de codigo abierto con licencia GNU GPL v2.<br>
 Fue creado en 1991 por el estudiante de la universidad de Helsinki Linus Torvalds, al mismo tiempo Richard Stallman junto con su proyecto GNU de la fundacion de software libre (FSF) ya habian creado las aplicaciones y utilidades de un sistema operativo. Estas aplicaciones y utilidades fueron agregadas al Linux kernel para crear un systema completo llamado GNU/Linux
 
 ---
-# aunque antes tendria que hablar de distros y  tambien que los compone
+
 # 1.3 temas relacionadas
 
 
-Free/libre opensource software - licencias MIT, etc
-\minimalism/anti bloat
-    anti gnu
-    anti systemd
+# FOSS
+Free and open source software
 
+- creative commons: uso libre pero con atribucion obligatoria
+![CC BY](https://licensebuttons.net/l/by/3.0/88x31.png), ![CC BY-SA](https://licensebuttons.net/l/by-sa/3.0/88x31.png), ![CC BY-ND](https://licensebuttons.net/l/by-nd/3.0/88x31.png), ![CC BY-NC](https://licensebuttons.net/l/by-nc/3.0/88x31.png), ![CC BY-NC-SA](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png) y ![CC BY-NC-ND](https://licensebuttons.net/l/by-nc-nd/3.0/88x31.png)
+- licencias más comunes:
+    - AGPL
+    - Apache: incluya la nota de copyright  
+    - BSD: incluya la nota de copyright 
+    - GPL: codigo fuente disponible y trabajos deribados con la misma licencia 
+    - MIT: incluya la nota de copyright  
+herramienta para elegir [licencia](https://choosealicense.com/) correcta
+- Free/libre: la filosofia free tiene relacion con richard stallman y su proyecto GNU, esta se basa en software que respeta la libertad del usuario, libertad de distrubucion, libertad de uso, libertad de estudio, etc. llendo en contra del software privado de codigo cerrado, los binary blobs, las licencias y EULAs no permisivas, los  y el DRM.
 
-# unix
-- posix   
-- unix filosofy
-- sysV good old days
+---
+
+# UNIX
+- POSIX: "Portable Operating System Interface", son una serie de standares de uso impuestos por el IEEE (Institute of Electrical and Electronics Engineers) que incluye el I/O, la terminal, comandos y redes.
+- Single UNIX Specification: es un estandard para sistemas operativos para usar el tredemark de UNIX, con interfaces para el lenguaje C, el shell y comandos especificos como por ejemplo "echo".
+- UNIX filosofy:
+    1. Hacer que cada programa haga una sola cosa, para algo nuevo hacer otro programa
+    2.  
+- sysVinit good old days
 - bsd is more like unix than linux
 
-ventajas y desventajas de BSD
-https://serverfault.com/questions/5267/what-is-good-about-the-bsds/5352#5352
+---
 
-que es BSD: ya en las referencias
+# bsd
+
+"Berkeley Software Distribution" es una distribucion de codigo abierto originalmente extension de AT&T’s Research UNIX, a diferencia de linux este tiene la BSD C library, aunque pueden compartir ciertas utilidades de GNU
 
 freeBSD: es un proyecto ["grande"](https://svnweb.freebsd.org/base/stable/12/) con muchos sistemas operativos forkeados de el
 
-openBSD: es un proyecto relativamente mas ["chico"](https://cvsweb.openbsd.org/src/) que freebsd 
-es [inovador](https://www.openbsd.org/innovations.html
-), crean nuevas herramientas usadas en toda la comunidad de unix
+OpenBSD: es un proyecto relativamente mas ["chico"](https://cvsweb.openbsd.org/src/) que freebsd, es [inovador](https://www.openbsd.org/innovations.html
+) y crean nuevas herramientas usadas en toda la comunidad unix
 
+ventajas y desventajas de BSD
+https://serverfault.com/questions/5267/what-is-good-about-the-bsds/5352#5352
 ambos pueden tener incompatibilidades de hardware
-ambos pueden tener algunas incompatibilidades de software, pero hay capas traduccion y emulacion para solucionarlo
+ambos pueden tener algunas incompatibilidades de software, pero hay capas traduccion y 
+emulacion para solucionarlo
 
-# Privacy 
+---
 
-avoid honey pots
-lee contrato de servicio en softwares "beta"
-duckduckgo relations with microsft
-starpage
-[proton](https://techcrunch.com/2021/09/06/protonmail-logged-ip-address-of-french-activist-after-order-by-swiss-authorities/)
-misconcepsiones de tor darkweb/deepwep
-usar whonix y/o qubes o tails
+# minimalism
+- kiss (Keep it simple, stupid!)
+- anti gnu: [Luke Smith: GNU is bloated!](https://yewtu.be/watch?v=nTCHapo8QFM)
+- init freedom/anti systemd
+- anti bloat
 
-# security
-harden linux kernel
-selinux admin
-linux guard o algo asi
-mentiras de hackeo y kali linux
-alch usa openBSD
+---
+
+# Privacidad 
+
+te recominedo esta [guia](https://www.privacyguides.org/en/) de privacidad
+[duckduckgo](https://seonorth.ca/news/why-duckduckgo-is-bad/) no es bueno
+[proton](https://techcrunch.com/2021/09/06/protonmail-logged-ip-address-of-french-activist-after-order-by-swiss-authorities/) no es confiable
+las VPN no te dan [privacidad](https://gist.github.com/joepie91/5a9909939e6ce7d09e29)
+tor y sus [mitos](https://www.whonix.org/wiki/Tor_Myths_and_Misconceptions)
+
+# Seguridad
+
+te recomiendo esta [guia](https://wiki.archlinux.org/title/security) de seguridad
+[linux-hardened](https://github.com/anthraxx/linux-hardened) kernel
+[selinux](https://selinuxproject.org/page/Main_Page) o [AppArmor](https://apparmor.net/) para el control de acceso
+no uses [kali linux](https://www.kali.org/docs/introduction/should-i-use-kali-linux/)
+usa OpenBSD, ya que es el sistema unix más [seguro](https://www.openbsd.org/security.html)
+
+---
+
+# customizacion (ricing)
+
+solo mira [r/unixporn](https://reddit.com/r/unixporn/)
+[dotfiles](https://wiki.archlinux.org/title/Dotfiles) son los archivos que van en la carpeta de usuario y tienen las configuraciones de los programas que se van a costumizar
+tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https://archcraft.io/gallery.html)
 
 ---
 
@@ -124,9 +157,7 @@ alch usa openBSD
 - [DistroTube: How Linux Respects Your Privacy (And How Windows Does NOT!)](https://yewtu.be/watch?v=KarYADRAoTU)
 - [Average Linux User: Linux advantages](https://yewtu.be/watch?v=mJEWPqHXNzs)
 - [The Linux Foundation: Why are Linux Jobs so In Demand?](https://training.linuxfoundation.org/blog/why-are-linux-jobs-so-in-demand/)
-- [The Linux Experiment: 
-Windows, macOS & Linux PRIVACY compared: why do they need ALL THIS DATA?!
-](https://yewtu.be/watch?v=MMc5zgALLiY)
+- [The Linux Experiment: Windows, macOS & Linux PRIVACY compared: why do they need ALL THIS DATA?!](https://yewtu.be/watch?v=MMc5zgALLiY)
 
 ---
 # desventajas de linux
@@ -233,7 +264,7 @@ Windows, macOS & Linux PRIVACY compared: why do they need ALL THIS DATA?!
 ) que .exe
 - tienes que pagar para poder usar archivos [HEVC](https://apps.microsoft.com/store/detail/hevc-video-extensions/9NMZLZ57R3T7?hl=en-us&gl=us&activetab=pivot%3Aoverviewtab)
 - windows incluye [bloatware](https://www.digitalcitizen.life/windows-10-bloatware/)
-- antivirus pueden bloquear aplicaciones/servicios en el [firewall](https://www.mcafee.com/support/?locale=en-US&articleId=TS102946&page=shell&shell=article-view) 
+- los antivirus pueden bloquear aplicaciones/servicios en el [firewall](https://www.mcafee.com/support/?locale=en-US&articleId=TS102946&page=shell&shell=article-view) 
 - Windows Antimalware Service puede usar [100%](https://answers.microsoft.com/en-us/windows/forum/all/high-cpu-usage-by-antimalware-service-executable/4f6f635a-b3ad-444c-8cd0-68fb1e9f4bfa) del cpu
 - Problemas en pantallas con [high dpi](https://support.microsoft.com/en-gb/topic/windows-scaling-issues-for-high-dpi-devices-508483cd-7c59-0d08-12b0-960b99aa347d) dando lugar a [apps borrosas](https://support.microsoft.com/en-us/windows/fix-apps-that-appear-blurry-in-windows-10-e9fe34ab-e7e7-bc6f-6695-cb169b51de0f)
 - la solucion a la mayoria de errores es [reistalar](https://answers.microsoft.com/en-us/windows/forum/all/windows-update-system-restore-and-repair-failed/aaf28405-55c0-4ee2-b4b4-f13571680b32) el sistema operativo
@@ -299,12 +330,12 @@ Windows, macOS & Linux PRIVACY compared: why do they need ALL THIS DATA?!
 
 ---
 
-# **linux distributions**
+# **Distribuciones de linux**
 
 ---
 
-# que es?
-una distribucion (tambien llamada distro) de linux es un sistema operativo completo con muchos componentes opensource.
+# ¿Qué es?
+una distribucion (distro) de linux es un sistema operativo completo con muchos componentes opensource.
 
 ---
 
@@ -312,12 +343,14 @@ los componentes y caracteristicas que construyen a una distribucion de linux son
 - filosofia: KISS, free/libre, utilitarism, bsd feel, unix feel,  etc.
 - licencia: BSD, gnu GPL v2, gnu GPL v3, MIT, etc.
 - uso especifico:
-    - juegos: steamOS, ChimeraOS, popOS
+    - juegos: steamOS, ChimeraOS, popOS, Fedora Games spin, etc.
+    - media: Ubuntu Studio, Fedora Design Suite, etc.
+    - escolar: uaabuntu, edubuntu, Zorin OS Education, etc.
     - privacidad/seguridad: whonix y/o qubes, tails, etc. 
 - Release model : fix, rolling release, lts, bleeding edge
 - Boot Loader: GRUB, Syslinux, LILO, systemd-boot, etc.
 - tipo de kernel: Stable (vanilla), zen, libre, LTS, Realtime, etc.
-- init system / daemon manager: runit, OpenRC, systemd, SysV, s6, dinit, etc.
+- init system / daemon manager: runit, OpenRC, systemd, SysVinit, s6, dinit, etc.
 - systema de archivos (File system): ext2/3/4, Btrfs, XFS, ZFS, etc. 
 - jerarquia de archivos: Linux File Hierarchy Structure o modificacion de este. 
 - libreria de c: glibc, musl, ulibc, etc.
@@ -355,16 +388,16 @@ hay cuatro partes que definen y diferencian a una distribucion de linux son:
 el sistema de arranque (init system [PID 1]), gestor de paquetes (package manager), libreria de c y las core utils, esto se debe a que todo lo demas lo puedes modificar a tu gusto con facilidad.
 
 categorias de distribuciones:
-
-independiente: la ventaja de esta es tener otras opciones
-deribados: los deribados tienen compatibilidad con quien se deribaron
- sinergia de distribuciones: debian - canonical ubuntu, SUSE - openSUSE, RHEL - fedora
-tipos de distribuciones deribadas:
-
- flavour: otros escritorios o temas oficiales de la distribucion, por ejemplo para ubuntu hay flavours como: edubuntu,kubuntu,lubuntu, etc.
- remix/respin: agregando un objetivo especifico 
- fork: pus forkean
- clone/repackage: copian el codigo y tienen otra infrestructura para la distribucion, por ejemplo para RHEL hay repackages como Rocky linux, Oracle Linux, etc.
+- independiente: la ventaja de esta es tener otras opciones
+ deribados: los deribados tienen compatibilidad con quien se deribaron
+ sinergia de distribuciones: debian <-> ubuntu, SUSE <-> openSUSE,
+ RHEL <-> fedora.
+ 
+- tipos de distribuciones deribadas:
+    - flavour: con otros escritorios,temas, y/o aplicaiones reconocidos por la distribucion, por ejemplo para ubuntu hay flavours como: edubuntu,kubuntu,lubuntu, etc.
+    - remix/respin: modificacion ofreciendo algo nuevo, pero sin ser reconocidos por la distribución.
+    - fork: hacen cambios grandes, cambiando el uso, filosofia, etc.
+    - clone/repackage: copian el codigo y tienen otra infrestructura para la distribucion, por ejemplo para RHEL hay repackages como Rocky linux, Oracle Linux, etc.
 
 [Linea de tiempo](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg)
 
@@ -379,7 +412,7 @@ tipos de distribuciones deribadas:
 | ![h:50](logos/alpine.png)      | [alpine](https://alpinelinux.org/)                                             | openrc         | apk         | musl       | busybox     |
 | ![h:50px](logos/arch.png)      | [arch](https://archlinux.org/)                                                 | systemd        | pacman      | glibc      | gnu         |
 | ![h:50px](logos/debian.png)    | [debian](https://www.debian.org/)                                              | systemd        | apt (dpkg)  | glibc      | gnu         |
-| ![h:50px](logos/slackware.png) | [slackware](http://www.slackware.com/)                                         | sysV           | slackpkg    | glibc      | gnu         |
+| ![h:50px](logos/slackware.png) | [slackware](http://www.slackware.com/)                                         | sysVinit           | slackpkg    | glibc      | gnu         |
 | ![h:50px](logos/gentoo.png)    | [gentoo](https://www.gentoo.org/)                                              | OpenRC/systemd | portage     | glibc/musl | gnu         |
 | ![h:50px](logos/void.png)      | [void](https://voidlinux.org/)                                                 | runit          | xbps        | glibc/musl | gnu         |
 
@@ -441,11 +474,14 @@ tipos de distribuciones deribadas:
 ---
 
 # que conforma linux
+unix filosofy
+todos son archivos
 sistema jerarquia 
 componentes
-todos son archivos
-# linux commands 
-https://wiki.archlinux.org/title/core_utilities
+
+# linux commands (gnu core utils)
+
+https://wiki.archlinux.org/title/core_utilities 
 gnu core utils https://wiki.debian.org/coreutils + util-linux   https://en.wikipedia.org/wiki/Util-linux
 busybox https://busybox.net/downloads/BusyBox.html
 
@@ -459,8 +495,13 @@ portables:
 app image, snap, flatpak
 
 aplicaiones recomendadas:
-btop, vim, feh
-
+IDE: vscodium
+editor de texto: vim
+navegador: librewolf + arkenfox user.js o ungoogled-chromium
+motor de busqueda: searXNG 
+torrents: qbitorrent-enhanced
+terminal: alacritty o st
+monitor de recursos: btop
 
 # hardware
 libreboot/coreboot para desabilitar AMD PSP, intel ME
@@ -498,15 +539,17 @@ RHEL, SLES y las basdas en debian: debian, ubuntu server y proxmox
 hardware para servidores:
 x64: intel xeon,amd epyc
 zimaboard,
-laptops : puertos limitados, maximo un mini nvmeen lugar de la tarjeta de red, un disco duro en el puerto ata de dvd drive, maximo 2.5 gb ethernet si tiene usb 3.0 ->, puertos usb limite de hubs sin energia externa 
+laptops : puertos limitados, maximo un mini nvmeen lugar de la tarjeta de red, un disco duro en el puerto ata de dvd drive, maximo 2.5 gb ethernet apartir de usb 3.0 , puertos usb limite de hubs sin energia externa 
 
+los firewalls son inecesarios 
+
+nginx superior a apache
 
 conteiners:
 docker, porteiner, conteinerd
 
 virtuaslizar:
 proxmox, qubes, QEMU
-
 
 ---
 
@@ -569,3 +612,7 @@ SUSE. (s.f.). *Linux Distribution*. https://www.suse.com/suse-defines/definition
 - dayzerosec. (2023). *Reversing the AMD Secure Processor (PSP) - Part 1: Design and Overview*. https://dayzerosec.com/blog/2023/04/17/reversing-the-amd-secure-processor-psp.html
 - The Linux Experiment. (2018). *Linux DISTRIBUTION: explained* [Video]. https://yewtu.be/watch?v=6gqLWTSz6ck
 - linuxfoundation. (2015). *Filesystem Hierarchy Standard*. https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.html
+- creativecommons. (s.f). *About The Licenses*. https://creativecommons.org/licenses/
+- GNU. (s.f). *What is Free Software?*. https://www.gnu.org/philosophy/free-sw.html
+- opensource initiative. (s.f). *OSI Approved Licenses*. https://opensource.org/licenses/
+- Eric Steven Raymond. (2003). *Basics of the Unix Philosophy*. http://www.catb.org/~esr/writings/taoup/html/ch01s06.html
