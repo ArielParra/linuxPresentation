@@ -73,13 +73,15 @@ herramienta para elegir [licencia](https://choosealicense.com/) correcta
 ---
 
 # UNIX
+
+UNIX es un sistema operativo creado a principios de los 70s en AT&T por Dennis Ritchie (creador del lenguaje C) y Ken Thompson (creador de B predecesor del lenguaje C) 
 - POSIX: "Portable Operating System Interface", son una serie de standares de uso impuestos por el IEEE (Institute of Electrical and Electronics Engineers) que incluye el I/O, la terminal, comandos y redes.
 - Single UNIX Specification: es un estandard para sistemas operativos para usar el tredemark de UNIX, con interfaces para el lenguaje C, el shell y comandos especificos como por ejemplo "echo".
-- UNIX filosofy:
-    1. Hacer que cada programa haga una sola cosa, para algo nuevo hacer otro programa
-    2.  
-- sysVinit good old days
-- bsd is more like unix than linux
+- UNIX filosofy (Doug McIlroy):
+Escribe programas que hagan una cosa muy bien, escribe programas que trabajen juntos (input de uno es el output de otro). Escribe programas que manejen streams (serie de bytes para I/O), porque son  una interfaz universal.
+- todo son archivos, los dispositivos, teclados, discos duros, etc. estos son manejados con streams
+- Lenguaje C es superior
+- los sistemas BSD son más unix que linux
 
 ---
 
