@@ -78,22 +78,22 @@ herramienta para elegir una [licencia](https://choosealicense.com/) adecuada
 
 la filosofia de linux se basa principalmente en la filosofia de UNIX y del opensource, donde linux se diferencia es al darle el control completo al usuario, dandole la libertad de elegir cualquier parte de su sistema operativo.
 el kernel incluye drivers
-jerarquia de archivos
+se suele usar el Filesystem Hierarchy Standard de linux
+
+---
+
+![](https://www.linuxfoundation.org/hubfs/Imported_Blog_Media/standard-unix-filesystem-hierarchy-1.png)
 
 
 ---
 
 # UNIX
-
 UNIX es un sistema operativo creado a principios de los 70s en AT&T por Dennis Ritchie (creador del lenguaje C) y Ken Thompson (creador de B predecesor del lenguaje C) 
 - POSIX: "Portable Operating System Interface", son una serie de standares de uso impuestos por el IEEE (Institute of Electrical and Electronics Engineers) que incluye el I/O, la terminal, comandos y redes.
-- Single UNIX Specification: es un estandard para sistemas operativos para usar el tredemark de UNIX, con interfaces para el lenguaje C, el shell y comandos especificos como por ejemplo "echo".
+- Single UNIX Specification: es un estandard para sistemas operativos para usar el tredemark de UNIX, con interfaces para el lenguaje C, el shell y comandos.
 - UNIX filosofy (Doug McIlroy):
-Escribe programas que hagan una cosa muy bien, escribe programas que trabajen juntos (input de uno es el output de otro). Escribe programas que manejen streams (serie de bytes para I/O), porque son  una interfaz universal.
-- todo son archivos, los dispositivos, teclados, discos duros, etc. estos son manejados con streams
-- Lenguaje C es superior
-- los sistemas BSD son más unix que linux
-
+Escribe programas que hagan una cosa muy bien, que trabajen juntos (input de uno es el output de otro y *que manejen streams (serie de bytes para I/O), porque son  una interfaz universal.
+- todo son archivos, los dispositivos, teclados, discos duros, etc. estos son manejados con streams y almacenados en la carpeta /dev 
 ---
 
 # bsd
@@ -140,6 +140,7 @@ te recomiendo esta [guia](https://wiki.archlinux.org/title/security) de segurida
 # customizacion (ricing)
 
 solo mira [r/unixporn](https://reddit.com/r/unixporn/)
+se suelen usar paletas de colores como [nord](https://www.nordtheme.com/) o [Catppuccin](https://github.com/catppuccin/palette)
 [dotfiles](https://wiki.archlinux.org/title/Dotfiles) son los archivos que van en la carpeta de usuario y tienen las configuraciones de los programas que se van a costumizar, usualmente son y tambien recomiendo que esten respaldados con un servidor de git
 tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https://archcraft.io/gallery.html), o scripts de la comunidad como [LARBS](https://larbs.xyz/)
 
@@ -169,6 +170,7 @@ tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 - [Average Linux User: Linux advantages](https://yewtu.be/watch?v=mJEWPqHXNzs)
 - [The Linux Foundation: Why are Linux Jobs so In Demand?](https://training.linuxfoundation.org/blog/why-are-linux-jobs-so-in-demand/)
 - [The Linux Experiment: Windows, macOS & Linux PRIVACY compared: why do they need ALL THIS DATA?!](https://yewtu.be/watch?v=MMc5zgALLiY)
+- [ForrestKnight:  Why I Code on Linux Instead of Windows](https://yewtu.be/watch?v=HrYtwz0Xe2Q)
 
 ---
 # desventajas de linux
@@ -349,16 +351,16 @@ una distribucion (distro) de linux es un sistema operativo completo con muchos c
 ---
 
 los componentes y caracteristicas que construyen a una distribucion de linux son: 
-- filosofia: KISS, free/libre, utilitarism, bsd feel, unix feel,  etc.
+- filosofia: KISS/minimalismo, free/libre, bsd userspace, compilación, etc.
 - uso: juegos, media, privacidad, seguridad, escolar, etc.
-- Release model : fix, rolling release, lts, bleeding edge
+- Release model: fix, rolling release, lts, bleeding edge
 - Boot Loader: GRUB, Syslinux, LILO, systemd-boot, etc.
 - tipo de kernel: Stable (vanilla), zen, libre, LTS, Realtime, etc.
 - init system / daemon manager: runit, OpenRC, systemd, SysVinit, s6, dinit, etc.
 - systema de archivos (File system): ext2/3/4, Btrfs, XFS, ZFS, etc. 
 - jerarquia de archivos: Linux File Hierarchy Structure o modificacion de este. 
 - libreria de c: glibc, musl, ulibc, etc.
-- utilidades basicas: gnu core utils + util-linux, busybox, etc.
+- utilidades basicas: gnu core utils, busybox, util-linux, bin-utils,  lspci-utils, etc.
 
 ---
 
@@ -378,6 +380,8 @@ los componentes y caracteristicas que construyen a una distribucion de linux son
 - aplicaciones incluidas: 
     - terminal (CLI/TUI):
         - editor de textos: nano, vim, neovim, emacs, etc.
+        - informacion: neofetch, htop, etc.
+        -
     - graficas (GUI):
         - navegador: firefox, chromium, etc.
         - Office Suite: libreoffice, onlyoffice, Calligra etc.
@@ -422,7 +426,7 @@ hay muchisimas [distribuciones](https://upload.wikimedia.org/wikipedia/commons/1
 | ![h:50](logos/alpine.png)      | [alpine](https://alpinelinux.org/)                                             | openrc         | apk         | musl       | busybox     |
 | ![h:50px](logos/arch.png)      | [arch](https://archlinux.org/)                                                 | systemd        | pacman      | glibc      | gnu         |
 | ![h:50px](logos/debian.png)    | [debian](https://www.debian.org/)                                              | systemd        | apt (dpkg)  | glibc      | gnu         |
-| ![h:50px](logos/slackware.png) | [slackware](http://www.slackware.com/)                                         | sysVinit           | slackpkg    | glibc      | gnu         |
+| ![h:50px](logos/slackware.png) | [slackware](http://www.slackware.com/)                                         | sysVinit       | slackpkg    | glibc      | gnu         |
 | ![h:50px](logos/gentoo.png)    | [gentoo](https://www.gentoo.org/)                                              | OpenRC/systemd | portage     | glibc/musl | gnu         |
 | ![h:50px](logos/void.png)      | [void](https://voidlinux.org/)                                                 | runit          | xbps        | glibc/musl | gnu         |
 
@@ -483,116 +487,141 @@ hay muchisimas [distribuciones](https://upload.wikimedia.org/wikipedia/commons/1
 
 
 # commandos 
-categorize los comandos que más creo importantes y los marcare con tres letras siendo G de "GNU core utils", U de "Util-linux" y N de "No standard, pero usual":
+categorize los comandos que más creo importantes y los marcare con tres letras siendo C de "GNU core utils", U de "Util-linux", G de "GNU Software", P de "procps", I de "iproute2 y iputils",  S de "SHELL" y N de "No standard":
 
-archivos:
-cd
-touch
-mv
-cp
-rm
+file system:
+touch (C)
+mv (C)
+cp (C)
+ln (C)
+rm (C)
+chmod (C)
+chown (C)
+tar (G), unzip (N), unrar (N)
+cd (C)
+pwd (C)
+ls (C)
+mkdir (C)
+rmdir (C)
 
-read/edit files:
-cat
-less
-head
-tail
-file
-vi
-
-directorio:
-pwd
-ls
-mkdir
-rmdir 
+read/write files:
+cat (C)
+less (G)
+head (C)
+tail (C)
+file (N)
+sed (G)
+awk (G)
+vi (N)
+sort (C)
 
 procesos:
-daemon manager: systemctl, sv, etc.
-ps ax
-pstree
-kill
-pkill
-top
+jobs (S)
+bg (S)
+fg (S)
+ps (P)
+pstree (N)
+kill (U)
+killall (N)
+pkill (P)
+top (N)
 
 encontrar cosas:
-find
-grep
-history
-env
-locate
+find (G)
+grep (G)
+history (S)
+env (C)
+locate (N)
 
 almacenamiento:
-df
-cfdisk
-fdisk
-dd
-mount
-umount
-fsck
-lsblk
-blkid
+df (C)
+du (C)
+dd (C)
+fdisk (U)
+cfdisk (G)
+mount (U)
+umount (U)
+fschk (U)
+lsblk (U)
+blkid (U)
 
 networking:
-network manager/c
-ip a
-ping
-route
-nslookup
-tracerout
-ssh
-scp
-wget
-curl
-git
+ip address(I)
+ip route (I)
+ping (I)
+tracerout (I)
+rfkill (U)
+ssh (N)
+scp (N)
+wget (N)
+curl (N)
+git (N)
 
 sys info:
-neofetch, pfetch
-uname
-wheris
-whoami
-uptime
-watch
-date
-hostname
-free
-lscpi
-lsusb
-xinput
-dmidecode
-lsof
+dmesg (U)
+neofetch (N)
+uname (C)
+wheris (U)
+whoami (C)
+uptime (C)
+time (G)
+date (G)
+hostname (C)
+free (P)
+lscpi (N)
+lsusb (N)
+lscpu (U)
+xinput (N)
 
+distro:
+- wifi: NetworkManager, IWD, ConnMan, wpa_supplicant
+- firewall: iptables, uwd, firewalld
+- package manager: apt, pacman, emerge, etc.
+- init system: poweroff, shutdown, poweroff, halt
+    -daemon management: systemctl, sv, rc-service, etc.
+- cron jobs: cronie, fcron, dcron, etc.
 
 extra:
-man
-echo
-exit
-sudo
-doas
-su
+man (N)
+echo (C)
+exit (S)
+printf (C)
+sudo (N)
+su (U)
+wc (C)
+diff (G)
+xclip (N) -sel clip
+gpg (G)
+cksum (C)
+
+shell specific:
+tab para completar
+* wildcars
+$ vars
+{num..num}
 !$numero
 !!
-
----
-
+|
 >
 `> /dev/null 2>&1`
 >>
-diff
-wc
-ctrl c = cancelar
-export $VAR
+&
 alias
+export $VAR
 
-gpg sha256
+
+
+más informacion de comandos: [The linux Command Handbook](https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-man-command), [arch wiki](https://wiki.archlinux.org/title/core_utilities), [decoded gnu core utils](https://www.maizure.org/projects/decoded-gnu-coreutils/), [util-linux](https://wiki.gentoo.org/wiki/Util-linux), [procps](https://gitlab.com/procps-ng/procps), [iproute2](https://wiki.linuxfoundation.org/networking/iproute2), [iputils](https://wiki.linuxfoundation.org/networking/iputils), [busybox](https://busybox.net/downloads/BusyBox.htm), [posix](https://en.wikipedia.org/wiki/Category:Unix_SUS2008_utilities)
 
 ---
 
-más informacion de comandos, [arch wiki](https://wiki.archlinux.org/title/core_utilities), gnu core utils de [debian](https://wiki.debian.org/coreutils)
-util-linux   https://en.wikipedia.org/wiki/Util-linux
+<style scoped>img {position: absolute;top: 50%;left: 80%;transform: translate(-50%, -50%);}</style>
 
-busybox https://busybox.net/downloads/BusyBox.html
+# Linux Terminal Shortcuts
 
-posix https://en.wikipedia.org/wiki/Category:Unix_SUS2008_utilities
+![w:520px](https://linuxhandbook.com/content/images/2022/04/lhb-terminal-shortcut-cheatsheet-1.webp)
+
+---
 
 # aplicaciones
 
@@ -600,15 +629,16 @@ con la filosofia de linux de usar programas interconectados, las aplicaciones su
 
 ---
 
-# recomendaciones 
-editor de texto/codigo: vim y vscodium
-navegador: librewolf/firefox + Arkenfox.js o ungoogled-chromium
-extensiones de navegador: uBlock origin, bitwarden, libRedirect y decentraleyes.
-motor de busqueda: searXNG 
-terminal: alacritty o st
-monitor de recursos: btop
-visualizador de imagenes: feh
-descargar videos de youtube: yt-dlp
+# recomendacion de aplicaciones
+editor de texto/codigo: [vim](https://www.vim.org/) y [vscodium](https://vscodium.com/)
+navegador: [librewolf](https://librewolf.net/)/[firefox](https://www.mozilla.org/en-US/firefox/new/) + [Arkenfox.js](https://github.com/arkenfox/user.js/) o [ungoogled-chromium](https://github.com/ungoogled-software/ungoogled-chromium)
+extensiones de navegador: [uBlock origin](https://github.com/gorhill/uBlock), [bitwarden](https://bitwarden.com/), [libRedirect](https://libredirect.github.io/) y [decentraleyes](https://decentraleyes.org/).
+motor de busqueda: [searXNG](https://searx.space/#)
+terminal: [alacritty](https://alacritty.org/) o [st](https://st.suckless.org/)
+monitor de recursos: [btop](https://github.com/aristocratos/btop)
+visualizador de imagenes: [feh](https://feh.finalrewind.org/)
+descargar videos de youtube: [yt-dlp](https://github.com/yt-dlp/yt-dlp)
+respaldos: [timeshift](https://github.com/linuxmint/timeshift) (rsync, btrfs snapshots)
 
 ---
 
@@ -638,29 +668,32 @@ hardware y computadoras sin binarios o software propietario:
 - [Respects Your Freedom Certification](https://ryf.fsf.org/index.php/products)
 
 ---
+
 # servidores
 
-las distribuciones [más usadas](https://w3techs.com/technologies/details/os-linux) en servidores son las basdas en debian como: ubuntu server y debian o las empresariales como: RHEL y SLES, aunque tambien se usa Proxmox para VMs 
+las distribuciones [más usadas](https://w3techs.com/technologies/details/os-linux) en servidores son las basdas en debian como: ubuntu server y debian o las empresariales como: RHEL y SLES, aunque tambien se usa Proxmox para VMs. Los file systems más usados son ZFS (openZFS) o XFS, pero recomiendo este video para elegir el [file system](https://yewtu.be/watch/?v=HdEozE2gN9I) para tu servidor.
 
-hardware para servidores caseros:
-arm SBC: las recomendadas por la [FSF](https://www.fsf.org/resources/hw/single-board-computers) son Rockchip, FreeScale y Allwinner
-yo recomiendo: orange Pi 5 Plus, orange pi 5, ROCKPro64 y Quartz64 Model A
-de x86: zimaboard, Fujitsu Futro ThinClient, Dell OptiPlex, HP elitedesk (800), etc.
+hardware para servidores caseros y economicos:
+SBC con arm: las recomendadas por la [FSF](https://www.fsf.org/resources/hw/single-board-computers) son Rockchip, FreeScale y Allwinner, yo recomiendo: orange Pi 5 Plus, orange pi 5, ROCKPro64 y Quartz64 Model A.
+de x86: zimaboard, Fujitsu Futro ThinClient, Dell OptiPlex, HP elitedesk 800, etc.
 
-ventajas: precios accesibles, usan muy poca electricidad, buen rendimiento, opcion de hacer clusters, 
+ventajas: precios accesibles, usan muy poca electricidad, buen rendimiento, opcion de hacer clusters, las laptops pueden usar sus baterias en caso de un corte de luz.
 
  puertos limitados, maximo un mini nvmeen lugar de la tarjeta de red, un disco duro en el puerto ata de dvd drive, maximo 2.5 gb ethernet apartir de usb 3.0 , puertos usb limite de hubs sin energia externa 
 
 ---
 
-los firewalls son inecesarios 
+recomiendo esta guia de seguridad para [servidor](https://yewtu.be/watch?v=fKuqYQdqRIs&t)
 
-nginx es usado por el [34.4%](https://w3techs.com/technologies/overview/web_server) de websites, y este es superior a [Apache](https://www.digitalocean.com/community/tutorials/apache-vs-nginx-practical-considerations)
 
-conteiners: docker, porteiner, conteinerd
+recomiendo usar nginx como web server ya que es usado por el [34.4%](https://w3techs.com/technologies/overview/web_server) de websites, y este es superior a [Apache](https://www.digitalocean.com/community/tutorials/apache-vs-nginx-practical-considerations) en varios aspectos.
+
+
 
 pagina web sin servidor ni dominio: [Github Pages](https://pages.github.com/), [neocities](https://neocities.org/), [etc.](https://www.geeksforgeeks.org/7-best-sites-for-free-web-hosting/)
 
+conteiners: es una forma de tener contenidas aplicaciones "grandes" para su estabilidad, las soluciones más usadas son:
+ docker, kubernetes porteiner, conteinerd.
 
 DDNS: ya en referncias
 cloudflare ddns, duckDNS, freeDNS.
@@ -668,25 +701,31 @@ cloudflare ddns, duckDNS, freeDNS.
 dominios gratis por un año c/u con GitHub Student Developer Pack:
 [.tech](https://get.tech/github-student-developer-pack), [.me](https://nc.me/landing/github), [.engenieer, etc.](https://www.name.com/partner/github-students)
 
-certificados SSL: lets encrypt
+certificados SSL: son los certificados que te dejan tener una pagina con https, el que más recomiendo es: Let's Encrypt
 
 reverse proxy: es bla bla ya en referencias
 cloudflare tunnels, [Nginx Proxy Manager](nginxproxymanager.com)
 
+NAS: Network Attached Storage, es una forma de acceder a discos duros atravez de una red ya sea en casa o desde fuera, existen sistemas operativos como freeNAS y equipos dedicado, pero convine mejor hacer tu propio NAS.
+
+RAID: Redundant Array of Independent Disks,storage, los discos duros son más baratos que los ssd pero estos pueden fallar y ser más lentos, por lo que existen tecnologias de RAID como: RAID0, RAID5, RAID6, RAID10, RAIDZ con ZFS o MergerFS + SnapRAID.
+
 proyectos web:
-pagina web, vaultwarden, nextcloud, photoprism, searxng, vpn, [etc](https://landchad.net/).
+pagina web, vaultwarden, nextcloud, photoprism, searxng, wireguardvpn, dnsmasq/pihole [etc](https://landchad.net/).
 
 ---
 
-# aprender más de linux:
-[wikibooks](https://en.wikibooks.org/wiki/Linux_Guide/How_Linux_Works)
+# aprender más acerca de linux
+[wikibooks: how linux works](https://en.wikibooks.org/wiki/Linux_Guide/How_Linux_Works)
 [linux journey](https://linuxjourney.com/)
 [endevoarOs wiki](https://discovery.endeavouros.com/)
-[hack the box](https://www.hackthebox.com/blog/learn-linux)
-[linux foundation curse](https://training.linuxfoundation.org/training/introduction-to-linux/)
-[wikipedia linux portal](https://en.wikipedia.org/wiki/Portal:Linux)
+[hack the box: learn linux](https://www.hackthebox.com/blog/learn-linux)
+[linux foundation: introduction to linux](https://training.linuxfoundation.org/training/introduction-to-linux/)
+[wikipedia: linux portal](https://en.wikipedia.org/wiki/Portal:Linux)
 [arch wiki](https://wiki.archlinux.org/)
 [gentoo wiki](https://wiki.gentoo.org/wiki/Main_Page)
+
+---
 
 # youtubers de linux que recomiendo
 - [The linux experiment: noticias semanales](https://yewtu.be/channel/UC5UAwBUum7CPN5buc-_N1Fw)
@@ -694,8 +733,8 @@ pagina web, vaultwarden, nextcloud, photoprism, searxng, vpn, [etc](https://land
 - [Luke Smith: opiniones, recomendaciones y tutoriales ](https://yewtu.be/channel/UC2eYFnH61tmytImy1mTYvhA)
 - [Mental Outlaw: opiniones y noticias](https://yewtu.be/channel/UC7YOGHUfC1Tb6E4pudI9STA)
 - [Michael Horn: tips de linux](https://yewtu.be/channel/UC1s1OsWNYDFgbROPV-q5arg)
-- [Wolfgang's: servidores](https://yewtu.be/channel/UCsnGwSIHyoYN0kiINAGUKxg)
-- [Hardware Haven: servidores](https://yewtu.be/channel/UCgdTVe88YVSrOZ9qKumhULQ)
+- [Wolfgang's: tips para servidores](https://yewtu.be/channel/UCsnGwSIHyoYN0kiINAGUKxg)
+- [Hardware Haven: tips para servidores](https://yewtu.be/channel/UCgdTVe88YVSrOZ9qKumhULQ)
 - [y más](https://yewtu.be/watch?v=NybbsnDT5NI&t=316s)
 ---
 
@@ -705,42 +744,40 @@ pagina web, vaultwarden, nextcloud, photoprism, searxng, vpn, [etc](https://land
 
 <style scoped>{font-size: 21px;}</style>
 
+- Adekotujo, A., Odumabo, A., Adedokun, A., & Aiyeniko, O. (2020). *A Comparative Study of Operating Systems: Case of Windows, UNIX, Linux, Mac, Android and iOS*. https://www.researchgate.net/profile/Adedoyin-Odumabo/publication/343013056_A_Comparative_Study_of_Operating_Systems_Case_of_Windows_UNIX_Linux_Mac_Android_and_iOS/links/61f2b50a9a753545e2fe8300/A-Comparative-Study-of-Operating-Systems-Case-of-Windows-UNIX-Linux-Mac-Android-and-iOS.pdf
+- Britannica, T. Editors of Encyclopaedia (2023). *Linux*. Encyclopedia Britannica. https://www.britannica.com/technology/Linux
+- Cloudflare. (s.f.). *What is dynamic DNS (DDNS)?*. https://www.cloudflare.com/learning/dns/glossary/dynamic-dns/
+- coreboot. (2017). *1. AMD Platform Security Processor (PSP) Firmware Integration Guide*. https://doc.coreboot.org/soc/amd/psp_integration.html#platform-security-processor-psp-overview  
+- creativecommons. (s.f). *About The Licenses*. https://creativecommons.org/licenses/
+- David Both. (2014). *The impact of the Linux philosophy*.https://opensource.com/business/14/12/linux-philosophy
+- dayzerosec. (2023). *Reversing the AMD Secure Processor (PSP) - Part 1: Design and Overview*. https://dayzerosec.com/blog/2023/04/17/reversing-the-amd-secure-processor-psp.html
+- Eric Steven Raymond. (2003). *Basics of the Unix Philosophy*. http://www.catb.org/~esr/writings/taoup/html/ch01s06.html
+- ezeelinux. (2018). *Linux Distributions Deconstructed*. https://www.ezeelinux.com/news/linux-distributions-deconstructed/
+- Fireship. (2022). *Linux in 100 Seconds* [Video]. YouTube. https://yewtu.be/watch?v=rrB13utjYV4
+- freeBSD. (2023). *Explaining BSD*. https://docs.freebsd.org/en/articles/explaining-bsd/
 - GeeksforGeeks. (2019). *Linux Tutorials | Getting Started | Introduction | GeeksforGeeks* [Video]. https://yewtu.be/watch?v=0EDwEQoui_g
+- GNU. (2023). *GNU Coreutils*. https://www.gnu.org/software/coreutils/manual/coreutils.pdf
 - GNU. (2023). *GNU General Public License, version 2*. https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+- GNU. (s.f). *What is Free Software?*. https://www.gnu.org/philosophy/free-sw.html
+- IEEE. (2017). *IEEE Std 1003.1™-2017*. https://pubs.opengroup.org/onlinepubs/9699919799/
+- intel. (2017). *What is Intel® Management Engine?*. https://www.intel.com/content/www/us/en/support/articles/000008927/software/chipset-software.html
+- Linus Torvalds. (1997). *Linux: a Portable Operating System*. https://www.cs.helsinki.fi/u/kutvonen/index_files/linus.pdf
+- linuxfoundation. (2015). *Filesystem Hierarchy Standard*. https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.html
+- Michael Tunnell. (2023). *Explaining Linux Family Trees: Why Are There So Many Linux Distros?* [Video]. https://yewtu.be/watch?v=kF8CRt05s6A
+- NGINX. (s.f). *What Is a Reverse Proxy Server?*. https://www.nginx.com/resources/glossary/reverse-proxy-server/
 - Opensource.com. (s.f.). *What is Linux?*. https://opensource.com/resources/linux
 - Opensource.com. (s.f). *What is open source?*.https://opensource.com/resources/what-open-source
 - Open Source Initiative. (2007). *The Open Source Definition*. https://opensource.org/osd/
+- opensource initiative. (s.f). *OSI Approved Licenses*. https://opensource.org/licenses/
 - Red Hat. (2019). *What is the Linux kernel?*. https://www.redhat.com/en/topics/linux/what-is-the-linux-kernel 
 - Roch, B. (2004). *Monolithic kernel vs. Microkernel*. https://web.cs.wpi.edu/~cs3013/c12/Papers/Roch_Microkernels.pdf 
-- The Linux Kernel Organization. (2019). *Is Linux Kernel Free Software?*. https://www.kernel.org/category/faq.html
-- Britannica, T. Editors of Encyclopaedia (2023). *Linux*. Encyclopedia Britannica. https://www.britannica.com/technology/Linux
-- Fireship. (2022). *Linux in 100 Seconds* [Video]. YouTube. https://yewtu.be/watch?v=rrB13utjYV4
+- Seagate. (s.f ). *What is NAS*. https://www.seagate.com/blog/what-is-nas-master-ti/
+- SUSE. (s.f.). *Linux Distribution*. https://www.suse.com/suse-defines/definition/linux-distribution/ 
+- The Linux Experiment. (2018). *Linux DISTRIBUTION: explained* [Video]. https://yewtu.be/watch?v=6gqLWTSz6ck
+- The Linux Information Project. (2005). *Flavors of UNIX Definition*. http://www.linfo.org/flavors.html
 - The Linux Information Project. (2006). *What is Linux?*. http://www.linfo.org/newbies.html
 - The Linux Kernel Organization. (2019). *About Linux Kernel*. https://www.kernel.org/linux.html
-- Wheeler, D. (2003). *History of Unix, Linux, and Open Source / Free Software*. https://tldp.org/HOWTO/Secure-Programs-HOWTO/history.html
-- Michael Tunnell. (2023). *Explaining Linux Family Trees: Why Are There So Many Linux Distros?* [Video]. https://yewtu.be/watch?v=kF8CRt05s6A
-
----
-
-<style scoped>{font-size: 21px;}</style>
-
-- The Linux Information Project. (2005). *Flavors of UNIX Definition*. http://www.linfo.org/flavors.html
-- Adekotujo, A., Odumabo, A., Adedokun, A., & Aiyeniko, O. (2020). *A Comparative Study of Operating Systems: Case of Windows, UNIX, Linux, Mac, Android and iOS*. https://www.researchgate.net/profile/Adedoyin-Odumabo/publication/343013056_A_Comparative_Study_of_Operating_Systems_Case_of_Windows_UNIX_Linux_Mac_Android_and_iOS/links/61f2b50a9a753545e2fe8300/A-Comparative-Study-of-Operating-Systems-Case-of-Windows-UNIX-Linux-Mac-Android-and-iOS.pdf
+- The Linux Kernel Organization. (2019). *Is Linux Kernel Free Software?*. https://www.kernel.org/category/faq.html
 - The Open Group. (2008). *The Single UNIX Specification, Version 4*. https://unix.org/version4/overview.html
-- IEEE. (2017). *IEEE Std 1003.1™-2017*. https://pubs.opengroup.org/onlinepubs/9699919799/
-SUSE. (s.f.). *Linux Distribution*. https://www.suse.com/suse-defines/definition/linux-distribution/ 
-- ezeelinux. (2018). *Linux Distributions Deconstructed*. https://www.ezeelinux.com/news/linux-distributions-deconstructed/
-- Linus Torvalds. (1997). *Linux: a Portable Operating System*. https://www.cs.helsinki.fi/u/kutvonen/index_files/linus.pdf
-- freeBSD. (2023). *Explaining BSD*. https://docs.freebsd.org/en/articles/explaining-bsd/
-- intel. (2017). *What is Intel® Management Engine?*. https://www.intel.com/content/www/us/en/support/articles/000008927/software/chipset-software.html
-- coreboot. (2017). *1. AMD Platform Security Processor (PSP) Firmware Integration Guide*. https://doc.coreboot.org/soc/amd/psp_integration.html#platform-security-processor-psp-overview  
-- dayzerosec. (2023). *Reversing the AMD Secure Processor (PSP) - Part 1: Design and Overview*. https://dayzerosec.com/blog/2023/04/17/reversing-the-amd-secure-processor-psp.html
-- The Linux Experiment. (2018). *Linux DISTRIBUTION: explained* [Video]. https://yewtu.be/watch?v=6gqLWTSz6ck
-- linuxfoundation. (2015). *Filesystem Hierarchy Standard*. https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.html
-- creativecommons. (s.f). *About The Licenses*. https://creativecommons.org/licenses/
-- GNU. (s.f). *What is Free Software?*. https://www.gnu.org/philosophy/free-sw.html
-- opensource initiative. (s.f). *OSI Approved Licenses*. https://opensource.org/licenses/
-- Eric Steven Raymond. (2003). *Basics of the Unix Philosophy*. http://www.catb.org/~esr/writings/taoup/html/ch01s06.html
-- NGINX. (s.f). *What Is a Reverse Proxy Server?*. https://www.nginx.com/resources/glossary/reverse-proxy-server/
-- Cloudflare. (s.f.). *What is dynamic DNS (DDNS)?*. https://www.cloudflare.com/learning/dns/glossary/dynamic-dns/
-- David Both. (2014). *The impact of the Linux philosophy*.https://opensource.com/business/14/12/linux-philosophy
+- Westerndigital. (s.f.). *RAID Storage*. https://www.westerndigital.com/solutions/raid
+- Wheeler, D. (2003). *History of Unix, Linux, and Open Source / Free Software*. https://tldp.org/HOWTO/Secure-Programs-HOWTO/history.html
