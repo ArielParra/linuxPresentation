@@ -53,21 +53,33 @@ Fue creado en 1991 por el estudiante de la universidad de Helsinki Linus Torvald
 
 ---
 
+
+
 # 1.3 temas relacionadas
 
 
 # FOSS
 Free and open source software
 
-- creative commons: uso libre pero con atribucion obligatoria
+- creative commons: uso libre pero con atribucion obligatoria, comunmente usados para imagenes, videos y articulos.
 ![CC BY](https://licensebuttons.net/l/by/3.0/88x31.png), ![CC BY-SA](https://licensebuttons.net/l/by-sa/3.0/88x31.png), ![CC BY-ND](https://licensebuttons.net/l/by-nd/3.0/88x31.png), ![CC BY-NC](https://licensebuttons.net/l/by-nc/3.0/88x31.png), ![CC BY-NC-SA](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png) y ![CC BY-NC-ND](https://licensebuttons.net/l/by-nc-nd/3.0/88x31.png)
 - licencias más comunes:
+    - AGPL: similar al GPL pero para servicios en linea
     - Apache: incluya la nota de copyright  
     - BSD: incluya la nota de copyright 
     - GPL: codigo fuente disponible y trabajos deribados con la misma licencia 
     - MIT: incluya la nota de copyright  
 herramienta para elegir una [licencia](https://choosealicense.com/) adecuada
 - Free/libre: la filosofia free tiene relacion con richard stallman y su proyecto GNU, esta se basa en software que respeta la libertad del usuario, libertad de distrubucion, libertad de uso, libertad de estudio, etc. llendo en contra del software privado de codigo cerrado, los binary blobs, las licencias y EULAs no permisivas, los  y el DRM.
+
+---
+
+# 1.4 de que se compone
+
+la filosofia de linux se basa principalmente en la filosofia de UNIX y del opensource, donde linux se diferencia es al darle el control completo al usuario, dandole la libertad de elegir cualquier parte de su sistema operativo.
+el kernel incluye drivers
+jerarquia de archivos
+
 
 ---
 
@@ -101,7 +113,9 @@ estos pueden tener ciertas [ventajas y desventajas](https://serverfault.com/ques
 # minimalismo
 el minimalismo en cuestion de linux, se trata de usar y escribir programas simples siguiendo principios de UNIX y KISS (Keep it simple, stupid!),  dos ideas deribadas del minimalismo son:
 - gnuless: algunos programas de GNU pueden no ser los más eficientes o minimalistas, un video acerca del tema: [Luke Smith: GNU is bloated!](https://yewtu.be/watch?v=nTCHapo8QFM), donde se habla tambien de la pagina [harmfull cat -v](https://harmful.cat-v.org/software/) la cual tiene ideas algo extremas.
-- init freedom: systemd es el init system más usado, pero este no sigue la filosofia de unix ya que systemd no solo es el init ya que tiene muchas otras funcinoes y herramientas, por lo que usar alternativas es recomendado
+- [init freedom](https://www.devuan.org/os/init-freedom): systemd es el init system más usado, pero este no sigue la filosofia de unix ya que systemd no solo es el init, ya que tiene muchas otras [funciones](https://systemd-free.artixlinux.org/why.php) y herramientas, por lo que usar [alternativas](https://without-systemd.org/wiki/index_php/Main_Page/#other_UNIX-like) es [recomendado](https://nosystemd.org/)
+
+donde encontrar software minimalista: [lukesmith](https://lukesmith.xyz/programs/) y [suckless.org](https://suckless.org/rocks/)
 
 ---
 
@@ -126,8 +140,8 @@ te recomiendo esta [guia](https://wiki.archlinux.org/title/security) de segurida
 # customizacion (ricing)
 
 solo mira [r/unixporn](https://reddit.com/r/unixporn/)
-[dotfiles](https://wiki.archlinux.org/title/Dotfiles) son los archivos que van en la carpeta de usuario y tienen las configuraciones de los programas que se van a costumizar
-tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https://archcraft.io/gallery.html)
+[dotfiles](https://wiki.archlinux.org/title/Dotfiles) son los archivos que van en la carpeta de usuario y tienen las configuraciones de los programas que se van a costumizar, usualmente son y tambien recomiendo que esten respaldados con un servidor de git
+tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https://archcraft.io/gallery.html), o scripts de la comunidad como [LARBS](https://larbs.xyz/)
 
 ---
 
@@ -170,7 +184,6 @@ tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 - problemas al compartir pantalla con audio en [discord](https://wiki.archlinux.org/title/Discord#Screen_sharing_with_audio) y [MS Teams](https://answers.microsoft.com/en-us/msteams/forum/all/sharing-system-sound-in-teams-for-linux/f1c70d83-e9bd-41b4-abde-d78fae764d5c)
 - el driver para nvidia nouveau tiene un [peor rendimiento](https://openbenchmarking.org/result/2106300-IB-NOUVEAU2060) que el oficial
 - la capa de compatibilidad con windows wine puede correr [malware](https://wiki.winehq.org/FAQ#Is_Wine_malware-compatible.3F)
-
 
 ---
 
@@ -232,7 +245,6 @@ tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 ## Desarrollador
 - [java updater](https://www.java.com/en/download/help/java_update.html) esta siempre activo en segundo plano
 - ejecuta programas de manera lenta (a tirones) aunque sea pwsh
-- [.NET](https://michaelscodingspot.com/dotnet-dll-hell/) y [dll](https://www.partech.nl/en/publications/2022/03/what-is-dll-hell-problem-and-how-to-solve-it) [hell](https://www.baeldung.com/cs/dll-hell-problem)
 - Hyper-V y Windows hypervisor platform solo disponibles para [Windows Pro](https://www.microsoft.com/en-us/windows/compare-windows-10-home-vs-pro)
 - Virtual Machine Platform, Hyper-V, Windows hypervisor platform y WSL2 interfieren con aplicaciones: [dell alienware control](https://www.dell.com/community/Alienware-Desktops/AWCC-OC-Controls-incompatible-with-Virtual-Machine-Platform/m-p/8239494#M60811), [throttle stop](https://www.techpowerup.com/forums/threads/throttlestop-dead-on-windows-11.284102/), etc.
 - los hosts en windows son [read-only](https://superuser.com/questions/958991/windows-10-cant-edit-hosts-file) y modificarlo puede alertar al [antivirus](https://support.microsoft.com/en-au/topic/hosts-file-is-detected-as-malware-in-windows-defender-4320fa8b-0d54-1129-db85-61f095144521)
@@ -338,12 +350,7 @@ una distribucion (distro) de linux es un sistema operativo completo con muchos c
 
 los componentes y caracteristicas que construyen a una distribucion de linux son: 
 - filosofia: KISS, free/libre, utilitarism, bsd feel, unix feel,  etc.
-- licencia: BSD, gnu GPL v2, gnu GPL v3, MIT, etc.
-- uso especifico:
-    - juegos: steamOS, ChimeraOS, popOS, Fedora Games spin, etc.
-    - media: Ubuntu Studio, Fedora Design Suite, etc.
-    - escolar: uaabuntu, edubuntu, Zorin OS 16 Education, etc.
-    - privacidad/seguridad: whonix y/o qubes, tails, etc. 
+- uso: juegos, media, privacidad, seguridad, escolar, etc.
 - Release model : fix, rolling release, lts, bleeding edge
 - Boot Loader: GRUB, Syslinux, LILO, systemd-boot, etc.
 - tipo de kernel: Stable (vanilla), zen, libre, LTS, Realtime, etc.
@@ -381,14 +388,17 @@ los componentes y caracteristicas que construyen a una distribucion de linux son
 
 ---
 
-hay cuatro partes que definen y diferencian a una distribucion de linux son:
-el sistema de arranque (init system [PID 1]), gestor de paquetes (package manager), libreria de c y las core utils, esto se debe a que todo lo demas lo puedes modificar a tu gusto con facilidad.
+hay distrubuciones hechas con un uso especifico estas pueden ser conjuntos de programas y configuraciones que adecuan el sistema a ese uso, aunque sigues teniendo la libertad de modificarlo.
+- juegos: steamOS, ChimeraOS, popOS, Fedora Games spin, etc.
+- media: Ubuntu Studio, Fedora Design Suite, etc.
+- escolar: uaabuntu, edubuntu, Zorin OS 16 Education, etc.
+- privacidad/seguridad: whonix y/o qubes, tails, etc. 
 
-hay dos tipos de distribuciones:
-- independiente: la ventaja de esta es tener otras opciones
-- deribados: los deribados tienen compatibilidad con quien se deribaron y pueden crear una sinergia de distribuciones: debian <-> ubuntu,
+hay dos grandes categorias de distribuciones:
+- independientes: tienen mayormente su propio package manager y repositorio
+- deribados: tienen compatibilidad con quien se deribaron y pueden crear una sinergia de distribuciones: debian <-> ubuntu,
  SUSE <-> openSUSE, RHEL <-> fedora.
- 
+  
  ---
 
 - tipos de distribuciones deribadas:
@@ -397,7 +407,9 @@ hay dos tipos de distribuciones:
     - fork: hacen cambios grandes, cambiando el uso, filosofia, etc.
     - clone/repackage: copian el codigo y tienen otra infrestructura para la distribucion, por ejemplo para RHEL hay repackages como Rocky linux, Oracle Linux, etc.
 
-han exisistido muchisimas [distribuciones](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg) a lo largo del tiempo, pero los que yo recomiendo o creo que son más relevantes son:
+hay muchisimas [distribuciones](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg) para elegir, pero hay cuatro componentes principales que diferencian a una distrubucion de linux, estos son: el sistema de arranque (init system [PID 1]), gestor de paquetes (package manager), la libreria de c y las core utils. Con esto en mente yo recomiendo o pienso que son relevantes las siguientes distribuciones:
+
+
 
 ---
 
@@ -432,7 +444,7 @@ han exisistido muchisimas [distribuciones](https://upload.wikimedia.org/wikipedi
 
 <style scoped>table {font-size: 25px; text-align: center }</style>
 
-## deribadas
+## deribados
 
 | Logo                          | distribucion                          | init               | basado en   | libreria c | core utils  |  
 |-------------------------------|---------------------------------------|--------------------|-------------|------------|-------------|
@@ -454,7 +466,7 @@ han exisistido muchisimas [distribuciones](https://upload.wikimedia.org/wikipedi
 | ![h:50px](logos/PopOS.png)     |[PopOS](https://pop.system76.com/)      | systemd            | ubuntu/debian | glibc      | gnu         |
 | ![h:50px](logos/mint.png)      |[Mint](https://linuxmint.com/)          | systemd            | ubuntu/debian | glibc      | gnu         |
 | ![h:50px](logos/elementary.png)|[elementary](https://elementary.io/)    | systemd            | ubuntu/debian | glibc      | gnu         |
-| ![h:50px](logos/zorin.png)|[zorin](https://zorin.com/os/)    | systemd            | ubuntu/debian | glibc      | gnu         |
+| ![h:50px](logos/zorin.png)     |[zorin](https://zorin.com/os/)          | systemd            | ubuntu/debian | glibc      | gnu         |
 
 ---
 
@@ -469,36 +481,130 @@ han exisistido muchisimas [distribuciones](https://upload.wikimedia.org/wikipedi
 | ![w:300px](logos/PureOS.png)  | [PureOs](https://pureos.net/)           | systemd            | debian        | apt         | glibc      | gnu         | 
 | ![h:50px](logos/trisquel.png) | [trsiquel](https://trisquel.info/)      | systemd            | ubuntu/debian | apt         | glibc      | gnu         | 
 
+
+# commandos 
+categorize los comandos que más creo importantes y los marcare con tres letras siendo G de "GNU core utils", U de "Util-linux" y N de "No standard, pero usual":
+
+archivos:
+cd
+touch
+mv
+cp
+rm
+
+read/edit files:
+cat
+less
+head
+tail
+file
+vi
+
+directorio:
+pwd
+ls
+mkdir
+rmdir 
+
+procesos:
+daemon manager: systemctl, sv, etc.
+ps ax
+pstree
+kill
+pkill
+top
+
+encontrar cosas:
+find
+grep
+history
+env
+locate
+
+almacenamiento:
+df
+cfdisk
+fdisk
+dd
+mount
+umount
+fsck
+lsblk
+blkid
+
+networking:
+network manager/c
+ip a
+ping
+route
+nslookup
+tracerout
+ssh
+scp
+wget
+curl
+git
+
+sys info:
+neofetch, pfetch
+uname
+wheris
+whoami
+uptime
+watch
+date
+hostname
+free
+lscpi
+lsusb
+xinput
+dmidecode
+lsof
+
+
+extra:
+man
+echo
+exit
+sudo
+doas
+su
+!$numero
+!!
+
 ---
 
-# que conforma linux
-unix filosofy
-todos son archivos
-sistema jerarquia 
-componentes
+>
+`> /dev/null 2>&1`
+>>
+diff
+wc
+ctrl c = cancelar
+export $VAR
+alias
 
-# linux commands (gnu core utils)
+gpg sha256
 
-https://wiki.archlinux.org/title/core_utilities 
-gnu core utils https://wiki.debian.org/coreutils + util-linux   https://en.wikipedia.org/wiki/Util-linux
+---
+
+más informacion de comandos, [arch wiki](https://wiki.archlinux.org/title/core_utilities), gnu core utils de [debian](https://wiki.debian.org/coreutils)
+util-linux   https://en.wikipedia.org/wiki/Util-linux
+
 busybox https://busybox.net/downloads/BusyBox.html
 
 posix https://en.wikipedia.org/wiki/Category:Unix_SUS2008_utilities
 
-# aplicaciones 
+# aplicaciones
 
-aplicacion y dependencias
+con la filosofia de linux de usar programas interconectados, las aplicaciones suelen tener dependencias para poder funcionar, esto puede producir problemas de compatibilidad si la aplicacion o la dependencia esta desactualizada, para solucionar este problema se han creado formatos de paquetes que son portables, donde la aplicacion es distribuida junto con la dependencia, esto puede ocacionar tamaños de aplicaciones más grandes, a costa de "estabilidad", los tres grandes distribuidores de aplicaciones portables son: [AppImage](https://appimage.org/), [flatpak](https://flatpak.org/) y [Snapcraft](https://snapcraft.io/)
 
-portables:
-app image, snap, flatpak
+---
 
-aplicaiones recomendadas:
-IDE: vscodium
-editor de texto: vim
-navegador: librewolf + arkenfox user.js o ungoogled-chromium
-extensiones de navegador: uBlock origin, bitwarden, libRedirect, decentraleyes.
+# recomendaciones 
+editor de texto/codigo: vim y vscodium
+navegador: librewolf/firefox + Arkenfox.js o ungoogled-chromium
+extensiones de navegador: uBlock origin, bitwarden, libRedirect y decentraleyes.
 motor de busqueda: searXNG 
-torrents: qbitorrent-enhanced
 terminal: alacritty o st
 monitor de recursos: btop
 visualizador de imagenes: feh
@@ -537,9 +643,9 @@ hardware y computadoras sin binarios o software propietario:
 las distribuciones [más usadas](https://w3techs.com/technologies/details/os-linux) en servidores son las basdas en debian como: ubuntu server y debian o las empresariales como: RHEL y SLES, aunque tambien se usa Proxmox para VMs 
 
 hardware para servidores caseros:
-SBC: las recomendadas por la [FSF](https://www.fsf.org/resources/hw/single-board-computers) son Rockchip, FreeScale y Allwinner
+arm SBC: las recomendadas por la [FSF](https://www.fsf.org/resources/hw/single-board-computers) son Rockchip, FreeScale y Allwinner
 yo recomiendo: orange Pi 5 Plus, orange pi 5, ROCKPro64 y Quartz64 Model A
-de x86: zimaboard, Fujitsu Futro ThinClient, Dell OptiPlex
+de x86: zimaboard, Fujitsu Futro ThinClient, Dell OptiPlex, HP elitedesk (800), etc.
 
 ventajas: precios accesibles, usan muy poca electricidad, buen rendimiento, opcion de hacer clusters, 
 
@@ -556,7 +662,7 @@ conteiners: docker, porteiner, conteinerd
 pagina web sin servidor ni dominio: [Github Pages](https://pages.github.com/), [neocities](https://neocities.org/), [etc.](https://www.geeksforgeeks.org/7-best-sites-for-free-web-hosting/)
 
 
-DDNS: es bla bla
+DDNS: ya en referncias
 cloudflare ddns, duckDNS, freeDNS.
 
 dominios gratis por un año c/u con GitHub Student Developer Pack:
@@ -564,11 +670,11 @@ dominios gratis por un año c/u con GitHub Student Developer Pack:
 
 certificados SSL: lets encrypt
 
-reverse proxy: es bla bla
+reverse proxy: es bla bla ya en referencias
 cloudflare tunnels, [Nginx Proxy Manager](nginxproxymanager.com)
 
 proyectos web:
-pagina web, vaultwarden, nextcloud, photoprism, searxng, [etc](https://landchad.net/).
+pagina web, vaultwarden, nextcloud, photoprism, searxng, vpn, [etc](https://landchad.net/).
 
 ---
 
@@ -636,4 +742,5 @@ SUSE. (s.f.). *Linux Distribution*. https://www.suse.com/suse-defines/definition
 - opensource initiative. (s.f). *OSI Approved Licenses*. https://opensource.org/licenses/
 - Eric Steven Raymond. (2003). *Basics of the Unix Philosophy*. http://www.catb.org/~esr/writings/taoup/html/ch01s06.html
 - NGINX. (s.f). *What Is a Reverse Proxy Server?*. https://www.nginx.com/resources/glossary/reverse-proxy-server/
-*What is dynamic DNS (DDNS)?*. https://www.cloudflare.com/learning/dns/glossary/dynamic-dns/
+- Cloudflare. (s.f.). *What is dynamic DNS (DDNS)?*. https://www.cloudflare.com/learning/dns/glossary/dynamic-dns/
+- David Both. (2014). *The impact of the Linux philosophy*.https://opensource.com/business/14/12/linux-philosophy
