@@ -1,51 +1,15 @@
 ---
 marp: true
 title: linux rabit hole
-theme: default
+theme: nord
 paginate: true
 ---
+<style>{text-align: justify}</style>
 
 ![bg opacity](rabithole.png)
 # <!--fit--> linux rabit hole
 ## curso completo de linux y los temas que lo rodean
 ### por Ariel Parra
-
----
-
-# Contenidos
-<style scoped>
-ol{columns: 3; font-size: 20px }
-</style>
-1. ¿Qué es linux?
-1.1 Definición
-1.2 Historia
-1.3 Filosofia de linux
-1.4 Linux Filesystem Hierarchy Standard
-1.5 las capas de linux
-2. temas relacionadas
-2.1 UNIX
-2.2 FOSS
-2.3 BSD
-2.4 Privacidad
-2.5 Seguridad
-2.6 Minimalismo
-2.7 Ricing
-3. Comparación de Sistemas operativos
-3.1 Ventajas de linux
-3.2 Más referencias de las ventajas de linux
-3.3 Desventajas de linux
-3.4 Ventajs de MacOs
-3.5 Desventajas de MacOS
-3.6 Recomendaciones al usar MacOS
-3.7 Ventajas de Windows
-3.8 Desventajas de Windows
-3.9 Más referencias de las desventajas de Windows
-3.10 Recomendaciones al usar Windows
-4. Distribuciones de linux
-
-
-
-
 
 ---
 
@@ -72,7 +36,7 @@ Fue creado en 1991 por el estudiante de la universidad de Helsinki Linus Torvald
 
 # 1.3 Filosofia de linux
 
-la filosofia de linux se basa principalmente en la filosofia de UNIX y del opensource, donde linux se diferencia es al darle control completo al usuario, dandole la libertad de elegir, estudiar y modificar cualquier parte de su sistema operativo.
+la filosofia de linux se basa principalmente en la filosofia de UNIX y del opensource, donde linux se diferencia es al darle control completo al usuario, dandole la libertad de elegir, estudiar, modificar y distribuir cualquier parte de su sistema operativo.
 El kernel de linux en si no tiene blobs binarios sino que estos son distribuidos en el linux-firmware, esto sirve para inicializar el hardware y los drivers.
 Linux tiene estandares como el LSB (Linux Standard Base) que define system interfaces, librarias, and runtimes de donde las librerias y aplicaciones dependen
 se suele usar el Filesystem Hierarchy Standard de linux
@@ -90,15 +54,15 @@ se suele usar el Filesystem Hierarchy Standard de linux
 
 # 1.5 las capas de linux
 
-<style scoped>img {display: block; margin-left: auto;margin-right: auto;}; body {font-size: 100px }</style>
+<style scoped>img {display: block; margin-left: auto;margin-right: auto;};</style>
 
-![](./kernel-user_space.png)
+![h:575px](./kernel-user_space.png)
 
-Imagen recuperada de https://en.wikipedia.org/wiki/Template%3ALinux_layers
+Imagen recuperada de [wikipedia](https://en.wikipedia.org/wiki/Template%3ALinux_layers)
 
 ---
 
-# 2. temas relacionadas
+# **2. temas relacionadas**
 
 ---
 
@@ -107,23 +71,26 @@ UNIX es un sistema operativo creado a principios de los 70s en AT&T por Dennis R
 - POSIX: "Portable Operating System Interface", son una serie de standares de uso impuestos por el IEEE (Institute of Electrical and Electronics Engineers) que incluye el I/O, la terminal, comandos y redes.
 - Single UNIX Specification: es un estandard para sistemas operativos para usar el tredemark de UNIX, con interfaces para el lenguaje C, el shell y comandos.
 - UNIX filosofy (Doug McIlroy):
-Escribe programas que hagan una cosa muy bien, que trabajen juntos (input de uno es el output de otro y *que manejen streams (serie de bytes para I/O), porque son  una interfaz universal.
+Escribe programas que hagan una cosa muy bien, que trabajen juntos (input de uno es el output de otro) y *que manejen streams (serie de bytes para I/O), porque son  una interfaz universal.
 - todo son archivos, los dispositivos, teclados, discos duros, etc. estos son manejados con streams y almacenados en la carpeta /dev 
 
 ---
 
 # 2.2 FOSS
-Free and open source software
 
-- creative commons: uso libre pero con atribucion obligatoria, comunmente usados para imagenes, videos y articulos.
-![CC BY](https://licensebuttons.net/l/by/3.0/88x31.png), ![CC BY-SA](https://licensebuttons.net/l/by-sa/3.0/88x31.png), ![CC BY-ND](https://licensebuttons.net/l/by-nd/3.0/88x31.png), ![CC BY-NC](https://licensebuttons.net/l/by-nc/3.0/88x31.png), ![CC BY-NC-SA](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png) y ![CC BY-NC-ND](https://licensebuttons.net/l/by-nc-nd/3.0/88x31.png)
-- licencias más comunes:
-    - AGPL: similar al GPL pero para servicios en linea
-    - Apache: incluya la nota de copyright  
-    - BSD: incluya la nota de copyright 
-    - GPL: codigo fuente disponible y trabajos deribados con la misma licencia 
-    - MIT: incluya la nota de copyright  
-herramienta para elegir una [licencia](https://choosealicense.com/) adecuada
+Free and open source software, es software que tiene codigo abierto, donde uno es libre de estudiar, modificar, aunque la distribucion depende de las licencias. 
+
+
+# 2.2.1 licencias open source más comunes
+- [creative commons:](https://creativecommons.org/licenses/) uso libre pero con atribucion obligatoria, comunmente usados para imagenes, videos y articulos. ![CC BY](https://licensebuttons.net/l/by/3.0/88x31.png), ![CC BY-SA](https://licensebuttons.net/l/by-sa/3.0/88x31.png), ![CC BY-ND](https://licensebuttons.net/l/by-nd/3.0/88x31.png), ![CC BY-NC](https://licensebuttons.net/l/by-nc/3.0/88x31.png), ![CC BY-NC-SA](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png) y ![CC BY-NC-ND](https://licensebuttons.net/l/by-nc-nd/3.0/88x31.png)
+- [AGPL:](https://www.gnu.org/licenses/agpl-3.0.en.html) similar al GPL pero para servicios en linea
+- [Apache](https://www.apache.org/licenses/LICENSE-2.0): incluir la nota de copyright  
+- BSD [2](https://opensource.org/license/bsd-2-clause/)/[3](https://opensource.org/license/bsd-3-clause/): incluir la nota de copyright 
+- GPL [v2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)/[v3](https://www.gnu.org/licenses/gpl-3.0.html): codigo fuente disponible y trabajos deribados con la misma licencia 
+- [MIT](https://opensource.org/license/mit/): incluya la nota de copyright  
+
+---
+
 - Free/libre: la filosofia free tiene relacion con richard stallman y su proyecto GNU, esta se basa en software que respeta la libertad del usuario, libertad de distrubucion, libertad de uso, libertad de estudio, etc. llendo en contra del software privado de codigo cerrado, los binary blobs, las licencias y EULAs no permisivas, los  y el DRM.
 
 ---
@@ -162,25 +129,24 @@ te recomiendo esta [guia](https://wiki.archlinux.org/title/security) de segurida
 ---
 
 # 2.6 Minimalismo
-el minimalismo en cuestion de linux, se trata de usar y escribir programas simples siguiendo principios de UNIX y KISS (Keep it simple, stupid!),  dos ideas deribadas del minimalismo son:
-- gnuless: algunos programas de GNU pueden no ser los más eficientes o minimalistas, un video acerca del tema: [Luke Smith: GNU is bloated!](https://yewtu.be/watch?v=nTCHapo8QFM), donde se habla tambien de la pagina [harmfull cat -v](https://harmful.cat-v.org/software/) la cual tiene ideas algo extremas.
+el minimalismo en cuestion de linux, se trata de usar y escribir programas simples siguiendo principios de UNIX y KISS,  dos ideas deribadas del minimalismo son:
+- gnuless: algunos programas de GNU pueden no ser los más eficientes o minimalistas, un video acerca del tema: [Luke Smith: GNU is bloated!](https://yewtu.be/watch?v=nTCHapo8QFM), donde se habla tambien de la pagina [harmfull cat -v](https://harmful.cat-v.org/software/) la cual tiene ideas extremas al respecto.
 - [init freedom](https://www.devuan.org/os/init-freedom): systemd es el init system más usado, pero este no sigue la filosofia de unix ya que systemd no solo es el init, ya que tiene muchas otras [funciones](https://systemd-free.artixlinux.org/why.php) y herramientas, por lo que usar [alternativas](https://without-systemd.org/wiki/index_php/Main_Page/#other_UNIX-like) es [recomendado](https://nosystemd.org/)
 
-donde encontrar software minimalista: [lukesmith](https://lukesmith.xyz/programs/) y [suckless.org](https://suckless.org/rocks/)
+Paginas que recomiendan software minimalista: [lukesmith](https://lukesmith.xyz/programs/) y [suckless.org](https://suckless.org/rocks/)
 
 ---
 
 
 # 2.7 Ricing (customizacion)
 
-solo mira [r/unixporn](https://reddit.com/r/unixporn/)
-se suelen usar paletas de colores como [nord](https://www.nordtheme.com/) o [Catppuccin](https://github.com/catppuccin/palette)
-[dotfiles](https://wiki.archlinux.org/title/Dotfiles) son los archivos que van en la carpeta de usuario y tienen las configuraciones de los programas que se van a costumizar, usualmente son y tambien recomiendo que esten respaldados con un servidor de git
-tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https://archcraft.io/gallery.html), o scripts de la comunidad como [LARBS](https://larbs.xyz/)
+Como linux te permite modificar el sistema, puedes configurarlo a todos tus gustos artisticos, se suelen usar paletas de colores como [nord](https://www.nordtheme.com/) o [Catppuccin](https://github.com/catppuccin/palette).
+Uno de los mejores lugares para ver, aprender y compartir rices es  [r/unixporn](https://reddit.com/r/unixporn/), donde los usuarios comparten [dotfiles](https://wiki.archlinux.org/title/Dotfiles) que son los archivos que van en la carpeta de usuario y tienen las configuraciones de los programas que se van a costumizar, usualmente son respaldados en un servidor de git.
+Tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https://archcraft.io/gallery.html) o puedes usar scripts de la comunidad como [LARBS.](https://larbs.xyz/)
 
 ---
 
-# 3. Comparación de Sistemas operativos
+# **3. Comparación de Sistemas operativos**
 
 ---
 
@@ -282,7 +248,7 @@ tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 
 ---
 
-## Desarrollador
+## 3.8.1 Desarrollador
 - [java updater](https://www.java.com/en/download/help/java_update.html) esta siempre activo en segundo plano
 - ejecuta programas de manera lenta (a tirones) aunque sea pwsh
 - Hyper-V y Windows hypervisor platform solo disponibles para [Windows Pro](https://www.microsoft.com/en-us/windows/compare-windows-10-home-vs-pro)
@@ -295,7 +261,7 @@ tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 
 ---
 
-## 3.8.1 Uso general
+## 3.8.2 Uso general
 - las apps por defecto se actualizan individualmente ya sea abriendo la aplicación o teniendo que descargar la nueva version de la pagina del creador
 - para usar winget ocupas una cuenta microsoft para descargar [App-Installer](https://apps.microsoft.com/store/detail/appinstaller/9NBLGGH4NNS1?hl=de-at&gl=at&rtc=1) de la microsoft store y para usarlo ocupas constantemente aceptar los [UAC](https://learn.microsoft.com/en-us/windows/package-manager/winget/) prompts, aparte de acepatar la [CLA](https://opensource.microsoft.com/cla/) 
 - no puedes nombrar archivos con ciertos [nombres](https://yewtu.be/watch?v=bC6tngl0PTI)
@@ -323,7 +289,7 @@ tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 
 ---
 
-## 3.8.2 hardware
+## 3.8.3 hardware
 - Device encryption ocupa hardware [moderno](https://www.microsoft.com/en-us/windows/compare-windows-10-home-vs-pro) ([InstantGo](https://blogs.windows.com/windowsexperience/2014/06/19/instantgo-a-better-way-to-sleep/#RXGeiruxOD7f3V0q.97)/[AOAC](https://www.microsoft.com/en-us/store/b/alwaysconnectedfaq)/[HSTI-compliant](https://learn.microsoft.com/en-us/windows-hardware/test/hlk/testref/hardware-security-testability-specification)), basicamente de 2014 en adelante.
 - los [requisitos](https://www.microsoft.com/en-us/windows/windows-11-specifications) de Windows 11, procesador de 64 bits, UEFI, TPM v2.0 y una grafica compatible con DirectX12.
 - los discos duros con ntfs tienen que [defragmentarse](https://learn.microsoft.com/en-us/previous-versions/cc767961(v=technet.10))
@@ -331,7 +297,7 @@ tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 - no suele haber drivers opensource
 
 
-## 3.8.3 juegos
+## 3.8.4 juegos
 - descargas [muchas versiones](https://www.howtogeek.com/256245/why-are-there-so-many-microsoft-visual-c-redistributables-installed-on-my-pc/) de microsoft visual c++ redistributable por juego
 - los juegos de la microsoft store (xbox app) suelen correr [peor](https://old.reddit.com/r/techsupport/comments/v4nhaf/so_ive_been_wondering_if_its_just_me_or_windows/) o dar [input lag](https://www.reddit.com/r/roblox/comments/oahvsf/roblox_player_vs_microsoft_store_app_input_lag/)
 - no puedes acceder a las [carpetas](https://www.makeuseof.com/windows-access-windowsapps-folder/) de juegos de la microsoft store (xbox app) aun siendo administrador
@@ -339,7 +305,7 @@ tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 
 ---
 
-## 3.8.4 privacidad
+## 3.8.5 privacidad
 - opciones anti privacidad activados por [defecto](https://learn.microsoft.com/es-es/intune-education/media/rs5_choose_settings.png)
 - windows [phone home](https://yewtu.be/watch?v=IT4vDfA_4NI).
 - windows esta implicacdo con la [NSA](http://techrights.org/wiki/index.php/Microsoft_and_the_NSA) y [PRISM](https://en.wikipedia.org/wiki/PRISM)
@@ -366,8 +332,8 @@ tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 # 3.10 Recomendaciones al usar windows
 - usa windows 10 sin iniciar sesion en una cuenta de microsoft
 - descarga apps de la ms store con https://store.rg-adguard.net/
-- usa windows  en una vm  con NAT activado
-- si usas windows en una vm usa [WinApps](https://github.com/Fmstrat/winapps)
+- usa [PowerToys](https://github.com/microsoft/PowerToys) para mejorar la experiencia de uso
+- si usas windows en una vm con NAT usa [WinApps](https://github.com/Fmstrat/winapps)
 - si usas una grafica nvidia, instala drivers sin telemetria con [nvcleanstall](https://www.techpowerup.com/download/techpowerup-nvcleanstall/) 
 - si es para jugar, preinstala todos los Visual C++ desde [techpowerup](https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/)
 - usa [Chris Titus Tech's Windows Utility](https://github.com/ChrisTitusTech/winutil) para desactivar facilemente telemetria o tambien para activar UTC si se usa windows en dual-boot
@@ -379,15 +345,15 @@ tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 
 ---
 
-# 4. Distribuciones de linux
+# **4. Distribuciones de linux**
 
 ---
 
-# ¿Qué es?
-una distribucion (distro) de linux es un sistema operativo completo con muchos componentes opensource.
+# 4.1 ¿Qué es una distribucion de linux?
+una distribucion (distro) de linux es un sistema operativo completo con muchos componentes opensource, utilidades e interfaces.
 
 ---
-
+# 4.2 ¿Qué compone una distrubucion de linux?
 los componentes y caracteristicas que construyen a una distribucion de linux son: 
 - filosofia: KISS/minimalismo, free/libre, bsd userspace, compilación, etc.
 - uso: juegos, media, privacidad, seguridad, escolar, etc.
@@ -408,9 +374,9 @@ los componentes y caracteristicas que construyen a una distribucion de linux son
 - login/display manager: ssdm (KDE), GDM (GNOME), LightDM, etc.
 - window manager: dwm, sway, i3, xmonad, etc.    
 - Desktop environment: Gnome, Plasma, xfce4, etc. 
-- Graphics Toolkits: GTK+ , Qt.
+- Graphics Toolkits: GTK+ , Qt, etc.
 - gestor de paquetes (package manager): apt, DNF, pacman, portage, yay, etc.
-- formato de paquetes: deb, RPM, .pkg.tar.zst, source code, install scripts, etc.
+- formato de paquetes: .deb, .rpm, .pkg.tar.zst, source code, install scripts, etc.
 
 ---
 
@@ -419,16 +385,18 @@ los componentes y caracteristicas que construyen a una distribucion de linux son
     - terminal (CLI/TUI):
         - editor de textos: nano, vim, neovim, emacs, etc.
         - informacion: neofetch, htop, etc.
-        -
+        - etc.
     - graficas (GUI):
         - navegador: firefox, chromium, etc.
         - Office Suite: libreoffice, onlyoffice, Calligra etc.
         - emulador de terminal: konsole, gnome-terminal, alacritty, kitty, st, etc. 
-        - editor de textos: vscodium, gvim, etc.
+        - editor de textos: kate, Gnome text editor, gvim, etc.
         - explorador de archivos: nautilus (gnome), dolphin (KDE)
         - visualizador de imagenes: feh, gwenviwer, etc.
-
+        - etc.
 ---
+
+# 4.3 Categorias de las distribuciones
 
 hay distrubuciones hechas con un uso especifico estas pueden ser conjuntos de programas y configuraciones que adecuan el sistema a ese uso, aunque sigues teniendo la libertad de modificarlo.
 - juegos: steamOS, ChimeraOS, popOS, Fedora Games spin, etc.
@@ -449,19 +417,17 @@ hay dos grandes categorias de distribuciones:
     - fork: hacen cambios grandes, cambiando el uso, filosofia, etc.
     - clone/repackage: copian el codigo y tienen otra infrestructura para la distribucion, por ejemplo para RHEL hay repackages como Rocky linux, Oracle Linux, etc.
 
-hay muchisimas [distribuciones](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg) para elegir, pero hay cuatro componentes principales que diferencian a una distrubucion de linux, estos son: el sistema de arranque (init system [PID 1]), gestor de paquetes (package manager), la libreria de c y las core utils. Con esto en mente yo recomiendo o pienso que son relevantes las siguientes distribuciones:
-
-
+hay muchisimas [distribuciones](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg) para elegir, pero hay cuatro componentes principales que diferencian a una distrubucion de linux, estos son: el sistema de arranque (init system/daemon), gestor de paquetes (package manager), la libreria de c y las core utils. Con esto en mente yo recomiendo o pienso que son relevantes las siguientes distribuciones:
 
 ---
 
 <style scoped>table {font-size: 25px; text-align: center }</style>
 
-## independentes 
+## 4.3.1 Distribuciones independentes 
 
 | Logo                           | distribucion                                                                   | init           | pkg manager | libreria c | core utils  |  
 |--------------------------------|--------------------------------------------------------------------------------|----------------|-------------|------------|-------------|
-| ![h:50](logos/alpine.png)      | [alpine](https://alpinelinux.org/)                                             | openrc         | apk         | musl       | busybox     |
+| ![h:50px](logos/alpine.png)      | [alpine](https://alpinelinux.org/)                                             | openrc         | apk         | musl       | busybox     |
 | ![h:50px](logos/arch.png)      | [arch](https://archlinux.org/)                                                 | systemd        | pacman      | glibc      | gnu         |
 | ![h:50px](logos/debian.png)    | [debian](https://www.debian.org/)                                              | systemd        | apt (dpkg)  | glibc      | gnu         |
 | ![h:50px](logos/slackware.png) | [slackware](http://www.slackware.com/)                                         | sysVinit       | slackpkg    | glibc      | gnu         |
@@ -486,7 +452,7 @@ hay muchisimas [distribuciones](https://upload.wikimedia.org/wikipedia/commons/1
 
 <style scoped>table {font-size: 25px; text-align: center }</style>
 
-## deribados
+## 4.3.2 Distribuciones Deribadas 
 
 | Logo                          | distribucion                          | init               | basado en   | libreria c | core utils  |  
 |-------------------------------|---------------------------------------|--------------------|-------------|------------|-------------|
@@ -514,7 +480,7 @@ hay muchisimas [distribuciones](https://upload.wikimedia.org/wikipedia/commons/1
 
 <style scoped>table {font-size: 25px; text-align: center }</style>
 
-# Recomendadas por la FSF (linux-libre kernel)
+## 4.3.3 Recomendadas por la FSF (linux-libre kernel)
 | Logo                          | distribucion                            | init               | basado en     | pkg manager | libreria c | core utils  |  
 |-------------------------------|-----------------------------------------|--------------------|---------------|-------------|------------|-------------|
 | ![h:50px](logos/parabola.png) | [parabola](https://www.parabola.nu/)    | systemd/OpenRC/etc.| arch          | pacman      | glibc      | gnu         |
@@ -525,15 +491,16 @@ hay muchisimas [distribuciones](https://upload.wikimedia.org/wikipedia/commons/1
 
 ---
 
-# commandos 
-categorize los comandos que más creo importantes en su funcion y los marcare con seis letras mayusculas siendo C de "GNU core utils", U de "Util-linux", G de "GNU Software", P de "procps", I de "iproute2 o iputils",  S de "SHELL" y O de "Otros comunes".
-en el uso l
+# **5. Comandos**
+
+A las aplicaciones CLI/TUI y utilidades de terminal  se les llama comandos, estos como en las funciones de programacion, tienen argumentos y/o parametros con los que se usan, siendo los argumentos los archivos o directerios usados y los parametros las opciones del comando.
+Categorize los comandos que creo más importantes en su funcion y los marque en funcion del conjunto de utilidades con seis letras mayusculas siendo C de "GNU core utils", U de "Util-linux", G de "GNU Software", P de "procps", I de "iproute2 o iputils", <br> S de "SHELL" y O de "Otros comunes".
 
 ---
 
 <style scoped>table{font-size: 25px;}</style>
 
-# navegacion de archivos
+# 5.1 Comandosde navegacion de archivos
 |comando    |  uso | comando  |uso
 |-----------|------|----------|---------
 |(C) touch  | touch <archivo>   |(O) unzip|      |
@@ -547,7 +514,7 @@ en el uso l
 
 ---
 
-# lecto-escritura de archivos 
+# 5.2 Comandos de Lecto-escritura de archivos 
 
 |comando     |  uso    | comando | uso
 |------------|---------|---------|---------
@@ -558,7 +525,7 @@ en el uso l
 
 ---
 
-# procesos
+# 5.3 Comandos acerca de procesos
 
 |comando     | uso  | comando    | uso
 |------------|------|------------|----
@@ -570,86 +537,89 @@ en el uso l
 
 ---
 
-# encontrar cosas
+# 5.4 Comandos para encontrar cosas
 
-|(G) find
-|(G) grep | busca patrones
-|(S) history
-|(C) env 
-|(O) locate 
-
----
-
-# almacenamiento
-
-|(C) df
-|(C) du 
-|(C) dd 
-|(U) fdisk 
-|(G) cfdisk 
-|(U) mount 
-|(U) umount
-|(U) fschk
-|(U) lsblk
-|(U) blkid
+|comando     | uso  
+|------------|------
+|(G) find    |
+|(G) grep    | busca patrones
+|(S) history |
+|(C) env     |
+|(O) locate  |
 
 ---
 
-# networking
+# 5.5 Comandos de almacenamiento
 
-|(I) ip address
-|(I) ip route
-|(I) ping
-|(I) tracerout
-|(U) rfkill 
-|(O) ssh
-|(O) scp
-|(O) wget
-|(O) curl 
-|(O) git 
+|comando    | uso|comando    | uso       
+|-----------|----|-----------|-------
+|(C) df     |    |(U) mount  |
+|(C) du     |    |(U) umount |
+|(C) dd     |    |(U) fschk  |
+|(U) fdisk  |    |(U) lsblk  |
+|(G) cfdisk |    |(U) blkid  |
 
 ---
 
-# sys info
+# 5.6 Comandos de redes
 
-|(U) dmesg
-|(O) neofetch
-|(C) uname 
-|(U) wheris |locate binaries
-|(O) which |full path of commands
-|(C) whoami
-|(C) uptime
-|(G) time 
-|(G) date
-|(C) hostname
-|(P) free 
-|(O) lscpi
-|(O) lsusb
-|(U) lscpu
-|(O) xinput 
-|(S) export
+|comando | uso        | antiguas net-tools, etc. | 
+|--------|------------|--------------------------|
+|(I) ip  | ip address | ifconfig                 |
+|(I) ip  | ip link    | ifconfig                 |          
+|(I) ip  | ip route   | route, netstat           |
+|(I) ip  | ip neight  | arp                      |
+|(I) ss  |            | netstat                  |
 
 ---
 
-# extras
-
-|(O) man | manual
-|(O) whatis 1 line manual
-|(C) echo |
-|(S) exit 
-|(C) printf 
-|(O) sudo 
-|(U) su 
-|(C) wc 
-|(G) diff 
-|(O) xclip -sel clip
-|(G) gpg 
-|(C) cksum 
-
+|comando       | uso|comando    | uso       
+|--------------|----|-----------|-------
+|(I) tracerout |    |(O) wget   |
+|(I) ping      |    |(O) curl   |
+|(O) ssh       |    |(O) git    |
+|(O) scp       |    |(U) rfkill |
 
 ---
 
-# shell specific
+# 5.7 Comandos de informacion del sistema
+
+|comando      | uso|comando    | uso       
+|-------------|----|-----------|-------
+|(U) dmesg    |    |(O) which  |
+|(O) neofetch |    |(C) whoami |
+|(C) uname    |    |(C) uptime |
+|(U) wheris   |    |(G) time   |
+
+---
+
+|comando       | uso|comando    | uso       
+|--------------|----|-----------|-------
+|(G) date      |    |(O) lsusb
+|(C) hostname  |    |(U) lscpu
+|(P) free      |    |(O) xinput 
+|(O) lscpi     |    |(S) export
+ 
+
+---
+
+# 5.8 Comandos extras
+|comando    | uso|comando   | uso       
+|-----------|----|----------|-------
+|(O) man    |    |(U) su    |
+|(O) whatis |    |(C) wc    |
+|(C) echo   |    |(G) diff  |
+|(S) exit   |    |(O) xclip | xclip -sel clip
+|(C) printf |    |(G) gpg   |
+|(O) sudo   |    |(C) cksum |
+
+---
+
+# **6. Funciones especificas**
+
+---
+
+# 6.1 Funciones de shell 
 
 | *  |wildcars
 | =  | definir variables
@@ -668,50 +638,52 @@ en el uso l
 
 <style scoped>img {position: absolute;top: 50%;left: 80%;transform: translate(-50%, -50%);}</style>
 
-# Linux Terminal Shortcuts
+# 6.2 Shortcuts de terminal
 
 ![w:520px](https://linuxhandbook.com/content/images/2022/04/lhb-terminal-shortcut-cheatsheet-1.webp)
 
 ---
 
-# distro
-- wifi: NetworkManager, IWD, ConnMan, wpa_supplicant
-- firewall: iptables, uwd, firewalld
-- package manager: apt, pacman, emerge, etc.
+# 6.3 Funciones especificos de la distro
+- WIFI: NetworkManager, IWD, ConnMan, wpa_supplicant
+- Firewalls: iptables, uwd, firewalld
+- Package Manager: apt, pacman, emerge, etc.
 - init system: poweroff, shutdown, poweroff, halt
-    -daemon management: systemctl, sv, rc-service, etc.
+    - daemon management: systemctl, sv, rc-service, etc.
 - cron jobs: cronie, fcron, dcron, etc.
 
----
-
-más informacion de comandos: [The linux Command Handbook](https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-man-command), [arch wiki](https://wiki.archlinux.org/title/core_utilities), [decoded gnu core utils](https://www.maizure.org/projects/decoded-gnu-coreutils/), [util-linux](https://wiki.gentoo.org/wiki/Util-linux), [procps](https://gitlab.com/procps-ng/procps), [iproute2](https://wiki.linuxfoundation.org/networking/iproute2), [iputils](https://wiki.linuxfoundation.org/networking/iputils).
-
- [busybox](https://busybox.net/downloads/BusyBox.htm), [posix](https://en.wikipedia.org/wiki/Category:Unix_SUS2008_utilities)
-
+más informacion de comandos: [The linux Command Handbook](https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-man-command), [arch wik: core utilities](https://wiki.archlinux.org/title/core_utilities), [decoded gnu core utils](https://www.maizure.org/projects/decoded-gnu-coreutils/), [Gentoo wiki: util-linux](https://wiki.gentoo.org/wiki/Util-linux), [procps](https://gitlab.com/procps-ng/procps), [iproute2](https://wiki.linuxfoundation.org/networking/iproute2), [iputils](https://wiki.linuxfoundation.org/networking/iputils), [net-tools](https://net-tools.sourceforge.io/).
 
 ---
 
-# aplicaciones
-
-con la filosofia de linux de usar programas interconectados, las aplicaciones suelen tener dependencias para poder funcionar, esto puede producir problemas de compatibilidad si la aplicacion o la dependencia esta desactualizada, para solucionar este problema se han creado formatos de paquetes que son portables, donde la aplicacion es distribuida junto con la dependencia, esto puede ocacionar tamaños de aplicaciones más grandes, a costa de "estabilidad", los tres grandes distribuidores de aplicaciones portables son: [AppImage](https://appimage.org/), [flatpak](https://flatpak.org/) y [Snapcraft](https://snapcraft.io/)
+# **7. Aplicaciones**
 
 ---
 
-# recomendacion de aplicaciones
-editor de texto/codigo: [vim](https://www.vim.org/) y [vscodium](https://vscodium.com/)
-navegador: [librewolf](https://librewolf.net/)/[firefox](https://www.mozilla.org/en-US/firefox/new/) + [Arkenfox.js](https://github.com/arkenfox/user.js/) o [ungoogled-chromium](https://github.com/ungoogled-software/ungoogled-chromium)
-extensiones de navegador: [uBlock origin](https://github.com/gorhill/uBlock), [bitwarden](https://bitwarden.com/), [libRedirect](https://libredirect.github.io/) y [decentraleyes](https://decentraleyes.org/).
-motor de busqueda: [searXNG](https://searx.space/#)
-terminal: [alacritty](https://alacritty.org/) o [st](https://st.suckless.org/)
-monitor de recursos: [btop](https://github.com/aristocratos/btop)
-visualizador de imagenes: [feh](https://feh.finalrewind.org/)
-descargar videos de youtube: [yt-dlp](https://github.com/yt-dlp/yt-dlp)
-respaldos: [timeshift](https://github.com/linuxmint/timeshift) (rsync, btrfs snapshots)
-aplicaciones de android en linux: [waydorid](https://waydro.id/)
+Con la filosofia de linux de usar programas interconectados, las aplicaciones suelen tener dependencias para poder funcionar, los encargados de manternar las relaciones entre aplicacion y dependencia son los Package Managers, pero estos pueden llegar a tener problemas de compatibilidad si la aplicacion o la dependencia esta desactualizada, para solucionar este problema se han creado formatos de paquetes que son portables, donde la aplicacion es distribuida junto con la dependencia, esto puede ocacionar tamaños de aplicaciones más grandes, a costa de "estabilidad", los tres grandes distribuidores de aplicaciones portables son: [AppImage](https://appimage.org/), [flatpak](https://flatpak.org/) y [Snapcraft](https://snapcraft.io/)
 
 ---
 
-# hardware
+# 7.1 Recomendacion de aplicaciones
+- Editor de texto: [vim](https://www.vim.org/) 
+- IDE: [vscodium](https://vscodium.com/)
+- Navegador: [librewolf](https://librewolf.net/)/[firefox](https://www.mozilla.org/en-US/firefox/new/) + [Arkenfox.js](https://github.com/arkenfox/user.js/) o [ungoogled-chromium](https://github.com/ungoogled-software/ungoogled-chromium)
+- Extensiones de navegador: [uBlock origin](https://github.com/gorhill/uBlock), [bitwarden](https://bitwarden.com/), [libRedirect](https://libredirect.github.io/) y [decentraleyes](https://decentraleyes.org/).
+- Motor de busqueda: [searXNG](https://searx.space/#)
+- Emulador de terminal: [alacritty](https://alacritty.org/) o [st](https://st.suckless.org/)
+- Monitor de recursos: [btop](https://github.com/aristocratos/btop)
+- Visualizador de imagenes: [feh](https://feh.finalrewind.org/)
+- Reproductor de video: [mpv](https://mpv.io/)
+- Descargar videos de youtube: [yt-dlp](https://github.com/yt-dlp/yt-dlp)
+- Respaldos: [timeshift](https://github.com/linuxmint/timeshift) ([rsync](https://rsync.samba.org/), [btrfs snapshots](https://wiki.gentoo.org/wiki/Btrfs/snapshots)), [git](https://git-scm.com/)
+- Android en linux: [waydorid](https://waydro.id/)
+
+---
+
+# **8. Hardware**
+
+---
+
 libreboot/coreboot para desabilitar AMD PSP, intel ME
 que es AMD PSP:
 que es intel ME:
@@ -721,7 +693,7 @@ si deshabilitar intel ME en procesadores de la 11 generacion (Tiger-Lake) en ade
 
 microcode es un blob necesario para sacar el mejor rendimiento al procesador
 undervolting es una [vulnerabilidad](https://plundervolt.com/)
-fsf 
+
 
 ---
 
@@ -738,7 +710,9 @@ hardware y computadoras sin binarios o software propietario:
 
 ---
 
-# servidores
+# **9. servidores**
+
+---
 
 las distribuciones [más usadas](https://w3techs.com/technologies/details/os-linux) en servidores son las basdas en debian como: ubuntu server y debian o las empresariales como: RHEL y SLES, aunque tambien se usa Proxmox para VMs. Los file systems más usados son ZFS (openZFS) o XFS, pero recomiendo este video para elegir el [file system](https://yewtu.be/watch/?v=HdEozE2gN9I) para tu servidor.
 
@@ -748,7 +722,7 @@ de x86: zimaboard, Fujitsu Futro ThinClient, Dell OptiPlex, HP elitedesk 800, et
 
 ventajas: precios accesibles, usan muy poca electricidad, buen rendimiento, opcion de hacer clusters, las laptops pueden usar sus baterias en caso de un corte de luz.
 
- puertos limitados, maximo un mini nvmeen lugar de la tarjeta de red, un disco duro en el puerto ata de dvd drive, maximo 2.5 gb ethernet apartir de usb 3.0 , puertos usb limite de hubs sin energia externa 
+ puertos limitados, maximo un mini nvmeen lugar de la tarjeta de red, un disco duro en el puerto ata de dvd drive, maximo 2.5 gb ethernet apartir de usb 3.0 , puertos usb limite de hubs sin energia externa ****************
 
 ---
 
@@ -756,8 +730,6 @@ recomiendo esta guia de seguridad para [servidor](https://yewtu.be/watch?v=fKuqY
 
 
 recomiendo usar nginx como web server ya que es usado por el [34.4%](https://w3techs.com/technologies/overview/web_server) de websites, y este es superior a [Apache](https://www.digitalocean.com/community/tutorials/apache-vs-nginx-practical-considerations) en varios aspectos.
-
-
 
 pagina web sin servidor ni dominio: [Github Pages](https://pages.github.com/), [neocities](https://neocities.org/), [etc.](https://www.geeksforgeeks.org/7-best-sites-for-free-web-hosting/)
 
@@ -769,6 +741,8 @@ cloudflare ddns, duckDNS, freeDNS.
 
 dominios gratis por un año c/u con GitHub Student Developer Pack:
 [.tech](https://get.tech/github-student-developer-pack), [.me](https://nc.me/landing/github), [.engenieer, etc.](https://www.name.com/partner/github-students)
+
+---
 
 certificados SSL: son los certificados que te dejan tener una pagina con https, el que más recomiendo es: Let's Encrypt
 
@@ -784,13 +758,12 @@ pagina web, vaultwarden, nextcloud, photoprism, searxng, wireguardvpn, dnsmasq/p
 
 ---
 
-# migracion
-
-usa rufus o ventoy, descarga los iso en torrents con qbitrorrent-enhanced, para buscar alternativas 
+# **10. aprender más acerca de linux**
 
 ---
 
-# aprender más acerca de linux
+# 10.1 Guias y Paginas
+
 - [arch wiki](https://wiki.archlinux.org/)
 - [gentoo wiki](https://wiki.gentoo.org/wiki/Main_Page)
 - [hack the box: learn linux](https://www.hackthebox.com/blog/learn-linux)
@@ -806,7 +779,8 @@ usa rufus o ventoy, descarga los iso en torrents con qbitrorrent-enhanced, para 
 
 ---
 
-# youtubers de linux que recomiendo
+# 10.2 Youtubers de linux que recomiendo
+
 - [The linux experiment: noticias semanales](https://yewtu.be/channel/UC5UAwBUum7CPN5buc-_N1Fw)
 - [DistroTube: reviews de distros, opiniones y tutoriales](https://yewtu.be/channel/UCVls1GmFKf6WlTraIb_IaJg)
 - [Luke Smith: opiniones, recomendaciones y tutoriales ](https://yewtu.be/channel/UC2eYFnH61tmytImy1mTYvhA)
@@ -818,7 +792,7 @@ usa rufus o ventoy, descarga los iso en torrents con qbitrorrent-enhanced, para 
 
 ---
 
-# Referencias
+# ** 11. Referencias**
 
 ---
 
