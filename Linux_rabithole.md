@@ -14,19 +14,36 @@ paginate: true
 
 # Contenidos
 <style scoped>
-ol{ columns: 2; }
+ol{columns: 3; font-size: 20px }
 </style>
 1. ¿Qué es linux?
 1.1 Definición
 1.2 Historia
-2. sistemas operativos
-2.1 porque usar linux
-2.2 problemas de windows
-3. Linux avanzado
-3.1 directorios
-3.2 bla bla
-4. usando linux
-4.1 comandos
+1.3 Filosofia de linux
+1.4 Linux Filesystem Hierarchy Standard
+1.5 las capas de linux
+2. temas relacionadas
+2.1 UNIX
+2.2 FOSS
+2.3 BSD
+2.4 Privacidad
+2.5 Seguridad
+2.6 Minimalismo
+2.7 Ricing
+3. Comparación de Sistemas operativos
+3.1 Ventajas de linux
+3.2 Más referencias de las ventajas de linux
+3.3 Desventajas de linux
+3.4 Ventajs de MacOs
+3.5 Desventajas de MacOS
+3.6 Recomendaciones al usar MacOS
+3.7 Ventajas de Windows
+3.8 Desventajas de Windows
+3.9 Más referencias de las desventajas de Windows
+3.10 Recomendaciones al usar Windows
+4. Distribuciones de linux
+
+
 
 
 
@@ -53,12 +70,49 @@ Fue creado en 1991 por el estudiante de la universidad de Helsinki Linus Torvald
 
 ---
 
+# 1.3 Filosofia de linux
+
+la filosofia de linux se basa principalmente en la filosofia de UNIX y del opensource, donde linux se diferencia es al darle control completo al usuario, dandole la libertad de elegir, estudiar y modificar cualquier parte de su sistema operativo.
+El kernel de linux en si no tiene blobs binarios sino que estos son distribuidos en el linux-firmware, esto sirve para inicializar el hardware y los drivers.
+Linux tiene estandares como el LSB (Linux Standard Base) que define system interfaces, librarias, and runtimes de donde las librerias y aplicaciones dependen
+se suele usar el Filesystem Hierarchy Standard de linux
 
 
-# 1.3 temas relacionadas
+---
+
+# 1.4 Linux Filesystem Hierarchy Standard
 
 
-# FOSS
+![](https://www.linuxfoundation.org/hubfs/Imported_Blog_Media/standard-unix-filesystem-hierarchy-1.png)
+
+
+---
+
+# 1.5 las capas de linux
+
+<style scoped>img {display: block; margin-left: auto;margin-right: auto;}; body {font-size: 100px }</style>
+
+![](./kernel-user_space.png)
+
+Imagen recuperada de https://en.wikipedia.org/wiki/Template%3ALinux_layers
+
+---
+
+# 2. temas relacionadas
+
+---
+
+# 2.1 UNIX
+UNIX es un sistema operativo creado a principios de los 70s en AT&T por Dennis Ritchie (creador del lenguaje C) y Ken Thompson (creador de B predecesor del lenguaje C) 
+- POSIX: "Portable Operating System Interface", son una serie de standares de uso impuestos por el IEEE (Institute of Electrical and Electronics Engineers) que incluye el I/O, la terminal, comandos y redes.
+- Single UNIX Specification: es un estandard para sistemas operativos para usar el tredemark de UNIX, con interfaces para el lenguaje C, el shell y comandos.
+- UNIX filosofy (Doug McIlroy):
+Escribe programas que hagan una cosa muy bien, que trabajen juntos (input de uno es el output de otro y *que manejen streams (serie de bytes para I/O), porque son  una interfaz universal.
+- todo son archivos, los dispositivos, teclados, discos duros, etc. estos son manejados con streams y almacenados en la carpeta /dev 
+
+---
+
+# 2.2 FOSS
 Free and open source software
 
 - creative commons: uso libre pero con atribucion obligatoria, comunmente usados para imagenes, videos y articulos.
@@ -74,29 +128,7 @@ herramienta para elegir una [licencia](https://choosealicense.com/) adecuada
 
 ---
 
-# 1.4 de que se compone
-
-la filosofia de linux se basa principalmente en la filosofia de UNIX y del opensource, donde linux se diferencia es al darle el control completo al usuario, dandole la libertad de elegir cualquier parte de su sistema operativo.
-el kernel incluye drivers
-se suele usar el Filesystem Hierarchy Standard de linux
-
----
-
-![](https://www.linuxfoundation.org/hubfs/Imported_Blog_Media/standard-unix-filesystem-hierarchy-1.png)
-
-
----
-
-# UNIX
-UNIX es un sistema operativo creado a principios de los 70s en AT&T por Dennis Ritchie (creador del lenguaje C) y Ken Thompson (creador de B predecesor del lenguaje C) 
-- POSIX: "Portable Operating System Interface", son una serie de standares de uso impuestos por el IEEE (Institute of Electrical and Electronics Engineers) que incluye el I/O, la terminal, comandos y redes.
-- Single UNIX Specification: es un estandard para sistemas operativos para usar el tredemark de UNIX, con interfaces para el lenguaje C, el shell y comandos.
-- UNIX filosofy (Doug McIlroy):
-Escribe programas que hagan una cosa muy bien, que trabajen juntos (input de uno es el output de otro y *que manejen streams (serie de bytes para I/O), porque son  una interfaz universal.
-- todo son archivos, los dispositivos, teclados, discos duros, etc. estos son manejados con streams y almacenados en la carpeta /dev 
----
-
-# bsd
+# 2.3 BSD
 
 "Berkeley Software Distribution" es un sistema operativo creado en la universidad de Berkeley en California, de codigo abierto y originalmente extension de AT&T’s Research UNIX, a diferencia de linux este tiene la BSD C library, aunque pueden compartir ciertas utilidades de GNU
 
@@ -110,16 +142,8 @@ estos pueden tener ciertas [ventajas y desventajas](https://serverfault.com/ques
 
 ---
 
-# minimalismo
-el minimalismo en cuestion de linux, se trata de usar y escribir programas simples siguiendo principios de UNIX y KISS (Keep it simple, stupid!),  dos ideas deribadas del minimalismo son:
-- gnuless: algunos programas de GNU pueden no ser los más eficientes o minimalistas, un video acerca del tema: [Luke Smith: GNU is bloated!](https://yewtu.be/watch?v=nTCHapo8QFM), donde se habla tambien de la pagina [harmfull cat -v](https://harmful.cat-v.org/software/) la cual tiene ideas algo extremas.
-- [init freedom](https://www.devuan.org/os/init-freedom): systemd es el init system más usado, pero este no sigue la filosofia de unix ya que systemd no solo es el init, ya que tiene muchas otras [funciones](https://systemd-free.artixlinux.org/why.php) y herramientas, por lo que usar [alternativas](https://without-systemd.org/wiki/index_php/Main_Page/#other_UNIX-like) es [recomendado](https://nosystemd.org/)
 
-donde encontrar software minimalista: [lukesmith](https://lukesmith.xyz/programs/) y [suckless.org](https://suckless.org/rocks/)
-
----
-
-# Privacidad 
+# 2.4 Privacidad 
 
 te recominedo esta [guia](https://www.privacyguides.org/en/) de privacidad o tambien a la youtuber [Naomi Brockwell](https://yewtu.be/channel/UCSuHzQ3GrHSzoBbwrIq3LLA)
 - [duckduckgo](https://seonorth.ca/news/why-duckduckgo-is-bad/) no es bueno
@@ -127,7 +151,7 @@ te recominedo esta [guia](https://www.privacyguides.org/en/) de privacidad o tam
 - las VPN no te dan [privacidad](https://gist.github.com/joepie91/5a9909939e6ce7d09e29)
 - la gente esta [desinformada](https://www.whonix.org/wiki/Tor_Myths_and_Misconceptions) acerca de tor
 
-# Seguridad
+# 2.5 Seguridad
 
 te recomiendo esta [guia](https://wiki.archlinux.org/title/security) de seguridad de la arch wiki
 - usa [linux-hardened](https://github.com/anthraxx/linux-hardened) kernel
@@ -137,7 +161,17 @@ te recomiendo esta [guia](https://wiki.archlinux.org/title/security) de segurida
 
 ---
 
-# customizacion (ricing)
+# 2.6 Minimalismo
+el minimalismo en cuestion de linux, se trata de usar y escribir programas simples siguiendo principios de UNIX y KISS (Keep it simple, stupid!),  dos ideas deribadas del minimalismo son:
+- gnuless: algunos programas de GNU pueden no ser los más eficientes o minimalistas, un video acerca del tema: [Luke Smith: GNU is bloated!](https://yewtu.be/watch?v=nTCHapo8QFM), donde se habla tambien de la pagina [harmfull cat -v](https://harmful.cat-v.org/software/) la cual tiene ideas algo extremas.
+- [init freedom](https://www.devuan.org/os/init-freedom): systemd es el init system más usado, pero este no sigue la filosofia de unix ya que systemd no solo es el init, ya que tiene muchas otras [funciones](https://systemd-free.artixlinux.org/why.php) y herramientas, por lo que usar [alternativas](https://without-systemd.org/wiki/index_php/Main_Page/#other_UNIX-like) es [recomendado](https://nosystemd.org/)
+
+donde encontrar software minimalista: [lukesmith](https://lukesmith.xyz/programs/) y [suckless.org](https://suckless.org/rocks/)
+
+---
+
+
+# 2.7 Ricing (customizacion)
 
 solo mira [r/unixporn](https://reddit.com/r/unixporn/)
 se suelen usar paletas de colores como [nord](https://www.nordtheme.com/) o [Catppuccin](https://github.com/catppuccin/palette)
@@ -146,7 +180,11 @@ tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 
 ---
 
-# 1.4 ventajas de linux 
+# 3. Comparación de Sistemas operativos
+
+---
+
+# 3.1 Ventajas de linux 
 - es gratuito y opensource
 - superioridad en cuestion de audio con [pipewire](https://pipewire.org/)
 - puede arrancar [rapidamente](https://www.forbes.com/sites/jasonevangelho/2019/06/19/infographics-linux-mint-challenges-windows-10-in-small-business-speed-tests-laptop/#7a560d2369bb) el sistema y las aplicaciones
@@ -162,7 +200,7 @@ tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 
 ----
 
-# más referencias de las ventajas de linux 
+# 3.2 Más referencias de las ventajas de linux 
 - [linfo: 25 Reasons to Convert to Linux](http://www.linfo.org/reasons_to_convert.html)
 - [Joe Collins: Linux vs. Windows | The Fundamental Differences](https://yewtu.be/watch?v=p4xA7GRmf6o)
 - [Dave's Garage: Linux vs Windows Round 1: Open Source vs Proprietary - From a Retired Microsoft Dev](https://yewtu.be/watch?v=a9ZADRy5W0c)
@@ -173,7 +211,7 @@ tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 - [ForrestKnight:  Why I Code on Linux Instead of Windows](https://yewtu.be/watch?v=HrYtwz0Xe2Q)
 
 ---
-# desventajas de linux
+# 3.3 Desventajas de linux
 
 - tienes que aprender temas nuevos, aprender a buscar soluciones y leer.
 - no puedes correr ciertos juegos: [rainbow six](https://www.protondb.com/app/359550), [roblox](https://news.itsfoss.com/roblox-linux-end/), [etc.](https://www.protondb.com/explore?sort=fixWanted)
@@ -189,7 +227,7 @@ tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 
 ---
 
-# ventajas MacOS
+# 3.4 Ventajas MacOS
 
 - tiene interfaces con diseños [inovadores](https://design.tutsplus.com/tutorials/how-apple-ended-up-leading-the-icon-design-trends-and-whether-or-not-you-should-fight-it--cms-32201)
 - tiene una certificacion [posix](https://www.opengroup.org/openbrand/register/apple.htm)
@@ -205,7 +243,7 @@ tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 
 ---
 
-# desventajas MacOS
+# 3.5 Desventajas MacOS
 
 - Appple ID es un requisito para instalar MacOS
 - no puede correr ciertos [juegos](https://www.protondb.com/explore?sort=fixWanted)
@@ -222,7 +260,7 @@ tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 
 ---
 
-# Recomendaciones si tienes que usar MacOS
+# 3.6 Recomendaciones al usar MacOS
 - no uses una cuenta de Apple ID con tus datos personales
 - usa macOS en una vm con NAT activado
 - lee esta [guia](https://github.com/drduh/macOS-Security-and-Privacy-Guide) de privacidad en MacOS
@@ -231,7 +269,7 @@ tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 
 ---
 
-# ventajas de windows
+# 3.7 Ventajas de Windows
 - compatibilidad perfecta con [directX](https://www.microsoft.com/en-us/download/details.aspx?id=35)
 - [compatibilidad](https://support.microsoft.com/en-us/windows/make-older-apps-or-programs-compatible-with-windows-783d6dd7-b439-bdb0-0490-54eea0f45938) con aplicaciones antiguas de windows
 - las empresas les importa la distribucion del [mercado](https://gs.statcounter.com/os-market-share/desktop/worldwide/#monthly-202306-202306-bar) de sistmas operativos, por lo que ciertas aplicaciones y juegos estan pensados para windows 
@@ -240,7 +278,7 @@ tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 
 ---
 
-# Desventajas de windows
+# 3.8 Desventajas de Windows
 
 ---
 
@@ -257,7 +295,7 @@ tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 
 ---
 
-## Uso general
+## 3.8.1 Uso general
 - las apps por defecto se actualizan individualmente ya sea abriendo la aplicación o teniendo que descargar la nueva version de la pagina del creador
 - para usar winget ocupas una cuenta microsoft para descargar [App-Installer](https://apps.microsoft.com/store/detail/appinstaller/9NBLGGH4NNS1?hl=de-at&gl=at&rtc=1) de la microsoft store y para usarlo ocupas constantemente aceptar los [UAC](https://learn.microsoft.com/en-us/windows/package-manager/winget/) prompts, aparte de acepatar la [CLA](https://opensource.microsoft.com/cla/) 
 - no puedes nombrar archivos con ciertos [nombres](https://yewtu.be/watch?v=bC6tngl0PTI)
@@ -285,7 +323,7 @@ tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 
 ---
 
-## hardware
+## 3.8.2 hardware
 - Device encryption ocupa hardware [moderno](https://www.microsoft.com/en-us/windows/compare-windows-10-home-vs-pro) ([InstantGo](https://blogs.windows.com/windowsexperience/2014/06/19/instantgo-a-better-way-to-sleep/#RXGeiruxOD7f3V0q.97)/[AOAC](https://www.microsoft.com/en-us/store/b/alwaysconnectedfaq)/[HSTI-compliant](https://learn.microsoft.com/en-us/windows-hardware/test/hlk/testref/hardware-security-testability-specification)), basicamente de 2014 en adelante.
 - los [requisitos](https://www.microsoft.com/en-us/windows/windows-11-specifications) de Windows 11, procesador de 64 bits, UEFI, TPM v2.0 y una grafica compatible con DirectX12.
 - los discos duros con ntfs tienen que [defragmentarse](https://learn.microsoft.com/en-us/previous-versions/cc767961(v=technet.10))
@@ -293,7 +331,7 @@ tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 - no suele haber drivers opensource
 
 
-## juegos
+## 3.8.3 juegos
 - descargas [muchas versiones](https://www.howtogeek.com/256245/why-are-there-so-many-microsoft-visual-c-redistributables-installed-on-my-pc/) de microsoft visual c++ redistributable por juego
 - los juegos de la microsoft store (xbox app) suelen correr [peor](https://old.reddit.com/r/techsupport/comments/v4nhaf/so_ive_been_wondering_if_its_just_me_or_windows/) o dar [input lag](https://www.reddit.com/r/roblox/comments/oahvsf/roblox_player_vs_microsoft_store_app_input_lag/)
 - no puedes acceder a las [carpetas](https://www.makeuseof.com/windows-access-windowsapps-folder/) de juegos de la microsoft store (xbox app) aun siendo administrador
@@ -301,7 +339,7 @@ tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 
 ---
 
-## privacidad
+## 3.8.4 privacidad
 - opciones anti privacidad activados por [defecto](https://learn.microsoft.com/es-es/intune-education/media/rs5_choose_settings.png)
 - windows [phone home](https://yewtu.be/watch?v=IT4vDfA_4NI).
 - windows esta implicacdo con la [NSA](http://techrights.org/wiki/index.php/Microsoft_and_the_NSA) y [PRISM](https://en.wikipedia.org/wiki/PRISM)
@@ -311,7 +349,7 @@ tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 
 ---
 
-# más referencias de las desventajas de windows
+# 3.9 más referencias de las desventajas de windows
 - [GNU: Microsoft's Software is Malware](https://www.gnu.org/proprietary/malware-microsoft.en.html)
 - [Jody Bruchon Tech: Windows 11 Must Be Stopped - A Veteran PC Repair Shop Owner's Dire Warning](https://yewtu.be/watch?v=LcafzHL8iBQ)
 - [reddit: why many people dislike windows as an development environment?](https://old.reddit.com/r/webdev/comments/132eql/why_many_people_dislike_windows_as_an_development/)
@@ -325,7 +363,7 @@ tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 
 ---
 
-# Recomendaciones si tienes que usar windows
+# 3.10 Recomendaciones al usar windows
 - usa windows 10 sin iniciar sesion en una cuenta de microsoft
 - descarga apps de la ms store con https://store.rg-adguard.net/
 - usa windows  en una vm  con NAT activado
@@ -341,7 +379,7 @@ tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 
 ---
 
-# **Distribuciones de linux**
+# 4. Distribuciones de linux
 
 ---
 
@@ -359,7 +397,7 @@ los componentes y caracteristicas que construyen a una distribucion de linux son
 - init system / daemon manager: runit, OpenRC, systemd, SysVinit, s6, dinit, etc.
 - systema de archivos (File system): ext2/3/4, Btrfs, XFS, ZFS, etc. 
 - jerarquia de archivos: Linux File Hierarchy Structure o modificacion de este. 
-- libreria de c: glibc, musl, ulibc, etc.
+- libreria de c: glibc, musl, uClibc, etc.
 - utilidades basicas: gnu core utils, busybox, util-linux, bin-utils,  lspci-utils, etc.
 
 ---
@@ -488,60 +526,54 @@ hay muchisimas [distribuciones](https://upload.wikimedia.org/wikipedia/commons/1
 ---
 
 # commandos 
-categorize los comandos que más creo importantes y los marcare con tres letras siendo C de "GNU core utils", U de "Util-linux", G de "GNU Software", P de "procps", I de 
-"iproute2 y iputils",  S de "SHELL" y O de "Otros comunes":
+categorize los comandos que más creo importantes en su funcion y los marcare con seis letras mayusculas siendo C de "GNU core utils", U de "Util-linux", G de "GNU Software", P de "procps", I de "iproute2 o iputils",  S de "SHELL" y O de "Otros comunes".
+en el uso l
 
 ---
 
 <style scoped>table{font-size: 25px;}</style>
 
 # navegacion de archivos
-
-|comando     | ques | uso | comando | ques |uso
-|------------|------|-----|---------|------|-----
-|(C) touch   |      |     |(O) unzip|      |
-|(C) cp     |  copy    |     |(O) unrar  |      |   
-|(C) ln      | link     |     |(C) cd      |      |
-|(C) rm     |  remove    |     |(C) pwd     |      |
-|(C) chmod   |  change mod    |     |(C)ls     |      |
-|(C) chown  |      |     |(C) mkdir   |      |
-|(C) mv     |      |     |(C) rmdir   |      |
-|(G) tar
+|comando    |  uso | comando  |uso
+|-----------|------|----------|---------
+|(C) touch  | touch <archivo>   |(O) unzip|      |
+|(C) cp     | cp <archivo> <destino>          |(O) unrar  |      |   
+|(C) ls     | ls <directorio>, ls -l -a           |(C) cd      |      |
+|(C) rm     | rm -r -d -f           |(C) pwd     |      |
+|(C) mkdir  | mkdir <directorio>         |(C) ln     |      |
+|(C) rmdir  | rmdir <directorio>          |(C) chmod   |      |
+|(C) mv     | mv <archivo> <destino>          |(C) chown    |      |
+|(G) tar    | tar 
 
 ---
 
 # lecto-escritura de archivos 
 
-|comando     | ques | uso | comando | ques |uso
-|------------|------|-----|---------|------|-----
-|(C) cat     |      |     |(G) sed
-|(G) less    |      |     |(G) awk
-|(C) head    |      |     |(O) vi
-|(C) tail    |      |     |(C) sort
+|comando     |  uso    | comando | uso
+|------------|---------|---------|---------
+|(C) cat     |         |(G) sed  |
+|(G) less    |         |(G) awk  |
+|(C) head    |         |(O) vi   |
+|(C) tail    |         |(C) sort |
 
 ---
 
 # procesos
 
-|comando     | ques | uso | comando | ques |uso
-|------------|------|-----|---------|------|-----
-|(S) jobs    |      |     |(U) kill |      |
-|(S) bg
-|(S) fg 
-|(P) ps 
-|(O) pstree 
-
-|(U) kill 
-|(N) killall 
-|(P) pkill 
-|(O) top 
+|comando     | uso  | comando    | uso
+|------------|------|------------|----
+|(S) jobs    |      |(U) kill    |
+|(S) bg      |      |(N) killall | pkill chromium
+|(S) fg      |      |(P) pkill   |
+|(P) ps      |      |(O) top     |
+|(O) pstree  |      |
 
 ---
 
 # encontrar cosas
 
 |(G) find
-|(G) grep
+|(G) grep | busca patrones
 |(S) history
 |(C) env 
 |(O) locate 
@@ -583,7 +615,8 @@ categorize los comandos que más creo importantes y los marcare con tres letras 
 |(U) dmesg
 |(O) neofetch
 |(C) uname 
-|(U) wheris
+|(U) wheris |locate binaries
+|(O) which |full path of commands
 |(C) whoami
 |(C) uptime
 |(G) time 
@@ -594,13 +627,15 @@ categorize los comandos que más creo importantes y los marcare con tres letras 
 |(O) lsusb
 |(U) lscpu
 |(O) xinput 
+|(S) export
 
 ---
 
 # extras
 
-|(O) man
-|(C) echo 
+|(O) man | manual
+|(O) whatis 1 line manual
+|(C) echo |
 |(S) exit 
 |(C) printf 
 |(O) sudo 
@@ -615,19 +650,27 @@ categorize los comandos que más creo importantes y los marcare con tres letras 
 ---
 
 # shell specific
-tab para completar
-* wildcars
-$ vars
-{num..num}
-!$numero
-!!
-|
->
-`> /dev/null 2>&1`
->>
-&
-alias
-export $VAR
+
+| *  |wildcars
+| =  | definir variables
+| $ () | comandos como variables |
+| {num..num} |
+|!$numero |
+|!! | ultimo comando
+| | | pipes
+|>
+|> /dev/null 2>&1
+|>>
+|&
+|alias
+
+---
+
+<style scoped>img {position: absolute;top: 50%;left: 80%;transform: translate(-50%, -50%);}</style>
+
+# Linux Terminal Shortcuts
+
+![w:520px](https://linuxhandbook.com/content/images/2022/04/lhb-terminal-shortcut-cheatsheet-1.webp)
 
 ---
 
@@ -645,13 +688,6 @@ más informacion de comandos: [The linux Command Handbook](https://www.freecodec
 
  [busybox](https://busybox.net/downloads/BusyBox.htm), [posix](https://en.wikipedia.org/wiki/Category:Unix_SUS2008_utilities)
 
----
-
-<style scoped>img {position: absolute;top: 50%;left: 80%;transform: translate(-50%, -50%);}</style>
-
-# Linux Terminal Shortcuts
-
-![w:520px](https://linuxhandbook.com/content/images/2022/04/lhb-terminal-shortcut-cheatsheet-1.webp)
 
 ---
 
@@ -671,6 +707,7 @@ monitor de recursos: [btop](https://github.com/aristocratos/btop)
 visualizador de imagenes: [feh](https://feh.finalrewind.org/)
 descargar videos de youtube: [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 respaldos: [timeshift](https://github.com/linuxmint/timeshift) (rsync, btrfs snapshots)
+aplicaciones de android en linux: [waydorid](https://waydro.id/)
 
 ---
 
@@ -747,18 +784,25 @@ pagina web, vaultwarden, nextcloud, photoprism, searxng, wireguardvpn, dnsmasq/p
 
 ---
 
+# migracion
+
+usa rufus o ventoy, descarga los iso en torrents con qbitrorrent-enhanced, para buscar alternativas 
+
+---
+
 # aprender más acerca de linux
-[Machtelt Garrels: Introduction to Linux](https://tldp.org/LDP/intro-linux/intro-linux.pdf)
-[wikibooks: how linux works](https://en.wikibooks.org/wiki/Linux_Guide/How_Linux_Works)
-[linux journey](https://linuxjourney.com/)
-[endevoarOs wiki](https://discovery.endeavouros.com/)
-[hack the box: learn linux](https://www.hackthebox.com/blog/learn-linux)
-[IBM: Learn Linux, 101](https://developer.ibm.com/tutorials/l-lpic1-map/)
-[linux foundation: introduction to linux](https://training.linuxfoundation.org/training/introduction-to-linux/)
-[wikipedia: linux portal](https://en.wikipedia.org/wiki/Portal:Linux)
-[arch wiki](https://wiki.archlinux.org/)
-[gentoo wiki](https://wiki.gentoo.org/wiki/Main_Page)
-[y más](https://itsfoss.com/learn-linux-for-free/)
+- [arch wiki](https://wiki.archlinux.org/)
+- [gentoo wiki](https://wiki.gentoo.org/wiki/Main_Page)
+- [hack the box: learn linux](https://www.hackthebox.com/blog/learn-linux)
+- [endevoarOs wiki](https://discovery.endeavouros.com/)
+- [Machtelt Garrels: Introduction to Linux](https://tldp.org/LDP/intro-linux/intro-linux.pdf)
+- [linux journey](https://linuxjourney.com/)
+- [wikipedia: linux portal](https://en.wikipedia.org/wiki/Portal:Linux)
+- [wikibooks: how linux works](https://en.wikibooks.org/wiki/Linux_Guide/How_Linux_Works)
+- [IBM: Learn Linux, 101](https://developer.ibm.com/tutorials/l-lpic1-map/)
+- [linux foundation: introduction to linux](https://training.linuxfoundation.org/training/introduction-to-linux/)
+- [kernel.org: Documentation](https://www.kernel.org/doc/)
+- [y más](https://itsfoss.com/learn-linux-for-free/)
 
 ---
 
@@ -789,6 +833,11 @@ pagina web, vaultwarden, nextcloud, photoprism, searxng, wireguardvpn, dnsmasq/p
 - dayzerosec. (2023). *Reversing the AMD Secure Processor (PSP) - Part 1: Design and Overview*. https://dayzerosec.com/blog/2023/04/17/reversing-the-amd-secure-processor-psp.html
 - Eric Steven Raymond. (2003). *Basics of the Unix Philosophy*. http://www.catb.org/~esr/writings/taoup/html/ch01s06.html
 - ezeelinux. (2018). *Linux Distributions Deconstructed*. https://www.ezeelinux.com/news/linux-distributions-deconstructed/
+
+---
+
+<style scoped>{font-size: 21px;}</style>
+
 - Fireship. (2022). *Linux in 100 Seconds* [Video]. YouTube. https://yewtu.be/watch?v=rrB13utjYV4
 - freeBSD. (2023). *Explaining BSD*. https://docs.freebsd.org/en/articles/explaining-bsd/
 - GeeksforGeeks. (2019). *Linux Tutorials | Getting Started | Introduction | GeeksforGeeks* [Video]. https://yewtu.be/watch?v=0EDwEQoui_g
@@ -796,17 +845,23 @@ pagina web, vaultwarden, nextcloud, photoprism, searxng, wireguardvpn, dnsmasq/p
 - GNU. (2023). *GNU General Public License, version 2*. https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 - GNU. (s.f). *What is Free Software?*. https://www.gnu.org/philosophy/free-sw.html
 - IEEE. (2017). *IEEE Std 1003.1™-2017*. https://pubs.opengroup.org/onlinepubs/9699919799/
-- intel. (2017). *What is Intel® Management Engine?*. https://www.intel.com/content/www/us/en/support/articles/000008927/software/chipset-software.html
+- Intel. (2017). *What is Intel® Management Engine?*. https://www.intel.com/content/www/us/en/support/articles/000008927/software/chipset-software.html
 - Linus Torvalds. (1997). *Linux: a Portable Operating System*. https://www.cs.helsinki.fi/u/kutvonen/index_files/linus.pdf
-- linuxfoundation. (2015). *Filesystem Hierarchy Standard*. https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.html
+- Linux Foundation. (2015). *Filesystem Hierarchy Standard*. https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.html
+- Linux Foundation. (2015). *Linux Standard Base*. https://refspecs.linuxfoundation.org/lsb.shtml
 - Machtelt Garrels. (2008). *Introduction to Linux*. https://tldp.org/LDP/intro-linux/intro-linux.pdf
 - Michael Tunnell. (2023). *Explaining Linux Family Trees: Why Are There So Many Linux Distros?* [Video]. https://yewtu.be/watch?v=kF8CRt05s6A
 - NGINX. (s.f). *What Is a Reverse Proxy Server?*. https://www.nginx.com/resources/glossary/reverse-proxy-server/
 - Opensource.com. (s.f.). *What is Linux?*. https://opensource.com/resources/linux
+
+---
+
+<style scoped>{font-size: 21px;}</style>
+
 - Opensource.com. (s.f). *What is open source?*.https://opensource.com/resources/what-open-source
 - Open Source Initiative. (2007). *The Open Source Definition*. https://opensource.org/osd/
 - opensource initiative. (s.f). *OSI Approved Licenses*. https://opensource.org/licenses/
-- Red Hat. (2019). *What is the Linux kernel?*. https://www.redhat.com/en/topics/linux/what-is-the-linux-kernel 
+- Red Hat. (2019). *What is the Linux kernel?*. https://www.redhat.com/en/topics/linux/what-is-the-linux-kernel
 - Roch, B. (2004). *Monolithic kernel vs. Microkernel*. https://web.cs.wpi.edu/~cs3013/c12/Papers/Roch_Microkernels.pdf 
 - Seagate. (s.f ). *What is NAS*. https://www.seagate.com/blog/what-is-nas-master-ti/
 - SUSE. (s.f.). *Linux Distribution*. https://www.suse.com/suse-defines/definition/linux-distribution/ 
