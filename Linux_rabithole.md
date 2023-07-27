@@ -485,24 +485,30 @@ hay muchisimas [distribuciones](https://upload.wikimedia.org/wikipedia/commons/1
 | ![w:300px](logos/PureOS.png)  | [PureOs](https://pureos.net/)           | systemd            | debian        | apt         | glibc      | gnu         | 
 | ![h:50px](logos/trisquel.png) | [trsiquel](https://trisquel.info/)      | systemd            | ubuntu/debian | apt         | glibc      | gnu         | 
 
+---
 
 # commandos 
-categorize los comandos que más creo importantes y los marcare con tres letras siendo C de "GNU core utils", U de "Util-linux", G de "GNU Software", P de "procps", I de "iproute2 y iputils",  S de "SHELL" y N de "No standard":
+categorize los comandos que más creo importantes y los marcare con tres letras siendo C de "GNU core utils", U de "Util-linux", G de "GNU Software", P de "procps", I de 
+"iproute2 y iputils",  S de "SHELL" y N de "No standard":
 
-file system:
-touch (C)
-mv (C)
-cp (C)
-ln (C)
-rm (C)
-chmod (C)
-chown (C)
-tar (G), unzip (N), unrar (N)
-cd (C)
-pwd (C)
-ls (C)
-mkdir (C)
-rmdir (C)
+---
+
+<style scoped>table {font-size: 25px; }</style>
+
+# file system  
+
+|comando     | ques | uso | comando | ques |uso
+|------------|------|-----|---------|------|-----
+|(C) touch   |      |     |(N) unzip|      |
+|(C) cp     |  copy    |     |(N)unrar  |      |   
+|(C) ln      | link     |     |(C)cd      |      |
+|(C) rm     |  remove    |     |(C)pwd     |      |
+|(C) chmod   |  change mod    |     |(C)ls     |      |
+|(C) chown  |      |     |(C)mkdir   |      |
+|(C) mv     |      |     |(C)rmdir   |      |
+|(G) tar
+
+---
 
 read/write files:
 cat (C)
