@@ -489,118 +489,132 @@ hay muchisimas [distribuciones](https://upload.wikimedia.org/wikipedia/commons/1
 
 # commandos 
 categorize los comandos que más creo importantes y los marcare con tres letras siendo C de "GNU core utils", U de "Util-linux", G de "GNU Software", P de "procps", I de 
-"iproute2 y iputils",  S de "SHELL" y N de "No standard":
+"iproute2 y iputils",  S de "SHELL" y O de "Otros comunes":
 
 ---
 
-<style scoped>table {font-size: 25px; }</style>
+<style scoped>table{font-size: 25px;}</style>
 
-# file system  
+# navegacion de archivos
 
 |comando     | ques | uso | comando | ques |uso
 |------------|------|-----|---------|------|-----
-|(C) touch   |      |     |(N) unzip|      |
-|(C) cp     |  copy    |     |(N)unrar  |      |   
-|(C) ln      | link     |     |(C)cd      |      |
-|(C) rm     |  remove    |     |(C)pwd     |      |
+|(C) touch   |      |     |(O) unzip|      |
+|(C) cp     |  copy    |     |(O) unrar  |      |   
+|(C) ln      | link     |     |(C) cd      |      |
+|(C) rm     |  remove    |     |(C) pwd     |      |
 |(C) chmod   |  change mod    |     |(C)ls     |      |
-|(C) chown  |      |     |(C)mkdir   |      |
-|(C) mv     |      |     |(C)rmdir   |      |
+|(C) chown  |      |     |(C) mkdir   |      |
+|(C) mv     |      |     |(C) rmdir   |      |
 |(G) tar
 
 ---
 
-read/write files:
-cat (C)
-less (G)
-head (C)
-tail (C)
-file (N)
-sed (G)
-awk (G)
-vi (N)
-sort (C)
+# lecto-escritura de archivos 
 
-procesos:
-jobs (S)
-bg (S)
-fg (S)
-ps (P)
-pstree (N)
-kill (U)
-killall (N)
-pkill (P)
-top (N)
+|comando     | ques | uso | comando | ques |uso
+|------------|------|-----|---------|------|-----
+|(C) cat     |      |     |(G) sed
+|(G) less    |      |     |(G) awk
+|(C) head    |      |     |(O) vi
+|(C) tail    |      |     |(C) sort
 
-encontrar cosas:
-find (G)
-grep (G)
-history (S)
-env (C)
-locate (N)
+---
 
-almacenamiento:
-df (C)
-du (C)
-dd (C)
-fdisk (U)
-cfdisk (G)
-mount (U)
-umount (U)
-fschk (U)
-lsblk (U)
-blkid (U)
+# procesos
 
-networking:
-ip address(I)
-ip route (I)
-ping (I)
-tracerout (I)
-rfkill (U)
-ssh (N)
-scp (N)
-wget (N)
-curl (N)
-git (N)
+|comando     | ques | uso | comando | ques |uso
+|------------|------|-----|---------|------|-----
+|(S) jobs    |      |     |(U) kill |      |
+|(S) bg
+|(S) fg 
+|(P) ps 
+|(O) pstree 
 
-sys info:
-dmesg (U)
-neofetch (N)
-uname (C)
-wheris (U)
-whoami (C)
-uptime (C)
-time (G)
-date (G)
-hostname (C)
-free (P)
-lscpi (N)
-lsusb (N)
-lscpu (U)
-xinput (N)
+|(U) kill 
+|(N) killall 
+|(P) pkill 
+|(O) top 
 
-distro:
-- wifi: NetworkManager, IWD, ConnMan, wpa_supplicant
-- firewall: iptables, uwd, firewalld
-- package manager: apt, pacman, emerge, etc.
-- init system: poweroff, shutdown, poweroff, halt
-    -daemon management: systemctl, sv, rc-service, etc.
-- cron jobs: cronie, fcron, dcron, etc.
+---
 
-extra:
-man (N)
-echo (C)
-exit (S)
-printf (C)
-sudo (N)
-su (U)
-wc (C)
-diff (G)
-xclip (N) -sel clip
-gpg (G)
-cksum (C)
+# encontrar cosas
 
-shell specific:
+|(G) find
+|(G) grep
+|(S) history
+|(C) env 
+|(O) locate 
+
+---
+
+# almacenamiento
+
+|(C) df
+|(C) du 
+|(C) dd 
+|(U) fdisk 
+|(G) cfdisk 
+|(U) mount 
+|(U) umount
+|(U) fschk
+|(U) lsblk
+|(U) blkid
+
+---
+
+# networking
+
+|(I) ip address
+|(I) ip route
+|(I) ping
+|(I) tracerout
+|(U) rfkill 
+|(O) ssh
+|(O) scp
+|(O) wget
+|(O) curl 
+|(O) git 
+
+---
+
+# sys info
+
+|(U) dmesg
+|(O) neofetch
+|(C) uname 
+|(U) wheris
+|(C) whoami
+|(C) uptime
+|(G) time 
+|(G) date
+|(C) hostname
+|(P) free 
+|(O) lscpi
+|(O) lsusb
+|(U) lscpu
+|(O) xinput 
+
+---
+
+# extras
+
+|(O) man
+|(C) echo 
+|(S) exit 
+|(C) printf 
+|(O) sudo 
+|(U) su 
+|(C) wc 
+|(G) diff 
+|(O) xclip -sel clip
+|(G) gpg 
+|(C) cksum 
+
+
+---
+
+# shell specific
 tab para completar
 * wildcars
 $ vars
@@ -615,9 +629,21 @@ $ vars
 alias
 export $VAR
 
+---
 
+# distro
+- wifi: NetworkManager, IWD, ConnMan, wpa_supplicant
+- firewall: iptables, uwd, firewalld
+- package manager: apt, pacman, emerge, etc.
+- init system: poweroff, shutdown, poweroff, halt
+    -daemon management: systemctl, sv, rc-service, etc.
+- cron jobs: cronie, fcron, dcron, etc.
 
-más informacion de comandos: [The linux Command Handbook](https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-man-command), [arch wiki](https://wiki.archlinux.org/title/core_utilities), [decoded gnu core utils](https://www.maizure.org/projects/decoded-gnu-coreutils/), [util-linux](https://wiki.gentoo.org/wiki/Util-linux), [procps](https://gitlab.com/procps-ng/procps), [iproute2](https://wiki.linuxfoundation.org/networking/iproute2), [iputils](https://wiki.linuxfoundation.org/networking/iputils), [busybox](https://busybox.net/downloads/BusyBox.htm), [posix](https://en.wikipedia.org/wiki/Category:Unix_SUS2008_utilities)
+---
+
+más informacion de comandos: [The linux Command Handbook](https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-man-command), [arch wiki](https://wiki.archlinux.org/title/core_utilities), [decoded gnu core utils](https://www.maizure.org/projects/decoded-gnu-coreutils/), [util-linux](https://wiki.gentoo.org/wiki/Util-linux), [procps](https://gitlab.com/procps-ng/procps), [iproute2](https://wiki.linuxfoundation.org/networking/iproute2), [iputils](https://wiki.linuxfoundation.org/networking/iputils).
+
+ [busybox](https://busybox.net/downloads/BusyBox.htm), [posix](https://en.wikipedia.org/wiki/Category:Unix_SUS2008_utilities)
 
 ---
 
@@ -722,14 +748,17 @@ pagina web, vaultwarden, nextcloud, photoprism, searxng, wireguardvpn, dnsmasq/p
 ---
 
 # aprender más acerca de linux
+[Machtelt Garrels: Introduction to Linux](https://tldp.org/LDP/intro-linux/intro-linux.pdf)
 [wikibooks: how linux works](https://en.wikibooks.org/wiki/Linux_Guide/How_Linux_Works)
 [linux journey](https://linuxjourney.com/)
 [endevoarOs wiki](https://discovery.endeavouros.com/)
 [hack the box: learn linux](https://www.hackthebox.com/blog/learn-linux)
+[IBM: Learn Linux, 101](https://developer.ibm.com/tutorials/l-lpic1-map/)
 [linux foundation: introduction to linux](https://training.linuxfoundation.org/training/introduction-to-linux/)
 [wikipedia: linux portal](https://en.wikipedia.org/wiki/Portal:Linux)
 [arch wiki](https://wiki.archlinux.org/)
 [gentoo wiki](https://wiki.gentoo.org/wiki/Main_Page)
+[y más](https://itsfoss.com/learn-linux-for-free/)
 
 ---
 
@@ -742,6 +771,7 @@ pagina web, vaultwarden, nextcloud, photoprism, searxng, wireguardvpn, dnsmasq/p
 - [Wolfgang's: tips para servidores](https://yewtu.be/channel/UCsnGwSIHyoYN0kiINAGUKxg)
 - [Hardware Haven: tips para servidores](https://yewtu.be/channel/UCgdTVe88YVSrOZ9qKumhULQ)
 - [y más](https://yewtu.be/watch?v=NybbsnDT5NI&t=316s)
+
 ---
 
 # Referencias
@@ -769,6 +799,7 @@ pagina web, vaultwarden, nextcloud, photoprism, searxng, wireguardvpn, dnsmasq/p
 - intel. (2017). *What is Intel® Management Engine?*. https://www.intel.com/content/www/us/en/support/articles/000008927/software/chipset-software.html
 - Linus Torvalds. (1997). *Linux: a Portable Operating System*. https://www.cs.helsinki.fi/u/kutvonen/index_files/linus.pdf
 - linuxfoundation. (2015). *Filesystem Hierarchy Standard*. https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.html
+- Machtelt Garrels. (2008). *Introduction to Linux*. https://tldp.org/LDP/intro-linux/intro-linux.pdf
 - Michael Tunnell. (2023). *Explaining Linux Family Trees: Why Are There So Many Linux Distros?* [Video]. https://yewtu.be/watch?v=kF8CRt05s6A
 - NGINX. (s.f). *What Is a Reverse Proxy Server?*. https://www.nginx.com/resources/glossary/reverse-proxy-server/
 - Opensource.com. (s.f.). *What is Linux?*. https://opensource.com/resources/linux
