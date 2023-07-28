@@ -636,24 +636,21 @@ Categorize los comandos que creo más importantes en su funcion y los marque en 
 
 # 6.1 Funciones de shell 
 
-|funcion | uso     |funcion   | uso       
-|--------|---------|----------|-------
-|*       | completa strings             |         | a
-|=       | definir variables   |
-|\$()    | comandos como variables |
-|{}      | secuencias                       |
-|!<num>  | ejecuta el comando en ese numero | 
-|!!      | ejecuta el ultimo comando dado   |
-| \|     | para encadenar comandos          |
-| \||    | or, funciona como un try catch   |
-|>
-|> /dev/null 2>&1
-|>>
-|&
-|&&
-| ;
-|alias
+|funcion | uso                              |funcion   | uso       
+|--------|----------------------------------|----------|-------
+|*       | completa strings                 |!<num>  | ejecuta el comando en ese numero  
+|=       | definir variables                |!!      | ejecuta el ultimo comando dado
+|\$()    | comandos como variables          | \|     | para encadenar comandos
+|{}      | secuencias                       | \|\|    | or, funciona como un try catch
 
+---
+
+|funcion | uso                              |funcion | uso
+|--------|----------------------------------|--------|------
+|>                |redirecciona             |&&      |
+|> /dev/null 2>&1 |envia el output a null   | ;      |
+|>>               |redirecciona             |alias   |
+|&                |segundo plano            |   
 
 ---
 
