@@ -509,124 +509,124 @@ hay muchisimas [distribuciones](https://upload.wikimedia.org/wikipedia/commons/1
 # **5. Comandos**
 
 A las aplicaciones CLI/TUI y utilidades de terminal  se les llama comandos, estos como en las funciones de programacion, tienen argumentos y/o parametros con los que se usan, siendo los argumentos los archivos o directerios usados y los parametros las opciones del comando.
-Categorize los comandos que creo más importantes en su funcion y los marque en funcion del conjunto de utilidades con seis letras mayusculas siendo C de "GNU core utils", U de "Util-linux", G de "GNU Software", P de "procps", I de "iproute2 o iputils", <br> S de "SHELL" y O de "Otros".
+Categorize los comandos que creo más importantes en su funcion y los marque en funcion del conjunto de utilidades con seis letras mayusculas siendo C de "GNU core utils", U de "Util-linux", G de "GNU Software", P de "procps", I de "iproute2 o iputils", S de "SHELL" y O de "Otros".
 
 ---
 
 <style scoped>table{font-size: 25px;}</style>
 
 # 5.1 Comandosde navegacion de archivos
-|comando    |  uso                               | comando  |uso
-|-----------|------------------------------------|----------|---------
+|comando    | uso común                          | comando  | uso común
+|-----------|------------------------------------|----------|----------
 |(C) touch  | touch <archivo>                    |(G) gzip  | gzip (-d) <archivo>      
-|(C) cp     | cp <origen> <destino>             |(O) unrar | unrar <archivo>.rar
-|(C) ls     | ls <dir>, ls -l -a, ls -la <dir>   |(O) unzip | unzip <archivo>.zip     
-|(C) rm     | rm -r -d -f                        |(C) cd    | cd <dir>      
+|(C) cp     | cp <origen> <destino>              |(G) tar   | tar (c/x)zfv <archivo>.tar.gz <dir>
+|(C) ls     | ls <dir>, ls -l -a, ls -la <dir>   |(C) pwd   | pwd
+|(C) rm     | rm <archivo>, rm -r -d -f  <dir>   |(C) cd    | cd <dir>      
 |(C) mkdir  | mkdir <dir>                        |(C) ln    | ln -s <origen> <destino>
-|(C) rmdir  | rmdir <dir>                        |(C) chmod |    
-|(C) mv     | mv <archivo> <destino>             |(C) chown |    
-|(G) tar    | tar (c/x)zfv <archivo>.tar.gz <dir>|(C) pwd   |    
+|(C) rmdir  | rmdir <dir>                        |(C) chmod | chmod +x <archivo>   
+|(C) mv     | mv <archivo> <destino>             |(C) chown | chown <usuario>:<grupo> <archivo>
+
 ---
 
 # 5.2 Comandos de Lecto-escritura de archivos 
 
-|comando     |  uso    | comando | uso
-|------------|---------|---------|---------
-|(C) cat     |         |(G) sed  |
-|(G) less    |         |(G) awk  |
-|(C) head    |         |(O) vi   |
-|(C) tail    |         |(C) sort |
+|comando     | uso  común     | comando | uso común
+|------------|----------------|---------|----------
+|(C) cat     | cat <archivo>  |(G) sed  | sed -i 's/este/por-este/' <archivo>
+|(G) less    | less <archivo> |(G) awk  | <comando> \| awk '{print $1,$4}'
+|(C) head    | head <archivo> |(O) vi   | vi <archivo>
+|(C) tail    | tail <archivo> |(C) sort | sort <archivo> 
 
 ---
 
 # 5.3 Comandos acerca de procesos
 
-|comando     | uso  | comando    | uso
-|------------|------|------------|----
-|(S) jobs    |      |(U) kill    |
-|(S) bg      |      |(N) killall | pkill chromium
-|(S) fg      |      |(P) pkill   |
-|(P) ps      |      |(O) top     |
-|(O) pstree  |      |
-
+|comando     | uso común   | comando    | uso común
+|------------|-------------|------------|----------
+|(S) jobs    | jobs        |(U) kill    | kill <pid>
+|(S) bg      | bg <job id> |(N) killall | killall <app>
+|(S) fg      | fg <job id> |(P) pkill   | pkill <app>
+|(P) ps      | ps, ps aux  |(O) top     | top
+|(O) pstree  | pstree      |(O) htop    | htop
+ 
 ---
 
 # 5.4 Comandos para encontrar cosas
 
-|comando     | uso  
-|------------|------
-|(G) find    |
-|(G) grep    | busca patrones
-|(S) history |
-|(C) env     |
-|(O) locate  |
+|comando     | uso  común
+|------------|-----------
+|(G) find    | find <archivo>
+|(S) history | history 
+|(G) grep    | <comando> \| grep <string>
+|(C) env     | env
+|(O) locate  | locate <archivo>
 
 ---
 
 # 5.5 Comandos de almacenamiento
 
-|comando    | uso|comando    | uso       
-|-----------|----|-----------|-------
-|(C) df     |    |(U) mount  |
-|(C) du     |    |(U) umount |
-|(C) dd     |    |(U) fschk  |
-|(U) fdisk  |    |(U) lsblk  |
-|(G) cfdisk |    |(U) blkid  |
+|comando    | uso común         | comando   | uso  común     
+|-----------|-------------------|-----------|-----------
+|(C) df     |  df               |(U) mount  | mount -t ntfs-3g <dev> <destino>
+|(C) du     |  du -h <archivo>  |(U) umount | umount <destino>
+|(U) fsck   |  fsck -y <dev>    |(U) lsblk  | lsblk
+|(U) fdisk  |  -l <dev>         |(U) blkid  | blkid
+|(G) cfdisk |  cfdisk           |           |
+|(U) wheris   | wheris <archivo>   
 
 ---
 
 # 5.6 Comandos de redes
 
-|comando | uso        | equivalente a net-tools  | 
-|--------|------------|--------------------------|
-|(I) ip  | ip address | ifconfig                 |
-|(I) ip  | ip link    | ifconfig                 |          
-|(I) ip  | ip route   | route, netstat           |
-|(I) ip  | ip neight  | arp                      |
-|(I) ss  | ss         | netstat                  |
+|comando | uso común                           | equivalente a net-tools  | 
+|--------|-------------------------------------|--------------------------|
+|(I) ip  | ip address, ip a                    | ifconfig                 |
+|        | ip link set/add/remove <interfaz>   | ifconfig                 |          
+|        | ip route                            | route, netstat           |
+|        | ip neigh                            | arp                      |
+|(I) ss  | ss                                  | netstat                  |
 
 ---
 
-|comando       | uso|comando    | uso       
-|--------------|----|-----------|-------
-|(I) tracerout |    |(O) wget   |
-|(I) ping      |    |(O) curl   |
-|(O) ssh       |    |(O) git    |
-|(O) scp       |    |(U) rfkill |
+|comando        | uso común                            |comando    | uso común      
+|---------------|--------------------------------------|-----------|----------
+|(I) traceroute | traceroute <pagina web>              |(O) wget   | wget <pagina web>
+|(I) ping       | ping <pagina web>                    |(O) curl   | curl -o <archivo> <pagina web>
+|(O) ssh        | ssh <usario>@<ip>                    |(O) git    | git clone <servidor.git>
+|(O) scp        | scp <origen> <usario>@<ip>:<destino> |(U) rfkill | rfkill (un)block all
 
 ---
 
-# 5.7 Comandos de informacion del sistema
+# 5.7 Comandos de informacion 
 
-|comando      | uso|comando    | uso       
-|-------------|----|-----------|-------
-|(U) dmesg    |    |(O) which  |
-|(O) neofetch |    |(C) whoami |
-|(C) uname    |    |(C) uptime |
-|(U) wheris   |    |(G) time   |
+|comando      | uso común|comando    | uso común  
+|-------------|----------|-----------|-------
+|(U) dmesg    |                 |(O) which  |
+|(O) neofetch | noefetch  |(C) whoami | whoami
+|(C) uname    | uname   |(C) who | who
+|(G) time     | time <comando>     |(C) uptime |
 
 ---
 
-|comando       | uso|comando    | uso       
-|--------------|----|-----------|-------
-|(G) date      |    |(O) lsusb
-|(C) hostname  |    |(U) lscpu
-|(P) free      |    |(O) xinput 
-|(O) lscpi     |    |(S) export
- 
+|comando       | uso común  |comando    | uso común 
+|--------------|------------|-----------|-------
+|(G) date      | date +"%D" |(O) lsusb  | lsub
+|(C) hostname  | hostname   |(U) lscpu  |
+|(P) free      | free -h   |(O) xinput | xinput lists
+|(O) lscpi     | lspci   |(S) export |
 
 ---
 
 # 5.8 Comandos extras
 
-|comando    | uso|comando   | uso       
-|-----------|----|----------|-------
-|(O) man    |    |(U) su    |
-|(O) whatis |    |(C) wc    |
-|(C) echo   |    |(G) diff  |
-|(S) exit   |    |(O) xclip | xclip -sel clip
-|(C) printf |    |(G) gpg   |
-|(O) sudo   |    |(C) cksum |
+|comando    | uso común                              |comando       | uso común      
+|-----------|----------------------------------------|--------------|----------
+|(O) man    | man <comando>                          |(U) su        | su, su <usuario>
+|(O) whatis | whatis <comando>                       |(C) wc        | wc <archivo>
+|(C) echo   | echo '<string>', echo \$<variable>     |(G) diff      | diff <archivo> <archivo> 
+|(S) exit   | exit                                   |(O) xclip     | xclip -sel clip
+|(C) printf | printf "integer: %i" "\$<variable> \n" |(G) gpg       | gpg --verify <archivo>.sig/.gpg 
+|(O) sudo   | sudo <comando>                         |(C) sha512sum | sha512sum -c <archivo>.sha512sum
 
 ---
 
@@ -636,22 +636,21 @@ Categorize los comandos que creo más importantes en su funcion y los marque en 
 
 # 6.1 Funciones de shell 
 
-|funcion | uso                              |funcion   | uso       
-|--------|----------------------------------|----------|-------
-|*       | completa strings                 |!<num>  | ejecuta el comando en ese numero  
-|=       | definir variables                |!!      | ejecuta el ultimo comando dado
-|\$()    | comandos como variables          | \|     | para encadenar comandos
-|{}      | secuencias                       | \|\|    | or, funciona como un try catch
+|función | ejemplo de uso     | función  | ejemplo de uso       
+|--------|--------------------|----------|------------
+|*       | find /*            |!         | !<num>  
+|=       | <variable>=<valor> |!!        | !!  
+|\$()    | cowsay $(fortune)  | \|       | fortune \| cowsay
+|{}      | echo {1..10}       | \|\|     | echo 'try' \|\| echo 'catch'
 
 ---
 
-|funcion | uso                              |funcion | uso
-|--------|----------------------------------|--------|------
-|>                |redirecciona             |&&      |
-|> /dev/null 2>&1 |envia el output a null   | ;      |
-|>>               |redirecciona             |alias   |
-|&                |segundo plano            |   
-
+|función           | ejemplo de uso              | función | ejemplo de uso                                    
+|------------------|-----------------------------|---------|---------------
+|&                 | <comando> &                 |&&       | <comado> && <comando>
+|>                 | echo "ola" > <archivo>      |;        | <comando> ; <comando>
+|>>                | echo "ola" >> <archivo>     |alias    |alias nombre=<comando>
+|>> /dev/null 2>&1 | firefox & >> /dev/null 2>&1 |         |
 ---
 
 <style scoped>img {position: absolute;top: 50%;left: 80%;transform: translate(-50%, -50%);}</style>
@@ -663,14 +662,14 @@ Categorize los comandos que creo más importantes en su funcion y los marque en 
 ---
 
 # 6.3 Funciones especificos de la distro
-- WIFI: NetworkManager, IWD, ConnMan, wpa_supplicant
-- Firewalls: iptables, uwd, firewalld
+- WIFI: NetworkManager, IWD, ConnMan, wpa_supplicant.
+- Firewalls: iptables, uwd, firewalld.
 - Package Manager: apt, pacman, emerge, etc.
-- init system: poweroff, shutdown, poweroff, halt
+- init system: poweroff, shutdown, poweroff, halt.
     - daemon management: systemctl, sv, rc-service, etc.
 - cron jobs: cronie, fcron, dcron, etc.
 
-más informacion de comandos: [The linux Command Handbook](https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-man-command), [arch wik: core utilities](https://wiki.archlinux.org/title/core_utilities), [decoded gnu core utils](https://www.maizure.org/projects/decoded-gnu-coreutils/), [Gentoo wiki: util-linux](https://wiki.gentoo.org/wiki/Util-linux), [procps](https://gitlab.com/procps-ng/procps), [iproute2](https://wiki.linuxfoundation.org/networking/iproute2), [iputils](https://wiki.linuxfoundation.org/networking/iputils), [net-tools](https://net-tools.sourceforge.io/).
+más informacion acerca de comandos: [The linux Command Handbook](https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-man-command), [arch wik: core utilities](https://wiki.archlinux.org/title/core_utilities), [decoded gnu core utils](https://www.maizure.org/projects/decoded-gnu-coreutils/), [Gentoo wiki: util-linux](https://wiki.gentoo.org/wiki/Util-linux), [procps](https://gitlab.com/procps-ng/procps), [iproute2](https://wiki.linuxfoundation.org/networking/iproute2), [iputils](https://wiki.linuxfoundation.org/networking/iputils), [net-tools](https://net-tools.sourceforge.io/).
 
 ---
 
@@ -810,7 +809,7 @@ pagina web, vaultwarden, nextcloud, photoprism, searxng, wireguardvpn, dnsmasq/p
 
 ---
 
-# ** 11. Referencias**
+# **11. Referencias**
 
 ---
 
