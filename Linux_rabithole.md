@@ -1,7 +1,7 @@
 ---
 marp: true
 title: linux rabit hole
-theme: nord
+theme: default
 paginate: true
 ---
 <style>{text-align: justify}</style>
@@ -76,13 +76,27 @@ Escribe programas que hagan una cosa muy bien, que trabajen juntos (input de uno
 
 ---
 
-# 2.2 FOSS
+# 2.2 licencias 
 
-Free and open source software, es software que tiene codigo abierto, donde uno es libre de estudiar, modificar, aunque la distribucion depende de las licencias. 
+las licencias son bla bla bla poner en refs
+University of Pittsburgh. (2022). *Copyright and Intellectual Property Toolkit*. https://pitt.libguides.com/copyright/licenses
+
+copyright.gov. (s.f.). *What is Copyright?*. https://www.copyright.gov/what-is-copyright/
+copyright.org. (s.f.). *What is copyleft?*. https://copyleft.org/
+creativecommons. (s.f.). *About The Licenses*. https://creativecommons.org/licenses/
+
+copyright: 
+copyleft:
+
+creative commons: uso libre pero con atribucion obligatoria, comunmente usados para imagenes, videos y articulos. ![CC BY](https://licensebuttons.net/l/by/3.0/88x31.png), ![CC BY-SA](https://licensebuttons.net/l/by-sa/3.0/88x31.png), ![CC BY-ND](https://licensebuttons.net/l/by-nd/3.0/88x31.png), ![CC BY-NC](https://licensebuttons.net/l/by-nc/3.0/88x31.png), ![CC BY-NC-SA](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png) y ![CC BY-NC-ND](https://licensebuttons.net/l/by-nc-nd/3.0/88x31.png)
+
+---
+
+# 2.2.1 FOSS
+ Free and open source software, es software que tiene codigo abierto, donde uno es libre de estudiar, modificar, aunque la distribucion depende de las licencias. 
 
 
-# 2.2.1 licencias open source más comunes
-- [creative commons:](https://creativecommons.org/licenses/) uso libre pero con atribucion obligatoria, comunmente usados para imagenes, videos y articulos. ![CC BY](https://licensebuttons.net/l/by/3.0/88x31.png), ![CC BY-SA](https://licensebuttons.net/l/by-sa/3.0/88x31.png), ![CC BY-ND](https://licensebuttons.net/l/by-nd/3.0/88x31.png), ![CC BY-NC](https://licensebuttons.net/l/by-nc/3.0/88x31.png), ![CC BY-NC-SA](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png) y ![CC BY-NC-ND](https://licensebuttons.net/l/by-nc-nd/3.0/88x31.png)
+# 2.2.2 licencias open source 
 - [AGPL:](https://www.gnu.org/licenses/agpl-3.0.en.html) similar al GPL pero para servicios en linea
 - [Apache](https://www.apache.org/licenses/LICENSE-2.0): incluir la nota de copyright  
 - BSD [2](https://opensource.org/license/bsd-2-clause/)/[3](https://opensource.org/license/bsd-3-clause/): incluir la nota de copyright 
@@ -91,11 +105,12 @@ Free and open source software, es software que tiene codigo abierto, donde uno e
 
 ---
 
-- Free/libre: la filosofia free tiene relacion con richard stallman y su proyecto GNU, esta se basa en software que respeta la libertad del usuario, libertad de distrubucion, libertad de uso, libertad de estudio, etc. llendo en contra del software privado de codigo cerrado, los binary blobs, las licencias y EULAs no permisivas, los  y el DRM.
+# 2.3 Filosofia de software libre 
+ la filosofia de software libre tiene relacion con richard stallman y su proyecto GNU, esta dice que software debe respetar la libertad del usuario, la libertad de distrubucion, la libertad de uso, la libertad de estudio, etc. Llendo en contra del software privado y con codigo cerrado, los blobs binarios, las licencias y EULAs no permisivas y el DRM.
 
 ---
 
-# 2.3 BSD
+# 2.4 BSD
 
 "Berkeley Software Distribution" es un sistema operativo creado en la universidad de Berkeley en California, de codigo abierto y originalmente extension de AT&T’s Research UNIX, a diferencia de linux este tiene la BSD C library, aunque pueden compartir ciertas utilidades de GNU
 
@@ -110,7 +125,7 @@ estos pueden tener ciertas [ventajas y desventajas](https://serverfault.com/ques
 ---
 
 
-# 2.4 Privacidad 
+# 2.5 Privacidad 
 
 te recominedo esta [guia](https://www.privacyguides.org/en/) de privacidad o tambien a la youtuber [Naomi Brockwell](https://yewtu.be/channel/UCSuHzQ3GrHSzoBbwrIq3LLA)
 - [duckduckgo](https://seonorth.ca/news/why-duckduckgo-is-bad/) no es bueno
@@ -118,7 +133,7 @@ te recominedo esta [guia](https://www.privacyguides.org/en/) de privacidad o tam
 - las VPN no te dan [privacidad](https://gist.github.com/joepie91/5a9909939e6ce7d09e29)
 - la gente esta [desinformada](https://www.whonix.org/wiki/Tor_Myths_and_Misconceptions) acerca de tor
 
-# 2.5 Seguridad
+# 2.6 Seguridad
 
 te recomiendo esta [guia](https://wiki.archlinux.org/title/security) de seguridad de la arch wiki
 - usa [linux-hardened](https://github.com/anthraxx/linux-hardened) kernel
@@ -128,7 +143,7 @@ te recomiendo esta [guia](https://wiki.archlinux.org/title/security) de segurida
 
 ---
 
-# 2.6 Minimalismo
+# 2.7 Minimalismo
 el minimalismo en cuestion de linux, se trata de usar y escribir programas simples siguiendo principios de UNIX y KISS,  dos ideas deribadas del minimalismo son:
 - gnuless: algunos programas de GNU pueden no ser los más eficientes o minimalistas, un video acerca del tema: [Luke Smith: GNU is bloated!](https://yewtu.be/watch?v=nTCHapo8QFM), donde se habla tambien de la pagina [harmfull cat -v](https://harmful.cat-v.org/software/) la cual tiene ideas extremas al respecto.
 - [init freedom](https://www.devuan.org/os/init-freedom): systemd es el init system más usado, pero este no sigue la filosofia de unix ya que systemd no solo es el init, ya que tiene muchas otras [funciones](https://systemd-free.artixlinux.org/why.php) y herramientas, por lo que usar [alternativas](https://without-systemd.org/wiki/index_php/Main_Page/#other_UNIX-like) es [recomendado](https://nosystemd.org/)
@@ -138,7 +153,7 @@ Paginas que recomiendan software minimalista: [lukesmith](https://lukesmith.xyz/
 ---
 
 
-# 2.7 Ricing (customizacion)
+# 2.8 Ricing (customizacion)
 
 Como linux te permite modificar el sistema, puedes configurarlo a todos tus gustos artisticos, se suelen usar paletas de colores como [nord](https://www.nordtheme.com/) o [Catppuccin](https://github.com/catppuccin/palette).
 Uno de los mejores lugares para ver, aprender y compartir rices es  [r/unixporn](https://reddit.com/r/unixporn/), donde los usuarios comparten [dotfiles](https://wiki.archlinux.org/title/Dotfiles) que son los archivos que van en la carpeta de usuario y tienen las configuraciones de los programas que se van a costumizar, usualmente son respaldados en un servidor de git.
@@ -494,24 +509,23 @@ hay muchisimas [distribuciones](https://upload.wikimedia.org/wikipedia/commons/1
 # **5. Comandos**
 
 A las aplicaciones CLI/TUI y utilidades de terminal  se les llama comandos, estos como en las funciones de programacion, tienen argumentos y/o parametros con los que se usan, siendo los argumentos los archivos o directerios usados y los parametros las opciones del comando.
-Categorize los comandos que creo más importantes en su funcion y los marque en funcion del conjunto de utilidades con seis letras mayusculas siendo C de "GNU core utils", U de "Util-linux", G de "GNU Software", P de "procps", I de "iproute2 o iputils", <br> S de "SHELL" y O de "Otros comunes".
+Categorize los comandos que creo más importantes en su funcion y los marque en funcion del conjunto de utilidades con seis letras mayusculas siendo C de "GNU core utils", U de "Util-linux", G de "GNU Software", P de "procps", I de "iproute2 o iputils", <br> S de "SHELL" y O de "Otros".
 
 ---
 
 <style scoped>table{font-size: 25px;}</style>
 
 # 5.1 Comandosde navegacion de archivos
-|comando    |  uso | comando  |uso
-|-----------|------|----------|---------
-|(C) touch  | touch <archivo>   |(O) unzip|      |
-|(C) cp     | cp <archivo> <destino>          |(O) unrar  |      |   
-|(C) ls     | ls <directorio>, ls -l -a           |(C) cd      |      |
-|(C) rm     | rm -r -d -f           |(C) pwd     |      |
-|(C) mkdir  | mkdir <directorio>         |(C) ln     |      |
-|(C) rmdir  | rmdir <directorio>          |(C) chmod   |      |
-|(C) mv     | mv <archivo> <destino>          |(C) chown    |      |
-|(G) tar    | tar 
-
+|comando    |  uso                               | comando  |uso
+|-----------|------------------------------------|----------|---------
+|(C) touch  | touch <archivo>                    |(G) gzip  | gzip (-d) <archivo>      
+|(C) cp     | cp <origen> <destino>             |(O) unrar | unrar <archivo>.rar
+|(C) ls     | ls <dir>, ls -l -a, ls -la <dir>   |(O) unzip | unzip <archivo>.zip     
+|(C) rm     | rm -r -d -f                        |(C) cd    | cd <dir>      
+|(C) mkdir  | mkdir <dir>                        |(C) ln    | ln -s <origen> <destino>
+|(C) rmdir  | rmdir <dir>                        |(C) chmod |    
+|(C) mv     | mv <archivo> <destino>             |(C) chown |    
+|(G) tar    | tar (c/x)zfv <archivo>.tar.gz <dir>|(C) pwd   |    
 ---
 
 # 5.2 Comandos de Lecto-escritura de archivos 
@@ -563,13 +577,13 @@ Categorize los comandos que creo más importantes en su funcion y los marque en 
 
 # 5.6 Comandos de redes
 
-|comando | uso        | antiguas net-tools, etc. | 
+|comando | uso        | equivalente a net-tools  | 
 |--------|------------|--------------------------|
 |(I) ip  | ip address | ifconfig                 |
 |(I) ip  | ip link    | ifconfig                 |          
 |(I) ip  | ip route   | route, netstat           |
 |(I) ip  | ip neight  | arp                      |
-|(I) ss  |            | netstat                  |
+|(I) ss  | ss         | netstat                  |
 
 ---
 
@@ -604,6 +618,7 @@ Categorize los comandos que creo más importantes en su funcion y los marque en 
 ---
 
 # 5.8 Comandos extras
+
 |comando    | uso|comando   | uso       
 |-----------|----|----------|-------
 |(O) man    |    |(U) su    |
@@ -621,18 +636,24 @@ Categorize los comandos que creo más importantes en su funcion y los marque en 
 
 # 6.1 Funciones de shell 
 
-| *  |wildcars
-| =  | definir variables
-| $ () | comandos como variables |
-| {num..num} |
-|!$numero |
-|!! | ultimo comando
-| | | pipes
+|funcion | uso     |funcion   | uso       
+|--------|---------|----------|-------
+|*       | completa strings             |         | a
+|=       | definir variables   |
+|\$()    | comandos como variables |
+|{}      | secuencias                       |
+|!<num>  | ejecuta el comando en ese numero | 
+|!!      | ejecuta el ultimo comando dado   |
+| \|     | para encadenar comandos          |
+| \||    | or, funciona como un try catch   |
 |>
 |> /dev/null 2>&1
 |>>
 |&
+|&&
+| ;
 |alias
+
 
 ---
 

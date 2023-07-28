@@ -23,13 +23,15 @@ por lo que esta imagen no podra ser usada en mercancia, plantillas u otros produ
     - 1.5 las capas de linux
 - 2. temas relacionadas
     - 2.1 UNIX
-    - 2.2 FOSS
-        - 2.2.1 licencias open source más comunes
-    - 2.3 BSD
-    - 2.4 Privacidad
-    - 2.5 Seguridad
-    - 2.6 Minimalismo
-    - 2.7 Ricing
+    - 2.2 licencias 
+        - 2.2.1 FOSS
+        - 2.2.2 licencias open source 
+    - 2.3 Filosofia Free/Libre 
+    - 2.4 BSD
+    - 2.5 Privacidad
+    - 2.6 Seguridad
+    - 2.7 Minimalismo
+    - 2.8 Ricing
 - 3. Comparación de Sistemas operativos
     - 3.1 Ventajas de linux
     - 3.2 Más referencias de las ventajas de linux
