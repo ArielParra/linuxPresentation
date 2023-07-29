@@ -4,10 +4,25 @@ title: linux rabit hole
 theme: default
 paginate: true
 ---
-<style>{text-align: justify}</style>
 
-![bg opacity](rabithole.png)
+
+<!-- tema -->
+<style>
+
+h1 {color: #81a1c1;}
+h1 strong {color: #5e81ac;}
+h2 {color: #88c0d0;}
+a[href]{color: #5e81ac;}
+section {
+  background: #d8dee9;
+  text-align: justify;
+  color: #3b4252;
+}
+</style>
+
+![bg opacity ](./img/rabithole.png)
 # <!--fit--> linux rabit hole
+<style>h2 {background-color: rgba(255, 0, 0, 0.3);}</style>
 ## curso completo de linux y los temas que lo rodean
 ### por Ariel Parra
 
@@ -18,7 +33,7 @@ paginate: true
 ---
 
 # 1.1 Definición
-Es un kernel monolitico de codigo abierto con licencia GNU GPL v2.<br>
+Es un kernel monolitico de codigo abierto con licencia GNU GPL v2.
 
 ---
 
@@ -54,9 +69,9 @@ se suele usar el Filesystem Hierarchy Standard de linux
 
 # 1.5 las capas de linux
 
-<style scoped>img {display: block; margin-left: auto;margin-right: auto;};</style>
+<style scoped>img {display: block; margin-left: auto;margin-right: auto;}</style>
 
-![h:575px](./kernel-user_space.png)
+![h:575px](./img/kernel-user_space.png)
 
 Imagen recuperada de [wikipedia](https://en.wikipedia.org/wiki/Template%3ALinux_layers)
 
@@ -92,11 +107,11 @@ creative commons: uso libre pero con atribucion obligatoria, comunmente usados p
 
 ---
 
-# 2.2.1 FOSS
+## 2.2.1 FOSS
  Free and open source software, es software que tiene codigo abierto, donde uno es libre de estudiar, modificar, aunque la distribucion depende de las licencias. 
 
 
-# 2.2.2 licencias open source 
+## 2.2.2 licencias open source 
 - [AGPL:](https://www.gnu.org/licenses/agpl-3.0.en.html) similar al GPL pero para servicios en linea
 - [Apache](https://www.apache.org/licenses/LICENSE-2.0): incluir la nota de copyright  
 - BSD [2](https://opensource.org/license/bsd-2-clause/)/[3](https://opensource.org/license/bsd-3-clause/): incluir la nota de copyright 
@@ -138,14 +153,14 @@ te recominedo esta [guia](https://www.privacyguides.org/en/) de privacidad o tam
 te recomiendo esta [guia](https://wiki.archlinux.org/title/security) de seguridad de la arch wiki
 - usa [linux-hardened](https://github.com/anthraxx/linux-hardened) kernel
 - [selinux](https://selinuxproject.org/page/Main_Page) o [AppArmor](https://apparmor.net/) para el control de acceso
-- no uses [kali linux](https://www.kali.org/docs/introduction/should-i-use-kali-linux/)
+- No uses [kali linux](https://www.kali.org/docs/introduction/should-i-use-kali-linux/), como sistema operativo principal
 - usa OpenBSD, ya que es el sistema unix más [seguro](https://www.openbsd.org/security.html)
 
 ---
 
 # 2.7 Minimalismo
 el minimalismo en cuestion de linux, se trata de usar y escribir programas simples siguiendo principios de UNIX y KISS,  dos ideas deribadas del minimalismo son:
-- gnuless: algunos programas de GNU pueden no ser los más eficientes o minimalistas, un video acerca del tema: [Luke Smith: GNU is bloated!](https://yewtu.be/watch?v=nTCHapo8QFM), donde se habla tambien de la pagina [harmfull cat -v](https://harmful.cat-v.org/software/) la cual tiene ideas extremas al respecto.
+- gnuless: algunos programas de GNU pueden no ser los más eficientes o minimalistas, un video acerca del tema: [Luke Smith: GNU is bloated!](https://yewtu.be/watch?v=nTCHapo8QFM), donde se habla tambien de la pagina [harmfull cat -v](https://harmful.cat-v.org/software/) la cual tiene ideas extremas.
 - [init freedom](https://www.devuan.org/os/init-freedom): systemd es el init system más usado, pero este no sigue la filosofia de unix ya que systemd no solo es el init, ya que tiene muchas otras [funciones](https://systemd-free.artixlinux.org/why.php) y herramientas, por lo que usar [alternativas](https://without-systemd.org/wiki/index_php/Main_Page/#other_UNIX-like) es [recomendado](https://nosystemd.org/)
 
 Paginas que recomiendan software minimalista: [lukesmith](https://lukesmith.xyz/programs/) y [suckless.org](https://suckless.org/rocks/)
@@ -436,7 +451,8 @@ hay muchisimas [distribuciones](https://upload.wikimedia.org/wikipedia/commons/1
 
 ---
 
-<style scoped>table {font-size: 25px; text-align: center }</style>
+<style scoped>table {}</style>
+<style scoped>table {font-size: 25px; text-align: center;}</style>
 
 ## 4.3.1 Distribuciones independentes 
 
@@ -451,7 +467,7 @@ hay muchisimas [distribuciones](https://upload.wikimedia.org/wikipedia/commons/1
 
 ---
 
-<style scoped>table {font-size: 25px; text-align: center }</style>
+<style scoped>table {text-align: center }</style>
 
 
 | Logo                        | distribucion                                                                   | init         | pkg manager | libreria c | core utils  |  
@@ -465,7 +481,7 @@ hay muchisimas [distribuciones](https://upload.wikimedia.org/wikipedia/commons/1
 
 ---
 
-<style scoped>table {font-size: 25px; text-align: center }</style>
+<style scoped>table {text-align: center }</style>
 
 ## 4.3.2 Distribuciones Deribadas 
 
@@ -501,7 +517,6 @@ hay muchisimas [distribuciones](https://upload.wikimedia.org/wikipedia/commons/1
 | ![h:50px](logos/parabola.png) | [parabola](https://www.parabola.nu/)    | systemd/OpenRC/etc.| arch          | pacman      | glibc      | gnu         |
 | ![h:50px](logos/Hyperbola.png)| [hyperbola](https://www.hyperbola.info/)| OpenRC             | debian/arch   | pacman      | glibc      | gnu         |
 | ![h:50px](logos/Guix.png)     | [Guix](https://guix.gnu.org/)           | shepherd           | independiente | Guix        | glibc      | gnu         | 
-| ![w:300px](logos/PureOS.png)  | [PureOs](https://pureos.net/)           | systemd            | debian        | apt         | glibc      | gnu         | 
 | ![h:50px](logos/trisquel.png) | [trsiquel](https://trisquel.info/)      | systemd            | ubuntu/debian | apt         | glibc      | gnu         | 
 
 ---
@@ -597,25 +612,24 @@ Categorize los comandos que creo más importantes en su funcion y los marque en 
 
 ---
 
+<style scoped>table {font-size: 26px; }</style>
+
 # 5.7 Comandos de informacion 
 
-|comando      | uso común       |comando    | uso común  
-|-------------|-----------------|-----------|----------
-|(U) dmesg    | dmesg -t        |(O) which  | which <comando>
-|(O) neofetch | noefetch        |(C) whoami | whoami
-|(C) uname    | uname           |(C) who    | who 
-|(G) time     | time <programa> |(C) uptime | uptime
+|comando       | uso común       |comando    | uso común  
+|--------------|-----------------|-----------|----------
+|(U) dmesg     | dmesg -t        |(O) which  | which <comando>
+|(O) neofetch  | noefetch        |(C) whoami | whoami
+|(C) uname     | uname           |(C) who    | who 
+|(G) time      | time <programa> |(C) uptime | uptime
+|(G) date      | date +"%D"      |(O) lsusb  | lsusb
+|(C) hostname  | hostname        |(U) lscpu  | lscpu
+|(P) free      | free -h         |(O) xinput | xinput list
+|(O) lscpi     | lspci           |(C) env    | env
 
 ---
 
-|comando       | uso común  |comando    | uso común 
-|--------------|------------|-----------|----------
-|(G) date      | date +"%D" |(O) lsusb  | lsusb
-|(C) hostname  | hostname   |(U) lscpu  | lscpu
-|(P) free      | free -h    |(O) xinput | xinput lists
-|(O) lscpi     | lspci      |(C) env    | env
-
----
+<style scoped>table {font-size: 23px; }</style>
 
 # 5.8 Comandos extras
 
@@ -625,7 +639,7 @@ Categorize los comandos que creo más importantes en su funcion y los marque en 
 |(O) whatis | whatis <comando>                       |(C) wc        | wc <archivo>
 |(C) echo   | echo '<string>', echo \$<variable>     |(G) diff      | diff <archivo> <archivo> 
 |(S) exit   | exit                                   |(O) xclip     | xclip -sel clip
-|(C) printf | printf "integer: %i" "\$<variable> \n" |(G) gpg       | gpg --verify <archivo>.sig/.gpg 
+|(C) printf | printf "entero: %i" "\$<variable> \n"  |(G) gpg       | gpg --verify <archivo>.sig/.gpg 
 |(O) sudo   | sudo <comando>                         |(C) sha512sum | sha512sum -c <archivo>.sha512sum
 
 ---
@@ -650,7 +664,7 @@ Categorize los comandos que creo más importantes en su funcion y los marque en 
 |&                 | <comando> &                 |&&       | <comado> && <comando>
 |>                 | echo "ola" > <archivo>      |;        | <comando> ; <comando>
 |>>                | echo "ola" >> <archivo>     |alias    |alias nombre=<comando>
-|>> /dev/null 2>&1 | firefox & >> /dev/null 2>&1 |export   |export
+|2>&1              | firefox & >> /dev/null 2>&1 |export   |export
 ---
 
 <style scoped>img {position: absolute;top: 50%;left: 80%;transform: translate(-50%, -50%);}</style>
@@ -667,7 +681,7 @@ Categorize los comandos que creo más importantes en su funcion y los marque en 
 - Package Manager: apt, pacman, emerge, etc.
 - init system: poweroff, shutdown, poweroff, halt.
     - daemon management: systemctl, sv, rc-service, etc.
-- cron jobs: cronie, fcron, dcron, etc.
+- cron jobs: cronie, fcron, dcron, etc. 
 
 más informacion acerca de comandos: [The linux Command Handbook](https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-man-command), [arch wik: core utilities](https://wiki.archlinux.org/title/core_utilities), [decoded gnu core utils](https://www.maizure.org/projects/decoded-gnu-coreutils/), [Gentoo wiki: util-linux](https://wiki.gentoo.org/wiki/Util-linux), [procps](https://gitlab.com/procps-ng/procps), [iproute2](https://wiki.linuxfoundation.org/networking/iproute2), [iputils](https://wiki.linuxfoundation.org/networking/iputils), [net-tools](https://net-tools.sourceforge.io/).
 
@@ -677,11 +691,12 @@ más informacion acerca de comandos: [The linux Command Handbook](https://www.fr
 
 ---
 
-Con la filosofia de linux de usar programas interconectados, las aplicaciones suelen tener dependencias para poder funcionar, los encargados de manternar las relaciones entre aplicacion y dependencia son los Package Managers, pero estos pueden llegar a tener problemas de compatibilidad si la aplicacion o la dependencia esta desactualizada, para solucionar este problema se han creado formatos de paquetes que son portables, donde la aplicacion es distribuida junto con la dependencia, esto puede ocacionar tamaños de aplicaciones más grandes, a costa de "estabilidad", los tres grandes distribuidores de aplicaciones portables son: [AppImage](https://appimage.org/), [flatpak](https://flatpak.org/) y [Snapcraft](https://snapcraft.io/)
+Con la filosofia de linux de usar programas interconectados, las aplicaciones suelen depender de otros programas llamados dependencias, los encargados de manternar las relaciones entre aplicaciones y dependencias son los Package Managers. Aun asi las aplicaciones pueden llegar a tener problemas de compatibilidad si la aplicacion o la dependencia esta desactualizada, para solucionar este problema se han creado formatos de paquetes que son portables, donde la aplicacion es distribuida junto con la dependencias, esto puede ocacionar tamaños de aplicaciones más grandes, a costa de una mayor "estabilidad", los tres grandes distribuidores de aplicaciones portables son: [AppImage](https://appimage.org/), [flatpak](https://flatpak.org/) y [Snapcraft](https://snapcraft.io/)
 
 ---
 
 # 7.1 Recomendacion de aplicaciones
+
 - Editor de texto: [vim](https://www.vim.org/) 
 - IDE: [vscodium](https://vscodium.com/)
 - Navegador: [librewolf](https://librewolf.net/)/[firefox](https://www.mozilla.org/en-US/firefox/new/) + [Arkenfox.js](https://github.com/arkenfox/user.js/) o [ungoogled-chromium](https://github.com/ungoogled-software/ungoogled-chromium)
@@ -697,24 +712,61 @@ Con la filosofia de linux de usar programas interconectados, las aplicaciones su
 
 ---
 
-# **8. Hardware**
+# **8. Procesadores**
+
+---
+<style scoped>img {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}</style>
+
+![w:600 px](https://miro.medium.com/v2/ resize:fit:1400/1*mKsH4qcTSzFYvVyxskZewg.jpeg)
+
+imagen recuperada de [RealWorldCyberSecurity](https://medium.com/swlh/negative-rings-in-intel-architecture-the-security-threats-youve-probably-never-heard-of-d725a4b6f831)
 
 ---
 
-se puede usar linux con cualquier tipo de hardware, pero es recomendado usar hardware especializado que respete tu privacidad y libertad de uso.
+# x86
 
-libreboot/coreboot para desabilitar AMD PSP, intel ME
-que es AMD PSP:
-que es intel ME:
-se puede eliminar completamente en procesadores intel core duo
-se puede deshabilitar en una gran parte con: [me_cleaner](https://github.com/system76/coreboot/tree/8c9e6ad9833bfdc522917200e0101c84fe0784c2/util/me_cleaner)
-si deshabilitar intel ME en procesadores de la 11 generacion (Tiger-Lake) en adelante, se usa el [triple de energia](https://github.com/system76/firmware-open/blob/master/docs/intel-me.md#tiger-lake-u) en estado de suspencion 
+es una familia CISC (complex instruction set computer) de procesadores, creados originalmente por intel en 1978. Tienen un close source ISA (Instruction Set Architecture).
 
 microcode es un blob necesario para sacar el mejor rendimiento al procesador
-undervolting es una [vulnerabilidad](https://plundervolt.com/)
 
+undervolting es una [vulnerabilidad](https://plundervolt.com/), por lo que se recomienda utilizar frequency scaling 
+[cpufreq](https://docs.kernel.org/admin-guide/pm/cpufreq.html)
+
+![](./img/Intel-ME.png)
+
+Intel ME es un sistema operativo que siempre esta activo mientras la placa madre tenga corriente, este puede acceder a la tarjeta de red, lo que lo convierte en una gran [backdoor](https://www.eff.org/deeplinks/2017/05/intels-management-engine-security-hazard-and-users-need-way-disable-it)
+se puede eliminar Intel ME completamente en procesadores intel core duo, y en procesadores más modernos se puede deshabilitar en una gran parte con [me_cleaner](https://github.com/system76/coreboot/tree/8c9e6ad9833bfdc522917200e0101c84fe0784c2/util/me_cleaner). Pero si se deshabilita intel ME en procesadores de la 11 generacion (Tiger-Lake) en adelante, se usa el [triple de energia](https://github.com/system76/firmware-open/blob/master/docs/intel-me.md#tiger-lake-u) en estado de suspencion 
 
 ---
+![w:450px](./img/AMD-PSP)
+https://freundschafter.com/wp-content/uploads/2018/01/amdpspsoc
+AMD PSP: Es un sistema completo con un procesador arm independiente del procesador x86, el cual ejecuta su propio firmware. y este tiene vulnerabilidades 
+
+
+la mejor forma de usar un procesador x86 es con libreboot o coreboot ya que estos te permiten deshabilitar Intel ME o AMD PSP 
+
+---
+
+# arm
+tiene un close ISA
+
+
+[TrustZone](https://www.arm.com/technologies/trustzone-for-cortex-a) la cual tiene [vulnerabilidades](https://blog.quarkslab.com/attacking-the-arms-trustzone.html
+)
+
+---
+
+# risc-v
+open ISA
+es bien chingon aca 
+https://www.makeuseof.com/what-is-a-risc-v-sbc/
+[keystone](https://keystone-enclave.org/2018/12/13/what-is-keystone.html)
+
+---
+
+# 8.2 Hardware recomendado
+
+Linux es compatible con la mayoria de hardware, pero es recomendado usar hardware especializado para tener una compatibilidad perfecta con linux donde se respete tu privacidad y libertad de uso.
 
 vendedores de laptops/computadoras con coreboot: 
 - [starlabs](https://mx.starlabs.systems/)
@@ -732,12 +784,15 @@ hardware y computadoras sin binarios o software propietario:
 # **9. servidores**
 
 ---
-z
-las distribuciones [más usadas](https://w3techs.com/technologies/details/os-linux) en servidores son las basdas en debian como: ubuntu server y debian o las empresariales como: RHEL y SLES, aunque tambien se usa Proxmox para VMs. Los file systems más usados son ZFS (openZFS) o XFS, pero recomiendo este video para elegir el [file system](https://yewtu.be/watch/?v=HdEozE2gN9I) para tu servidor.
+
+las distribuciones [más usadas](https://w3techs.com/technologies/details/os-linux) en servidores son las basdas en debian como: ubuntu server y debian o las empresariales como: RHEL y SLES, aunque tambien se usa Proxmox como hypervisor para VMs.
+
+Los file systems más usados son ZFS (openZFS) o XFS, pero recomiendo este video para elegir el [file system](https://yewtu.be/watch/?v=HdEozE2gN9I) para tu servidor.
 
 hardware para servidores caseros y economicos:
-SBC con arm: las recomendadas por la [FSF](https://www.fsf.org/resources/hw/single-board-computers) son Rockchip, FreeScale y Allwinner, yo recomiendo: orange Pi 5 Plus, orange pi 5, ROCKPro64 y Quartz64 Model A.
-de x86: zimaboard, Fujitsu Futro ThinClient, Dell OptiPlex, HP elitedesk 800, etc.
+AIO: Fujitsu Futro ThinClient, Dell OptiPlex, HP elitedesk 800.
+arm SBC: la [FSF](https://www.fsf.org/resources/hw/single-board-computers) recomienda procesadores Rockchip, FreeScale y Allwinner. 
+Yo recomiendo: orange Pi 5 Plus, orange pi 5, ROCKPro64 y Quartz64 Model A.
 
 ventajas: precios accesibles, usan muy poca electricidad, buen rendimiento, opcion de hacer clusters, las laptops pueden usar sus baterias en caso de un corte de luz.
 
@@ -824,13 +879,9 @@ pagina web, vaultwarden, nextcloud, photoprism, searxng, wireguardvpn, dnsmasq/p
 - creativecommons. (s.f). *About The Licenses*. https://creativecommons.org/licenses/
 - David Both. (2014). *The impact of the Linux philosophy*.https://opensource.com/business/14/12/linux-philosophy
 - dayzerosec. (2023). *Reversing the AMD Secure Processor (PSP) - Part 1: Design and Overview*. https://dayzerosec.com/blog/2023/04/17/reversing-the-amd-secure-processor-psp.html
+- Dodge, C., Irvine, C., & Nguyen, T. (2005). *A study of initialization in Linux and OpenBSD*. https://core.ac.uk/download/pdf/36700709.pdf
 - Eric Steven Raymond. (2003). *Basics of the Unix Philosophy*. http://www.catb.org/~esr/writings/taoup/html/ch01s06.html
 - ezeelinux. (2018). *Linux Distributions Deconstructed*. https://www.ezeelinux.com/news/linux-distributions-deconstructed/
-
----
-
-<style scoped>{font-size: 21px;}</style>
-
 - Fireship. (2022). *Linux in 100 Seconds* [Video]. YouTube. https://yewtu.be/watch?v=rrB13utjYV4
 - freeBSD. (2023). *Explaining BSD*. https://docs.freebsd.org/en/articles/explaining-bsd/
 - GeeksforGeeks. (2019). *Linux Tutorials | Getting Started | Introduction | GeeksforGeeks* [Video]. https://yewtu.be/watch?v=0EDwEQoui_g
@@ -846,11 +897,6 @@ pagina web, vaultwarden, nextcloud, photoprism, searxng, wireguardvpn, dnsmasq/p
 - Michael Tunnell. (2023). *Explaining Linux Family Trees: Why Are There So Many Linux Distros?* [Video]. https://yewtu.be/watch?v=kF8CRt05s6A
 - NGINX. (s.f). *What Is a Reverse Proxy Server?*. https://www.nginx.com/resources/glossary/reverse-proxy-server/
 - Opensource.com. (s.f.). *What is Linux?*. https://opensource.com/resources/linux
-
----
-
-<style scoped>{font-size: 21px;}</style>
-
 - Opensource.com. (s.f). *What is open source?*.https://opensource.com/resources/what-open-source
 - Open Source Initiative. (2007). *The Open Source Definition*. https://opensource.org/osd/
 - opensource initiative. (s.f). *OSI Approved Licenses*. https://opensource.org/licenses/
@@ -866,3 +912,8 @@ pagina web, vaultwarden, nextcloud, photoprism, searxng, wireguardvpn, dnsmasq/p
 - The Open Group. (2008). *The Single UNIX Specification, Version 4*. https://unix.org/version4/overview.html
 - Westerndigital. (s.f.). *RAID Storage*. https://www.westerndigital.com/solutions/raid
 - Wheeler, D. (2003). *History of Unix, Linux, and Open Source / Free Software*. https://tldp.org/HOWTO/Secure-Programs-HOWTO/history.html
+
+
+- ExplainingComputers. (2022). *Explaining RISC-V: An x86 & ARM Alternative* [Video]. https://yewtu.be/watch?v=Ps0JFsyX2fU
+- Boschs, P. (2019) *Introduction to the Intel Management Engine OS (Part 1)*. https://pbx.sh/intelme-sw1/#hasarfaty_2019
+- freundschafter. (2018). *About AMD TrustZone, AMD Platform Security Processor (PSP), AMD Secure Technology*. https://freundschafter.com/research/about-amd-trustzone-amd-platform-security-processor-psp-amd-secure-technology/
