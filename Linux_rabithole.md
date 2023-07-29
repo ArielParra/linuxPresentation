@@ -558,8 +558,9 @@ Categorize los comandos que creo más importantes en su funcion y los marque en 
 |(G) find    | find <archivo>
 |(S) history | history 
 |(G) grep    | <comando> \| grep <string>
-|(C) env     | env
+|(O) pgrep   | pgrep <comando>  
 |(O) locate  | locate <archivo>
+|(U) wheris  | wheris <archivo>   
 
 ---
 
@@ -572,7 +573,6 @@ Categorize los comandos que creo más importantes en su funcion y los marque en 
 |(U) fsck   |  fsck -y <dev>    |(U) lsblk  | lsblk
 |(U) fdisk  |  -l <dev>         |(U) blkid  | blkid
 |(G) cfdisk |  cfdisk           |           |
-|(U) wheris   | wheris <archivo>   
 
 ---
 
@@ -599,21 +599,21 @@ Categorize los comandos que creo más importantes en su funcion y los marque en 
 
 # 5.7 Comandos de informacion 
 
-|comando      | uso común|comando    | uso común  
-|-------------|----------|-----------|-------
-|(U) dmesg    |                 |(O) which  |
-|(O) neofetch | noefetch  |(C) whoami | whoami
-|(C) uname    | uname   |(C) who | who
-|(G) time     | time <comando>     |(C) uptime |
+|comando      | uso común       |comando    | uso común  
+|-------------|-----------------|-----------|----------
+|(U) dmesg    | dmesg -t        |(O) which  | which <comando>
+|(O) neofetch | noefetch        |(C) whoami | whoami
+|(C) uname    | uname           |(C) who    | who 
+|(G) time     | time <programa> |(C) uptime | uptime
 
 ---
 
 |comando       | uso común  |comando    | uso común 
-|--------------|------------|-----------|-------
-|(G) date      | date +"%D" |(O) lsusb  | lsub
-|(C) hostname  | hostname   |(U) lscpu  |
-|(P) free      | free -h   |(O) xinput | xinput lists
-|(O) lscpi     | lspci   |(S) export |
+|--------------|------------|-----------|----------
+|(G) date      | date +"%D" |(O) lsusb  | lsusb
+|(C) hostname  | hostname   |(U) lscpu  | lscpu
+|(P) free      | free -h    |(O) xinput | xinput lists
+|(O) lscpi     | lspci      |(C) env    | env
 
 ---
 
@@ -650,7 +650,7 @@ Categorize los comandos que creo más importantes en su funcion y los marque en 
 |&                 | <comando> &                 |&&       | <comado> && <comando>
 |>                 | echo "ola" > <archivo>      |;        | <comando> ; <comando>
 |>>                | echo "ola" >> <archivo>     |alias    |alias nombre=<comando>
-|>> /dev/null 2>&1 | firefox & >> /dev/null 2>&1 |         |
+|>> /dev/null 2>&1 | firefox & >> /dev/null 2>&1 |export   |export
 ---
 
 <style scoped>img {position: absolute;top: 50%;left: 80%;transform: translate(-50%, -50%);}</style>
@@ -685,14 +685,14 @@ Con la filosofia de linux de usar programas interconectados, las aplicaciones su
 - Editor de texto: [vim](https://www.vim.org/) 
 - IDE: [vscodium](https://vscodium.com/)
 - Navegador: [librewolf](https://librewolf.net/)/[firefox](https://www.mozilla.org/en-US/firefox/new/) + [Arkenfox.js](https://github.com/arkenfox/user.js/) o [ungoogled-chromium](https://github.com/ungoogled-software/ungoogled-chromium)
-- Extensiones de navegador: [uBlock origin](https://github.com/gorhill/uBlock), [bitwarden](https://bitwarden.com/), [libRedirect](https://libredirect.github.io/) y [decentraleyes](https://decentraleyes.org/).
+- Extensiones de navegador: [uBlock origin](https://github.com/gorhill/uBlock), [bitwarden](https://bitwarden.com/), [libRedirect](https://libredirect.github.io/), [decentraleyes](https://decentraleyes.org/), [ClearURLs](https://github.com/ClearURLs/Addon) 
 - Motor de busqueda: [searXNG](https://searx.space/#)
 - Emulador de terminal: [alacritty](https://alacritty.org/) o [st](https://st.suckless.org/)
 - Monitor de recursos: [btop](https://github.com/aristocratos/btop)
 - Visualizador de imagenes: [feh](https://feh.finalrewind.org/)
 - Reproductor de video: [mpv](https://mpv.io/)
 - Descargar videos de youtube: [yt-dlp](https://github.com/yt-dlp/yt-dlp)
-- Respaldos: [timeshift](https://github.com/linuxmint/timeshift) ([rsync](https://rsync.samba.org/), [btrfs snapshots](https://wiki.gentoo.org/wiki/Btrfs/snapshots)), [git](https://git-scm.com/)
+- Respaldos: [timeshift](https://github.com/linuxmint/timeshift) ([rsync](https://rsync.samba.org/), [btrfs snapshots](https://wiki.gentoo.org/wiki/Btrfs/snapshots)) y [git](https://git-scm.com/)
 - Android en linux: [waydorid](https://waydro.id/)
 
 ---
@@ -700,6 +700,8 @@ Con la filosofia de linux de usar programas interconectados, las aplicaciones su
 # **8. Hardware**
 
 ---
+
+se puede usar linux con cualquier tipo de hardware, pero es recomendado usar hardware especializado que respete tu privacidad y libertad de uso.
 
 libreboot/coreboot para desabilitar AMD PSP, intel ME
 que es AMD PSP:
@@ -730,7 +732,7 @@ hardware y computadoras sin binarios o software propietario:
 # **9. servidores**
 
 ---
-
+z
 las distribuciones [más usadas](https://w3techs.com/technologies/details/os-linux) en servidores son las basdas en debian como: ubuntu server y debian o las empresariales como: RHEL y SLES, aunque tambien se usa Proxmox para VMs. Los file systems más usados son ZFS (openZFS) o XFS, pero recomiendo este video para elegir el [file system](https://yewtu.be/watch/?v=HdEozE2gN9I) para tu servidor.
 
 hardware para servidores caseros y economicos:
