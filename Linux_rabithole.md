@@ -11,18 +11,22 @@ paginate: true
 
 h1 {color: #81a1c1;}
 h1 strong {color: #5e81ac;}
-h2 {color: #88c0d0;}
+h2 {color: #5e81ac;}
+h3 {color: #3b4252;}
 a[href]{color: #5e81ac;}
 section {
   background: #d8dee9;
   text-align: justify;
   color: #3b4252;
 }
+img {background-color: transparent!important;}
 </style>
 
 ![bg opacity ](./img/rabithole.png)
 # <!--fit--> linux rabit hole
-<style>h2 {background-color: rgba(255, 0, 0, 0.3);}</style>
+<style>h2{background-color: rgba(216,222,233,.9);}</style>
+<style>h3{background-color: rgba(216,222,233,.9);}</style>
+
 ## curso completo de linux y los temas que lo rodean
 ### por Ariel Parra
 
@@ -428,13 +432,16 @@ los componentes y caracteristicas que construyen a una distribucion de linux son
 
 # 4.3 Categorias de las distribuciones
 
-hay distrubuciones hechas con un uso especifico estas pueden ser conjuntos de programas y configuraciones que adecuan el sistema a ese uso, aunque sigues teniendo la libertad de modificarlo.
+hay distrubuciones hechas con un uso especifico estas pueden ser conjuntos de programas y configuraciones que adecuan el sistema a ese uso, aunque sigues teniendo la libertad de poder modificarlo a tu gusto:
+
 - juegos: steamOS, ChimeraOS, popOS, Fedora Games spin, etc.
+- routing: openWRT, LibreCMC, ipfire, alpine, etc.
 - media: Ubuntu Studio, Fedora Design Suite, etc.
 - escolar: uaabuntu, edubuntu, Zorin OS 16 Education, etc.
 - privacidad/seguridad: whonix y/o qubes, tails, etc. 
 
 hay dos grandes categorias de distribuciones:
+
 - independientes: tienen mayormente su propio package manager y repositorio
 - deribados: tienen compatibilidad con quien se deribaron y pueden crear una sinergia de distribuciones: debian <-> ubuntu,
  SUSE <-> openSUSE, RHEL <-> fedora.
@@ -712,51 +719,54 @@ Con la filosofia de linux de usar programas interconectados, las aplicaciones su
 
 ---
 
-# **8. Procesadores**
-
----
-<style scoped>img {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}</style>
-
-![w:600 px](https://miro.medium.com/v2/ resize:fit:1400/1*mKsH4qcTSzFYvVyxskZewg.jpeg)
-
-imagen recuperada de [RealWorldCyberSecurity](https://medium.com/swlh/negative-rings-in-intel-architecture-the-security-threats-youve-probably-never-heard-of-d725a4b6f831)
+# **8. Hardware**
 
 ---
 
-# x86
+<style scoped>img {position: absolute;top: 50%;left: 70%;transform: translate(-50%, -50%);}</style>
 
-es una familia CISC (complex instruction set computer) de procesadores, creados originalmente por intel en 1978. Tienen un close source ISA (Instruction Set Architecture).
+![w:600 px](./img/security-rings.png) imagen recuperada <br> de [RealWorldCyberSecurity](https://medium.com/swlh/negative-rings-in-intel-architecture-the-security-threats-youve-probably-never-heard-of-d725a4b6f831)
 
-microcode es un blob necesario para sacar el mejor rendimiento al procesador
+---
 
-undervolting es una [vulnerabilidad](https://plundervolt.com/), por lo que se recomienda utilizar frequency scaling 
+<style scoped>img {position: absolute;}</style>
+
+# 8.1 Procesadores x86
+
+![w:50o](./img/Intel-ME.png) imagen recuperada de [black hat bla bla]()
+
+Es una familia CISC (complex instruction set computer) de procesadores, creados originalmente por intel en 1978. Tienen un close source ISA (Instruction Set Architecture).
+
+En cuestion de linux estos suelen necesitar un microcode para sacar el mejor rendimiento al procesador.
+
+los procesadores de laptops pueden alcanzar altas temperaturas y para mitigar esto se solia hacer undervolting, pero es una [vulnerabilidad](https://plundervolt.com/), por lo que se recomienda utilizar frequency scaling ...................
 [cpufreq](https://docs.kernel.org/admin-guide/pm/cpufreq.html)
 
-![](./img/Intel-ME.png)
+Hay dos grandes vulnerabilidades para este tipo de procesador: Intel ME y AMD PSP, siendo Intel ME el más suceptible a ataques.
 
 Intel ME es un sistema operativo que siempre esta activo mientras la placa madre tenga corriente, este puede acceder a la tarjeta de red, lo que lo convierte en una gran [backdoor](https://www.eff.org/deeplinks/2017/05/intels-management-engine-security-hazard-and-users-need-way-disable-it)
-se puede eliminar Intel ME completamente en procesadores intel core duo, y en procesadores más modernos se puede deshabilitar en una gran parte con [me_cleaner](https://github.com/system76/coreboot/tree/8c9e6ad9833bfdc522917200e0101c84fe0784c2/util/me_cleaner). Pero si se deshabilita intel ME en procesadores de la 11 generacion (Tiger-Lake) en adelante, se usa el [triple de energia](https://github.com/system76/firmware-open/blob/master/docs/intel-me.md#tiger-lake-u) en estado de suspencion 
+se puede eliminar Intel ME completamente en procesadores intel core duo, y en procesadores más modernos se puede deshabilitar en una gran parte con [me_cleaner](https://github.com/system76/coreboot/tree/8c9e6ad9833bfdc522917200e0101c84fe0784c2/util/me_cleaner). Pero si se deshabilita intel ME en procesadores de la 11 generacion (Tiger-Lake) en adelante, se usa el [triple de energia](https://github.com/system76/firmware-open/blob/master/docs/intel-me.md#tiger-lake-u) en estado de suspencion.
 
 ---
-![w:450px](./img/AMD-PSP)
-https://freundschafter.com/wp-content/uploads/2018/01/amdpspsoc
-AMD PSP: Es un sistema completo con un procesador arm independiente del procesador x86, el cual ejecuta su propio firmware. y este tiene vulnerabilidades 
 
+![w:450px](./img/AMD-PSP.png) imagen recuperada de [freundschafter](https://freundschafter.com/wp-content/uploads/2018/01/amdpspsoc)
+AMD PSP: Es un procesador arm independiente del procesador x86, el cual ejecuta su propio firmware y este tiene vulnerabilidades.
 
 la mejor forma de usar un procesador x86 es con libreboot o coreboot ya que estos te permiten deshabilitar Intel ME o AMD PSP 
 
 ---
 
-# arm
-tiene un close ISA
+# 8.2 Procesadores arm
 
-
-[TrustZone](https://www.arm.com/technologies/trustzone-for-cortex-a) la cual tiene [vulnerabilidades](https://blog.quarkslab.com/attacking-the-arms-trustzone.html
+Son procesadores RISC con un close ISA
+https://www.arm.com/technologies/trustzone-for-cortex-a
+TrustZone la cual tiene [vulnerabilidades](https://blog.quarkslab.com/attacking-the-arms-trustzone.html
 )
 
 ---
 
-# risc-v
+# 8.3 Procesadores risc-v
+
 open ISA
 es bien chingon aca 
 https://www.makeuseof.com/what-is-a-risc-v-sbc/
@@ -764,7 +774,7 @@ https://www.makeuseof.com/what-is-a-risc-v-sbc/
 
 ---
 
-# 8.2 Hardware recomendado
+# 8.4 Hardware recomendado
 
 Linux es compatible con la mayoria de hardware, pero es recomendado usar hardware especializado para tener una compatibilidad perfecta con linux donde se respete tu privacidad y libertad de uso.
 
@@ -785,35 +795,46 @@ hardware y computadoras sin binarios o software propietario:
 
 ---
 
-las distribuciones [más usadas](https://w3techs.com/technologies/details/os-linux) en servidores son las basdas en debian como: ubuntu server y debian o las empresariales como: RHEL y SLES, aunque tambien se usa Proxmox como hypervisor para VMs.
+# 9.1 software para servidores
+las distribuciones [más usadas](https://w3techs.com/technologies/details/os-linux) en servidores son las basdas en debian como: ubuntu server y debian o las empresariales como: RHEL y SLES, aunque tambien se usa Proxmox como hypervisor para VMs o conteiners.
 
-Los file systems más usados son ZFS (openZFS) o XFS, pero recomiendo este video para elegir el [file system](https://yewtu.be/watch/?v=HdEozE2gN9I) para tu servidor.
+Los file systems más usados son ZFS (openZFS) o XFS, pero recomiendo este [video](https://yewtu.be/watch/?v=HdEozE2gN9I) de Chris Titus para elegir el file system para tu servidor.
 
-hardware para servidores caseros y economicos:
-AIO: Fujitsu Futro ThinClient, Dell OptiPlex, HP elitedesk 800.
-arm SBC: la [FSF](https://www.fsf.org/resources/hw/single-board-computers) recomienda procesadores Rockchip, FreeScale y Allwinner. 
-Yo recomiendo: orange Pi 5 Plus, orange pi 5, ROCKPro64 y Quartz64 Model A.
+conteiners: es una forma de tener contenidas aplicaciones "grandes" para su estabilidad, las soluciones más usadas son [docker](https://www.docker.com/), [kubernetes](https://kubernetes.io/), [porteiner](https://www.portainer.io/) y [conteinerd](https://containerd.io/).
 
-ventajas: precios accesibles, usan muy poca electricidad, buen rendimiento, opcion de hacer clusters, las laptops pueden usar sus baterias en caso de un corte de luz.
+El web server más usado es nginx con el [34.4%](https://w3techs.com/technologies/overview/web_server) del total de paginas web y este tiene ventajas sobre [Apache](https://www.digitalocean.com/community/tutorials/apache-vs-nginx-practical-considerations) en varios aspectos.
 
- puertos limitados, maximo un mini nvmeen lugar de la tarjeta de red, un disco duro en el puerto ata de dvd drive, maximo 2.5 gb ethernet apartir de usb 3.0 , puertos usb limite de hubs sin energia externa ****************
 
 ---
 
+# 9.2 hardware para servidores caseros
+
+laptops: thinkpads, o cualquiera que tengas a la mano.
+All in One (AIO): Dell OptiPlex, HP elitedesk 800.
+Single Board Computers (SBC) con ARM: la [FSF](https://www.fsf.org/resources/hw/single-board-computers) recomienda procesadores Rockchip, FreeScale y Allwinner. 
+
+Yo recomiendo los procesadores Rokchip con 4 nucleos o más como: orange Pi 5 Plus, orange pi 5, ROCKPro64 y Quartz64 Model A.
+
+ventajas de usar laptops, SBCs y AIOs: Tamaños pequeños, bajos db de ruido, precios accesibles en primera y segunda mano, suelen tener un bajo consumo energetico, las laptops tienen pantallas y teclados para mantenimiento y pueden usar sus baterias en caso de un corte de luz, los AIO pueden usar ECC RAM y/o tarjetas graficas.
+
+desventajas: puertos limitados, los graficos integrados puedn no ser optimos para media servers, los puertos usb tienen limite de energia externa, los SBC suelen usar tarjetas SD que son propensas a fallos.
+
+soluciones/expansiones: USB como root partition para SBCs, no breaks como respaldos de energia, clusters, USB ethernet 2.5 gb, adaptadores sata a USB, USB hub con energia externa, HDD/nvme en el puerto de DVD de laptops, puerto de red de laptop: tarjetas graficas externas (con mucho bottleneck), ethernet port, usb 3.0, sata, nvme, wifi 6.
+
+---
+
+# vps
+ 
 recomiendo esta guia de seguridad para [servidor](https://yewtu.be/watch?v=fKuqYQdqRIs&t)
 
 
-recomiendo usar nginx como web server ya que es usado por el [34.4%](https://w3techs.com/technologies/overview/web_server) de websites, y este es superior a [Apache](https://www.digitalocean.com/community/tutorials/apache-vs-nginx-practical-considerations) en varios aspectos.
-
 pagina web sin servidor ni dominio: [Github Pages](https://pages.github.com/), [neocities](https://neocities.org/), [etc.](https://www.geeksforgeeks.org/7-best-sites-for-free-web-hosting/)
 
-conteiners: es una forma de tener contenidas aplicaciones "grandes" para su estabilidad, las soluciones más usadas son:
- docker, kubernetes porteiner, conteinerd.
 
-DDNS: ya en referncias
+DDNS: ques ya en referncias
 cloudflare ddns, duckDNS, freeDNS.
 
-dominios gratis por un año c/u con GitHub Student Developer Pack:
+Dominios Web gratis por un año c/u con GitHub Student Developer Pack:
 [.tech](https://get.tech/github-student-developer-pack), [.me](https://nc.me/landing/github), [.engenieer, etc.](https://www.name.com/partner/github-students)
 
 ---
@@ -823,12 +844,12 @@ certificados SSL: son los certificados que te dejan tener una pagina con https, 
 reverse proxy: es bla bla ya en referencias
 cloudflare tunnels, [Nginx Proxy Manager](nginxproxymanager.com)
 
-NAS: Network Attached Storage, es una forma de acceder a discos duros atravez de una red ya sea en casa o desde fuera, existen sistemas operativos como freeNAS y equipos dedicado, pero convine mejor hacer tu propio NAS.
+NAS: Network Attached Storage, es una forma de acceder a discos duros atravez de una red ya sea en casa o desde fuera, existen sistemas operativos como freeNAS y equipos dedicados, pero convine mejor hacer tu propio NAS.
 
 RAID: Redundant Array of Independent Disks,storage, los discos duros son más baratos que los ssd pero estos pueden fallar y ser más lentos, por lo que existen tecnologias de RAID como: RAID0, RAID5, RAID6, RAID10, RAIDZ con ZFS o MergerFS + SnapRAID.
 
-proyectos web:
-pagina web, vaultwarden, nextcloud, photoprism, searxng, wireguardvpn, dnsmasq/pihole [etc](https://landchad.net/).
+proyectos para un servidor:
+pagina web, vaultwarden, nextcloud, photoprism, searxng, wireguard vpn, dnsmasq/pihole, [etc](https://landchad.net/).
 
 ---
 
