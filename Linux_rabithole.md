@@ -5,28 +5,27 @@ theme: default
 paginate: true
 ---
 
-
 <!-- tema -->
 <style>
-
 h1 {color: #81a1c1;}
-h1 strong {color: #5e81ac;}
-h2 {color: #5e81ac;}
-h3 {color: #3b4252;}
+h1 strong {color: #4c566a;}
+h2 {color: #81a1c1;}
 a[href]{color: #5e81ac;}
-section {
-  background: #d8dee9;
-  text-align: justify;
-  color: #3b4252;
-}
+section {background: #d8dee9;text-align: justify;color: #3b4252;}
 img {background-color: transparent!important;}
+img[alt~="center"] {display: block;margin: 0 auto;}
+table {text-align: center; margin-left: auto; margin-right: auto;} 
+th { background-color: #81a1c1; color: #e5e9f0}
+td { background-color: #e5e9f0;}
 </style>
 
-![bg opacity ](./img/rabithole.png)
-# <!--fit--> linux rabit hole
-<style>h2{background-color: rgba(216,222,233,.9);}</style>
-<style>h3{background-color: rgba(216,222,233,.9);}</style>
+<!-- Portada -->
 
+<style scoped>h1, h2, h3 {color: #3b4252;}</style>
+
+![bg opacity:.3](./img/rabithole.png)
+
+# <!--fit--> linux rabit hole
 ## curso completo de linux y los temas que lo rodean
 ### por Ariel Parra
 
@@ -63,19 +62,21 @@ se suele usar el Filesystem Hierarchy Standard de linux
 
 ---
 
+<style scoped>p {text-align: center; font-size: 20px}</style>
+
 # 1.4 Linux Filesystem Hierarchy Standard
 
+![h:600px center](./img/Standard-unix-filesystem-hierarchy.svg)
 
-![](https://www.linuxfoundation.org/hubfs/Imported_Blog_Media/standard-unix-filesystem-hierarchy-1.png)
-
+imagen recuperada de [wikimedia](https://commons.wikimedia.org/wiki/File:Standard-unix-filesystem-hierarchy.svg)
 
 ---
 
+<style scoped>p {text-align: center; font-size: 20px}</style>
+
 # 1.5 las capas de linux
 
-<style scoped>img {display: block; margin-left: auto;margin-right: auto;}</style>
-
-![h:575px](./img/kernel-user_space.png)
+![h:600px center](./img/kernel-user_space.png)
 
 Imagen recuperada de [wikipedia](https://en.wikipedia.org/wiki/Template%3ALinux_layers)
 
@@ -95,31 +96,27 @@ Escribe programas que hagan una cosa muy bien, que trabajen juntos (input de uno
 
 ---
 
+<style scoped> img { image-rendering: pixelated;}</style>
+
 # 2.2 licencias 
 
-las licencias son bla bla bla poner en refs
-University of Pittsburgh. (2022). *Copyright and Intellectual Property Toolkit*. https://pitt.libguides.com/copyright/licenses
+las licencias son permisos dados por quien tiene el copyrght del contenido, las licencias pueden darte ciertos permisos de uso dependiendo de las licencias.
 
-copyright.gov. (s.f.). *What is Copyright?*. https://www.copyright.gov/what-is-copyright/
-copyright.org. (s.f.). *What is copyleft?*. https://copyleft.org/
-creativecommons. (s.f.). *About The Licenses*. https://creativecommons.org/licenses/
+copyright: El derecho de autor (copyright) es un tipo de propiedad intelectual que protege las obras originales del autor, dando la libertad de elegir que se hace o que no se hace con su obra.
 
-copyright: 
-copyleft:
+copyleft: Es una estrategia para usar el copyright para fomentar y alentar el derecho de copiar, compartir, modificar y mejorar las obras bajo esta licencia.
 
-creative commons: uso libre pero con atribucion obligatoria, comunmente usados para imagenes, videos y articulos. ![CC BY](https://licensebuttons.net/l/by/3.0/88x31.png), ![CC BY-SA](https://licensebuttons.net/l/by-sa/3.0/88x31.png), ![CC BY-ND](https://licensebuttons.net/l/by-nd/3.0/88x31.png), ![CC BY-NC](https://licensebuttons.net/l/by-nc/3.0/88x31.png), ![CC BY-NC-SA](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png) y ![CC BY-NC-ND](https://licensebuttons.net/l/by-nc-nd/3.0/88x31.png)
+Dominio Publico: (No Rights Reserved) ![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)  es una licencia para deslindarte de los derechos de autor.
 
 ---
 
-## 2.2.1 FOSS
- Free and open source software, es software que tiene codigo abierto, donde uno es libre de estudiar, modificar, aunque la distribucion depende de las licencias. 
+creative commons: son licencias de uso libre pero con atribucion obligatoria, comunmente usados para imagenes, videos y articulos. ![CC BY](https://licensebuttons.net/l/by/3.0/88x31.png), ![CC BY-SA](https://licensebuttons.net/l/by-sa/3.0/88x31.png), ![CC BY-ND](https://licensebuttons.net/l/by-nd/3.0/88x31.png), ![CC BY-NC](https://licensebuttons.net/l/by-nc/3.0/88x31.png), ![CC BY-NC-SA](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png) y ![CC BY-NC-ND](https://licensebuttons.net/l/by-nc-nd/3.0/88x31.png)
 
-
-## 2.2.2 licencias open source 
+licencias open source:  
 - [AGPL:](https://www.gnu.org/licenses/agpl-3.0.en.html) similar al GPL pero para servicios en linea
 - [Apache](https://www.apache.org/licenses/LICENSE-2.0): incluir la nota de copyright  
 - BSD [2](https://opensource.org/license/bsd-2-clause/)/[3](https://opensource.org/license/bsd-3-clause/): incluir la nota de copyright 
-- GPL [v2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)/[v3](https://www.gnu.org/licenses/gpl-3.0.html): codigo fuente disponible y trabajos deribados con la misma licencia 
+- GPL [v2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)/[v3](https://www.gnu.org/licenses/gpl-3.0.html): codigo fuente disponible y copyleft
 - [MIT](https://opensource.org/license/mit/): incluya la nota de copyright  
 
 ---
@@ -216,14 +213,14 @@ Tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 - tienes que aprender temas nuevos, aprender a buscar soluciones y leer.
 - no puedes correr ciertos juegos: [rainbow six](https://www.protondb.com/app/359550), [roblox](https://news.itsfoss.com/roblox-linux-end/), [etc.](https://www.protondb.com/explore?sort=fixWanted)
 - no puedes correr ciertas aplicaciones: [Adobe Photoshop](https://appdb.winehq.org/objectManager.php?sClass=application&iId=17), [MS Office](https://appdb.winehq.org/objectManager.php?sClass=application&iId=31), [etc](https://appdb.winehq.org/).
-- sin soporte completo para [HDR](https://wiki.archlinux.org/title/HDR_monitor_support) 
+- problemas con [impresoras](https://opensource.com/article/21/8/add-printer-linux)
+- sin soporte para [HDR](https://wiki.archlinux.org/title/HDR_monitor_support) 
 - problemas con [variable refresh rate](https://wiki.archlinux.org/title/Variable_refresh_rate)
 - problemas con [fractional scaling](https://wiki.archlinux.org/title/HiDPI)
-- problemas con [impresoras](https://opensource.com/article/21/8/add-printer-linux)
 - screen tearing en [X11 (xorg)](https://christitus.com/fix-screen-tearing-linux/) 
 - problemas al compartir pantalla con audio en [discord](https://wiki.archlinux.org/title/Discord#Screen_sharing_with_audio) y [MS Teams](https://answers.microsoft.com/en-us/msteams/forum/all/sharing-system-sound-in-teams-for-linux/f1c70d83-e9bd-41b4-abde-d78fae764d5c)
-- el driver para nvidia nouveau tiene un [peor rendimiento](https://openbenchmarking.org/result/2106300-IB-NOUVEAU2060) que el oficial
-- la capa de compatibilidad con windows wine puede correr [malware](https://wiki.winehq.org/FAQ#Is_Wine_malware-compatible.3F)
+- el driver opensource de nvidia tiene un [peor rendimiento](https://openbenchmarking.org/result/2106300-IB-NOUVEAU2060) que el oficial
+- la capa de compatibilidad con windows (wine) puede correr [malware](https://wiki.winehq.org/FAQ#Is_Wine_malware-compatible.3F)
 
 ---
 
@@ -255,7 +252,7 @@ Tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 - los [contratos de licencia de software](https://www.apple.com/legal/sla/)
 - posibles conexiones con NSA e implicacion con [PRISM](https://www.washingtonpost.com/investigations/us-intelligence-mining-data-from-nine-us-internet-companies-in-broad-secret-program/013/06/06/3a0c0da8-cebf-11e2-8845-d970ccb04497_story.html)
 - no suele haber drivers opensource
-- la capa de compatibilidad con windows wine puede correr [malware](https://wiki.winehq.org/FAQ#Is_Wine_malware-compatible.3F)
+- la capa de compatibilidad con windows (wine) puede correr [malware](https://wiki.winehq.org/FAQ#Is_Wine_malware-compatible.3F)
 - no tiene controles de volumen por [aplicacion](https://apple.stackexchange.com/questions/381397/is-it-possible-to-set-an-individual-sound-volume-for-each-program-on-a-mac)
 
 ---
@@ -428,6 +425,7 @@ los componentes y caracteristicas que construyen a una distribucion de linux son
         - explorador de archivos: nautilus (gnome), dolphin (KDE)
         - visualizador de imagenes: feh, gwenviwer, etc.
         - etc.
+
 ---
 
 # 4.3 Categorias de las distribuciones
@@ -442,11 +440,10 @@ hay distrubuciones hechas con un uso especifico estas pueden ser conjuntos de pr
 
 hay dos grandes categorias de distribuciones:
 
-- independientes: tienen mayormente su propio package manager y repositorio
-- deribados: tienen compatibilidad con quien se deribaron y pueden crear una sinergia de distribuciones: debian <-> ubuntu,
- SUSE <-> openSUSE, RHEL <-> fedora.
+- independientes: tienen su propio package manager y repositorio
+- deribados: tienen compatibilidad con quien se deribaron y pueden crear una sinergia: debian <-> ubuntu, SUSE <-> openSUSE, RHEL <-> fedora.
   
- ---
+---
 
 - tipos de distribuciones deribadas:
     - flavour: con otros escritorios,temas, y/o aplicaiones reconocidos por la distribucion, por ejemplo para ubuntu hay flavours como: edubuntu,kubuntu,lubuntu, etc.
@@ -458,73 +455,67 @@ hay muchisimas [distribuciones](https://upload.wikimedia.org/wikipedia/commons/1
 
 ---
 
-<style scoped>table {}</style>
-<style scoped>table {font-size: 25px; text-align: center;}</style>
+<style scoped>table {font-size: 25px;}</style>
 
 ## 4.3.1 Distribuciones independentes 
 
-| Logo                           | distribucion                                                                   | init           | pkg manager | libreria c | core utils  |  
-|--------------------------------|--------------------------------------------------------------------------------|----------------|-------------|------------|-------------|
-| ![h:50px](logos/alpine.png)      | [alpine](https://alpinelinux.org/)                                             | openrc         | apk         | musl       | busybox     |
-| ![h:50px](logos/arch.png)      | [arch](https://archlinux.org/)                                                 | systemd        | pacman      | glibc      | gnu         |
-| ![h:50px](logos/debian.png)    | [debian](https://www.debian.org/)                                              | systemd        | apt (dpkg)  | glibc      | gnu         |
-| ![h:50px](logos/slackware.png) | [slackware](http://www.slackware.com/)                                         | sysVinit       | slackpkg    | glibc      | gnu         |
-| ![h:50px](logos/gentoo.png)    | [gentoo](https://www.gentoo.org/)                                              | OpenRC/systemd | portage     | glibc/musl | gnu         |
-| ![h:50px](logos/void.png)      | [void](https://voidlinux.org/)                                                 | runit          | xbps        | glibc/musl | gnu         |
+| Logo                     | distribucion                                                                   | init           | pkg manager | libreria c | core utils  |  
+|--------------------------|--------------------------------------------------------------------------------|----------------|-------------|------------|-------------|
+| ![](logos/alpine.png)    | [alpine](https://alpinelinux.org/)                                             | openrc         | apk         | musl       | busybox     |
+| ![](logos/arch.png)      | [arch](https://archlinux.org/)                                                 | systemd        | pacman      | glibc      | gnu         |
+| ![](logos/debian.png)    | [debian](https://www.debian.org/)                                              | systemd        | apt (dpkg)  | glibc      | gnu         |
+| ![](logos/slackware.png) | [slackware](http://www.slackware.com/)                                         | sysVinit       | slackpkg    | glibc      | gnu         |
+| ![](logos/gentoo.png)    | [gentoo](https://www.gentoo.org/)                                              | OpenRC/systemd | portage     | glibc/musl | gnu         |
+| ![](logos/void.png)      | [void](https://voidlinux.org/)                                                 | runit          | xbps        | glibc/musl | gnu         |
 
 ---
 
-<style scoped>table {text-align: center }</style>
-
-
-| Logo                        | distribucion                                                                   | init         | pkg manager | libreria c | core utils  |  
-|-----------------------------|--------------------------------------------------------------------------------|--------------|-------------|------------|-------------|
-| ![h:50px](logos/nixos.png)  | [nixos](https://nixos.org/)                                                    | systemd      | nix         | glibc      | gnu         |
-| ![h:50px](logos/RHEL.png)   | [RHEL](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux)| systemd      | DNF (yum)   | glibc      | gnu         |
-| ![h:70px](logos/SUSE.png)   | [SUSE LE S/D](https://www.suse.com/products/server/)                           | systemd      | Zypper      | glibc      | gnu         | 
-| ![h:50px](logos/LFS.png)    | [LFS](https://www.linuxfromscratch.org/lfs/)                                   | systemd/sysV | -           | glibc      | gnu         | 
-| ![h:50px](logos/kiss.png)   | [kiss](https://kisslinux.org/)                                                 | runit        | kiss        | musl       | busybox     | 
-| ![h:50px](logos/chimera.png)| [chimera-linux](https://chimera-linux.org/)                                    | Dinit        | apk         | musl       | BSD-derived | 
+| Logo                  | distribucion                                                                   | init         | pkg manager | libreria c | core utils  |  
+|-----------------------|--------------------------------------------------------------------------------|--------------|-------------|------------|-------------|
+| ![](logos/nixos.png)  | [nixos](https://nixos.org/)                                                    | systemd      | nix         | glibc      | gnu         |
+| ![](logos/RHEL.png)   | [RHEL](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux)| systemd      | DNF (yum)   | glibc      | gnu         |
+| ![](logos/SUSE.png)   | [SUSE LE S/D](https://www.suse.com/products/server/)                           | systemd      | Zypper      | glibc      | gnu         | 
+| ![](logos/LFS.png)    | [LFS](https://www.linuxfromscratch.org/lfs/)                                   | systemd/sysV | -           | glibc      | gnu         | 
+| ![](logos/kiss.png)   | [kiss](https://kisslinux.org/)                                                 | runit        | kiss        | musl       | busybox     | 
+| ![](logos/chimera.png)| [chimera-linux](https://chimera-linux.org/)                                    | Dinit        | apk         | musl       | BSD-derived | 
 
 ---
-
-<style scoped>table {text-align: center }</style>
 
 ## 4.3.2 Distribuciones Deribadas 
 
-| Logo                          | distribucion                          | init               | basado en   | libreria c | core utils  |  
-|-------------------------------|---------------------------------------|--------------------|-------------|------------|-------------|
-| ![h:50px](logos/artix.png)    |[artix](https://artixlinux.org/)       | OpenRC/runit/etc.  | arch        | glibc      | gnu         |
-| ![h:50px](logos/devuan.png)   |[devuan](https://www.devuan.org/)      | sysV/OpenRC/etc.   | debian      | glibc      | gnu         |
-| ![h:50px](logos/ubuntu.png)   |[Ubuntu](https://ubuntu.com/)          | systemd            | debian      | glibc      | gnu         |
-| ![h:50px](logos/uaabuntu.png) |[Uaabuntu](https://uaabuntu.uaa.mx/)   | systemd            | ubuntu      | glibc      | gnu         |
-| ![h:50px](logos/openSUSE.png) |[openSUSE](https://opensuse.org/)      | systemd            | SUSE        | glibc      | gnu         |
+| Logo                    | distribucion                          | init               | basado en   | libreria c | core utils  |  
+|-------------------------|---------------------------------------|--------------------|-------------|------------|-------------|
+| ![](logos/artix.png)    |[artix](https://artixlinux.org/)       | OpenRC/runit/etc.  | arch        | glibc      | gnu         |
+| ![](logos/devuan.png)   |[devuan](https://www.devuan.org/)      | sysV/OpenRC/etc.   | debian      | glibc      | gnu         |
+| ![](logos/ubuntu.png)   |[Ubuntu](https://ubuntu.com/)          | systemd            | debian      | glibc      | gnu         |
+| ![](logos/uaabuntu.png) |[Uaabuntu](https://uaabuntu.uaa.mx/)   | systemd            | ubuntu      | glibc      | gnu         |
+| ![](logos/openSUSE.png) |[openSUSE](https://opensuse.org/)      | systemd            | SUSE        | glibc      | gnu         |
 
 ---
 
-<style scoped>table {font-size: 25px; text-align: center }</style>
+<style scoped>table {font-size: 25px;}</style>
 
-| Logo                           | distribucion                           | init               | basado en     | libreria c | core utils  |  
-|--------------------------------|----------------------------------------|--------------------|---------------|------------|-------------|
-| ![h:50px](logos/fedora.png)    |[Fedora](https://fedoraproject.org/)    | systemd            | RHEL          | glibc      | gnu         |
-| ![h:50px](logos/endeavour.png) |[endeavour](https://endeavouros.com/)   | systemd            | arch          | glibc      | gnu         |
-| ![h:50px](logos/archcraft.png) |[archcraft](https://archcraft.io/)      | systemd            | arch          | glibc      | gnu         |
-| ![h:50px](logos/PopOS.png)     |[PopOS](https://pop.system76.com/)      | systemd            | ubuntu/debian | glibc      | gnu         |
-| ![h:50px](logos/mint.png)      |[Mint](https://linuxmint.com/)          | systemd            | ubuntu/debian | glibc      | gnu         |
-| ![h:50px](logos/elementary.png)|[elementary](https://elementary.io/)    | systemd            | ubuntu/debian | glibc      | gnu         |
-| ![h:50px](logos/zorin.png)     |[zorin](https://zorin.com/os/)          | systemd            | ubuntu/debian | glibc      | gnu         |
+| Logo                     | distribucion                           | init               | basado en     | libreria c | core utils  |  
+|--------------------------|----------------------------------------|--------------------|---------------|------------|-------------|
+| ![](logos/fedora.png)    |[Fedora](https://fedoraproject.org/)    | systemd            | RHEL          | glibc      | gnu         |
+| ![](logos/endeavour.png) |[endeavour](https://endeavouros.com/)   | systemd            | arch          | glibc      | gnu         |
+| ![](logos/archcraft.png) |[archcraft](https://archcraft.io/)      | systemd            | arch          | glibc      | gnu         |
+| ![](logos/PopOS.png)     |[PopOS](https://pop.system76.com/)      | systemd            | ubuntu/debian | glibc      | gnu         |
+| ![](logos/mint.png)      |[Mint](https://linuxmint.com/)          | systemd            | ubuntu/debian | glibc      | gnu         |
+| ![](logos/elementary.png)|[elementary](https://elementary.io/)    | systemd            | ubuntu/debian | glibc      | gnu         |
+| ![](logos/zorin.png)     |[zorin](https://zorin.com/os/)          | systemd            | ubuntu/debian | glibc      | gnu         |
 
 ---
 
-<style scoped>table {font-size: 25px; text-align: center }</style>
+<style scoped>table {font-size: 25px;}</style>
 
 ## 4.3.3 Recomendadas por la FSF (linux-libre kernel)
-| Logo                          | distribucion                            | init               | basado en     | pkg manager | libreria c | core utils  |  
-|-------------------------------|-----------------------------------------|--------------------|---------------|-------------|------------|-------------|
-| ![h:50px](logos/parabola.png) | [parabola](https://www.parabola.nu/)    | systemd/OpenRC/etc.| arch          | pacman      | glibc      | gnu         |
-| ![h:50px](logos/Hyperbola.png)| [hyperbola](https://www.hyperbola.info/)| OpenRC             | debian/arch   | pacman      | glibc      | gnu         |
-| ![h:50px](logos/Guix.png)     | [Guix](https://guix.gnu.org/)           | shepherd           | independiente | Guix        | glibc      | gnu         | 
-| ![h:50px](logos/trisquel.png) | [trsiquel](https://trisquel.info/)      | systemd            | ubuntu/debian | apt         | glibc      | gnu         | 
+| Logo                    | distribucion                            | init               | basado en     | pkg manager | libreria c | core utils  |  
+|-------------------------|-----------------------------------------|--------------------|---------------|-------------|------------|-------------|
+| ![](logos/parabola.png) | [parabola](https://www.parabola.nu/)    | systemd/OpenRC/etc.| arch          | pacman      | glibc      | gnu         |
+| ![](logos/Hyperbola.png)| [hyperbola](https://www.hyperbola.info/)| OpenRC             | debian/arch   | pacman      | glibc      | gnu         |
+| ![](logos/Guix.png)     | [Guix](https://guix.gnu.org/)           | shepherd           | independiente | Guix        | glibc      | gnu         | 
+| ![](logos/trisquel.png) | [trsiquel](https://trisquel.info/)      | systemd            | ubuntu/debian | apt         | glibc      | gnu         | 
 
 ---
 
@@ -672,13 +663,12 @@ Categorize los comandos que creo más importantes en su funcion y los marque en 
 |>                 | echo "ola" > <archivo>      |;        | <comando> ; <comando>
 |>>                | echo "ola" >> <archivo>     |alias    |alias nombre=<comando>
 |2>&1              | firefox & >> /dev/null 2>&1 |export   |export
----
 
-<style scoped>img {position: absolute;top: 50%;left: 80%;transform: translate(-50%, -50%);}</style>
+---
 
 # 6.2 Shortcuts de terminal
 
-![w:520px](https://linuxhandbook.com/content/images/2022/04/lhb-terminal-shortcut-cheatsheet-1.webp)
+![w:520px bg right:40%](https://linuxhandbook.com/content/images/2022/04/lhb-terminal-shortcut-cheatsheet-1.webp)
 
 ---
 
@@ -690,7 +680,19 @@ Categorize los comandos que creo más importantes en su funcion y los marque en 
     - daemon management: systemctl, sv, rc-service, etc.
 - cron jobs: cronie, fcron, dcron, etc. 
 
-más informacion acerca de comandos: [The linux Command Handbook](https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-man-command), [arch wik: core utilities](https://wiki.archlinux.org/title/core_utilities), [decoded gnu core utils](https://www.maizure.org/projects/decoded-gnu-coreutils/), [Gentoo wiki: util-linux](https://wiki.gentoo.org/wiki/Util-linux), [procps](https://gitlab.com/procps-ng/procps), [iproute2](https://wiki.linuxfoundation.org/networking/iproute2), [iputils](https://wiki.linuxfoundation.org/networking/iputils), [net-tools](https://net-tools.sourceforge.io/).
+---
+
+# 6.4 más informacion acerca de comandos
+- [The linux Command Handbook](https://www.freecodecamp.org/news/the-linux-commands-handbook/#the-linux-man-command)
+- [arch wik: core utilities](https://wiki.archlinux.org/title/core_utilities)
+- [decoded gnu core utils](https://www.maizure.org/projects/decoded-gnu-coreutils/)
+- [Gentoo wiki: util-linux](https://wiki.gentoo.org/wiki/Util-linux), [procps](https://gitlab.com/procps-ng/procps)
+- [iproute2](https://wiki.linuxfoundation.org/networking/iproute2)
+- [iputils](https://wiki.linuxfoundation.org/networking/iputils)
+- [net-tools](https://net-tools.sourceforge.io/).
+- [Learn Linux: Linux Commands for Beginners](https://yewtu.be/playlist?list=PLT98CRl2KxKHaKA9-4_I38sLzK134p4GJ)
+- [freeCodeCamp.org: The 50 Most Popular Linux & Terminal Commands - Full Course for Beginners](https://yewtu.be/watch?v=ZtqBQ68cfJc)
+- [NetworkChuck: 60 Linux Commands you NEED to know (in 10 minutes)](https://yewtu.be/watch?v=gd7BXuUQ91w)
 
 ---
 
@@ -723,54 +725,49 @@ Con la filosofia de linux de usar programas interconectados, las aplicaciones su
 
 ---
 
-<style scoped>img {position: absolute;top: 50%;left: 70%;transform: translate(-50%, -50%);}</style>
-
-![w:600 px](./img/security-rings.png) imagen recuperada <br> de [RealWorldCyberSecurity](https://medium.com/swlh/negative-rings-in-intel-architecture-the-security-threats-youve-probably-never-heard-of-d725a4b6f831)
-
----
-
 <style scoped>img {position: absolute;}</style>
 
-# 8.1 Procesadores x86
+# 8.1 Procesadores x86 (i686)/x64 (x86_64, amd64)
 
-![w:50o](./img/Intel-ME.png) imagen recuperada de [black hat bla bla]()
+Es una familia de procesadores con arquitecura CISC (complex instruction set computing), creados originalmente por intel en 1978. Tienen un ISA (Instruction Set Architecture) close source. En cuestion de linux estos suelen necesitar de un microcode para un mejor rendimiento del procesador, que .
+Estos son los tipo procesadores más [usados](https://www.cpubenchmark.net/market_share.html) en computadoras de escritorio, laptops y servidores. 
 
-Es una familia CISC (complex instruction set computer) de procesadores, creados originalmente por intel en 1978. Tienen un close source ISA (Instruction Set Architecture).
-
-En cuestion de linux estos suelen necesitar un microcode para sacar el mejor rendimiento al procesador.
-
-los procesadores de laptops pueden alcanzar altas temperaturas y para mitigar esto se solia hacer undervolting, pero es una [vulnerabilidad](https://plundervolt.com/), por lo que se recomienda utilizar frequency scaling ...................
-[cpufreq](https://docs.kernel.org/admin-guide/pm/cpufreq.html)
-
-Hay dos grandes vulnerabilidades para este tipo de procesador: Intel ME y AMD PSP, siendo Intel ME el más suceptible a ataques.
-
-Intel ME es un sistema operativo que siempre esta activo mientras la placa madre tenga corriente, este puede acceder a la tarjeta de red, lo que lo convierte en una gran [backdoor](https://www.eff.org/deeplinks/2017/05/intels-management-engine-security-hazard-and-users-need-way-disable-it)
-se puede eliminar Intel ME completamente en procesadores intel core duo, y en procesadores más modernos se puede deshabilitar en una gran parte con [me_cleaner](https://github.com/system76/coreboot/tree/8c9e6ad9833bfdc522917200e0101c84fe0784c2/util/me_cleaner). Pero si se deshabilita intel ME en procesadores de la 11 generacion (Tiger-Lake) en adelante, se usa el [triple de energia](https://github.com/system76/firmware-open/blob/master/docs/intel-me.md#tiger-lake-u) en estado de suspencion.
+los procesadores de laptops pueden alcanzar altas temperaturas y para mitigar esto se solia hacer undervolting, pero es una [vulnerabilidad](https://plundervolt.com/), por lo que se recomienda utilizar [frequency scaling](https://wiki.archlinux.org/title/CPU_frequency_scaling) 
 
 ---
 
-![w:450px](./img/AMD-PSP.png) imagen recuperada de [freundschafter](https://freundschafter.com/wp-content/uploads/2018/01/amdpspsoc)
-AMD PSP: Es un procesador arm independiente del procesador x86, el cual ejecuta su propio firmware y este tiene vulnerabilidades.
+Hay dos grandes [vulnerabilidades](https://i.blackhat.com/us-18/Thu-August-9/us-18-Domas-God-Mode-Unlocked-Hardware-Backdoors-In-x86-CPUs-wp.pdf) para este tipo de arquitecturas que actuan desde la capa -3 de la seguridad del procesador: Intel ME y AMD PSP.
 
-la mejor forma de usar un procesador x86 es con libreboot o coreboot ya que estos te permiten deshabilitar Intel ME o AMD PSP 
+Intel ME es un sistema operativo que siempre esta activo mientras la placa madre tenga corriente, este puede acceder a la tarjeta de red, lo que lo convierte en una gran [backdoor](https://www.blackhat.com/docs/eu-17/materials/eu-17-Goryachy-How-To-Hack-A-Turned-Off-Computer-Or-Running-Unsigned-Code-In-Intel-Management-Engine-wp.pdf). Este se puede deshabilitar en una gran parte con [me_cleaner](https://github.com/system76/coreboot/tree/8c9e6ad9833bfdc522917200e0101c84fe0784c2/util/me_cleaner). Pero si se deshabilita intel ME en procesadores de la 11 generacion (Tiger-Lake) en adelante, se usa el [triple de energia](https://github.com/system76/firmware-open/blob/master/docs/intel-me.md#tiger-lake-u) en estado de suspencion.
+
+AMD PSP: Es un procesador arm independiente del procesador x86, el cual ejecuta su propio firmware y este puede llegar a tener [vulnerabilidades](https://www.techspot.com/news/91322-millions-amd-pcs-affected-new-cpu-flaw-need.html). Se pueden desabilitar ciertos modulos en ciertas [motherboards](https://www.phoronix.com/news/AMD-PSP-Disable-Option)
+
+La mejor forma de usar un procesador con esta arquitectura es con un BIOS/UEFI parchado con [libreboot](https://libreboot.org/) o [coreboot](https://coreboot.org/) ya que estos te permiten mitigar los efectos de Intel ME o AMD PSP.
+
+---
+
+<style scoped>p {columns: 3; font-size: 20px;}</style>
+
+![w:500px center](./img/AMD-PSP.png) 
+Arquitectura de AMD PSP. imagen recuperada de [freundschafter](https://freundschafter.com/wp-content/uploads/2018/01/amdpspsoc)
+![w:320px center](./img/Intel-ME.png)
+Arquitectura de Intel ME. imagen recuperada de [black hat](https://i.blackhat.com/USA-19/Wednesday/us-19-Hasarfaty-Behind-The-Scenes-Of-Intel-Security-And-Manageability-Engine.pdf)
+![w:430 px center](./img/security-rings.png)
+CPU secuirity rings. imagen recuperada de [RealWorldCyberSecurity](https://medium.com/swlh/negative-rings-in-intel-architecture-the-security-threats-youve-probably-never-heard-of-d725a4b6f831)
 
 ---
 
 # 8.2 Procesadores arm
 
-Son procesadores RISC con un close ISA
-https://www.arm.com/technologies/trustzone-for-cortex-a
-TrustZone la cual tiene [vulnerabilidades](https://blog.quarkslab.com/attacking-the-arms-trustzone.html
-)
+Es una familia de procesadores con arquitecura RISC (Reduce instruction set computing) con un ISA close source; este tiene un TEE (Trusted Execution Environment) close source llamado TrustZone la cual puede tener [vulnerabilidades](https://blog.quarkslab.com/attacking-the-arms-trustzone.html)
+
+Es el procesador más usado en el [mundo](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/worldwide) ya que este se encuentra en los celulares, aunque tambien se pueden encontrar en laptops, computadoras de escritorios, servidores y single board computers. La razon de esto es su eficiencia energetica.
 
 ---
 
-# 8.3 Procesadores risc-v
+# 8.3 Procesadores Risc-V
 
-open ISA
-es bien chingon aca 
-https://www.makeuseof.com/what-is-a-risc-v-sbc/
-[keystone](https://keystone-enclave.org/2018/12/13/what-is-keystone.html)
+Es una familia de procesadores con arquitecura RISC, con un ISA open source, por el momento estos tienen menor potencia computacional que arm por lo que hay menos [usos](https://www.makeuseof.com/what-is-a-risc-v-sbc/); este tambien tiene un TEE llamado keystone, la diferncia es que este es open source.
 
 ---
 
@@ -796,59 +793,70 @@ hardware y computadoras sin binarios o software propietario:
 ---
 
 # 9.1 software para servidores
-las distribuciones [más usadas](https://w3techs.com/technologies/details/os-linux) en servidores son las basdas en debian como: ubuntu server y debian o las empresariales como: RHEL y SLES, aunque tambien se usa Proxmox como hypervisor para VMs o conteiners.
+las distribuciones [más usadas](https://w3techs.com/technologies/details/os-linux) en servidores son las basdas en debian como: ubuntu server y debian o las empresariales como: RHEL y SLES, aunque tambien se usa Proxmox como hypervisor para VMs o conteiners, pero si se usara una SBC recomiendo [armbian](https://www.armbian.com/).
 
 Los file systems más usados son ZFS (openZFS) o XFS, pero recomiendo este [video](https://yewtu.be/watch/?v=HdEozE2gN9I) de Chris Titus para elegir el file system para tu servidor.
 
 conteiners: es una forma de tener contenidas aplicaciones "grandes" para su estabilidad, las soluciones más usadas son [docker](https://www.docker.com/), [kubernetes](https://kubernetes.io/), [porteiner](https://www.portainer.io/) y [conteinerd](https://containerd.io/).
 
-El web server más usado es nginx con el [34.4%](https://w3techs.com/technologies/overview/web_server) del total de paginas web y este tiene ventajas sobre [Apache](https://www.digitalocean.com/community/tutorials/apache-vs-nginx-practical-considerations) en varios aspectos.
+El web server más usado es nginx con el [34.4%](https://w3techs.com/technologies/overview/web_server) del total de paginas web y este tiene [ventajas](https://www.digitalocean.com/community/tutorials/apache-vs-nginx-practical-considerations) sobre Apache en varios aspectos.
 
 
 ---
 
 # 9.2 hardware para servidores caseros
 
-laptops: thinkpads (T60s, T400s, X200s), o cualquiera que tengas a la mano.
-All in One (AIO): Dell OptiPlex, HP elitedesk 800.
-Single Board Computers (SBC) con ARM: la [FSF](https://www.fsf.org/resources/hw/single-board-computers) recomienda procesadores Rockchip, FreeScale y Allwinner. 
-Yo recomiendo los procesadores Rokchip con 4 nucleos o más como: orange Pi 5 Plus, orange pi 5, ROCKPro64 y Quartz64 Model A.
+laptops: thinkpads (T60s, T400s, X200s), etc.
+All in One (AIO)/Mini PCs: Dell OptiPlex, HP elitedesk, ThinkCentre, etc.
+Single Board Computers (SBC)/System on a chip (SoC) con arm: la [FSF](https://www.fsf.org/resources/hw/single-board-computers) recomienda procesadores Rockchip, FreeScale y Allwinner. Yo recomiendo los procesadores Rokchip con 4 nucleos o más: [orange Pi 5 Plus](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-5-plus.html), [orange pi 5](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-5.html), [ROCKPro64](https://www.pine64.org/rockpro64/) y [Quartz64 Model A](https://www.pine64.org/quartz64a/).
 
-ventajas de usar laptops, SBCs y AIOs: Tamaños pequeños, bajos db de ruido, precios accesibles en primera y segunda mano, suelen tener un bajo consumo energetico, las laptops tienen pantallas y teclados para mantenimiento y pueden usar sus baterias en caso de un corte de luz, los AIO pueden usar ECC RAM y/o tarjetas graficas.
-
-desventajas: puertos limitados, los graficos integrados puedn no ser optimos para media servers, los puertos usb tienen limite de energia externa, los SBC suelen usar tarjetas SD que son propensas a fallos.
-
-soluciones/expansiones: USB como root partition para SBCs, no breaks como respaldos de energia, clusters, USB ethernet 2.5 gb, adaptadores sata a USB, USB hub con energia externa, HDD/nvme en el puerto de DVD de laptops, puerto de tarjeta red (M.2 key/mini PCIe) de laptop o express card: eGPU (con bottleneck), ethernet card, usb 3.0, sata hub, ssd.
+ventajas de usar laptops, SBCs y AIOs: Tamaños pequeños, bajos db de ruido, precios accesibles en primera y segunda mano, suelen tener un bajo consumo energetico, las laptops tienen pantallas y teclados para mantenimiento y pueden usar sus baterias en caso de un corte de luz, los AIO pueden usar ECC RAM y/o tarjetas graficas y los SBC tienen GPIO (General-purpose input/output) pin headers.
 
 ---
 
-# vps
- 
-recomiendo esta guia de seguridad para [servidor](https://yewtu.be/watch?v=fKuqYQdqRIs&t)
+desventajas: puertos limitados, los graficos integrados pueden no ser optimos para media servers, los SBC suelen usar tarjetas micro SD que tienen [bajas velocidades de lecto-escritura](https://www.kingston.com/en/blog/personal-storage/memory-card-speed-classes) y son propensas a [corrupcion de datos](https://wildlabs.net/discussion/sd-cards-and-reliability).
 
-
-pagina web sin servidor ni dominio: [Github Pages](https://pages.github.com/), [neocities](https://neocities.org/), [etc.](https://www.geeksforgeeks.org/7-best-sites-for-free-web-hosting/)
-
-
-DDNS: ques ya en referncias
-cloudflare ddns, duckDNS, freeDNS.
-
-Dominios Web gratis por un año c/u con GitHub Student Developer Pack:
-[.tech](https://get.tech/github-student-developer-pack), [.me](https://nc.me/landing/github), [.engenieer, etc.](https://www.name.com/partner/github-students)
+soluciones/actualizaciones: [USB en vez de micro SD para SBCs](https://cdn-learn.adafruit.com/downloads/pdf/external-drive-as-raspberry-pi-root.pdf), no break como respaldo de energia, clusters, load balancer, USB 2.5gb Ethernet Adapter, adaptadores sata a USB, USB hub con energia externa, HDD/SSD en el puerto de DVD de laptops, puertos de tarjeta red (M.2 key/mini PCIe) o express card de laptop: eGPU, ethernet card, usb 3.0, sata hub, ssd.
 
 ---
 
-certificados SSL: son los certificados que te dejan tener una pagina con https, el que más recomiendo es: Let's Encrypt
+# 9.3 servicios para servidores
 
-reverse proxy: es bla bla ya en referencias
-cloudflare tunnels, [Nginx Proxy Manager](nginxproxymanager.com)
+Guia de seguridad para servidores por [LiveOverflow ](https://yewtu.be/watch?v=fKuqYQdqRIs&t)
+
+VPS: Virtual Personal Server, son servidores en la "nube", yo recomiendo [vultr](https://www.vultr.com/), pero hay alternativas gratuitas como [AWS Free tier](https://aws.amazon.com/free/) (por 12 meses) y [Oracle Cloud Free Tier](https://www.oracle.com/cloud/free/) (para siempre)
+
+pagina web sin servidor ni dominio: [Github Pages](https://pages.github.com/) y [neocities](https://neocities.org/).
+
+
+DDNS: los ISP pueden cambiar tu direccion ip publica en cualquier momento, las soluciones a esto que recomiendo son: [cloudflare API](https://github.com/K0p1-Git/cloudflare-ddns-updater), [duckDNS](https://www.duckdns.org/) y [freeDNS](https://freedns.afraid.org/).
+
+Dominios Web gratis por un año c/u, con [GitHub Student Developer Pack](https://education.github.com/pack):
+[.tech](https://get.tech/github-student-developer-pack), [.me](https://nc.me/landing/github), [.engenieer, .software, .live etc.](https://www.name.com/partner/github-students)
+
+---
+
+certificados SSL: son los certificados que te hacen que una pagina web tenga https, yo recomiendo: [Let's Encrypt](https://letsencrypt.org/getting-started/)
+
+reverse proxy: es un servidor que redirecciona el trafico al servidor de la pagina web, con mayor seguiridad y velocidad. Las soluciones que recomiendo son: [cloudflare tunnels](https://www.cloudflare.com/products/tunnel/) y [Nginx Proxy Manager](https://nginxproxymanager.com/)
 
 NAS: Network Attached Storage, es una forma de acceder a discos duros atravez de una red ya sea en casa o desde fuera, existen sistemas operativos como freeNAS y equipos dedicados, pero convine mejor hacer tu propio NAS.
 
-RAID: Redundant Array of Independent Disks,storage, los discos duros son más baratos que los ssd pero estos pueden fallar y ser más lentos, por lo que existen tecnologias de RAID como: RAID0, RAID5, RAID6, RAID10, RAIDZ con ZFS o MergerFS + SnapRAID.
+RAID: Redundant Array of Independent Disks,storage, los discos duros son más baratos que los ssd pero estos pueden fallar y ser más lentos, las soluciones que hay son: [RAIDZ](https://openzfs.github.io/openzfs-docs/Basic%20Concepts/RAIDZ.html) con ZFS o [MergerFS](https://github.com/trapexit/mergerfs) + [SnapRAID](https://www.snapraid.it/manual), RAID5, RAID6, RAID10, etc.
 
-proyectos para un servidor:
-pagina web, vaultwarden, nextcloud, photoprism, searxng, wireguard vpn, dnsmasq/pihole, [etc](https://landchad.net/).
+---
+
+# 9.4 Proyectos para servidores
+
+- pagina web con [nginx](https://ubuntu.com/tutorials/install-and-configure-nginx#1-overview)
+- password manager con [vaultwarden](https://github.com/dani-garcia/vaultwarden)
+- almacenaniemto en la nube con [nextcloud](https://nextcloud.com/)
+- nube con IA para fotos con [photoprism](https://docs.photoprism.app/getting-started/)
+- Search engine con [searxng](https://docs.searxng.org/admin/installation.html#)
+- vpn con [wireguard](https://www.wireguard.com/quickstart/)
+- controlador de dns con [pihole](https://docs.pi-hole.net/main/prerequisites/)
+- servidor de email con [postfix](https://www.postfix.org/BASIC_CONFIGURATION_README.html)
+- [etc](https://landchad.net/).
 
 ---
 
@@ -866,7 +874,7 @@ pagina web, vaultwarden, nextcloud, photoprism, searxng, wireguard vpn, dnsmasq/
 - [linux journey](https://linuxjourney.com/)
 - [wikipedia: linux portal](https://en.wikipedia.org/wiki/Portal:Linux)
 - [wikibooks: how linux works](https://en.wikibooks.org/wiki/Linux_Guide/How_Linux_Works)
-- [IBM: Learn Linux, 101](https://developer.ibm.com/tutorials/l-lpic1-map/)
+- [IBM: Learn Linux 101](https://developer.ibm.com/tutorials/l-lpic1-map/)
 - [linux foundation: introduction to linux](https://training.linuxfoundation.org/training/introduction-to-linux/)
 - [kernel.org: Documentation](https://www.kernel.org/doc/)
 - [y más](https://itsfoss.com/learn-linux-for-free/)
@@ -877,11 +885,11 @@ pagina web, vaultwarden, nextcloud, photoprism, searxng, wireguard vpn, dnsmasq/
 
 - [The linux experiment: noticias semanales](https://yewtu.be/channel/UC5UAwBUum7CPN5buc-_N1Fw)
 - [DistroTube: reviews de distros, opiniones y tutoriales](https://yewtu.be/channel/UCVls1GmFKf6WlTraIb_IaJg)
-- [Luke Smith: opiniones, recomendaciones y tutoriales ](https://yewtu.be/channel/UC2eYFnH61tmytImy1mTYvhA)
+- [Luke Smith: opiniones, recomendaciones y tutoriales](https://yewtu.be/channel/UC2eYFnH61tmytImy1mTYvhA)
 - [Mental Outlaw: opiniones y noticias](https://yewtu.be/channel/UC7YOGHUfC1Tb6E4pudI9STA)
 - [Michael Horn: tips de linux](https://yewtu.be/channel/UC1s1OsWNYDFgbROPV-q5arg)
 - [Wolfgang's: tips para servidores](https://yewtu.be/channel/UCsnGwSIHyoYN0kiINAGUKxg)
-- [Hardware Haven: tips para servidores](https://yewtu.be/channel/UCgdTVe88YVSrOZ9qKumhULQ)
+- [Hardware Haven: hardware para servidores](https://yewtu.be/channel/UCgdTVe88YVSrOZ9qKumhULQ)
 - [y más](https://yewtu.be/watch?v=NybbsnDT5NI&t=316s)
 
 ---
@@ -893,33 +901,60 @@ pagina web, vaultwarden, nextcloud, photoprism, searxng, wireguard vpn, dnsmasq/
 <style scoped>{font-size: 21px;}</style>
 
 - Adekotujo, A., Odumabo, A., Adedokun, A., & Aiyeniko, O. (2020). *A Comparative Study of Operating Systems: Case of Windows, UNIX, Linux, Mac, Android and iOS*. https://www.researchgate.net/profile/Adedoyin-Odumabo/publication/343013056_A_Comparative_Study_of_Operating_Systems_Case_of_Windows_UNIX_Linux_Mac_Android_and_iOS/links/61f2b50a9a753545e2fe8300/A-Comparative-Study-of-Operating-Systems-Case-of-Windows-UNIX-Linux-Mac-Android-and-iOS.pdf
+- arm. (s.f.). *     CPU Architecture: A Foundation for Computing Everywhere*. https://www.arm.com/architecture/cpu
+- arm. (s.f.). *TrustZone for Cortex-A*. https://www.arm.com/technologies/trustzone-for-cortex-a
+- Boschs, P. (2019) *Introduction to the Intel Management Engine OS (Part 1)*. https://pbx.sh/intelme-sw1/#hasarfaty_2019
 - Britannica, T. Editors of Encyclopaedia (2023). *Linux*. Encyclopedia Britannica. https://www.britannica.com/technology/Linux
+- Cloudflare. (s.f). *What is a reverse proxy? | Proxy servers explained*. https://www.cloudflare.com/learning/cdn/glossary/reverse-proxy/
 - Cloudflare. (s.f.). *What is dynamic DNS (DDNS)?*. https://www.cloudflare.com/learning/dns/glossary/dynamic-dns/
+- copyright.gov. (s.f.). *What is Copyright?*. https://www.copyright.gov/what-is-copyright/
+- copyright.org. (s.f.). *What is copyleft?*. https://copyleft.org/
 - coreboot. (2017). *1. AMD Platform Security Processor (PSP) Firmware Integration Guide*. https://doc.coreboot.org/soc/amd/psp_integration.html#platform-security-processor-psp-overview  
+
+---
+
+<style scoped>{font-size: 21px;}</style>
+
+- Cray. (2016). *The final ISA showdown: Is ARM, x86, or MIPS intrinsically more power efficient?*. https://community.arm.com/arm-community-blogs/b/architectures-and-processors-blog/posts/the-final-isa-showdown-is-arm-x86-or-mips-intrinsically-more-power-efficient
 - creativecommons. (s.f). *About The Licenses*. https://creativecommons.org/licenses/
+- creativecommons. (s.f.). *About The Licenses*. https://creativecommons.org/licenses/
 - David Both. (2014). *The impact of the Linux philosophy*.https://opensource.com/business/14/12/linux-philosophy
-- dayzerosec. (2023). *Reversing the AMD Secure Processor (PSP) - Part 1: Design and Overview*. https://dayzerosec.com/blog/2023/04/17/reversing-the-amd-secure-processor-psp.html
+- Dayzerosec. (2023). *Reversing the AMD Secure Processor (PSP) - Part 1: Design and Overview*. https://dayzerosec.com/blog/2023/04/17/reversing-the-amd-secure-processor-psp.html
 - Dodge, C., Irvine, C., & Nguyen, T. (2005). *A study of initialization in Linux and OpenBSD*. https://core.ac.uk/download/pdf/36700709.pdf
 - Eric Steven Raymond. (2003). *Basics of the Unix Philosophy*. http://www.catb.org/~esr/writings/taoup/html/ch01s06.html
+- ExplainingComputers. (2022). *Explaining RISC-V: An x86 & ARM Alternative* [Video]. https://yewtu.be/watch?v=Ps0JFsyX2fU
 - ezeelinux. (2018). *Linux Distributions Deconstructed*. https://www.ezeelinux.com/news/linux-distributions-deconstructed/
 - Fireship. (2022). *Linux in 100 Seconds* [Video]. YouTube. https://yewtu.be/watch?v=rrB13utjYV4
 - freeBSD. (2023). *Explaining BSD*. https://docs.freebsd.org/en/articles/explaining-bsd/
+
+---
+
+<style scoped>{font-size: 21px;}</style>
+
+- freundschafter. (2018). *About AMD TrustZone, AMD Platform Security Processor (PSP), AMD Secure Technology*. https://freundschafter.com/research/about-amd-trustzone-amd-platform-security-processor-psp-amd-secure-technology/
 - GeeksforGeeks. (2019). *Linux Tutorials | Getting Started | Introduction | GeeksforGeeks* [Video]. https://yewtu.be/watch?v=0EDwEQoui_g
 - GNU. (2023). *GNU Coreutils*. https://www.gnu.org/software/coreutils/manual/coreutils.pdf
 - GNU. (2023). *GNU General Public License, version 2*. https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 - GNU. (s.f). *What is Free Software?*. https://www.gnu.org/philosophy/free-sw.html
 - IEEE. (2017). *IEEE Std 1003.1™-2017*. https://pubs.opengroup.org/onlinepubs/9699919799/
 - Intel. (2017). *What is Intel® Management Engine?*. https://www.intel.com/content/www/us/en/support/articles/000008927/software/chipset-software.html
+- Keystone. (2021). *What is Keystone Enclave?*. https://keystone-enclave.org/
+- Libreboot. (s.f.). *Intel Management Engine (ME)*. https://libreboot.org/faq.html#intelme
 - Linus Torvalds. (1997). *Linux: a Portable Operating System*. https://www.cs.helsinki.fi/u/kutvonen/index_files/linus.pdf
 - Linux Foundation. (2015). *Filesystem Hierarchy Standard*. https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.html
 - Linux Foundation. (2015). *Linux Standard Base*. https://refspecs.linuxfoundation.org/lsb.shtml
 - Machtelt Garrels. (2008). *Introduction to Linux*. https://tldp.org/LDP/intro-linux/intro-linux.pdf
+
+---
+
+<style scoped>{font-size: 21px;}</style>
+
 - Michael Tunnell. (2023). *Explaining Linux Family Trees: Why Are There So Many Linux Distros?* [Video]. https://yewtu.be/watch?v=kF8CRt05s6A
 - NGINX. (s.f). *What Is a Reverse Proxy Server?*. https://www.nginx.com/resources/glossary/reverse-proxy-server/
 - Opensource.com. (s.f.). *What is Linux?*. https://opensource.com/resources/linux
 - Opensource.com. (s.f). *What is open source?*.https://opensource.com/resources/what-open-source
 - Open Source Initiative. (2007). *The Open Source Definition*. https://opensource.org/osd/
-- opensource initiative. (s.f). *OSI Approved Licenses*. https://opensource.org/licenses/
+- Open source initiative. (s.f). *OSI Approved Licenses*. https://opensource.org/licenses/
 - Red Hat. (2019). *What is the Linux kernel?*. https://www.redhat.com/en/topics/linux/what-is-the-linux-kernel
 - Roch, B. (2004). *Monolithic kernel vs. Microkernel*. https://web.cs.wpi.edu/~cs3013/c12/Papers/Roch_Microkernels.pdf 
 - Seagate. (s.f ). *What is NAS*. https://www.seagate.com/blog/what-is-nas-master-ti/
@@ -929,11 +964,12 @@ pagina web, vaultwarden, nextcloud, photoprism, searxng, wireguard vpn, dnsmasq/
 - The Linux Information Project. (2006). *What is Linux?*. http://www.linfo.org/newbies.html
 - The Linux Kernel Organization. (2019). *About Linux Kernel*. https://www.kernel.org/linux.html
 - The Linux Kernel Organization. (2019). *Is Linux Kernel Free Software?*. https://www.kernel.org/category/faq.html
+
+---
+
+<style scoped>{font-size: 21px;}</style>
+
 - The Open Group. (2008). *The Single UNIX Specification, Version 4*. https://unix.org/version4/overview.html
+- University of Pittsburgh. (2022). *Copyright and Intellectual Property Toolkit*. https://pitt.libguides.com/copyright/licenses
 - Westerndigital. (s.f.). *RAID Storage*. https://www.westerndigital.com/solutions/raid
 - Wheeler, D. (2003). *History of Unix, Linux, and Open Source / Free Software*. https://tldp.org/HOWTO/Secure-Programs-HOWTO/history.html
-
-
-- ExplainingComputers. (2022). *Explaining RISC-V: An x86 & ARM Alternative* [Video]. https://yewtu.be/watch?v=Ps0JFsyX2fU
-- Boschs, P. (2019) *Introduction to the Intel Management Engine OS (Part 1)*. https://pbx.sh/intelme-sw1/#hasarfaty_2019
-- freundschafter. (2018). *About AMD TrustZone, AMD Platform Security Processor (PSP), AMD Secure Technology*. https://freundschafter.com/research/about-amd-trustzone-amd-platform-security-processor-psp-amd-secure-technology/
