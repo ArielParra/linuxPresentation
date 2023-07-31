@@ -406,7 +406,7 @@ los componentes y caracteristicas que construyen a una distribucion de linux son
 - servidor grafico: Xorg (X11) / protocolo grafico: Wayland 
 - tecnologia de audio: ALSA, pulseaudio, Jackaudio, pipewire.
 - login/display manager: ssdm (KDE), GDM (GNOME), LightDM, etc.
-- window manager: dwm, sway, i3, xmonad, etc.    
+- window manager: dwm, sway, i3, xmonad, Hyprland, etc.    
 - Desktop environment: Gnome, Plasma, xfce4, etc. 
 - Graphics Toolkits: GTK+ , Qt, etc.
 - gestor de paquetes (package manager): apt, DNF, pacman, portage, yay, etc.
@@ -809,17 +809,16 @@ El web server más usado es nginx con el [34.4%](https://w3techs.com/technologie
 
 # 9.2 hardware para servidores caseros
 
-laptops: thinkpads, o cualquiera que tengas a la mano.
+laptops: thinkpads (T60s, T400s, X200s), o cualquiera que tengas a la mano.
 All in One (AIO): Dell OptiPlex, HP elitedesk 800.
 Single Board Computers (SBC) con ARM: la [FSF](https://www.fsf.org/resources/hw/single-board-computers) recomienda procesadores Rockchip, FreeScale y Allwinner. 
-
 Yo recomiendo los procesadores Rokchip con 4 nucleos o más como: orange Pi 5 Plus, orange pi 5, ROCKPro64 y Quartz64 Model A.
 
 ventajas de usar laptops, SBCs y AIOs: Tamaños pequeños, bajos db de ruido, precios accesibles en primera y segunda mano, suelen tener un bajo consumo energetico, las laptops tienen pantallas y teclados para mantenimiento y pueden usar sus baterias en caso de un corte de luz, los AIO pueden usar ECC RAM y/o tarjetas graficas.
 
 desventajas: puertos limitados, los graficos integrados puedn no ser optimos para media servers, los puertos usb tienen limite de energia externa, los SBC suelen usar tarjetas SD que son propensas a fallos.
 
-soluciones/expansiones: USB como root partition para SBCs, no breaks como respaldos de energia, clusters, USB ethernet 2.5 gb, adaptadores sata a USB, USB hub con energia externa, HDD/nvme en el puerto de DVD de laptops, puerto de red de laptop: tarjetas graficas externas (con mucho bottleneck), ethernet port, usb 3.0, sata, nvme, wifi 6.
+soluciones/expansiones: USB como root partition para SBCs, no breaks como respaldos de energia, clusters, USB ethernet 2.5 gb, adaptadores sata a USB, USB hub con energia externa, HDD/nvme en el puerto de DVD de laptops, puerto de tarjeta red (M.2 key/mini PCIe) de laptop o express card: eGPU (con bottleneck), ethernet card, usb 3.0, sata hub, ssd.
 
 ---
 
