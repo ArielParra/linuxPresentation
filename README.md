@@ -1,10 +1,10 @@
-![bg](rabithole.png)
+![bg](./img/rabithole.png)
 # linux rabit hole
 ## curso completo de linux y los temas que lo rodean
 ### por Ariel Parra
 ---
 
-version 1.0 al 2023/07/21 a las 12 horas <br>
+version 1.0 al 2023/07/31 a las 14 horas <br>
 la licencia de esta presentación es [CC BY](https://creativecommons.org/licenses/by/4.0/) ![](https://licensebuttons.net/l/by/3.0/88x31.png)
 
 la imagen fue creada usando GIMP y la fuente del texto de "penguin" es liberation-serif <br>
@@ -24,8 +24,6 @@ por lo que esta imagen no podra ser usada en mercancia, plantillas u otros produ
 - 2. temas relacionadas
     - 2.1 UNIX
     - 2.2 licencias 
-        - 2.2.1 FOSS
-        - 2.2.2 licencias open source 
     - 2.3 Filosofia Free/Libre 
     - 2.4 BSD
     - 2.5 Privacidad
@@ -67,10 +65,20 @@ por lo que esta imagen no podra ser usada en mercancia, plantillas u otros produ
 - 6. Funciones especificas
     - 6.1 Funciones de shell 
     - 6.2 Shortcuts de terminal
+    - 6.3 Funciones especificos de la distro
+    - 6.4 más informacion acerca de comandos
 - 7. Aplicaciones
     - 7.1 Recomendacion de aplicaciones
 - 8. Hardware
+    - 8.1 Procesadores x86/x64
+    - 8.2 Procesadores arm
+    - 8.3 Procesadores Risc-V
+    - 8.4 Hardware recomendado
 - 9. servidores
+    - 9.1 software para servidores
+    - 9.2 hardware para servidores caseros
+    - 9.3 servicios para servidores.
+    - 9.4 Proyectos para servidores
 - 10. aprender más acerca de linux
     - 10.1 Guias y Paginas
     - 10.2 Youtubers de linux que recomiendo
