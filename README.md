@@ -5,26 +5,26 @@
 
 ---
 
-version 1.0 al 2023/08/01 a las 7 horas <br>
-la licencia de esta presentación es [CC BY](https://creativecommons.org/licenses/by/4.0/) ![](https://licensebuttons.net/l/by/3.0/88x31.png)
+Version 1.0 al 2023/08/01 a las 7 horas. <br>
+La licencia de esta presentación es [CC BY](https://creativecommons.org/licenses/by/4.0/) ![](https://licensebuttons.net/l/by/3.0/88x31.png)
 
-la imagen fue creada usando GIMP y la fuente del texto de "penguin" es liberation-serif <br>
-el pinguino blanco (tux) lo descargue de https://commons.wikimedia.org/wiki/File:Tux_bw.svg <br>
-el fondo es de svetlanasmirnova "White rabbit runs and falls into a hole. Surreal chess background and lettering follow the white rabbit." obtenida de: https://stock.adobe.com/mx/contributor/205805951/svetlanasmirnova?load_type=author&prev_url=detail&asset_id=391546596 <br>
-por lo que esta imagen no podra ser usada en mercancia, plantillas u otros productos a la venta
+La imagen fue creada usando GIMP y la fuente del texto de "penguin" es liberation-serif. <br>
+El pinguino blanco (tux) lo descargue de https://commons.wikimedia.org/wiki/File:Tux_bw.svg <br>
+El fondo es de Svetlanasmirnova "White rabbit runs and falls into a hole. Surreal chess background and lettering follow the white rabbit." obtenida de: https://stock.adobe.com/mx/contributor/205805951/svetlanasmirnova?load_type=author&prev_url=detail&asset_id=391546596 <br>
+Por lo que esta imagen no podra ser usada en mercancia, plantillas u otros productos a la venta.
 
 ---
 # Contenidos
 
-- 1. ¿Qué es linux?
+- 1. ¿Qué es Linux?
     - 1.1 Definición
     - 1.2 Historia
-    - 1.3 Filosofia de linux
+    - 1.3 Filosofia de Linux
     - 1.4 Linux Filesystem Hierarchy Standard
-    - 1.5 las capas de linux
+    - 1.5 las capas de Linux
 - 2. temas relacionadas
     - 2.1 UNIX
-    - 2.2 licencias 
+    - 2.2 Licencias 
     - 2.3 Filosofia Free/Libre 
     - 2.4 BSD
     - 2.5 Privacidad
@@ -32,9 +32,9 @@ por lo que esta imagen no podra ser usada en mercancia, plantillas u otros produ
     - 2.7 Minimalismo
     - 2.8 Ricing
 - 3. Comparación de Sistemas operativos
-    - 3.1 Ventajas de linux
-    - 3.2 Más referencias de las ventajas de linux
-    - 3.3 Desventajas de linux
+    - 3.1 Ventajas de Linux
+    - 3.2 Más referencias de las ventajas de Linux
+    - 3.3 Desventajas de Linux
     - 3.4 Ventajs de MacOs
     - 3.5 Desventajas de MacOS
     - 3.6 Recomendaciones al usar MacOS
@@ -47,9 +47,9 @@ por lo que esta imagen no podra ser usada en mercancia, plantillas u otros produ
         - 3.8.5 Privacidad
     - 3.9 Más referencias de las desventajas de Windows
     - 3.10 Recomendaciones al usar Windows
-- 4. Distribuciones de linux
-    - 4.1 ¿Qué es una distribucion de linux?
-    - 4.2 ¿Qué compone una distrubucion de linux?
+- 4. Distribuciones de Linux
+    - 4.1 ¿Qué es una distribucion de Linux?
+    - 4.2 Componentes de una distrubucion de Linux
     - 4.3 Categorias de las distribuciones
         - 4.3.1 Distribuciones independentes 
         - 4.3.2 Distribuciones Derivadas 
@@ -78,11 +78,11 @@ por lo que esta imagen no podra ser usada en mercancia, plantillas u otros produ
 - 9. Servidores
     - 9.1 Software para servidores
     - 9.2 Hardware para servidores caseros
-    - 9.3 Servicios para servidores.
+    - 9.3 Servicios para servidores
     - 9.4 Proyectos para servidores
-- 10. Aprender más acerca de linux
+- 10. Aprender más acerca de Linux
     - 10.1 Guías y Paginas
-    - 10.2 Youtubers de linux que recomiendo
+    - 10.2 Youtubers de Linux que recomiendo
 - 11. Referencias
 
 ---

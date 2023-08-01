@@ -5,7 +5,7 @@ theme: default
 paginate: true
 ---
 
-<!-- tema -->
+<!-- theme -->
 <style>
 h1 {color: #81a1c1;}
 h1 strong {color: #4c566a;}
@@ -19,47 +19,48 @@ th { background-color: #81a1c1; color: #e5e9f0}
 td { background-color: #e5e9f0;}
 </style>
 
-<!-- Portada -->
+<!-- Title page -->
 
 <style scoped>h1, h2, h3 {color: #3b4252;}</style>
 
 ![bg opacity:.3](./img/rabithole.png)
 
 # <!--fit--> Linux rabit hole
-## Curso completo de Linux y los temas que lo rodean
-### Por Ariel Parra.
+## Full course of Linux and the topics surrounding it
+### By Ariel Parra.
 
 ---
 
-# **1. ¿Qué es Linux?**
+# **1. What is Linux?**
 
 ---
 
-# 1.1 Definición
+# 1.1 Definition
 
-Es un kernel monolítico de código abierto con licencia GNU GPL v2, usado como base de sistemas operativos.
-
----
-
-- ¿Qué es un kernel monolítico? El kernel es software que tiene el control del hardware, administra y optimiza los recursos del sistema como asignación de memoria RAM, procesos del CPU, drivers, etc. Actuando, así como un puente entre aplicaciones y el hardware. Este es monolítico cuando todos los servicios del sistema operan en el kernel atreves de system calls. 
-- ¿Qué es el código abierto? Es software donde cualquier persona puede ver, analizar y por ende modificar el código fuente.
-- ¿Cuál es la licencia GPLv2? Es una licencia de software donde cualquier modificación al código debe tener la misma licencia y también que por cada archivo binario que sea distribuido tiene que estar disponible su código fuente. 
+It is an open-source monolithic kernel with GNU GPL v2 licence, used as the base of operating systems.
 
 ---
 
-# 1.2 Historia 
-
-Fue creado en 1991 por el estudiante de la universidad de Helsinki Linus Torvalds, al mismo tiempo Richard Stallman junto con su proyecto GNU de la fundación de software libre (FSF) ya habían creado las aplicaciones y utilidades de un sistema operativo. Estas aplicaciones y utilidades fueron agregadas al Linux kernel para crear un systema completo llamado GNU/Linux.
+- What is a monolithic kernel? The kernel is software that has hardware control, manages and optimizes system resources such as RAM allocation, CPU processes, drivers, etc. Acting as a bridge between applications and hardware. It is monolithic when all system services operate in the system’s kernel with syscalls.
+- What is open-source? It is software where anyone can see, analyze and therefore modify the source code.
+- What's the GPLv2 license? It is a software license where any modification to the code must have the same license and for every binary file that is distributed, there has to be available source code.
 
 ---
 
-# 1.3 Filosofia de linux
+# 1.2 History 
 
-La filosofía de Linux se basa principalmente en la filosofía de UNIX y del open-source, donde Linux se diferencia es al darle control completo al usuario, dándole la libertad de elegir, estudiar, modificar y distribuir cualquier parte de su sistema operativo. 
+It was created in 1991 by the student of the University of Helsinki Linus Torvalds, at the same time Richard Stallman along with his GNU project of the Free Software Foundation (FSF) had already created the applications and utilities of an operating system. These applications and utilities were added to the Linux kernel to create a complete system called GNU/Linux.
 
-El kernel de Linux en si no tiene blobs binarios, sino que estos son distribuidos en el Linux-firmware, esto sirve para inicializar el hardware y los drivers. 
+---
 
-Linux tiene estándares como el LSB (Linux Standard Base) que define system interfaces y run times de donde las librerías y aplicaciones dependen, un Open Container Initiative (OCI) para especificaciones de runtimes, imagenes y distribución. Los sistemas operativos Linux suelen usar el Filesystem Hierarchy Standard de linux.
+# 1.3 linux Philosophy
+
+The Linux philosophy is mainly based on UNIX and the open-source philosophies, where Linux is differentiated is by giving full control to the user, giving him the freedom to choose, study, modify and distribute any part of his operating system.
+
+The Linux kernel it self, does not have binary blobs, but these are distributed in the Linux-firmware, this serves to initialize the hardware and drivers.
+
+Linux has standards such as the LSB (Linux Standard Base) that define system interfaces and run times from where libraries and applications depend.
+Linux operating systems often use the Filesystem Hierarchy Standard of linux.
 
 ---
 
@@ -69,63 +70,63 @@ Linux tiene estándares como el LSB (Linux Standard Base) que define system inte
 
 ![h:600px center](./img/Standard-unix-filesystem-hierarchy.svg)
 
-Imagen recuperada de [wikimedia](https://commons.wikimedia.org/wiki/File:Standard-unix-filesystem-hierarchy.svg)
+Image recovered from [wikimedia](https://commons.wikimedia.org/wiki/File:Standard-unix-filesystem-hierarchy.svg)
 
 ---
 
 <style scoped>p {text-align: center; font-size: 20px}</style>
 
-# 1.5 las capas de Linux
+# 1.5 Layers of Linux
 
 ![h:600px center](./img/kernel-user_space.png)
 
-Imagen recuperada de [wikipedia](https://en.wikipedia.org/wiki/Template%3ALinux_layers)
+Image recovered from [wikipedia](https://en.wikipedia.org/wiki/Template%3ALinux_layers)
 
 ---
 
-# **2. temas relacionadas**
+# **2. Related topics**
 
 ---
 
 # 2.1 UNIX
 
-UNIX es un sistema operativo creado a principios de los 70s en AT&T por Dennis Ritchie (creador del lenguaje C) y Ken Thompson (creador del lenguaje B).
-- POSIX: "Portable Operating System Interface", son una serie de estándares de uso, impuestos por el IEEE (Institute of Electrical and Electronics Engineers) que incluye el I/O, la terminal, comandos y redes. Estos estandares se suele usar para hacer shell scripts compatibiles con muchos sistemas operativos.
-- Single UNIX Specification: Es un estándar para sistemas operativos para usar el tredemark de UNIX , con interfaces para el lenguaje C, el shell y comandos.
-- UNIX filosofy (Doug McIlroy): Escribe programas que hagan una cosa muy bien, que trabajen juntos (input de uno es el output de otro) y que manejen streams (serie de bytes para I/O), porque son  una interfaz universal.
-- Todo es un archivo, los dispositivos, teclados, discos duros, etc. estos son manejados con streams y almacenados en la carpeta /dev .
+UNIX is an operating system created at the beginning of the 70s in AT&T by Dennis Ritchie (C language creator) and Ken Thompson (B language creator).
+- POSIX: "Portable Operating System Interface", are a series of standards of use, given by the IEEE (Institute of Electrical and Electronics Engineers) which includes the I/O, the terminal, commands and networking. These standards are usually used to make shells compatibility scripts with many operating systems.
+- Single UNIX Specification: It is a standard for operating systems to use the UNIX tredemark, with interfaces for C language, shell and commands.
+- UNIX filosofy (Doug McIlroy): Write programs that do one thing very good, that work together (input is the output of another) and that handle streams (bytes strings for I/O), because they are a universal interface.
+- Everything is a file, devices, keyboards, hard drives, etc. these are managed with streams and stored in the /dev folder.
 
 ---
 
 <style scoped> img { image-rendering: pixelated;}</style>
 
-# 2.2 Licencias 
+# 2.2 Licenses 
 
-Las licencias son permisos dados por quien tiene el copyrght del contenido, las licencias pueden darte ciertos permisos de uso dependiendo de las licencias.
+Licences are licenses given by those who have the copyrght of the content, licenses can give you certain use permits depending on the licenses.
 
-Copyright: El derecho de autor (copyright) es un tipo de propiedad intelectual que protege las obras originales del autor, dando la libertad de elegir que se hace o que no se hace con su obra.
+Copyright: Is a type of intellectual property that protects the original work of the author, giving the freedom to choose what can and can't be done with his work.
 
-Copyleft: Es una estrategia para usar el copyright para fomentar el derecho de copiar, compartir, modificar y mejorar las obras bajo esta licencia.
+Copyleft: It is a strategy to use copyright to encourage the right to copy, share, modify and improve works under this license.
 
-Dominio Publico: (No Rights Reserved) ![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png) es una licencia para deslindarte de los derechos de autor.
-
----
-
-Creative commons: son licencias de uso libre pero con atribucion obligatoria, comunmente usados para imagenes, videos y articulos. ![CC BY](https://licensebuttons.net/l/by/3.0/88x31.png), ![CC BY-SA](https://licensebuttons.net/l/by-sa/3.0/88x31.png), ![CC BY-ND](https://licensebuttons.net/l/by-nd/3.0/88x31.png), ![CC BY-NC](https://licensebuttons.net/l/by-nc/3.0/88x31.png), ![CC BY-NC-SA](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png) y ![CC BY-NC-ND](https://licensebuttons.net/l/by-nc-nd/3.0/88x31.png).
-
-Licencias open-source:  
-- [AGPL:](https://www.gnu.org/licenses/agpl-3.0.en.html) similar al GPL pero para servicios en linea.
-- [Apache](https://www.apache.org/licenses/LICENSE-2.0): incluir la nota de copyright.  
-- BSD [2](https://opensource.org/license/bsd-2-clause/)/[3](https://opensource.org/license/bsd-3-clause/): incluir la nota de copyright. 
-- GPL [v2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)/[v3](https://www.gnu.org/licenses/gpl-3.0.html): codigo fuente disponible y copyleft.
-- [MIT](https://opensource.org/license/mit/): incluya la nota de copyright.  
+Public Domain: (No Rights Reserved) ![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png) is a license to opt out copyright.
 
 ---
 
-# 2.3 Filosofia de software libre
+Creative commons: they are free use licenses but with mandatory attribute, commonly used for images, videos and articles. ![CC BY](https://licensebuttons.net/l/by/3.0/88x31.png), ![CC BY-SA](https://licensebuttons.net/l/by-sa/3.0/88x31.png), ![CC BY-ND](https://licensebuttons.net/l/by-nd/3.0/88x31.png), ![CC BY-NC](https://licensebuttons.net/l/by-nc/3.0/88x31.png), ![CC BY-NC-SA](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png) and ![CC BY-NC-ND](https://licensebuttons.net/l/by-nc-nd/3.0/88x31.png).
+
+
+Open source licenses:
+- [AGPL:](https://www.gnu.org/licenses/agpl-3.0.en.html) similar to GPL but for online services.
+- [Apache](https://www.apache.org/licenses/LICENSE-2.0): include the copyright notice.
+- BSD [2](https://opensource.org/license/bsd-2-clause/)/[3](https://opensource.org/license/bsd-3-clause/): include the copyright notice.
+- GPL [v2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)/[v3](https://www.gnu.org/licenses/gpl-3.0.html): source code available and copyleft.
+- [MIT](https://opensource.org/license/mit/): include the copyright notice.  
+
+---
+
+# 2.3 Free/Libre Philosophy
  
-La filosofía de software libre tiene relación con Richard Stallman y su proyecto GNU, esta dice que software debe respetar la libertad del usuario, la libertad de distribución, la libertad de uso, la libertad de estudio, etc. Yendo en contra del software privado y con código cerrado, los blobs binarios, las licencias y EULAs no permisivas y el DRM. 
-
+The Free/Libre software philosophy is related to Richard Stallman and his GNU project, which says that software must respect the freedom of the user, freedom of distribution, freedom of use, freedom of study, etc. Going against Proprietary software and closed-source, binary blobs, non-permissive licenses and EULAs and DRM.
 ---
 
 # 2.4 BSD
@@ -188,7 +189,7 @@ Tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 
 # 3.1 Ventajas de Linux 
 
-- Es gratuito y open-source.
+- Es gratuito y open source.
 - Superioridad en cuestion de audio con [pipewire](https://pipewire.org/).
 - Puede arrancar [rapidamente](https://www.forbes.com/sites/jasonevangelho/2019/06/19/infographics-linux-mint-challenges-windows-10-in-small-business-speed-tests-laptop/#7a560d2369bb) el sistema y las aplicaciones.
 - Tiempos menores de [compilacion](https://medium.com/aedm/windows-wsl-and-linux-a-build-time-benchmark-for-java-rust-go-and-node-43188a9c77d6)
@@ -198,7 +199,7 @@ Tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 - Tiene multiples [comunidades](https://www.makeuseof.com/tag/4-helpful-communities-new-linux-users/) para soporte.
 - Tiene drivers opensource oficiales de [AMD](https://gpuopen.com/amd-open-source-driver-for-vulkan/) y no oficiales de [Nvidia](https://nouveau.freedesktop.org/).
 - Puedes ["revivir"](https://itsfoss.com/mystory-linux-13-years-laptop/) laptops antiguas.
-- Promueve el [open-source](https://www.linuxfoundation.org/resources/open-source-guides/participating-in-open-source-communities).
+- Promueve [open source](https://www.linuxfoundation.org/resources/open-source-guides/participating-in-open-source-communities).
 - Tienes libertad de elección sobre cada componente del sistema operativo.
 
 ----
@@ -226,7 +227,7 @@ Tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 - Problemas con [fractional scaling](https://wiki.archlinux.org/title/HiDPI).
 - Screen tearing en [X11 (xorg)](https://christitus.com/fix-screen-tearing-linux/).
 - Problemas al compartir pantalla con audio en [discord](https://wiki.archlinux.org/title/Discord#Screen_sharing_with_audio) y [MS Teams](https://answers.microsoft.com/en-us/msteams/forum/all/sharing-system-sound-in-teams-for-linux/f1c70d83-e9bd-41b4-abde-d78fae764d5c).
-- El driver open-source de nvidia tiene un [peor rendimiento](https://openbenchmarking.org/result/2106300-IB-NOUVEAU2060) que el oficial.
+- El driver open source de nvidia tiene un [peor rendimiento](https://openbenchmarking.org/result/2106300-IB-NOUVEAU2060) que el oficial.
 - La capa de compatibilidad con Windows (wine) puede correr [malware](https://wiki.winehq.org/FAQ#Is_Wine_malware-compatible.3F).
 
 ---
@@ -258,7 +259,7 @@ Tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 - Múltiples  problemas de [privacidad](https://sneak.berlin/20201112/your-computer-isnt-yours/).
 - Los [contratos de licencia de software](https://www.apple.com/legal/sla/).
 - Posibles conexiones con NSA e implicación con [PRISM](https://www.washingtonpost.com/investigations/us-intelligence-mining-data-from-nine-us-internet-companies-in-broad-secret-program/013/06/06/3a0c0da8-cebf-11e2-8845-d970ccb04497_story.html).
-- No suele haber drivers open-source.
+- No suele haber drivers open source.
 - La capa de compatibilidad con Windows (wine) puede correr [malware](https://wiki.winehq.org/FAQ#Is_Wine_malware-compatible.3F).
 - No tiene controles de volumen por [aplicación](https://apple.stackexchange.com/questions/381397/is-it-possible-to-set-an-individual-sound-volume-for-each-program-on-a-mac).
 
@@ -327,7 +328,7 @@ Tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 - La solución a la mayoria de errores es [reinstalar](https://answers.microsoft.com/en-us/windows/forum/all/windows-update-system-restore-and-repair-failed/aaf28405-55c0-4ee2-b4b4-f13571680b32) el sistema operativo 
 - Las [apps](https://www.pcmag.com/how-to/stop-windows-10-apps-from-launching-at-startup) se ejecutan al inicio o crean servicios que se ejecutan al inicio 
 - Fondos de pantalla en slidehow puede no [funcionar](https://answers.microsoft.com/en-us/windows/forum/all/background-slideshow-stops-working/acfcabe4-56fb-436a-afc6-42bdd877ca29) 
-- Pocas opciones open-source de [customizacion](https://github.com/Awesome-Windows/Awesome#customization) y algunas opciones privadas cuestan [wallpaperengine](https://store.steampowered.com/app/431960/Wallpaper_Engine/), [taskbarX](https://apps.microsoft.com/store/detail/taskbarx/9PCMZ6BXK8GH?hl=en-us&gl=us), [start11](https://www.stardock.com/products/start11/), etc. 
+- Pocas opciones open source de [customizacion](https://github.com/Awesome-Windows/Awesome#customization) y algunas opciones privadas cuestan [wallpaperengine](https://store.steampowered.com/app/431960/Wallpaper_Engine/), [taskbarX](https://apps.microsoft.com/store/detail/taskbarx/9PCMZ6BXK8GH?hl=en-us&gl=us), [start11](https://www.stardock.com/products/start11/), etc. 
 
 ---
 
@@ -337,7 +338,7 @@ Tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 - Los [requisitos](https://www.microsoft.com/en-us/windows/windows-11-specifications) de Windows 11, procesador de 64 bits, UEFI, TPM v2.0 y una grafica compatible con DirectX12.
 - Los discos duros con NTFS tienen que [defragmentarse](https://learn.microsoft.com/en-us/previous-versions/cc767961(v=technet.10)).
 - Los drivers oficiales de Nvidia tienen [telemetría](https://www.geeks3d.com/20161107/nvidia-telemetry-in-geforce-drivers/).
-- No suele haber drivers open-source.
+- No suele haber drivers open source.
 
 ---
 
@@ -397,11 +398,11 @@ Tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 
 # 4.1 ¿Qué es una distribucion de Linux?
 
-Una distribución (distro) de Linux es un sistema operativo completo con muchos componentes open-source, utilidades e interfaces.
+Una distribución (distro) de Linux es un sistema operativo completo con muchos componentes open source, utilidades e interfaces.
 
 ---
 
-# 4.2 Componentes de una distrubucion de Linux
+# 4.2 ¿Qué compone una distrubucion de Linux?
 
 Los componentes y características que construyen a una distribución de linux son: 
 - Filosofia: KISS/minimalismo, free/libre, bsd userspace, compilación, etc.
@@ -786,7 +787,7 @@ Es el procesador más usado en el [mundo](https://gs.statcounter.com/platform-ma
 
 # 8.3 Procesadores Risc-V
 
-Es una familia de procesadores con arquitectura  RISC, con un ISA open-source, por el momento estos tienen menor potencia computacional que arm por lo que hay menos [usos](https://www.makeuseof.com/what-is-a-risc-v-sbc/); este también tiene un TEE llamado keystone, la diferencia es que este es open-source.
+Es una familia de procesadores con arquitectura  RISC, con un ISA open source, por el momento estos tienen menor potencia computacional que arm por lo que hay menos [usos](https://www.makeuseof.com/what-is-a-risc-v-sbc/); este también tiene un TEE llamado keystone, la diferencia es que este es open source.
 
 ---
 
@@ -867,16 +868,16 @@ RAID: Redundant Array of Independent Disks,storage, los discos duros son más ba
 
 ---
 
-# 9.4 Proyectos para servidores
+# 9.4 Server projects
 
-- Página web con [nginx](https://ubuntu.com/tutorials/install-and-configure-nginx#1-overview)
-- Password manager con [vaultwarden](https://github.com/dani-garcia/vaultwarden)
-- Almacenamiento en la nube con [nextcloud](https://nextcloud.com/)
-- Nube con IA para fotos con [photoprism](https://docs.photoprism.app/getting-started/)
-- Search engine con [searxng](https://docs.searxng.org/admin/installation.html#)
-- VPN con [wireguard](https://www.wireguard.com/quickstart/)
-- Controlador de DNS con [pihole](https://docs.pi-hole.net/main/prerequisites/)
-- Servidor de email con [postfix](https://www.postfix.org/BASIC_CONFIGURATION_README.html)
+- Website with [nginx](https://ubuntu.com/tutorials/install-and-configure-nginx#1-overview)
+- Password manager with [vaultwarden](https://github.com/dani-garcia/vaultwarden)
+- Cloud storage with [nextcloud](https://nextcloud.com/)
+- Cloud with AI for photos with [photoprism](https://docs.photoprism.app/getting-started/)
+- Search engine with [searxng](https://docs.searxng.org/admin/installation.html#)
+- VPN with [wireguard](https://www.wireguard.com/quickstart/)
+- DNS controller with [pihole](https://docs.pi-hole.net/main/prerequisites/)
+- Email server with [postfix](https://www.postfix.org/BASIC_CONFIGURATION_README.html)
 - [etc](https://landchad.net/).
 
 ---
@@ -885,7 +886,7 @@ RAID: Redundant Array of Independent Disks,storage, los discos duros son más ba
 
 ---
 
-# 10.1 Guías y Paginas
+# 10.1 Guides and Websites
 
 - [Arch wiki](https://wiki.archlinux.org/)
 - [Gentoo wiki](https://wiki.gentoo.org/wiki/Main_Page)
@@ -902,34 +903,34 @@ RAID: Redundant Array of Independent Disks,storage, los discos duros son más ba
 
 ---
 
-# 10.2 Youtubers de Linux que recomiendo
+# 10.2 Linux Youtubers I recommend
 
-- [The linux experiment: Noticias semanales](https://yewtu.be/channel/UC5UAwBUum7CPN5buc-_N1Fw)
-- [DistroTube: Reviews de distros, opiniones y tutoriales](https://yewtu.be/channel/UCVls1GmFKf6WlTraIb_IaJg)
-- [Luke Smith: Opiniones, recomendaciones y tutoriales](https://yewtu.be/channel/UC2eYFnH61tmytImy1mTYvhA)
-- [Mental Outlaw: Opiniones y noticias](https://yewtu.be/channel/UC7YOGHUfC1Tb6E4pudI9STA)
-- [Michael Horn: Tips de Linux](https://yewtu.be/channel/UC1s1OsWNYDFgbROPV-q5arg)
-- [Wolfgang's: Tips para servidores](https://yewtu.be/channel/UCsnGwSIHyoYN0kiINAGUKxg)
-- [Hardware Haven: Hardware para servidores](https://yewtu.be/channel/UCgdTVe88YVSrOZ9qKumhULQ)
-- [Y más](https://yewtu.be/watch?v=NybbsnDT5NI&t=316s)
+- [The linux experiment: Weekly news](https://yewtu.be/channel/UC5UAwBUum7CPN5buc-_N1Fw)
+- [DistroTube: Distro reviews, reviews and tutorials](https://yewtu.be/channel/UCVls1GmFKf6WlTraIb_IaJg)
+- [Luke Smith: Opinions, recommendations and tutorials](https://yewtu.be/channel/UC2eYFnH61tmytImy1mTYvhA)
+- [Mental Outlaw: Opinions and news](https://yewtu.be/channel/UC7YOGHUfC1Tb6E4pudI9STA)
+- [Michael Horn: Linux tips](https://yewtu.be/channel/UC1s1OsWNYDFgbROPV-q5arg)
+- [Wolfgang's: Server tips](https://yewtu.be/channel/UCsnGwSIHyoYN0kiINAGUKxg)
+- [Hardware Haven: Server hardware](https://yewtu.be/channel/UCgdTVe88YVSrOZ9qKumhULQ)
+- [More](https://yewtu.be/watch?v=NybbsnDT5NI faket=316s)
 
 ---
 
-# **11. Referencias**
+# **11. References**
 
 ---
 
 <style scoped>{font-size: 21px;}</style>
 
 - Adekotujo, A., Odumabo, A., Adedokun, A., & Aiyeniko, O. (2020). *A Comparative Study of Operating Systems: Case of Windows, UNIX, Linux, Mac, Android and iOS*. https://www.researchgate.net/profile/Adedoyin-Odumabo/publication/343013056_A_Comparative_Study_of_Operating_Systems_Case_of_Windows_UNIX_Linux_Mac_Android_and_iOS/links/61f2b50a9a753545e2fe8300/A-Comparative-Study-of-Operating-Systems-Case-of-Windows-UNIX-Linux-Mac-Android-and-iOS.pdf
-- arm. (s.f.). *     CPU Architecture: A Foundation for Computing Everywhere*. https://www.arm.com/architecture/cpu
-- arm. (s.f.). *TrustZone for Cortex-A*. https://www.arm.com/technologies/trustzone-for-cortex-a
+- arm. (n.d.). *     CPU Architecture: A Foundation for Computing Everywhere*. https://www.arm.com/architecture/cpu
+- arm. (n.d.). *TrustZone for Cortex-A*. https://www.arm.com/technologies/trustzone-for-cortex-a
 - Boschs, P. (2019) *Introduction to the Intel Management Engine OS (Part 1)*. https://pbx.sh/intelme-sw1/#hasarfaty_2019
 - Britannica, T. Editors of Encyclopaedia (2023). *Linux*. Encyclopedia Britannica. https://www.britannica.com/technology/Linux
-- Cloudflare. (s.f). *What is a reverse proxy? | Proxy servers explained*. https://www.cloudflare.com/learning/cdn/glossary/reverse-proxy/
-- Cloudflare. (s.f.). *What is dynamic DNS (DDNS)?*. https://www.cloudflare.com/learning/dns/glossary/dynamic-dns/
-- copyright.gov. (s.f.). *What is Copyright?*. https://www.copyright.gov/what-is-copyright/
-- copyright.org. (s.f.). *What is copyleft?*. https://copyleft.org/
+- Cloudflare. (n.d.). *What is a reverse proxy? | Proxy servers explained*. https://www.cloudflare.com/learning/cdn/glossary/reverse-proxy/
+- Cloudflare. (n.d.). *What is dynamic DNS (DDNS)?*. https://www.cloudflare.com/learning/dns/glossary/dynamic-dns/
+- copyright.gov. (n.d.). *What is Copyright?*. https://www.copyright.gov/what-is-copyright/
+- copyright.org. (n.d.). *What is copyleft?*. https://copyleft.org/
 - coreboot. (2017). *1. AMD Platform Security Processor (PSP) Firmware Integration Guide*. https://doc.coreboot.org/soc/amd/psp_integration.html#platform-security-processor-psp-overview  
 
 ---
@@ -937,8 +938,8 @@ RAID: Redundant Array of Independent Disks,storage, los discos duros son más ba
 <style scoped>{font-size: 21px;}</style>
 
 - Cray. (2016). *The final ISA showdown: Is ARM, x86, or MIPS intrinsically more power efficient?*. https://community.arm.com/arm-community-blogs/b/architectures-and-processors-blog/posts/the-final-isa-showdown-is-arm-x86-or-mips-intrinsically-more-power-efficient
-- creativecommons. (s.f). *About The Licenses*. https://creativecommons.org/licenses/
-- creativecommons. (s.f.). *About The Licenses*. https://creativecommons.org/licenses/
+- creativecommons. (n.d). *About The Licenses*. https://creativecommons.org/licenses/
+- creativecommons. (n.d.). *About The Licenses*. https://creativecommons.org/licenses/
 - David Both. (2014). *The impact of the Linux philosophy*.https://opensource.com/business/14/12/linux-philosophy
 - Dayzerosec. (2023). *Reversing the AMD Secure Processor (PSP) - Part 1: Design and Overview*. https://dayzerosec.com/blog/2023/04/17/reversing-the-amd-secure-processor-psp.html
 - Dodge, C., Irvine, C., & Nguyen, T. (2005). *A study of initialization in Linux and OpenBSD*. https://core.ac.uk/download/pdf/36700709.pdf
@@ -956,11 +957,11 @@ RAID: Redundant Array of Independent Disks,storage, los discos duros son más ba
 - GeeksforGeeks. (2019). *Linux Tutorials | Getting Started | Introduction | GeeksforGeeks* [Video]. https://yewtu.be/watch?v=0EDwEQoui_g
 - GNU. (2023). *GNU Coreutils*. https://www.gnu.org/software/coreutils/manual/coreutils.pdf
 - GNU. (2023). *GNU General Public License, version 2*. https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-- GNU. (s.f). *What is Free Software?*. https://www.gnu.org/philosophy/free-sw.html
+- GNU. (n.d). *What is Free Software?*. https://www.gnu.org/philosophy/free-sw.html
 - IEEE. (2017). *IEEE Std 1003.1™-2017*. https://pubs.opengroup.org/onlinepubs/9699919799/
 - Intel. (2017). *What is Intel® Management Engine?*. https://www.intel.com/content/www/us/en/support/articles/000008927/software/chipset-software.html
 - Keystone. (2021). *What is Keystone Enclave?*. https://keystone-enclave.org/
-- Libreboot. (s.f.). *Intel Management Engine (ME)*. https://libreboot.org/faq.html#intelme
+- Libreboot. (n.d.). *Intel Management Engine (ME)*. https://libreboot.org/faq.html#intelme
 - Linus Torvalds. (1997). *Linux: a Portable Operating System*. https://www.cs.helsinki.fi/u/kutvonen/index_files/linus.pdf
 - Linux Foundation. (2015). *Filesystem Hierarchy Standard*. https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.html
 - Linux Foundation. (2015). *Linux Standard Base*. https://refspecs.linuxfoundation.org/lsb.shtml
@@ -971,17 +972,17 @@ RAID: Redundant Array of Independent Disks,storage, los discos duros son más ba
 <style scoped>{font-size: 21px;}</style>
 
 - Michael Tunnell. (2023). *Explaining Linux Family Trees: Why Are There So Many Linux Distros?* [Video]. https://yewtu.be/watch?v=kF8CRt05s6A
-- NGINX. (s.f). *What Is a Reverse Proxy Server?*. https://www.nginx.com/resources/glossary/reverse-proxy-server/
-- Open Conteiner Initiative. (s.f.). *Open Container Initiative*. https://opencontainers.org/
-- Opensource.com. (s.f.). *What is Linux?*. https://opensource.com/resources/linux
-- Opensource.com. (s.f). *What is open source?*.https://opensource.com/resources/what-open-source
+- NGINX. (n.d). *What Is a Reverse Proxy Server?*. https://www.nginx.com/resources/glossary/reverse-proxy-server/
+- Open Conteiner Initiative. (n.d.). *Open Container Initiative*. https://opencontainers.org/
+- Opensource.com. (n.d.). *What is Linux?*. https://opensource.com/resources/linux
+- Opensource.com. (n.d). *What is open source?*.https://opensource.com/resources/what-open-source
 - Open Source Initiative. (2007). *The Open Source Definition*. https://opensource.org/osd/
-- Open source initiative. (s.f). *OSI Approved Licenses*. https://opensource.org/licenses/
+- Open source initiative. (n.d). *OSI Approved Licenses*. https://opensource.org/licenses/
 - Red Hat. (2019). *What is the Linux kernel?*. https://www.redhat.com/en/topics/linux/what-is-the-linux-kernel
 - Red Hat. (2023). *Understanding containers*. https://www.redhat.com/en/topics/containers
 - Roch, B. (2004). *Monolithic kernel vs. Microkernel*. https://web.cs.wpi.edu/~cs3013/c12/Papers/Roch_Microkernels.pdf 
-- Seagate. (s.f ). *What is NAS*. https://www.seagate.com/blog/what-is-nas-master-ti/
-- SUSE. (s.f.). *Linux Distribution*. https://www.suse.com/suse-defines/definition/linux-distribution/ 
+- Seagate. (n.d ). *What is NAS*. https://www.seagate.com/blog/what-is-nas-master-ti/
+- SUSE. (n.d.). *Linux Distribution*. https://www.suse.com/suse-defines/definition/linux-distribution/ 
 - The Linux Experiment. (2018). *Linux DISTRIBUTION: explained* [Video]. https://yewtu.be/watch?v=6gqLWTSz6ck
 - The Linux Information Project. (2005). *Flavors of UNIX Definition*. http://www.linfo.org/flavors.html
 - The Linux Information Project. (2006). *What is Linux?*. http://www.linfo.org/newbies.html
@@ -995,5 +996,5 @@ RAID: Redundant Array of Independent Disks,storage, los discos duros son más ba
 - The Linux Kernel Organization. (2019). *Is Linux Kernel Free Software?*. https://www.kernel.org/category/faq.html
 - The Open Group. (2008). *The Single UNIX Specification, Version 4*. https://unix.org/version4/overview.html
 - University of Pittsburgh. (2022). *Copyright and Intellectual Property Toolkit*. https://pitt.libguides.com/copyright/licenses
-- Westerndigital. (s.f.). *RAID Storage*. https://www.westerndigital.com/solutions/raid
+- Westerndigital. (n.d.). *RAID Storage*. https://www.westerndigital.com/solutions/raid
 - Wheeler, D. (2003). *History of Unix, Linux, and Open Source / Free Software*. https://tldp.org/HOWTO/Secure-Programs-HOWTO/history.html
