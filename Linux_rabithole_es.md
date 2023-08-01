@@ -26,8 +26,8 @@ td { background-color: #e5e9f0;}
 ![bg opacity:.3](./img/rabithole.png)
 
 # <!--fit--> Linux rabit hole
-## curso completo de Linux y los temas que lo rodean
-### por Ariel Parra
+## Curso completo de Linux y los temas que lo rodean
+### Por Ariel Parra.
 
 ---
 
@@ -41,8 +41,8 @@ Es un kernel monolítico de código abierto con licencia GNU GPL v2, usado como 
 
 ---
 
-- ¿Qué es un kernel monolítico? El kernel es un software que tiene el control del hardware, administra y optimiza los recursos del sistema como asignación de memoria ram, procesos del CPU, drivers, etc. Actuando, así como un puente entre aplicaciones y el hardware. Este es monolítico cuando todos los servicios del sistema operan en el kernel atreves de system calls  
-- ¿Qué es el código abierto? Es software donde cualquier persona puede ver, analizar y por ende modificar el código fuente 
+- ¿Qué es un kernel monolítico? El kernel es un software que tiene el control del hardware, administra y optimiza los recursos del sistema como asignación de memoria ram, procesos del CPU, drivers, etc. Actuando, así como un puente entre aplicaciones y el hardware. Este es monolítico cuando todos los servicios del sistema operan en el kernel atreves de system calls. 
+- ¿Qué es el código abierto? Es software donde cualquier persona puede ver, analizar y por ende modificar el código fuente.
 - ¿Cuál es la licencia GPLv2? Es una licencia de software donde cualquier modificación al código debe tener la misma licencia y también que por cada archivo binario que sea distribuido tiene que estar disponible su código fuente. 
 
 ---
@@ -70,7 +70,7 @@ Los sistemas operativos Linux suelen usar el Filesystem Hierarchy Standard de li
 
 ![h:600px center](./img/Standard-unix-filesystem-hierarchy.svg)
 
-imagen recuperada de [wikimedia](https://commons.wikimedia.org/wiki/File:Standard-unix-filesystem-hierarchy.svg)
+Imagen recuperada de [wikimedia](https://commons.wikimedia.org/wiki/File:Standard-unix-filesystem-hierarchy.svg)
 
 ---
 
@@ -125,7 +125,7 @@ Licencias open source:
 
 # 2.3 Filosofia de software libre
  
-la filosofía de software libre tiene relación con Richard Stallman y su proyecto GNU, esta dice que software debe respetar la libertad del usuario, la libertad de distribución, la libertad de uso, la libertad de estudio, etc. Yendo en contra del software privado y con código cerrado, los blobs binarios, las licencias y EULAs no permisivas y el DRM. 
+La filosofía de software libre tiene relación con Richard Stallman y su proyecto GNU, esta dice que software debe respetar la libertad del usuario, la libertad de distribución, la libertad de uso, la libertad de estudio, etc. Yendo en contra del software privado y con código cerrado, los blobs binarios, las licencias y EULAs no permisivas y el DRM. 
 
 ---
 
@@ -133,7 +133,7 @@ la filosofía de software libre tiene relación con Richard Stallman y su proyec
 
 Berkeley Software Distribution, es un sistema operativo creado en la universidad de Berkeley en California, de código abierto y originalmente extensión de AT&T’s Research UNIX, a diferencia de Linux este tiene la BSD C library, aunque pueden compartir ciertas utilidades de GNU
 
-los dos forks más importantes son:
+Los dos forks más importantes son:
 - freeBSD: es un proyecto ["grande"](https://svnweb.freebsd.org/base/stable/12/) con muchos sistemas operativos forkeados apartir de el, como FreeNAS, pfsense, etc.
 - OpenBSD: es un proyecto relativamente mas ["chico"](https://cvsweb.openbsd.org/src/) que freebsd, es [inovador](https://www.openbsd.org/innovations.html
 ) y crean nuevas herramientas usadas en toda la comunidad unix, mientras que es de los sistemas más seguros.
@@ -164,7 +164,7 @@ Recomiendo esta [guia](https://wiki.archlinux.org/title/security) de seguridad d
 
 # 2.7 Minimalismo
 
-el minimalismo en cuestion de Linux, se trata de usar y escribir programas simples siguiendo principios de UNIX y KISS,  dos ideas deribadas del minimalismo son:
+El minimalismo en cuestion de Linux, se trata de usar y escribir programas simples siguiendo principios de UNIX y KISS,  dos ideas deribadas del minimalismo son:
 - gnuless: algunos programas de GNU pueden no ser los más eficientes o minimalistas, un video acerca del tema: [Luke Smith: GNU is bloated!](https://yewtu.be/watch?v=nTCHapo8QFM), donde se habla tambien de la pagina [harmfull cat -v](https://harmful.cat-v.org/software/) la cual tiene ideas extremas.
 - [init freedom](https://www.devuan.org/os/init-freedom): systemd es el init system más usado, pero este no sigue la filosofia de unix ya que systemd no solo es el init, ya que tiene muchas otras [funciones](https://systemd-free.artixlinux.org/why.php) y herramientas, por lo que usar [alternativas](https://without-systemd.org/wiki/index_php/Main_Page/#other_UNIX-like) es [recomendado](https://nosystemd.org/).
 
@@ -398,7 +398,7 @@ Tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 
 # 4.1 ¿Qué es una distribucion de Linux?
 
-una distribución (distro) de Linux es un sistema operativo completo con muchos componentes open source, utilidades e interfaces.
+Una distribución (distro) de Linux es un sistema operativo completo con muchos componentes open source, utilidades e interfaces.
 
 ---
 
@@ -420,7 +420,7 @@ Los componentes y características que construyen a una distribución de linux s
 
 - Interfaz de shell: bash, zsh, fish, dash, ash, etc.
 - Servidor grafico: Xorg (X11) / protocolo grafico: Wayland.
-- Tecnología de audio: ALSA, pulseaudio, Jackaudio, pipewire.
+- Tecnología de audio: ALSA, pulseaudio, Jackaudio, Pipewire.
 - Login/Display manager: ssdm (KDE), GDM (GNOME), LightDM, etc.
 - Window manager: dwm, sway, i3, xmonad, Hyprland, etc.    
 - Desktop environment: Gnome, Plasma, xfce4, etc. 
@@ -437,8 +437,8 @@ Los componentes y características que construyen a una distribución de linux s
         - Información: neofetch, htop, etc.
         - Etc.
     - Graficas (GUI):
-        - Navegador: firefox, chromium, etc.
-        - Office Suite: libreoffice, onlyoffice, Calligra etc.
+        - Navegador: Firefox, Librewolf, Chromium, etc.
+        - Office Suite: Libreoffice, Onlyoffice, Calligra etc.
         - Emulador de terminal: konsole, gnome-terminal, alacritty, kitty, st, etc. 
         - Editor de textos: kate, Gnome text editor, gvim, etc.
         - Explorador de archivos: nautilus (gnome), dolphin (KDE)
@@ -451,11 +451,11 @@ Los componentes y características que construyen a una distribución de linux s
 
 Hay distribuciones hechas con un uso especifico estas pueden ser conjuntos de programas y configuraciones que adecuan el sistema a ese uso, aunque sigues teniendo la libertad de poder modificarlo a tu gusto:
 
-- Juegos: steamOS, ChimeraOS, popOS, Fedora Games spin, etc.
+- Juegos: SteamOS, ChimeraOS, popOS, Fedora Games spin, etc.
 - Routing: openWRT, LibreCMC, ipfire, alpine, etc.
 - Media: Ubuntu Studio, Fedora Design Suite, etc.
-- Escolar: uaabuntu, edubuntu, Zorin OS 16 Education, etc.
-- Privacidad/Seguridad: whonix y/o qubes, tails, etc. 
+- Escolar: Uaabuntu, Edubuntu, Zorin OS 16 Education, etc.
+- Privacidad/Seguridad: Whonix y/o Qubes, Tails, etc. 
 
 Hay dos grandes categorías de distribuciones:
 - Independientes: tienen su propio package manager y repositorio
@@ -479,23 +479,23 @@ Hay muchísimas [distribuciones](https://upload.wikimedia.org/wikipedia/commons/
 
 | Logo                     | distribucion                                                                   | init           | pkg manager | libreria c | core utils  |  
 |--------------------------|--------------------------------------------------------------------------------|----------------|-------------|------------|-------------|
-| ![](logos/alpine.png)    | [alpine](https://alpinelinux.org/)                                             | openrc         | apk         | musl       | busybox     |
-| ![](logos/arch.png)      | [arch](https://archlinux.org/)                                                 | systemd        | pacman      | glibc      | gnu         |
-| ![](logos/debian.png)    | [debian](https://www.debian.org/)                                              | systemd        | apt (dpkg)  | glibc      | gnu         |
-| ![](logos/slackware.png) | [slackware](http://www.slackware.com/)                                         | sysVinit       | slackpkg    | glibc      | gnu         |
-| ![](logos/gentoo.png)    | [gentoo](https://www.gentoo.org/)                                              | OpenRC/systemd | portage     | glibc/musl | gnu         |
-| ![](logos/void.png)      | [void](https://voidlinux.org/)                                                 | runit          | xbps        | glibc/musl | gnu         |
+| ![](logos/alpine.png)    | [Alpine](https://alpinelinux.org/)                                             | openrc         | apk         | musl       | busybox     |
+| ![](logos/arch.png)      | [Arch](https://archlinux.org/)                                                 | systemd        | pacman      | glibc      | gnu         |
+| ![](logos/debian.png)    | [Debian](https://www.debian.org/)                                              | systemd        | apt (dpkg)  | glibc      | gnu         |
+| ![](logos/slackware.png) | [Slackware](http://www.slackware.com/)                                         | sysVinit       | slackpkg    | glibc      | gnu         |
+| ![](logos/gentoo.png)    | [Gentoo](https://www.gentoo.org/)                                              | OpenRC/systemd | portage     | glibc/musl | gnu         |
+| ![](logos/void.png)      | [Void](https://voidlinux.org/)                                                 | runit          | xbps        | glibc/musl | gnu         |
 
 ---
 
 | Logo                  | distribucion                                                                   | init         | pkg manager | libreria c | core utils  |  
 |-----------------------|--------------------------------------------------------------------------------|--------------|-------------|------------|-------------|
-| ![](logos/nixos.png)  | [nixos](https://nixos.org/)                                                    | systemd      | nix         | glibc      | gnu         |
+| ![](logos/nixos.png)  | [Nixos](https://nixos.org/)                                                    | systemd      | nix         | glibc      | gnu         |
 | ![](logos/RHEL.png)   | [RHEL](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux)| systemd      | DNF (yum)   | glibc      | gnu         |
 | ![](logos/SUSE.png)   | [SUSE LE S/D](https://www.suse.com/products/server/)                           | systemd      | Zypper      | glibc      | gnu         | 
 | ![](logos/LFS.png)    | [LFS](https://www.linuxfromscratch.org/lfs/)                                   | systemd/sysV | -           | glibc      | gnu         | 
-| ![](logos/kiss.png)   | [kiss](https://kisslinux.org/)                                                 | runit        | kiss        | musl       | busybox     | 
-| ![](logos/chimera.png)| [chimera-linux](https://chimera-linux.org/)                                    | Dinit        | apk         | musl       | BSD-derived | 
+| ![](logos/kiss.png)   | [Kiss](https://kisslinux.org/)                                                 | runit        | kiss        | musl       | busybox     | 
+| ![](logos/chimera.png)| [Chimera-linux](https://chimera-linux.org/)                                    | Dinit        | apk         | musl       | BSD-derived | 
 
 ---
 
@@ -503,11 +503,11 @@ Hay muchísimas [distribuciones](https://upload.wikimedia.org/wikipedia/commons/
 
 | Logo                    | distribucion                          | init               | basado en   | libreria c | core utils  |  
 |-------------------------|---------------------------------------|--------------------|-------------|------------|-------------|
-| ![](logos/artix.png)    |[artix](https://artixlinux.org/)       | OpenRC/runit/etc.  | arch        | glibc      | gnu         |
-| ![](logos/devuan.png)   |[devuan](https://www.devuan.org/)      | sysV/OpenRC/etc.   | debian      | glibc      | gnu         |
+| ![](logos/artix.png)    |[Artix](https://artixlinux.org/)       | OpenRC/runit/etc.  | arch        | glibc      | gnu         |
+| ![](logos/devuan.png)   |[Devuan](https://www.devuan.org/)      | sysV/OpenRC/etc.   | debian      | glibc      | gnu         |
 | ![](logos/ubuntu.png)   |[Ubuntu](https://ubuntu.com/)          | systemd            | debian      | glibc      | gnu         |
 | ![](logos/uaabuntu.png) |[Uaabuntu](https://uaabuntu.uaa.mx/)   | systemd            | ubuntu      | glibc      | gnu         |
-| ![](logos/openSUSE.png) |[openSUSE](https://opensuse.org/)      | systemd            | SUSE        | glibc      | gnu         |
+| ![](logos/openSUSE.png) |[OpenSUSE](https://opensuse.org/)      | systemd            | SUSE        | glibc      | gnu         |
 
 ---
 
@@ -516,12 +516,12 @@ Hay muchísimas [distribuciones](https://upload.wikimedia.org/wikipedia/commons/
 | Logo                     | distribucion                           | init               | basado en     | libreria c | core utils  |  
 |--------------------------|----------------------------------------|--------------------|---------------|------------|-------------|
 | ![](logos/fedora.png)    |[Fedora](https://fedoraproject.org/)    | systemd            | RHEL          | glibc      | gnu         |
-| ![](logos/endeavour.png) |[endeavour](https://endeavouros.com/)   | systemd            | arch          | glibc      | gnu         |
-| ![](logos/archcraft.png) |[archcraft](https://archcraft.io/)      | systemd            | arch          | glibc      | gnu         |
+| ![](logos/endeavour.png) |[Endeavour](https://endeavouros.com/)   | systemd            | arch          | glibc      | gnu         |
+| ![](logos/archcraft.png) |[Archcraft](https://archcraft.io/)      | systemd            | arch          | glibc      | gnu         |
 | ![](logos/PopOS.png)     |[PopOS](https://pop.system76.com/)      | systemd            | ubuntu/debian | glibc      | gnu         |
 | ![](logos/mint.png)      |[Mint](https://linuxmint.com/)          | systemd            | ubuntu/debian | glibc      | gnu         |
-| ![](logos/elementary.png)|[elementary](https://elementary.io/)    | systemd            | ubuntu/debian | glibc      | gnu         |
-| ![](logos/zorin.png)     |[zorin](https://zorin.com/os/)          | systemd            | ubuntu/debian | glibc      | gnu         |
+| ![](logos/elementary.png)|[Elementary](https://elementary.io/)    | systemd            | ubuntu/debian | glibc      | gnu         |
+| ![](logos/zorin.png)     |[Zorin](https://zorin.com/os/)          | systemd            | ubuntu/debian | glibc      | gnu         |
 
 ---
 
@@ -530,16 +530,16 @@ Hay muchísimas [distribuciones](https://upload.wikimedia.org/wikipedia/commons/
 ## 4.3.3 Recomendadas por la FSF (linux-libre kernel)
 | Logo                    | distribucion                            | init               | basado en     | pkg manager | libreria c | core utils  |  
 |-------------------------|-----------------------------------------|--------------------|---------------|-------------|------------|-------------|
-| ![](logos/parabola.png) | [parabola](https://www.parabola.nu/)    | systemd/OpenRC/etc.| arch          | pacman      | glibc      | gnu         |
-| ![](logos/Hyperbola.png)| [hyperbola](https://www.hyperbola.info/)| OpenRC             | debian/arch   | pacman      | glibc      | gnu         |
+| ![](logos/parabola.png) | [Parabola](https://www.parabola.nu/)    | systemd/OpenRC/etc.| arch          | pacman      | glibc      | gnu         |
+| ![](logos/Hyperbola.png)| [Hyperbola](https://www.hyperbola.info/)| OpenRC             | debian/arch   | pacman      | glibc      | gnu         |
 | ![](logos/Guix.png)     | [Guix](https://guix.gnu.org/)           | shepherd           | independiente | Guix        | glibc      | gnu         | 
-| ![](logos/trisquel.png) | [trsiquel](https://trisquel.info/)      | systemd            | ubuntu/debian | apt         | glibc      | gnu         | 
+| ![](logos/trisquel.png) | [Trsiquel](https://trisquel.info/)      | systemd            | ubuntu/debian | apt         | glibc      | gnu         | 
 
 ---
 
 # **5. Comandos**
 
-A las aplicaciones CLI/TUI y utilidades de terminal se les llama comandos, estos como en las funciones de programación, tienen argumentos y/o parámetros con los que se usan, siendo los argumentos los archivos o directorios usados y los parámetros las opciones del comando. 
+A las aplicaciones con CLI/TUI (Command Line Interface/ Terminal User Interface) y utilidades de terminal se les llama comandos, estos como en las funciones de programación, tienen argumentos y/o parámetros con los que se usan, siendo los argumentos los archivos o directorios usados y los parámetros las opciones del comando. 
 
 Categorice los comandos que creo más importantes en su función y los marque en funcion del conjunto de utilidades con seis letras mayúsculas siendo C de "GNU core utils", U de "Util-linux", G de "GNU Software", P de "procps", I de "iproute2 o iputils", S de "SHELL" y O de "Otros". 
 
@@ -728,10 +728,10 @@ Con la filosofía de Linux de usar programas interconectados, las aplicaciones s
 
 - Editor de texto/codigo: [vim](https://www.vim.org/), [vscodium](https://vscodium.com/)
 - Ofimática en markdown: presentaciones con [marp](https://marp.app/), documentos con [pandoc](https://pandoc.org/)
-- Navegador: [librewolf](https://librewolf.net/)/[firefox](https://www.mozilla.org/en-US/firefox/new/) + [Arkenfox.js](https://github.com/arkenfox/user.js/) o [ungoogled-chromium](https://github.com/ungoogled-software/ungoogled-chromium)
+- Navegador: [Librewolf](https://librewolf.net/)/[Firefox](https://www.mozilla.org/en-US/firefox/new/) + [Arkenfox.js](https://github.com/arkenfox/user.js/) o [ungoogled-chromium](https://github.com/ungoogled-software/ungoogled-chromium)
 - Extensiones de navegador: [uBlock origin](https://github.com/gorhill/uBlock), [bitwarden](https://bitwarden.com/), [libRedirect](https://libredirect.github.io/), [decentraleyes](https://decentraleyes.org/), [ClearURLs](https://github.com/ClearURLs/Addon) 
-- Motor de búsqueda: [searXNG](https://searx.space/#)
-- Emulador de terminal: [alacritty](https://alacritty.org/) o [st](https://st.suckless.org/)
+- Motor de búsqueda: [SearXNG](https://searx.space/#)
+- Emulador de terminal: [Alacritty](https://alacritty.org/) o [st](https://st.suckless.org/)
 - Monitor de recursos: [btop](https://github.com/aristocratos/btop)
 - Visualizador de imágenes: [feh](https://feh.finalrewind.org/)
 - Reproductor de video: [mpv](https://mpv.io/)
@@ -762,18 +762,18 @@ Intel ME es un sistema operativo que siempre esta activo mientras la placa madre
 
 AMD PSP: Es un procesador arm independiente del procesador x86, el cual ejecuta su propio firmware y este puede llegar a tener [vulnerabilidades](https://www.techspot.com/news/91322-millions-amd-pcs-affected-new-cpu-flaw-need.html). Se pueden deshabilitar ciertos módulos en algunas [motherboards](https://www.phoronix.com/news/AMD-PSP-Disable-Option)
 
-La mejor forma de usar un procesador con esta arquitectura es con un BIOS/UEFI parchado con [libreboot](https://libreboot.org/) o [coreboot](https://coreboot.org/) ya que estos te permiten mitigar los efectos de Intel ME o AMD PSP.
+La mejor forma de usar un procesador con esta arquitectura es con un BIOS/UEFI parchado con [Libreboot](https://libreboot.org/) o [Coreboot](https://coreboot.org/) ya que estos te permiten mitigar los efectos de Intel ME o AMD PSP.
 
 ---
 
 <style scoped>p {columns: 3; font-size: 20px;}</style>
 
 ![w:500px center](./img/AMD-PSP.png) 
-Arquitectura de AMD PSP. Imagen recuperada de [freundschafter](https://freundschafter.com/wp-content/uploads/2018/01/amdpspsoc)
+Arquitectura de AMD PSP. Imagen recuperada de [freundschafter](https://freundschafter.com/wp-content/uploads/2018/01/amdpspsoc).
 ![w:320px center](./img/Intel-ME.png)
-Arquitectura de Intel ME. Imagen recuperada de [black hat](https://i.blackhat.com/USA-19/Wednesday/us-19-Hasarfaty-Behind-The-Scenes-Of-Intel-Security-And-Manageability-Engine.pdf)
+Arquitectura de Intel ME. Imagen recuperada de [black hat](https://i.blackhat.com/USA-19/Wednesday/us-19-Hasarfaty-Behind-The-Scenes-Of-Intel-Security-And-Manageability-Engine.pdf).
 ![w:430 px center](./img/security-rings.png)
-CPU secuirity rings. Imagen recuperada de [RealWorldCyberSecurity](https://medium.com/swlh/negative-rings-in-intel-architecture-the-security-threats-youve-probably-never-heard-of-d725a4b6f831)
+CPU secuirity rings. Imagen recuperada de [RealWorldCyberSecurity](https://medium.com/swlh/negative-rings-in-intel-architecture-the-security-threats-youve-probably-never-heard-of-d725a4b6f831).
 
 ---
 
@@ -795,14 +795,14 @@ Es una familia de procesadores con arquitectura  RISC, con un ISA open source, p
 
 Linux es compatible con la mayoría de hardware, pero es recomendado usar hardware especializado para tener una compatibilidad perfecta con Linux donde se respete tu privacidad y libertad de uso.
 
-vendedores de laptops/computadoras con coreboot: 
-- [starlabs](https://mx.starlabs.systems/)
-- [tuxedo](https://www.tuxedocomputers.com/index.php)
-- [system76](https://system76.com/)
+vendedores de laptops/computadoras con Coreboot: 
+- [Starlabs](https://mx.starlabs.systems/)
+- [Tuxedo](https://www.tuxedocomputers.com/index.php)
+- [System76](https://system76.com/)
 
-hardware y computadoras sin binarios o software propietario:
-- [libreboot list](https://libreboot.org/docs/hardware/)
-- [h-node](https://h-node.org/hardware/catalogue/en)
+hardware y computadoras sin software propietario:
+- [Libreboot list](https://libreboot.org/docs/hardware/)
+- [H-node](https://h-node.org/hardware/catalogue/en)
 - [FSF Recommended Complete Systems](https://www.fsf.org/resources/hw/systems)
 - [Respects Your Freedom Certification](https://ryf.fsf.org/index.php/products)
 
@@ -814,11 +814,13 @@ hardware y computadoras sin binarios o software propietario:
 
 # 9.1 Software para servidores
 
-las distribuciones [más usadas](https://w3techs.com/technologies/details/os-linux) en servidores son las basadas en Debian como: ubuntu server y Debian o las empresariales como: RHEL y SLES, aunque también se usa Proxmox como hypervisor para VMs o conteiners, pero si se usara una SBC recomiendo [armbian](https://www.armbian.com/).
+Las distribuciones [más usadas](https://w3techs.com/technologies/details/os-linux) en servidores son las basadas en Debian como: ubuntu server y Debian o las empresariales como: RHEL y SLES, aunque también se usa Proxmox como hypervisor para VMs o conteiners, pero si se usara una SBC recomiendo [armbian](https://www.armbian.com/).
 
 Los file systems más usados son ZFS (openZFS) o XFS, pero recomiendo este [video](https://yewtu.be/watch/?v=HdEozE2gN9I) de Chris Titus para elegir el file system para tu servidor.
 
-conteiners: es una forma de tener contenidas aplicaciones "grandes" para su estabilidad, las soluciones más usadas son [docker](https://www.docker.com/), [kubernetes](https://kubernetes.io/), [porteiner](https://www.portainer.io/) y [conteinerd](https://containerd.io/).
+conteiners: permiten la agrupación y aislamiento de aplicaciones con todo su entorno de ejecución, para mantener la funcionalidad. Los soluciones más usadas son [Docker](https://www.docker.com/), [Podman](https://podman.io/), [Skopeo](https://github.com/containers/skopeo), [Buildah](https://buildah.io/) y [Conteinerd](https://containerd.io/).
+
+Conteiner Helpers: [Kubernetes](https://kubernetes.io/), [Porteiner](https://www.portainer.io/), [Rancher](https://rancherdesktop.io/), [Yatch](https://yacht.sh/), [LazyDocker](https://github.com/jesseduffield/lazydocker) y [CasaOS](https://casaos.io/).
 
 El web server más usado es nginx con el [34.4%](https://w3techs.com/technologies/overview/web_server) del total de páginas web y este tiene [ventajas](https://www.digitalocean.com/community/tutorials/apache-vs-nginx-practical-considerations) sobre Apache en varios aspectos.
 
@@ -827,17 +829,17 @@ El web server más usado es nginx con el [34.4%](https://w3techs.com/technologie
 
 # 9.2 Hardware para servidores caseros
 
-laptops: thinkpads (T60s, T400s, X200s), etc.
-All in One (AIO)/Mini PCs: Dell OptiPlex, HP elitedesk, ThinkCentre, etc.
+Laptops: thinkpads (T60s, T400s, X200s), etc.
+All in One (AIO)/Mini PCs: Dell OptiPlex, HP elitedesk, HP elite mini, ThinkCentre, Beelink Mini, ZimaBoard, etc.
 Single Board Computers (SBC)/System on a chip (SoC) con arm: la [FSF](https://www.fsf.org/resources/hw/single-board-computers) recomienda procesadores Rockchip, FreeScale y Allwinner. Yo recomiendo los procesadores Rokchip con 4 nucleos o más: [orange Pi 5 Plus](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-5-plus.html), [orange pi 5](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-5.html), [ROCKPro64](https://www.pine64.org/rockpro64/) y [Quartz64 Model A](https://www.pine64.org/quartz64a/).
 
-ventajas de usar laptops, SBCs y AIOs: Tamaños pequeños, bajos db de ruido, precios accesibles en primera y segunda mano, suelen tener un bajo consumo energético, las laptops tienen pantallas y teclados para mantenimiento y pueden usar sus baterías en caso de un corte de luz, los AIO pueden usar ECC RAM y/o tarjetas gráficas y los SBC tienen GPIO (General-purpose input/output) pin headers.
+Ventajas de usar laptops, SBCs y AIOs: Tamaños pequeños, bajos db de ruido, precios accesibles en primera y segunda mano, suelen tener un bajo consumo energético, las laptops tienen pantallas y teclados para mantenimiento y pueden usar sus baterías en caso de un corte de luz, los AIO pueden usar ECC RAM y/o tarjetas gráficas y los SBC tienen GPIO (General-purpose input/output) pin headers.
 
 ---
 
-desventajas: puertos limitados, los gráficos integrados pueden no ser óptimos para media servers, los SBC suelen usar tarjetas micro SD que tienen [bajas velocidades de lecto-escritura](https://www.kingston.com/en/blog/personal-storage/memory-card-speed-classes) y son propensas a [corrupción de datos](https://wildlabs.net/discussion/sd-cards-and-reliability).
+Desventajas: puertos limitados, los gráficos integrados pueden no ser óptimos para media servers, los SBC suelen usar tarjetas micro SD que tienen [bajas velocidades de lecto-escritura](https://www.kingston.com/en/blog/personal-storage/memory-card-speed-classes) y son propensas a [corrupción de datos](https://wildlabs.net/discussion/sd-cards-and-reliability).
 
-soluciones/actualizaciones: [USB en vez de microSD para SBCs](https://cdn-learn.adafruit.com/downloads/pdf/external-drive-as-raspberry-pi-root.pdf), no break como respaldo de energia, clusters, load balancer, USB 2.5gb Ethernet Adapter, adaptadores sata a USB, USB hub con energia externa, HDD/SSD en el puerto de DVD de laptops, puertos de tarjeta red (M.2 key/mini PCIe) o express card de laptop: eGPU, ethernet card, usb 3.0, sata hub, ssd.
+Soluciones/actualizaciones: [USB en vez de microSD para SBCs](https://cdn-learn.adafruit.com/downloads/pdf/external-drive-as-raspberry-pi-root.pdf), no break como respaldo de energia, clusters, load balancer, USB 2.5gb Ethernet Adapter, adaptadores sata a USB, USB hub con energia externa, HDD/SSD en el puerto de DVD de laptops, puertos de tarjeta red (M.2 key/mini PCIe) o express card de laptop: eGPU, ethernet card, usb 3.0, sata hub, ssd.
 
 ---
 
@@ -847,8 +849,7 @@ Guía de seguridad para servidores por [LiveOverflow ](https://yewtu.be/watch?v=
 
 VPS: Virtual Personal Server, son servidores en la "nube", yo recomiendo [vultr](https://www.vultr.com/), pero hay alternativas gratuitas como [AWS Free tier](https://aws.amazon.com/free/) (por 12 meses) y [Oracle Cloud Free Tier](https://www.oracle.com/cloud/free/) (para siempre)
 
-pagina web sin servidor ni dominio: [Github Pages](https://pages.github.com/) y [neocities](https://neocities.org/).
-
+Página web sin servidor ni dominio: [Github Pages](https://pages.github.com/) y [neocities](https://neocities.org/).
 
 DDNS: los ISP pueden cambiar tu direccion ip publica en cualquier momento, las soluciones a esto que recomiendo son: [cloudflare API](https://github.com/K0p1-Git/cloudflare-ddns-updater), [duckDNS](https://www.duckdns.org/) y [freeDNS](https://freedns.afraid.org/).
 
@@ -887,18 +888,18 @@ RAID: Redundant Array of Independent Disks,storage, los discos duros son más ba
 
 # 10.1 Guías y Paginas
 
-- [arch wiki](https://wiki.archlinux.org/)
-- [gentoo wiki](https://wiki.gentoo.org/wiki/Main_Page)
-- [hack the box: learn Linux](https://www.hackthebox.com/blog/learn-linux)
-- [endevoarOs wiki](https://discovery.endeavouros.com/)
+- [Arch wiki](https://wiki.archlinux.org/)
+- [Gentoo wiki](https://wiki.gentoo.org/wiki/Main_Page)
+- [Hack the box: learn Linux](https://www.hackthebox.com/blog/learn-linux)
+- [EndevoarOs wiki](https://discovery.endeavouros.com/)
 - [Machtelt Garrels: Introduction to Linux](https://tldp.org/LDP/intro-linux/intro-linux.pdf)
 - [Linux journey](https://linuxjourney.com/)
-- [wikipedia: Linux portal](https://en.wikipedia.org/wiki/Portal:Linux)
-- [wikibooks: how Linux works](https://en.wikibooks.org/wiki/Linux_Guide/How_Linux_Works)
+- [Wikipedia: Linux portal](https://en.wikipedia.org/wiki/Portal:Linux)
+- [Wikibooks: how Linux works](https://en.wikibooks.org/wiki/Linux_Guide/How_Linux_Works)
 - [IBM: Learn Linux 101](https://developer.ibm.com/tutorials/l-lpic1-map/)
 - [Linux foundation: introduction to Linux](https://training.linuxfoundation.org/training/introduction-to-linux/)
-- [kernel.org: Documentation](https://www.kernel.org/doc/)
-- [y más](https://itsfoss.com/learn-linux-for-free/)
+- [Kernel.org: Documentation](https://www.kernel.org/doc/)
+- [Y más](https://itsfoss.com/learn-linux-for-free/)
 
 ---
 
@@ -911,7 +912,7 @@ RAID: Redundant Array of Independent Disks,storage, los discos duros son más ba
 - [Michael Horn: tips de Linux](https://yewtu.be/channel/UC1s1OsWNYDFgbROPV-q5arg)
 - [Wolfgang's: tips para servidores](https://yewtu.be/channel/UCsnGwSIHyoYN0kiINAGUKxg)
 - [Hardware Haven: hardware para servidores](https://yewtu.be/channel/UCgdTVe88YVSrOZ9qKumhULQ)
-- [y más](https://yewtu.be/watch?v=NybbsnDT5NI&t=316s)
+- [Y más](https://yewtu.be/watch?v=NybbsnDT5NI&t=316s)
 
 ---
 
@@ -977,19 +978,21 @@ RAID: Redundant Array of Independent Disks,storage, los discos duros son más ba
 - Open Source Initiative. (2007). *The Open Source Definition*. https://opensource.org/osd/
 - Open source initiative. (s.f). *OSI Approved Licenses*. https://opensource.org/licenses/
 - Red Hat. (2019). *What is the Linux kernel?*. https://www.redhat.com/en/topics/linux/what-is-the-linux-kernel
+- Red Hat. (2023). *Understanding containers*. https://www.redhat.com/en/topics/containers
 - Roch, B. (2004). *Monolithic kernel vs. Microkernel*. https://web.cs.wpi.edu/~cs3013/c12/Papers/Roch_Microkernels.pdf 
 - Seagate. (s.f ). *What is NAS*. https://www.seagate.com/blog/what-is-nas-master-ti/
 - SUSE. (s.f.). *Linux Distribution*. https://www.suse.com/suse-defines/definition/linux-distribution/ 
 - The Linux Experiment. (2018). *Linux DISTRIBUTION: explained* [Video]. https://yewtu.be/watch?v=6gqLWTSz6ck
 - The Linux Information Project. (2005). *Flavors of UNIX Definition*. http://www.linfo.org/flavors.html
 - The Linux Information Project. (2006). *What is Linux?*. http://www.linfo.org/newbies.html
-- The Linux Kernel Organization. (2019). *About Linux Kernel*. https://www.kernel.org/linux.html
-- The Linux Kernel Organization. (2019). *Is Linux Kernel Free Software?*. https://www.kernel.org/category/faq.html
+
 
 ---
 
 <style scoped>{font-size: 21px;}</style>
 
+- The Linux Kernel Organization. (2019). *About Linux Kernel*. https://www.kernel.org/linux.html
+- The Linux Kernel Organization. (2019). *Is Linux Kernel Free Software?*. https://www.kernel.org/category/faq.html
 - The Open Group. (2008). *The Single UNIX Specification, Version 4*. https://unix.org/version4/overview.html
 - University of Pittsburgh. (2022). *Copyright and Intellectual Property Toolkit*. https://pitt.libguides.com/copyright/licenses
 - Westerndigital. (s.f.). *RAID Storage*. https://www.westerndigital.com/solutions/raid

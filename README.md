@@ -5,7 +5,7 @@
 
 ---
 
-version 1.0 al 2023/07/31 a las 23 horas <br>
+version 1.0 al 2023/08/01 a las 7 horas <br>
 la licencia de esta presentación es [CC BY](https://creativecommons.org/licenses/by/4.0/) ![](https://licensebuttons.net/l/by/3.0/88x31.png)
 
 la imagen fue creada usando GIMP y la fuente del texto de "penguin" es liberation-serif <br>
