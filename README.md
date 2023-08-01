@@ -2,9 +2,10 @@
 # linux rabit hole
 ## curso completo de linux y los temas que lo rodean
 ### por Ariel Parra
+
 ---
 
-version 1.0 al 2023/07/31 a las 14 horas <br>
+version 1.0 al 2023/07/31 a las 23 horas <br>
 la licencia de esta presentación es [CC BY](https://creativecommons.org/licenses/by/4.0/) ![](https://licensebuttons.net/l/by/3.0/88x31.png)
 
 la imagen fue creada usando GIMP y la fuente del texto de "penguin" es liberation-serif <br>
@@ -41,9 +42,9 @@ por lo que esta imagen no podra ser usada en mercancia, plantillas u otros produ
     - 3.8 Desventajas de Windows
         - 3.8.1 Desarrollador
         - 3.8.2 Uso general
-        - 3.8.3 hardware
-        - 3.8.4 juegos
-        - 3.8.5 privacidad
+        - 3.8.3 Hardware
+        - 3.8.4 Juegos
+        - 3.8.5 Privacidad
     - 3.9 Más referencias de las desventajas de Windows
     - 3.10 Recomendaciones al usar Windows
 - 4. Distribuciones de linux
@@ -51,7 +52,7 @@ por lo que esta imagen no podra ser usada en mercancia, plantillas u otros produ
     - 4.2 ¿Qué compone una distrubucion de linux?
     - 4.3 Categorias de las distribuciones
         - 4.3.1 Distribuciones independentes 
-        - 4.3.2 Distribuciones Deribadas 
+        - 4.3.2 Distribuciones Derivadas 
         - 4.3.3 Recomendadas por la FSF 
 - 5. Comandos
     - 5.1 Comandosde navegacion de archivos
@@ -66,21 +67,21 @@ por lo que esta imagen no podra ser usada en mercancia, plantillas u otros produ
     - 6.1 Funciones de shell 
     - 6.2 Shortcuts de terminal
     - 6.3 Funciones especificos de la distro
-    - 6.4 más informacion acerca de comandos
+    - 6.4 Más informacion acerca de comandos
 - 7. Aplicaciones
-    - 7.1 Recomendacion de aplicaciones
+    - 7.1 Aplicaciones recomendadas
 - 8. Hardware
     - 8.1 Procesadores x86/x64
     - 8.2 Procesadores arm
     - 8.3 Procesadores Risc-V
     - 8.4 Hardware recomendado
-- 9. servidores
-    - 9.1 software para servidores
-    - 9.2 hardware para servidores caseros
-    - 9.3 servicios para servidores.
+- 9. Servidores
+    - 9.1 Software para servidores
+    - 9.2 Hardware para servidores caseros
+    - 9.3 Servicios para servidores.
     - 9.4 Proyectos para servidores
-- 10. aprender más acerca de linux
-    - 10.1 Guias y Paginas
+- 10. Aprender más acerca de linux
+    - 10.1 Guías y Paginas
     - 10.2 Youtubers de linux que recomiendo
 - 11. Referencias
 
