@@ -130,14 +130,14 @@ La filosofía de software libre tiene relación con Richard Stallman y su proyec
 
 # 2.4 BSD
 
-Berkeley Software Distribution, es un sistema operativo creado en la universidad de Berkeley en California, de código abierto y originalmente extensión de AT&T’s Research UNIX, a diferencia de Linux este tiene la BSD C library, aunque pueden compartir ciertas utilidades de GNU
+Berkeley Software Distribution, es un sistema operativo creado en la universidad de Berkeley en California, de código abierto y originalmente extensión de AT&T’s Research UNIX, a diferencia de Linux este tiene la BSD C library, aunque pueden compartir ciertas utilidades de GNU.
 
 Los dos forks más importantes son:
-- freeBSD: es un proyecto ["grande"](https://svnweb.freebsd.org/base/stable/12/) con muchos sistemas operativos forkeados apartir de el, como FreeNAS, pfsense, etc.
-- OpenBSD: es un proyecto relativamente mas ["chico"](https://cvsweb.openbsd.org/src/) que freebsd, es [inovador](https://www.openbsd.org/innovations.html
-) y crean nuevas herramientas usadas en toda la comunidad unix, mientras que es de los sistemas más seguros.
+- FreeBSD: es un proyecto ["grande"](https://svnweb.freebsd.org/base/stable/12/) con muchos sistemas operativos forkeados apartir de el, como FreeNAS, pfsense, etc.
+- OpenBSD: es un proyecto relativamente más ["pequeño"](https://cvsweb.openbsd.org/src/) que freebsd, es [inovador](https://www.openbsd.org/innovations.html
+) y crean nuevas herramientas usadas en toda la comunidad unix como ssh, mientras que es de los sistemas operativos más seguros.
 
-estos pueden tener ciertas [ventajas y desventajas](https://serverfault.com/questions/5267/what-is-good-about-the-bsds/5352#5352) respecto a Linux.
+Estos pueden tener ciertas [ventajas y desventajas](https://serverfault.com/questions/5267/what-is-good-about-the-bsds/5352#5352) respecto a Linux.
 
 
 ---
@@ -146,39 +146,39 @@ estos pueden tener ciertas [ventajas y desventajas](https://serverfault.com/ques
 # 2.5 Privacidad 
 
 Recominedo esta [guia](https://www.privacyguides.org/en/) de privacidad o tambien a la youtuber [Naomi Brockwell](https://yewtu.be/channel/UCSuHzQ3GrHSzoBbwrIq3LLA).
-- [duckduckgo](https://seonorth.ca/news/why-duckduckgo-is-bad/) no es bueno.
-- [proton](https://techcrunch.com/2021/09/06/protonmail-logged-ip-address-of-french-activist-after-order-by-swiss-authorities/) no es confiable.
-- las VPN no te dan [privacidad](https://gist.github.com/joepie91/5a9909939e6ce7d09e29).
-- la gente esta [desinformada](https://www.whonix.org/wiki/Tor_Myths_and_Misconceptions) acerca de tor.
+- [Duckduckgo](https://seonorth.ca/news/why-duckduckgo-is-bad/) no es bueno.
+- [Proton](https://techcrunch.com/2021/09/06/protonmail-logged-ip-address-of-french-activist-after-order-by-swiss-authorities/) no es confiable.
+- Las VPN no te dan [privacidad](https://gist.github.com/joepie91/5a9909939e6ce7d09e29).
+- La gente esta [desinformada](https://www.whonix.org/wiki/Tor_Myths_and_Misconceptions) acerca de tor.
 
 # 2.6 Seguridad
 
 Recomiendo esta [guia](https://wiki.archlinux.org/title/security) de seguridad de la arch wiki.
-- usa [linux-hardened](https://github.com/anthraxx/linux-hardened) kernel.
-- [selinux](https://selinuxproject.org/page/Main_Page) o [AppArmor](https://apparmor.net/) para el control de acceso.
-- No uses [kali linux](https://www.kali.org/docs/introduction/should-i-use-kali-linux/), como sistema operativo principal.
-- usa OpenBSD, ya que es el sistema unix más [seguro](https://www.openbsd.org/security.html).
+- Usa el [Linux-hardened](https://github.com/anthraxx/linux-hardened) kernel.
+- Usa [selinux](https://selinuxproject.org/page/Main_Page) o [AppArmor](https://apparmor.net/) para el control de acceso.
+- No uses [Kali Linux](https://www.kali.org/docs/introduction/should-i-use-kali-linux/), como sistema operativo principal.
+- Usa OpenBSD, ya que es el sistema unix más [seguro](https://www.openbsd.org/security.html).
 
 ---
 
 # 2.7 Minimalismo
 
 El minimalismo en cuestion de Linux, se trata de usar y escribir programas simples siguiendo principios de UNIX y KISS,  dos ideas deribadas del minimalismo son:
-- gnuless: algunos programas de GNU pueden no ser los más eficientes o minimalistas, un video acerca del tema: [Luke Smith: GNU is bloated!](https://yewtu.be/watch?v=nTCHapo8QFM), donde se habla tambien de la pagina [harmfull cat -v](https://harmful.cat-v.org/software/) la cual tiene ideas extremas.
-- [init freedom](https://www.devuan.org/os/init-freedom): systemd es el init system más usado, pero este no sigue la filosofia de unix ya que systemd no solo es el init, ya que tiene muchas otras [funciones](https://systemd-free.artixlinux.org/why.php) y herramientas, por lo que usar [alternativas](https://without-systemd.org/wiki/index_php/Main_Page/#other_UNIX-like) es [recomendado](https://nosystemd.org/).
+- gnuless: algunos programas de GNU pueden no ser los más eficientes o minimalistas, un video acerca del tema: [Luke Smith: GNU is bloated!](https://yewtu.be/watch?v=nTCHapo8QFM), donde se habla tambien de la página web [harmfull cat -v](https://harmful.cat-v.org/software/) la cual tiene ideas extremas.
+- [init freedom](https://www.devuan.org/os/init-freedom): systemd es el init system más usado, pero este no sigue la filosofia de unix ya que systemd no solo es el init system, ya que tiene muchas otras [funciones](https://systemd-free.artixlinux.org/why.php) y herramientas, por lo que usar [alternativas](https://without-systemd.org/wiki/index_php/Main_Page/#other_UNIX-like) es [recomendado](https://nosystemd.org/).
 
-Paginas que recomiendan software minimalista: [lukesmith](https://lukesmith.xyz/programs/) y [suckless.org](https://suckless.org/rocks/).
+Páginas web que recomiendan software minimalista: [lukesmith](https://lukesmith.xyz/programs/) y [suckless.org](https://suckless.org/rocks/).
 
 ---
 
 
 # 2.8 Ricing (Personalización)
 
-Como Linux te permite modificar el sistema, puedes configurarlo a todos tus gustos artisticos, se suelen usar paletas de colores como [nord](https://www.nordtheme.com/) o [Catppuccin](https://github.com/catppuccin/palette).
+Como Linux te permite modificar el sistema, puedes configurarlo a todos tus gustos artisticos; se suelen usar paletas de colores como [nord](https://www.nordtheme.com/) o [Catppuccin](https://github.com/catppuccin/palette).
 
 Uno de los mejores lugares para ver, aprender y compartir rices es  [r/unixporn](https://reddit.com/r/unixporn/), donde los usuarios comparten [dotfiles](https://wiki.archlinux.org/title/Dotfiles) que son los archivos que van en la carpeta de usuario y tienen las configuraciones de los programas que se van a costumizar, usualmente son respaldados en un servidor de git.
 
-Tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https://archcraft.io/gallery.html) o puedes usar scripts de la comunidad como [LARBS](https://larbs.xyz/).
+Tambien puedes usar una distrubucion de Linux que ya venga riceada, como [archcraft](https://archcraft.io/gallery.html) o puedes usar scripts de la comunidad como [LARBS](https://larbs.xyz/).
 
 ---
 
@@ -196,7 +196,7 @@ Tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 - Usa menos memoria [RAM](https://yewtu.be/watch?v=L3d9okxKcjM).
 - Es un sistema operativo [portable](https://www.oreilly.com/library/view/linux-kernel-development/0672327201/ch19.html).
 - Tiene multiples [comunidades](https://www.makeuseof.com/tag/4-helpful-communities-new-linux-users/) para soporte.
-- Tiene drivers opensource oficiales de [AMD](https://gpuopen.com/amd-open-source-driver-for-vulkan/) y no oficiales de [Nvidia](https://nouveau.freedesktop.org/).
+- Tiene GPU drivers open-source oficiales de [AMD](https://gpuopen.com/amd-open-source-driver-for-vulkan/) y no oficiales de [Nvidia](https://nouveau.freedesktop.org/).
 - Puedes ["revivir"](https://itsfoss.com/mystory-linux-13-years-laptop/) laptops antiguas.
 - Promueve el [open-source](https://www.linuxfoundation.org/resources/open-source-guides/participating-in-open-source-communities).
 - Tienes libertad de elección sobre cada componente del sistema operativo.
@@ -231,7 +231,7 @@ Tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 
 ---
 
-# 3.4 Ventajas MacOS
+# 3.4 Ventajas de MacOS
 
 - Tiene interfaces con diseños [inovadores](https://design.tutsplus.com/tutorials/how-apple-ended-up-leading-the-icon-design-trends-and-whether-or-not-you-should-fight-it--cms-32201).
 - Tiene una certificación [posix](https://www.opengroup.org/openbrand/register/apple.htm).
@@ -242,12 +242,12 @@ Tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 - Tienen el [ecosistema de apple](https://www.apple.com/macos/continuity/).
 - Tienen de los mejores [procesadores arm](https://www.techspot.com/review/2499-apple-m2/) para escritorio y soporte de aplicaciones de iOS.
 - Soporte de [HDR](https://support.apple.com/en-us/HT210980).
-- Puedes compartir pantalla con sonido en [discord](https://support.discord.com/hc/en-us/articles/1500006741102-macOS-Screen-Share-with-Audio-Update-FAQ) y [MS Teams](https://answers.microsoft.com/en-us/msteams/forum/all/sharing-system-sound-in-teams-for-linux/f1c70d83-e9bd-41b4-abde-d78fae764d5c).
+- Puedes compartir pantalla con sonido en [Discord](https://support.discord.com/hc/en-us/articles/1500006741102-macOS-Screen-Share-with-Audio-Update-FAQ) y [MS Teams](https://answers.microsoft.com/en-us/msteams/forum/all/sharing-system-sound-in-teams-for-linux/f1c70d83-e9bd-41b4-abde-d78fae764d5c).
 - Buen rendimiento en juegos DX12 con [D3DMetal](https://developer.apple.com/metal/) y  [game porting toolkit](https://old.reddit.com/r/macgaming/comments/1446hj6/all_working_games_list_game_porting_toolkit/).
 
 ---
 
-# 3.5 Desventajas MacOS
+# 3.5 Desventajas de MacOS
 
 - Appple ID es un requisito para instalar MacOS.
 - No puede correr ciertos [juegos](https://www.protondb.com/explore?sort=fixWanted).
@@ -256,7 +256,7 @@ Tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 - Las computadoras Mac son [costosas](https://everymac.com/global-mac-prices/mac-prices-mexico-mx.html).
 - La existencia de [OCSP](https://blog.jacopo.io/en/post/apple-ocsp/).
 - Múltiples  problemas de [privacidad](https://sneak.berlin/20201112/your-computer-isnt-yours/).
-- Los [contratos de licencia de software](https://www.apple.com/legal/sla/).
+- [Contratos de licencia de software](https://www.apple.com/legal/sla/) restrictivos.
 - Posibles conexiones con NSA e implicación con [PRISM](https://www.washingtonpost.com/investigations/us-intelligence-mining-data-from-nine-us-internet-companies-in-broad-secret-program/013/06/06/3a0c0da8-cebf-11e2-8845-d970ccb04497_story.html).
 - No suele haber drivers open-source.
 - La capa de compatibilidad con Windows (wine) puede correr [malware](https://wiki.winehq.org/FAQ#Is_Wine_malware-compatible.3F).
@@ -267,7 +267,7 @@ Tambien puedes usar una distrubucion que ya venga riceada como [archcraft](https
 # 3.6 Recomendaciones al usar MacOS
 
 - No uses una cuenta de Apple ID con tus datos personales.
-- Usa macOS en una vm con NAT activado.
+- Usa MacOS en una vm con NAT activado.
 - Lee esta [guia](https://github.com/drduh/macOS-Security-and-Privacy-Guide) de privacidad en MacOS.
 - Usa [alacritty](https://alacritty.org/) como emulador terminal.
 - Usa [brew](https://brew.sh/) como package manager.
@@ -621,8 +621,8 @@ Categorice los comandos que creo más importantes en su función y los marque en
 
 |comando        | uso común                            |comando    | uso común      
 |---------------|--------------------------------------|-----------|----------
-|(I) traceroute | traceroute <pagina web>              |(O) wget   | wget <pagina web>
-|(I) ping       | ping <pagina web>                    |(O) curl   | curl -o <archivo> <pagina web>
+|(I) traceroute | traceroute <página web>              |(O) wget   | wget <página web>
+|(I) ping       | ping <página web>                    |(O) curl   | curl -o <archivo> <página web>
 |(O) ssh        | ssh <usario>@<ip>                    |(O) git    | git clone <servidor.git>
 |(O) scp        | scp <origen> <usario>@<ip>:<destino> |(U) rfkill | rfkill (un)block all
 
@@ -828,8 +828,8 @@ El web server más usado es nginx con el [34.4%](https://w3techs.com/technologie
 
 # 9.2 Hardware para servidores caseros
 
-Laptops: thinkpads (T60s, T400s, X200s), etc.
-All in One (AIO)/Mini PCs: Dell OptiPlex, HP elitedesk, HP elite mini, ThinkCentre, Beelink Mini, ZimaBoard, etc.
+Laptops: thinkpads (series [T](https://en.wikipedia.org/wiki/ThinkPad_T_series)/[X](https://en.wikipedia.org/wiki/ThinkPad_X_series)), cualquiera  que tengas disponible.
+All in One (AIO)/Mini PCs: [Dell OptiPlex](https://en.wikipedia.org/wiki/Dell_OptiPlex), [HP elitedesk](https://en.wikipedia.org/wiki/HP_business_desktops), [ThinkCentre M series](https://en.wikipedia.org/wiki/ThinkCentre_M_series), [Beelink Mini](https://www.bee-link.com/computer-73493777), [ZimaBoard](https://www.zimaboard.com/), etc.
 Single Board Computers (SBC)/System on a chip (SoC) con arm: la [FSF](https://www.fsf.org/resources/hw/single-board-computers) recomienda procesadores Rockchip, FreeScale y Allwinner. Yo recomiendo los procesadores Rokchip con 4 nucleos o más: [orange Pi 5 Plus](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-5-plus.html), [orange pi 5](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-5.html), [ROCKPro64](https://www.pine64.org/rockpro64/) y [Quartz64 Model A](https://www.pine64.org/quartz64a/).
 
 Ventajas de usar laptops, SBCs y AIOs: Tamaños pequeños, bajos db de ruido, precios accesibles en primera y segunda mano, suelen tener un bajo consumo energético, las laptops tienen pantallas y teclados para mantenimiento y pueden usar sus baterías en caso de un corte de luz, los AIO pueden usar ECC RAM y/o tarjetas gráficas y los SBC tienen GPIO (General-purpose input/output) pin headers.
@@ -859,7 +859,7 @@ Dominios Web gratis por un año c/u, con [GitHub Student Developer Pack](https:/
 
 Certificados SSL: son los certificados que te hacen que una página web tenga https, yo recomiendo: [Let's Encrypt](https://letsencrypt.org/getting-started/)
 
-Reverse proxy: es un servidor que redirecciona el tráfico al servidor de la pagina web, con mayor seguridad y velocidad. Las soluciones que recomiendo son: [cloudflare tunnels](https://www.cloudflare.com/products/tunnel/) y [Nginx Proxy Manager](https://nginxproxymanager.com/)
+Reverse proxy: es un servidor que redirecciona el tráfico al servidor de la página web, con mayor seguridad y velocidad. Las soluciones que recomiendo son: [cloudflare tunnels](https://www.cloudflare.com/products/tunnel/) y [Nginx Proxy Manager](https://nginxproxymanager.com/)
 
 NAS: Network Attached Storage, es una forma de acceder a discos duros atraves de una red ya sea en casa o desde fuera, existen sistemas operativos como freeNAS y equipos dedicados, pero convine mejor hacer tu propio NAS.
 
@@ -885,7 +885,7 @@ RAID: Redundant Array of Independent Disks,storage, los discos duros son más ba
 
 ---
 
-# 10.1 Guías y Paginas
+# 10.1 Guías y Wikis
 
 - [Arch wiki](https://wiki.archlinux.org/)
 - [Gentoo wiki](https://wiki.gentoo.org/wiki/Main_Page)
