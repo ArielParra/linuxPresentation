@@ -4,6 +4,17 @@ title: Linux rabit hole
 theme: default
 paginate: true
 ---
+<!-- HTML Enabled in Marp Markdown-->
+
+<style scoped>h1, h2, h3 {color: #3b4252;}</style>
+
+![bg opacity:.3](./img/rabithole.png)
+
+# <!--fit--> Linux rabit hole
+## Curso completo de Linux y los temas que lo rodean
+### Por Ariel Parra.
+
+---
 
 <!-- tema -->
 <style>
@@ -17,19 +28,8 @@ img[alt~="center"] {display: block;margin: 0 auto;}
 table {text-align: center; margin-left: auto; margin-right: auto;} 
 th { background-color: #81a1c1; color: #e5e9f0}
 td { background-color: #e5e9f0;}
+mark {background-color: rgb(129 161 193 / 0.3)};
 </style>
-
-<!-- Portada -->
-
-<style scoped>h1, h2, h3 {color: #3b4252;}</style>
-
-![bg opacity:.3](./img/rabithole.png)
-
-# <!--fit--> Linux rabit hole
-## Curso completo de Linux y los temas que lo rodean
-### Por Ariel Parra.
-
----
 
 # **1. ¿Qué es Linux?**
 
@@ -41,9 +41,9 @@ Es un kernel monolítico de código abierto con licencia GNU GPL v2, usado como 
 
 ---
 
-- ¿Qué es un kernel monolítico? El kernel es software que tiene el control del hardware, administra y optimiza los recursos del sistema como asignación de memoria RAM, procesos del CPU, drivers, etc. Actuando, así como un puente entre aplicaciones y el hardware. Este es monolítico cuando todos los servicios del sistema operan en el kernel atreves de system calls. 
-- ¿Qué es el código abierto? Es software donde cualquier persona puede ver, analizar y por ende modificar el código fuente.
-- ¿Cuál es la licencia GPLv2? Es una licencia de software donde cualquier modificación al código debe tener la misma licencia y también que por cada archivo binario que sea distribuido tiene que estar disponible su código fuente. 
+<mark>¿Qué es un kernel monolítico?</mark> El kernel es software que tiene el control del hardware, administra y optimiza los recursos del sistema como asignación de memoria RAM, procesos del CPU, drivers, etc. Actuando, así como un puente entre aplicaciones y el hardware. Este es monolítico cuando todos los servicios del sistema operan en el kernel atreves de system calls. 
+<mark>¿Qué es el código abierto?</mark> Es software donde cualquier persona puede ver, analizar y por ende modificar el código fuente.
+<mark>¿Cuál es la licencia GPLv2?</mark> Es una licencia de software donde cualquier modificación al código debe tener la misma licencia y también que por cada archivo binario que sea distribuido tiene que estar disponible su código fuente. 
 
 ---
 
@@ -63,6 +63,7 @@ Linux tiene estándares como el LSB (Linux Standard Base) que define system inte
 
 ---
 
+<style scoped>p {text-align: center; font-size: 20px}</style>
 <style scoped>p {text-align: center; font-size: 20px}</style>
 
 # 1.4 Linux Filesystem Hierarchy Standard
@@ -103,17 +104,17 @@ UNIX es un sistema operativo creado a principios de los 70s en AT&T por Dennis R
 
 Las licencias son permisos dados por quien tiene el copyrght del contenido, las licencias pueden darte ciertos permisos de uso dependiendo de las licencias.
 
-Copyright: El derecho de autor (copyright) es un tipo de propiedad intelectual que protege las obras originales del autor, dando la libertad de elegir que se hace o que no se hace con su obra.
+<mark>Copyright:</mark> El derecho de autor (copyright) es un tipo de propiedad intelectual que protege las obras originales del autor, dando la libertad de elegir que se hace o que no se hace con su obra.
 
-Copyleft: Es una estrategia para usar el copyright para fomentar el derecho de copiar, compartir, modificar y mejorar las obras bajo esta licencia.
+<mark>Copyleft:</mark> Es una estrategia para usar el copyright para fomentar el derecho de copiar, compartir, modificar y mejorar las obras bajo esta licencia.
 
-Dominio Publico: (No Rights Reserved) ![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png) es una licencia para deslindarte de los derechos de autor.
+<mark>Dominio Publico:</mark> (No Rights Reserved) ![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png) es una licencia para deslindarte de los derechos de autor.
 
 ---
 
-Creative commons: son licencias de uso libre pero con atribucion obligatoria, comunmente usados para imagenes, videos y articulos. ![CC BY](https://licensebuttons.net/l/by/3.0/88x31.png), ![CC BY-SA](https://licensebuttons.net/l/by-sa/3.0/88x31.png), ![CC BY-ND](https://licensebuttons.net/l/by-nd/3.0/88x31.png), ![CC BY-NC](https://licensebuttons.net/l/by-nc/3.0/88x31.png), ![CC BY-NC-SA](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png) y ![CC BY-NC-ND](https://licensebuttons.net/l/by-nc-nd/3.0/88x31.png).
+<mark>Creative commons:</mark> son licencias de uso libre pero con atribucion obligatoria, comunmente usados para imagenes, videos y articulos. ![CC BY](https://licensebuttons.net/l/by/3.0/88x31.png), ![CC BY-SA](https://licensebuttons.net/l/by-sa/3.0/88x31.png), ![CC BY-ND](https://licensebuttons.net/l/by-nd/3.0/88x31.png), ![CC BY-NC](https://licensebuttons.net/l/by-nc/3.0/88x31.png), ![CC BY-NC-SA](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png) y ![CC BY-NC-ND](https://licensebuttons.net/l/by-nc-nd/3.0/88x31.png).
 
-Licencias open-source:  
+Licencias open-source más comunes:  
 - [AGPL:](https://www.gnu.org/licenses/agpl-3.0.en.html) similar al GPL pero para servicios en linea.
 - [Apache](https://www.apache.org/licenses/LICENSE-2.0): incluir la nota de copyright.  
 - BSD [2](https://opensource.org/license/bsd-2-clause/)/[3](https://opensource.org/license/bsd-3-clause/): incluir la nota de copyright. 
@@ -133,8 +134,8 @@ La filosofía de software libre tiene relación con Richard Stallman y su proyec
 Berkeley Software Distribution, es un sistema operativo creado en la universidad de Berkeley en California, de código abierto y originalmente extensión de AT&T’s Research UNIX, a diferencia de Linux este tiene la BSD C library, aunque pueden compartir ciertas utilidades de GNU.
 
 Los dos forks más importantes son:
-- FreeBSD: es un proyecto ["grande"](https://svnweb.freebsd.org/base/stable/12/) con muchos sistemas operativos forkeados apartir de el, como FreeNAS, pfsense, etc.
-- OpenBSD: es un proyecto relativamente más ["pequeño"](https://cvsweb.openbsd.org/src/) que freebsd, es [inovador](https://www.openbsd.org/innovations.html
+- <mark>FreeBSD:</mark> es un proyecto ["grande"](https://svnweb.freebsd.org/base/stable/12/) con muchos sistemas operativos forkeados apartir de el, como FreeNAS, pfsense, etc.
+- <mark>OpenBSD:</mark> es un proyecto relativamente más ["pequeño"](https://cvsweb.openbsd.org/src/) que freebsd, es [inovador](https://www.openbsd.org/innovations.html
 ) y crean nuevas herramientas usadas en toda la comunidad unix como ssh, mientras que es de los sistemas operativos más seguros.
 
 Estos pueden tener ciertas [ventajas y desventajas](https://serverfault.com/questions/5267/what-is-good-about-the-bsds/5352#5352) respecto a Linux.
@@ -164,8 +165,8 @@ Recomiendo esta [guia](https://wiki.archlinux.org/title/security) de seguridad d
 # 2.7 Minimalismo
 
 El minimalismo en cuestion de Linux, se trata de usar y escribir programas simples siguiendo principios de UNIX y KISS,  dos ideas deribadas del minimalismo son:
-- gnuless: algunos programas de GNU pueden no ser los más eficientes o minimalistas, un video acerca del tema: [Luke Smith: GNU is bloated!](https://yewtu.be/watch?v=nTCHapo8QFM), donde se habla tambien de la página web [harmfull cat -v](https://harmful.cat-v.org/software/) la cual tiene ideas extremas.
-- [init freedom](https://www.devuan.org/os/init-freedom): systemd es el init system más usado, pero este no sigue la filosofia de unix ya que systemd no solo es el init system, ya que tiene muchas otras [funciones](https://systemd-free.artixlinux.org/why.php) y herramientas, por lo que usar [alternativas](https://without-systemd.org/wiki/index_php/Main_Page/#other_UNIX-like) es [recomendado](https://nosystemd.org/).
+- <mark>Gnuless:</mark> algunos programas de GNU pueden no ser los más eficientes o minimalistas, un video acerca del tema: [Luke Smith: GNU is bloated!](https://yewtu.be/watch?v=nTCHapo8QFM), donde se habla tambien de la página web [harmfull cat -v](https://harmful.cat-v.org/software/) la cual tiene ideas extremas.
+- <mark>[Init freedom](https://www.devuan.org/os/init-freedom):</mark> systemd es el init system más usado, pero este no sigue la filosofia de unix ya que systemd no solo es el init system, ya que tiene muchas otras [funciones](https://systemd-free.artixlinux.org/why.php) y herramientas, por lo que usar [alternativas](https://without-systemd.org/wiki/index_php/Main_Page/#other_UNIX-like) es [recomendado](https://nosystemd.org/).
 
 Páginas web que recomiendan software minimalista: [lukesmith](https://lukesmith.xyz/programs/) y [suckless.org](https://suckless.org/rocks/).
 
@@ -281,6 +282,7 @@ Tambien puedes usar una distrubucion de Linux que ya venga riceada, como [archcr
 - [Compatibilidad](https://support.microsoft.com/en-us/windows/make-older-apps-or-programs-compatible-with-windows-783d6dd7-b439-bdb0-0490-54eea0f45938) con aplicaciones antiguas de windows. 
 - Las empresas les importa la distribución del [mercado](https://gs.statcounter.com/os-market-share/desktop/worldwide/#monthly-202306-202306-bar) de sistemas operativos, por lo que ciertas aplicaciones y juegos están pensados solo para Windows.  
 - Soporte de [HDR](https://support.microsoft.com/en-us/windows/hdr-settings-in-windows-2d767185-38ec-7fdc-6f97-bbc6c5ef24e6). 
+- Grabar clips con [Game DVR](https://support.microsoft.com/en-us/windows/record-a-game-clip-on-your-pc-with-xbox-game-bar-2f477001-54d4-1276-9144-b0416a307f3c)
 - Windows Subsystem for Linux [(WSL)](https://learn.microsoft.com/en-us/windows/wsl/about) y Windows Subsystem for Android [(WSA)](https://learn.microsoft.com/en-us/windows/android/wsa/). 
  
 ---
@@ -293,7 +295,7 @@ Tambien puedes usar una distrubucion de Linux que ya venga riceada, como [archcr
 
 - [Java updater](https://www.java.com/en/download/help/java_update.html) esta siempre activo en segundo plano.
 - Ejecuta programas de manera lenta (a tirones) aunque sea con powershell.
-- Hyper-V y Windows hypervisor platform solo disponibles para [Windows Pro](https://www.microsoft.com/en-us/windows/compare-windows-10-home-vs-pro).
+- Hyper-V, Windows hypervisor platform, BitLocker, Group Policy Editor y Remote Desktop solo estan disponibles para [Windows Pro](https://www.microsoft.com/en-us/windows/compare-windows-10-home-vs-pro).
 - Virtual Machine Platform, Hyper-V, Windows hypervisor platform y WSL2 interfieren con aplicaciones: [dell alienware control](https://www.dell.com/community/Alienware-Desktops/AWCC-OC-Controls-incompatible-with-Virtual-Machine-Platform/m-p/8239494#M60811), [throttle stop](https://www.techpowerup.com/forums/threads/throttlestop-dead-on-windows-11.284102/), etc.
 - Los hosts en Windows son [read-only](https://superuser.com/questions/958991/windows-10-cant-edit-hosts-file) y modificarlo puede alertar al [antivirus](https://support.microsoft.com/en-au/topic/hosts-file-is-detected-as-malware-in-windows-defender-4320fa8b-0d54-1129-db85-61f095144521).
 - Para correr un ["hello world!"](https://stackoverflow.com/questions/55603111/unable-to-compile-rust-hello-world-on-windows-linker-link-exe-not-found) de rust ocupas que descargar visual studio community junto con 1gb para los c++ build tools y el Windows SDK.
@@ -346,6 +348,7 @@ Tambien puedes usar una distrubucion de Linux que ya venga riceada, como [archcr
 - Descargas [muchas versiones](https://www.howtogeek.com/256245/why-are-there-so-many-microsoft-visual-c-redistributables-installed-on-my-pc/) de microsoft visual c++ redistributable por juego.
 - Los juegos de la microsoft store (xbox app) suelen correr [peor](https://old.reddit.com/r/techsupport/comments/v4nhaf/so_ive_been_wondering_if_its_just_me_or_windows/) o dar [input lag](https://www.reddit.com/r/roblox/comments/oahvsf/roblox_player_vs_microsoft_store_app_input_lag/).
 - No puedes acceder a las [carpetas](https://www.makeuseof.com/windows-access-windowsapps-folder/) de juegos de la microsoft store (xbox app) aun siendo administrador.
+- Juegos antiguos en discos no [funcionan](https://answers.microsoft.com/en-us/windows/forum/all/older-disc-games-wont-work-on-windows-10/1ffb7eb3-b634-418a-a2f5-1b0055b6bbf7).
 
 ---
 
@@ -719,7 +722,7 @@ Categorice los comandos que creo más importantes en su función y los marque en
 
 ---
 
-Con la filosofía de Linux de usar programas interconectados, las aplicaciones suelen depender de otros programas llamados dependencias, los encargados de manternar las relaciones entre aplicaciones y dependencias son los Package Managers. Aun así las aplicaciones pueden llegar a tener problemas de compatibilidad si la aplicación o la dependencia esta desactualizada, para solucionar este problema se han creado formatos de paquetes que son portables, donde la aplicación es distribuida junto con la dependencias, esto puede ocasionar tamaños de aplicaciones más grandes, a costa de una mayor "estabilidad", los tres grandes distribuidores de aplicaciones portables son: [AppImage](https://appimage.org/), [flatpak](https://flatpak.org/) y [Snapcraft](https://snapcraft.io/) 
+Con la filosofía de Linux de usar programas interconectados, las aplicaciones suelen depender de otros programas llamados dependencias, los encargados de manternar las relaciones entre aplicaciones y dependencias son los Package Managers. Aun así las aplicaciones pueden llegar a tener problemas de compatibilidad si la aplicación o la dependencia esta desactualizada, para solucionar este problema se han creado formatos de paquetes que son portables, donde la aplicación es distribuida junto con la dependencias, esto puede ocasionar tamaños de aplicaciones más grandes, a costa de una mayor "estabilidad", los tres grandes distribuidores de aplicaciones portables son: [AppImage](https://appimage.org/), [flatpak](https://flatpak.org/) y [Snapcraft](https://snapcraft.io/).
 
 ---
 
@@ -740,19 +743,13 @@ Con la filosofía de Linux de usar programas interconectados, las aplicaciones s
 
 ---
 
-# **8. Juegos** 
-
-a
-
----
-
-# **9. Hardware**
+# **8. Hardware**
 
 ---
 
 <style scoped>img {position: absolute;}</style>
 
-# 9.1 Procesadores x86 (i686)/x64 (x86_64, amd64)
+# 8.1 Procesadores x86 (i686)/x64 (x86_64, amd64)
 
 Es una familia de procesadores con arquitectura  CISC (complex instruction set computing), creados originalmente por intel en 1978. Tienen un ISA (Instruction Set Architecture) close source. En cuestión de Linux estos suelen necesitar de un microcode para un mejor rendimiento del procesador.
 Estos son los tipos procesadores más [usados](https://www.cpubenchmark.net/market_share.html) en computadoras de escritorio, laptops y servidores. 
@@ -782,7 +779,7 @@ CPU secuirity rings. Imagen recuperada de [RealWorldCyberSecurity](https://mediu
 
 ---
 
-# 9.2 Procesadores arm
+# 8.2 Procesadores arm
 
 Es una familia de procesadores con arquitectura  RISC (Reduce instruction set computing) con un ISA close source; este tiene un TEE (Trusted Execution Environment) close source llamado TrustZone la cual puede tener [vulnerabilidades](https://blog.quarkslab.com/attacking-the-arms-trustzone.html)
 
@@ -790,13 +787,13 @@ Es el procesador más usado en el [mundo](https://gs.statcounter.com/platform-ma
 
 ---
 
-# 9.3 Procesadores Risc-V
+# 8.3 Procesadores Risc-V
 
 Es una familia de procesadores con arquitectura  RISC, con un ISA open-source, por el momento estos tienen menor potencia computacional que arm por lo que hay menos [usos](https://www.makeuseof.com/what-is-a-risc-v-sbc/); este también tiene un TEE llamado keystone, la diferencia es que este es open-source.
 
 ---
 
-# 9.4 Hardware recomendado
+# 8.4 Hardware recomendado
 
 Linux es compatible con la mayoría de hardware, pero es recomendado usar hardware especializado para tener una compatibilidad perfecta con Linux donde se respete tu privacidad y libertad de uso.
 
@@ -813,11 +810,11 @@ hardware y computadoras sin software propietario:
 
 ---
 
-# **10. Servidores**
+# **9. Servidores**
 
 ---
 
-# 10.1 Software para servidores
+# 9.1 Software para servidores
 
 Las distribuciones [más usadas](https://w3techs.com/technologies/details/os-linux) en servidores son las basadas en Debian como: ubuntu server y Debian o las empresariales como: RHEL y SLES, aunque también se usa Proxmox como hypervisor para VMs o conteiners, pero si se usara una SBC recomiendo [armbian](https://www.armbian.com/).
 
@@ -831,40 +828,57 @@ El web server más usado es nginx con el [34.4%](https://w3techs.com/technologie
 
 ---
 
-# 10.2 Servicios para servidores
+RAID: Redundant Array of Independent Disks,storage, los discos duros son más baratos que los ssd pero estos pueden fallar y ser más lentos, las soluciones que hay son: [RAIDZ](https://openzfs.github.io/openzfs-docs/Basic%20Concepts/RAIDZ.html) con ZFS o [MergerFS](https://github.com/trapexit/mergerfs) + [SnapRAID](https://www.snapraid.it/manual), RAID5, RAID6, RAID10, etc.
 
-Guía de seguridad para servidores por [LiveOverflow ](https://yewtu.be/watch?v=fKuqYQdqRIs&t)
+
+Antivirus: [ClamAV](www.clamav.net) es el unico antivirus open-source actualizado constantemente.
+
+Acceso remoto: 
+- [ssh X11 forwarding](https://wiki.archlinux.org/title/OpenSSH#X11_forwarding): ssh -X <usuario>@<ip>, ssh -Y <usuario>@<ip>
+- VNC: Virtual Network Computing
+    - servers: [wayvnc](https://github.com/any1/wayvnc), [x11vnc](https://github.com/LibVNC/x11vnc) y [tigervnc](https://tigervnc.org/).
+- RDP: Remote Desktop Protocol, es un protocolo originalmente de Microsoft, 
+    - server: [xrdp](https://www.xrdp.org/) y [freeRDP](https://www.freerdp.com/)
+- clientes VNC y RDP: Gnome Connections, KRDC .
+
+
+---
+
+# 9.2 Servicios para servidores
+
+Guía de seguridad para servidores por [LiveOverflow ](https://yewtu.be/watch?v=fKuqYQdqRIs&t).
 
 Página web sin servidor ni dominio: [Github Pages](https://pages.github.com/) y [neocities](https://neocities.org/).
 
 DDNS: los ISP pueden cambiar tu direccion ip publica en cualquier momento, las soluciones a esto que recomiendo son: [cloudflare API](https://github.com/K0p1-Git/cloudflare-ddns-updater), [duckDNS](https://www.duckdns.org/) y [freeDNS](https://freedns.afraid.org/).
 
-Dominios Web gratis por un año c/u, con [GitHub Student Developer Pack](https://education.github.com/pack):
-[.tech](https://get.tech/github-student-developer-pack), [.me](https://nc.me/landing/github), [.engenieer, .software, .live etc.](https://www.name.com/partner/github-students)
+Dominios web gratis: [.ga, .tk, .ml, .cf, .cq](https://www.freenom.com), [.c1.biz](https://www.biz.nf/), [.co.nr](https://www.freedomain.pro/); con [GitHub Student Developer Pack](https://education.github.com/pack): [.tech](https://get.tech/github-student-developer-pack), [.me](https://nc.me/landing/github), [.engenieer, .software, .live etc.](https://www.name.com/partner/github-students).
 
-Certificados SSL: son los certificados que te hacen que una página web tenga https, yo recomiendo: [Let's Encrypt](https://letsencrypt.org/getting-started/)
+Dominios web baratos: [wordpress](https://wordpress.com/domains/), [Rebel.com](https://www.rebel.com/), [name cheap](https://www.namecheap.com/), [hostinger](https://www.hostinger.com/cheap-domain-names), [Ionos](https://www.ionos.com/).
 
-Reverse proxy: es un servidor que redirecciona el tráfico al servidor de la página web, con mayor seguridad y velocidad. Las soluciones que recomiendo son: [cloudflare tunnels](https://www.cloudflare.com/products/tunnel/) y [Nginx Proxy Manager](https://nginxproxymanager.com/)
+Certificados SSL: son los certificados que te hacen que una página web tenga https, yo recomiendo [Let's Encrypt](https://letsencrypt.org/getting-started/).
 
-RAID: Redundant Array of Independent Disks,storage, los discos duros son más baratos que los ssd pero estos pueden fallar y ser más lentos, las soluciones que hay son: [RAIDZ](https://openzfs.github.io/openzfs-docs/Basic%20Concepts/RAIDZ.html) con ZFS o [MergerFS](https://github.com/trapexit/mergerfs) + [SnapRAID](https://www.snapraid.it/manual), RAID5, RAID6, RAID10, etc.
-
----
-
-# 10.3 Servidores Profesionales
-
-Se suelen usar discos duros de 3.5" certificados para funcionar 24/7 como los [Segate Ironwolf](https://www.seagate.com/products/nas-drives/ironwolf-hard-drive/) o los [Western Digital Red](https://www.westerndigital.com/solutions/network-attached-storage/NAS-for-heavy-duty-storage) 
-
-VPS: Virtual Personal Server, son servidores en la "nube", yo recomiendo [vultr](https://www.vultr.com/), pero hay alternativas gratuitas como [AWS Free tier](https://aws.amazon.com/free/) (por 12 meses) y [Oracle Cloud Free Tier](https://www.oracle.com/cloud/free/) (para siempre)
-
-NAS: Network Attached Storage, es una forma de acceder a discos duros atraves de una red ya sea en casa o desde fuera, existen sistemas operativos como freeNAS.
+Reverse proxy: es un servidor que redirecciona el tráfico al servidor de la página web, con mayor seguridad y velocidad. Las soluciones que recomiendo son: [cloudflare tunnels](https://www.cloudflare.com/products/tunnel/) y [Nginx Proxy Manager](https://nginxproxymanager.com/).
 
 ---
 
-# 10.4 Servidores caseros
+# 9.3 Servidores Profesionales
+
+Hardware: Se suelen usar discos duros de 3.5" certificados para funcionar 24/7 como los [Segate Ironwolf](https://www.seagate.com/products/nas-drives/ironwolf-hard-drive/) o los [Western Digital Red](https://www.westerndigital.com/solutions/network-attached-storage/NAS-for-heavy-duty-storage), tambien se suele usar ECC RAM para prevenir corrupción de datos, se sulene usar procesadores x64 [Intel XEON](https://www.intel.com/content/www/us/en/products/docs/processors/xeon/server-processor-overview.html) y [AMD EPYC](https://www.amd.com/en/processors/epyc-server-cpu-family).
+
+Server Rack:  
+
+VPS: Virtual Personal Server, son servidores en la "nube", yo recomiendo [vultr](https://www.vultr.com/), pero hay alternativas gratuitas como [AWS Free tier](https://aws.amazon.com/free/) (por 12 meses) y [Oracle Cloud Free Tier](https://www.oracle.com/cloud/free/) (para siempre).
+
+NAS: Network Attached Storage, es una forma de acceder a discos duros atraves de una red ya sea en o fuera de casa, hay vendedores de NAS como [synology](https://www.synology.com/en-global/products?product_line=ds_j%2Cds_plus%2Cds_value%2Cds_xs) con [DSM](https://www.synology.com/en-global/dsm), pero recomiendo hacer tu propio NAS con [openmediavault](https://www.openmediavault.org/).
+
+---
+
+# 9.4 Servidores caseros
 
 Laptops: thinkpads (series [T](https://en.wikipedia.org/wiki/ThinkPad_T_series)/[X](https://en.wikipedia.org/wiki/ThinkPad_X_series)), cualquiera  que tengas disponible.
 All in One (AIO)/Mini PCs: [Dell OptiPlex](https://en.wikipedia.org/wiki/Dell_OptiPlex), [HP elitedesk](https://en.wikipedia.org/wiki/HP_business_desktops), [ThinkCentre M series](https://en.wikipedia.org/wiki/ThinkCentre_M_series), [Beelink Mini](https://www.bee-link.com/computer-73493777), [ZimaBoard](https://www.zimaboard.com/), etc.
-Single Board Computers (SBC)/System on a chip (SoC) con arm: la [FSF](https://www.fsf.org/resources/hw/single-board-computers) recomienda procesadores Rockchip, FreeScale y Allwinner. Yo recomiendo los procesadores Rokchip con 4 nucleos o más: [orange Pi 5 Plus](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-5-plus.html), [orange pi 5](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-5.html), [ROCKPro64](https://www.pine64.org/rockpro64/) y [Quartz64 Model A](https://www.pine64.org/quartz64a/).
+Single Board Computers (SBC) con arm: la [FSF](https://www.fsf.org/resources/hw/single-board-computers) recomienda procesadores Rockchip, FreeScale y Allwinner. Yo recomiendo los procesadores Rokchip con 4 nucleos o más: [orange Pi 5 Plus](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-5-plus.html), [orange pi 5](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-5.html), [ROCKPro64](https://www.pine64.org/rockpro64/) y [Quartz64 Model A](https://www.pine64.org/quartz64a/).
 
 Ventajas de usar laptops, SBCs y AIOs: Tamaños pequeños, bajos db de ruido, precios accesibles en primera y segunda mano, suelen tener un bajo consumo energético, las laptops tienen pantallas y teclados para mantenimiento y pueden usar sus baterías en caso de un corte de luz, los AIO pueden usar ECC RAM y/o tarjetas gráficas y los SBC tienen GPIO (General-purpose input/output) pin headers, los discos duros de 2.5" consumen menos energia.
 
@@ -876,7 +890,7 @@ Soluciones/actualizaciones: [USB en vez de microSD para SBCs](https://cdn-learn.
 
 ---
 
-# 10.5 Proyectos para servidores
+# 9.5 Proyectos para servidores
 
 - Página web con [nginx](https://ubuntu.com/tutorials/install-and-configure-nginx#1-overview)
 - Password manager con [vaultwarden](https://github.com/dani-garcia/vaultwarden)
@@ -890,11 +904,11 @@ Soluciones/actualizaciones: [USB en vez de microSD para SBCs](https://cdn-learn.
 
 ---
 
-# **11. Aprender más acerca de Linux**
+# **10. Aprender más acerca de Linux**
 
 ---
 
-# 11.1 Guías y Wikis
+# 10.1 Guías y Wikis
 
 - [Arch wiki](https://wiki.archlinux.org/)
 - [Gentoo wiki](https://wiki.gentoo.org/wiki/Main_Page)
@@ -911,7 +925,7 @@ Soluciones/actualizaciones: [USB en vez de microSD para SBCs](https://cdn-learn.
 
 ---
 
-# 11.2 Youtubers de Linux que recomiendo
+# 10.2 Youtubers de Linux que recomiendo
 
 - [The linux experiment: Noticias semanales](https://yewtu.be/channel/UC5UAwBUum7CPN5buc-_N1Fw)
 - [DistroTube: Reviews de distros, opiniones y tutoriales](https://yewtu.be/channel/UCVls1GmFKf6WlTraIb_IaJg)
@@ -924,7 +938,7 @@ Soluciones/actualizaciones: [USB en vez de microSD para SBCs](https://cdn-learn.
 
 ---
 
-# **12. Referencias**
+# **11. Referencias**
 
 ---
 
@@ -940,11 +954,6 @@ Soluciones/actualizaciones: [USB en vez de microSD para SBCs](https://cdn-learn.
 - copyright.gov. (s.f.). *What is Copyright?*. https://www.copyright.gov/what-is-copyright/
 - copyright.org. (s.f.). *What is copyleft?*. https://copyleft.org/
 - coreboot. (2017). *1. AMD Platform Security Processor (PSP) Firmware Integration Guide*. https://doc.coreboot.org/soc/amd/psp_integration.html#platform-security-processor-psp-overview  
-
----
-
-<style scoped>{font-size: 21px;}</style>
-
 - Cray. (2016). *The final ISA showdown: Is ARM, x86, or MIPS intrinsically more power efficient?*. https://community.arm.com/arm-community-blogs/b/architectures-and-processors-blog/posts/the-final-isa-showdown-is-arm-x86-or-mips-intrinsically-more-power-efficient
 - creativecommons. (s.f). *About The Licenses*. https://creativecommons.org/licenses/
 - creativecommons. (s.f.). *About The Licenses*. https://creativecommons.org/licenses/
@@ -956,11 +965,6 @@ Soluciones/actualizaciones: [USB en vez de microSD para SBCs](https://cdn-learn.
 - ezeelinux. (2018). *Linux Distributions Deconstructed*. https://www.ezeelinux.com/news/linux-distributions-deconstructed/
 - Fireship. (2022). *Linux in 100 Seconds* [Video]. YouTube. https://yewtu.be/watch?v=rrB13utjYV4
 - freeBSD. (2023). *Explaining BSD*. https://docs.freebsd.org/en/articles/explaining-bsd/
-
----
-
-<style scoped>{font-size: 21px;}</style>
-
 - freundschafter. (2018). *About AMD TrustZone, AMD Platform Security Processor (PSP), AMD Secure Technology*. https://freundschafter.com/research/about-amd-trustzone-amd-platform-security-processor-psp-amd-secure-technology/
 - GeeksforGeeks. (2019). *Linux Tutorials | Getting Started | Introduction | GeeksforGeeks* [Video]. https://yewtu.be/watch?v=0EDwEQoui_g
 - GNU. (2023). *GNU Coreutils*. https://www.gnu.org/software/coreutils/manual/coreutils.pdf
@@ -974,11 +978,6 @@ Soluciones/actualizaciones: [USB en vez de microSD para SBCs](https://cdn-learn.
 - Linux Foundation. (2015). *Filesystem Hierarchy Standard*. https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.html
 - Linux Foundation. (2015). *Linux Standard Base*. https://refspecs.linuxfoundation.org/lsb.shtml
 - Machtelt Garrels. (2008). *Introduction to Linux*. https://tldp.org/LDP/intro-linux/intro-linux.pdf
-
----
-
-<style scoped>{font-size: 21px;}</style>
-
 - Michael Tunnell. (2023). *Explaining Linux Family Trees: Why Are There So Many Linux Distros?* [Video]. https://yewtu.be/watch?v=kF8CRt05s6A
 - NGINX. (s.f). *What Is a Reverse Proxy Server?*. https://www.nginx.com/resources/glossary/reverse-proxy-server/
 - Open Conteiner Initiative. (s.f.). *Open Container Initiative*. https://opencontainers.org/
@@ -994,12 +993,6 @@ Soluciones/actualizaciones: [USB en vez de microSD para SBCs](https://cdn-learn.
 - The Linux Experiment. (2018). *Linux DISTRIBUTION: explained* [Video]. https://yewtu.be/watch?v=6gqLWTSz6ck
 - The Linux Information Project. (2005). *Flavors of UNIX Definition*. http://www.linfo.org/flavors.html
 - The Linux Information Project. (2006). *What is Linux?*. http://www.linfo.org/newbies.html
-
-
----
-
-<style scoped>{font-size: 21px;}</style>
-
 - The Linux Kernel Organization. (2019). *About Linux Kernel*. https://www.kernel.org/linux.html
 - The Linux Kernel Organization. (2019). *Is Linux Kernel Free Software?*. https://www.kernel.org/category/faq.html
 - The Open Group. (2008). *The Single UNIX Specification, Version 4*. https://unix.org/version4/overview.html

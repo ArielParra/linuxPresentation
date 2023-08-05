@@ -77,9 +77,10 @@ So this image cannot be used in marketing, templates or other products for sale.
     - 8.4 Recommended hardware
 - 9. Servers
     - 9.1 Software for servers
-    - 9.2 Hardware for home servers
-    - 9.3 Services for servers
-    - 9.4 Server projects
+    - 9.2 Professional servers
+    - 9.3 Home servers
+    - 9.4 Services for servers
+    - 9.5 Server projects
 - 10. Learn more about Linux
     - 10.1 Guides and Wikis
     - 10.2 Linux Youtubers I recommend
