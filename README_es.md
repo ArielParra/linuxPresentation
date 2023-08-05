@@ -72,19 +72,21 @@ The background is Svetlanasmirnova's "White rabbit runs and falls into a hole. S
     - 6.4 Más informacion acerca de comandos
 - 7. Aplicaciones
     - 7.1 Aplicaciones recomendadas
-- 8. Hardware
-    - 8.1 Procesadores x86/x64
-    - 8.2 Procesadores arm
-    - 8.3 Procesadores Risc-V
-    - 8.4 Hardware recomendado
-- 9. Servidores
-    - 9.1 Software para servidores
-    - 9.2 Hardware para servidores caseros
-    - 9.3 Servicios para servidores
-    - 9.4 Proyectos para servidores
-- 10. Aprender más acerca de Linux
-    - 10.1 Guías y Wikis
-    - 10.2 Youtubers de Linux que recomiendo
-- 11. Referencias
+- 8. Juegos
+- 9. Hardware
+    - 9.1 Procesadores x86/x64
+    - 9.2 Procesadores arm
+    - 9.3 Procesadores Risc-V
+    - 9.4 Hardware recomendado
+- 10. Servidores
+    - 10.1 Software para servidores
+    - 10.2 Servidores Profesionales
+    - 10.3 Servidores caseros
+    - 10.4 Servicios para servidores
+    - 10.5 Proyectos para servidores
+- 11. Aprender más acerca de Linux
+    - 11.1 Guías y Wikis
+    - 11.2 Youtubers de Linux que recomiendo
+- 12. Referencias
 
 ---

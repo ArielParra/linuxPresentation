@@ -740,13 +740,19 @@ Con la filosofía de Linux de usar programas interconectados, las aplicaciones s
 
 ---
 
-# **8. Hardware**
+# **8. Juegos** 
+
+a
+
+---
+
+# **9. Hardware**
 
 ---
 
 <style scoped>img {position: absolute;}</style>
 
-# 8.1 Procesadores x86 (i686)/x64 (x86_64, amd64)
+# 9.1 Procesadores x86 (i686)/x64 (x86_64, amd64)
 
 Es una familia de procesadores con arquitectura  CISC (complex instruction set computing), creados originalmente por intel en 1978. Tienen un ISA (Instruction Set Architecture) close source. En cuestión de Linux estos suelen necesitar de un microcode para un mejor rendimiento del procesador.
 Estos son los tipos procesadores más [usados](https://www.cpubenchmark.net/market_share.html) en computadoras de escritorio, laptops y servidores. 
@@ -776,7 +782,7 @@ CPU secuirity rings. Imagen recuperada de [RealWorldCyberSecurity](https://mediu
 
 ---
 
-# 8.2 Procesadores arm
+# 9.2 Procesadores arm
 
 Es una familia de procesadores con arquitectura  RISC (Reduce instruction set computing) con un ISA close source; este tiene un TEE (Trusted Execution Environment) close source llamado TrustZone la cual puede tener [vulnerabilidades](https://blog.quarkslab.com/attacking-the-arms-trustzone.html)
 
@@ -784,13 +790,13 @@ Es el procesador más usado en el [mundo](https://gs.statcounter.com/platform-ma
 
 ---
 
-# 8.3 Procesadores Risc-V
+# 9.3 Procesadores Risc-V
 
 Es una familia de procesadores con arquitectura  RISC, con un ISA open-source, por el momento estos tienen menor potencia computacional que arm por lo que hay menos [usos](https://www.makeuseof.com/what-is-a-risc-v-sbc/); este también tiene un TEE llamado keystone, la diferencia es que este es open-source.
 
 ---
 
-# 8.4 Hardware recomendado
+# 9.4 Hardware recomendado
 
 Linux es compatible con la mayoría de hardware, pero es recomendado usar hardware especializado para tener una compatibilidad perfecta con Linux donde se respete tu privacidad y libertad de uso.
 
@@ -807,11 +813,11 @@ hardware y computadoras sin software propietario:
 
 ---
 
-# **9. Servidores**
+# **10. Servidores**
 
 ---
 
-# 9.1 Software para servidores
+# 10.1 Software para servidores
 
 Las distribuciones [más usadas](https://w3techs.com/technologies/details/os-linux) en servidores son las basadas en Debian como: ubuntu server y Debian o las empresariales como: RHEL y SLES, aunque también se usa Proxmox como hypervisor para VMs o conteiners, pero si se usara una SBC recomiendo [armbian](https://www.armbian.com/).
 
@@ -823,16 +829,44 @@ Conteiner Helpers: [Kubernetes](https://kubernetes.io/), [Porteiner](https://www
 
 El web server más usado es nginx con el [34.4%](https://w3techs.com/technologies/overview/web_server) del total de páginas web y este tiene [ventajas](https://www.digitalocean.com/community/tutorials/apache-vs-nginx-practical-considerations) sobre Apache en varios aspectos.
 
+---
+
+# 10.2 Servicios para servidores
+
+Guía de seguridad para servidores por [LiveOverflow ](https://yewtu.be/watch?v=fKuqYQdqRIs&t)
+
+Página web sin servidor ni dominio: [Github Pages](https://pages.github.com/) y [neocities](https://neocities.org/).
+
+DDNS: los ISP pueden cambiar tu direccion ip publica en cualquier momento, las soluciones a esto que recomiendo son: [cloudflare API](https://github.com/K0p1-Git/cloudflare-ddns-updater), [duckDNS](https://www.duckdns.org/) y [freeDNS](https://freedns.afraid.org/).
+
+Dominios Web gratis por un año c/u, con [GitHub Student Developer Pack](https://education.github.com/pack):
+[.tech](https://get.tech/github-student-developer-pack), [.me](https://nc.me/landing/github), [.engenieer, .software, .live etc.](https://www.name.com/partner/github-students)
+
+Certificados SSL: son los certificados que te hacen que una página web tenga https, yo recomiendo: [Let's Encrypt](https://letsencrypt.org/getting-started/)
+
+Reverse proxy: es un servidor que redirecciona el tráfico al servidor de la página web, con mayor seguridad y velocidad. Las soluciones que recomiendo son: [cloudflare tunnels](https://www.cloudflare.com/products/tunnel/) y [Nginx Proxy Manager](https://nginxproxymanager.com/)
+
+RAID: Redundant Array of Independent Disks,storage, los discos duros son más baratos que los ssd pero estos pueden fallar y ser más lentos, las soluciones que hay son: [RAIDZ](https://openzfs.github.io/openzfs-docs/Basic%20Concepts/RAIDZ.html) con ZFS o [MergerFS](https://github.com/trapexit/mergerfs) + [SnapRAID](https://www.snapraid.it/manual), RAID5, RAID6, RAID10, etc.
 
 ---
 
-# 9.2 Hardware para servidores caseros
+# 10.3 Servidores Profesionales
+
+Se suelen usar discos duros de 3.5" certificados para funcionar 24/7 como los [Segate Ironwolf](https://www.seagate.com/products/nas-drives/ironwolf-hard-drive/) o los [Western Digital Red](https://www.westerndigital.com/solutions/network-attached-storage/NAS-for-heavy-duty-storage) 
+
+VPS: Virtual Personal Server, son servidores en la "nube", yo recomiendo [vultr](https://www.vultr.com/), pero hay alternativas gratuitas como [AWS Free tier](https://aws.amazon.com/free/) (por 12 meses) y [Oracle Cloud Free Tier](https://www.oracle.com/cloud/free/) (para siempre)
+
+NAS: Network Attached Storage, es una forma de acceder a discos duros atraves de una red ya sea en casa o desde fuera, existen sistemas operativos como freeNAS.
+
+---
+
+# 10.4 Servidores caseros
 
 Laptops: thinkpads (series [T](https://en.wikipedia.org/wiki/ThinkPad_T_series)/[X](https://en.wikipedia.org/wiki/ThinkPad_X_series)), cualquiera  que tengas disponible.
 All in One (AIO)/Mini PCs: [Dell OptiPlex](https://en.wikipedia.org/wiki/Dell_OptiPlex), [HP elitedesk](https://en.wikipedia.org/wiki/HP_business_desktops), [ThinkCentre M series](https://en.wikipedia.org/wiki/ThinkCentre_M_series), [Beelink Mini](https://www.bee-link.com/computer-73493777), [ZimaBoard](https://www.zimaboard.com/), etc.
 Single Board Computers (SBC)/System on a chip (SoC) con arm: la [FSF](https://www.fsf.org/resources/hw/single-board-computers) recomienda procesadores Rockchip, FreeScale y Allwinner. Yo recomiendo los procesadores Rokchip con 4 nucleos o más: [orange Pi 5 Plus](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-5-plus.html), [orange pi 5](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-5.html), [ROCKPro64](https://www.pine64.org/rockpro64/) y [Quartz64 Model A](https://www.pine64.org/quartz64a/).
 
-Ventajas de usar laptops, SBCs y AIOs: Tamaños pequeños, bajos db de ruido, precios accesibles en primera y segunda mano, suelen tener un bajo consumo energético, las laptops tienen pantallas y teclados para mantenimiento y pueden usar sus baterías en caso de un corte de luz, los AIO pueden usar ECC RAM y/o tarjetas gráficas y los SBC tienen GPIO (General-purpose input/output) pin headers.
+Ventajas de usar laptops, SBCs y AIOs: Tamaños pequeños, bajos db de ruido, precios accesibles en primera y segunda mano, suelen tener un bajo consumo energético, las laptops tienen pantallas y teclados para mantenimiento y pueden usar sus baterías en caso de un corte de luz, los AIO pueden usar ECC RAM y/o tarjetas gráficas y los SBC tienen GPIO (General-purpose input/output) pin headers, los discos duros de 2.5" consumen menos energia.
 
 ---
 
@@ -842,32 +876,7 @@ Soluciones/actualizaciones: [USB en vez de microSD para SBCs](https://cdn-learn.
 
 ---
 
-# 9.3 Servicios para servidores
-
-Guía de seguridad para servidores por [LiveOverflow ](https://yewtu.be/watch?v=fKuqYQdqRIs&t)
-
-VPS: Virtual Personal Server, son servidores en la "nube", yo recomiendo [vultr](https://www.vultr.com/), pero hay alternativas gratuitas como [AWS Free tier](https://aws.amazon.com/free/) (por 12 meses) y [Oracle Cloud Free Tier](https://www.oracle.com/cloud/free/) (para siempre)
-
-Página web sin servidor ni dominio: [Github Pages](https://pages.github.com/) y [neocities](https://neocities.org/).
-
-DDNS: los ISP pueden cambiar tu direccion ip publica en cualquier momento, las soluciones a esto que recomiendo son: [cloudflare API](https://github.com/K0p1-Git/cloudflare-ddns-updater), [duckDNS](https://www.duckdns.org/) y [freeDNS](https://freedns.afraid.org/).
-
-Dominios Web gratis por un año c/u, con [GitHub Student Developer Pack](https://education.github.com/pack):
-[.tech](https://get.tech/github-student-developer-pack), [.me](https://nc.me/landing/github), [.engenieer, .software, .live etc.](https://www.name.com/partner/github-students)
-
----
-
-Certificados SSL: son los certificados que te hacen que una página web tenga https, yo recomiendo: [Let's Encrypt](https://letsencrypt.org/getting-started/)
-
-Reverse proxy: es un servidor que redirecciona el tráfico al servidor de la página web, con mayor seguridad y velocidad. Las soluciones que recomiendo son: [cloudflare tunnels](https://www.cloudflare.com/products/tunnel/) y [Nginx Proxy Manager](https://nginxproxymanager.com/)
-
-NAS: Network Attached Storage, es una forma de acceder a discos duros atraves de una red ya sea en casa o desde fuera, existen sistemas operativos como freeNAS y equipos dedicados, pero convine mejor hacer tu propio NAS.
-
-RAID: Redundant Array of Independent Disks,storage, los discos duros son más baratos que los ssd pero estos pueden fallar y ser más lentos, las soluciones que hay son: [RAIDZ](https://openzfs.github.io/openzfs-docs/Basic%20Concepts/RAIDZ.html) con ZFS o [MergerFS](https://github.com/trapexit/mergerfs) + [SnapRAID](https://www.snapraid.it/manual), RAID5, RAID6, RAID10, etc.
-
----
-
-# 9.4 Proyectos para servidores
+# 10.5 Proyectos para servidores
 
 - Página web con [nginx](https://ubuntu.com/tutorials/install-and-configure-nginx#1-overview)
 - Password manager con [vaultwarden](https://github.com/dani-garcia/vaultwarden)
@@ -881,11 +890,11 @@ RAID: Redundant Array of Independent Disks,storage, los discos duros son más ba
 
 ---
 
-# **10. Aprender más acerca de Linux**
+# **11. Aprender más acerca de Linux**
 
 ---
 
-# 10.1 Guías y Wikis
+# 11.1 Guías y Wikis
 
 - [Arch wiki](https://wiki.archlinux.org/)
 - [Gentoo wiki](https://wiki.gentoo.org/wiki/Main_Page)
@@ -902,7 +911,7 @@ RAID: Redundant Array of Independent Disks,storage, los discos duros son más ba
 
 ---
 
-# 10.2 Youtubers de Linux que recomiendo
+# 11.2 Youtubers de Linux que recomiendo
 
 - [The linux experiment: Noticias semanales](https://yewtu.be/channel/UC5UAwBUum7CPN5buc-_N1Fw)
 - [DistroTube: Reviews de distros, opiniones y tutoriales](https://yewtu.be/channel/UCVls1GmFKf6WlTraIb_IaJg)
@@ -915,7 +924,7 @@ RAID: Redundant Array of Independent Disks,storage, los discos duros son más ba
 
 ---
 
-# **11. Referencias**
+# **12. Referencias**
 
 ---
 
