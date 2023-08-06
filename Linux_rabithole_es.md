@@ -695,19 +695,21 @@ Categorice los comandos que creo más importantes en su función y los marque en
 
 ---
 
-# 6.2 Shortcuts de terminal
+# 6.2 Atajos de terminal
 
 ![w:520px bg right:40%](https://linuxhandbook.com/content/images/2022/04/lhb-terminal-shortcut-cheatsheet-1.webp)
 
 ---
 
-# 6.3 Shortcuts de teclado
+# 6.3 Atajos generales
 
-ctrl + shift + C = copiar al portapapeles 
-ctrl + shift + V = pegar el portapeles
-shift + insert / mouse 2  = pegar el buffer principal
-
-arch wiki keybord shurtcuts, clipboard
+|Atajo                            | Descripcion
+|---------------------------------|------------------------------------------
+|ctrl + shift + C / ctrl + insert | copiar al portapapeles 
+|ctrl + shift + V / shift + insert| pegar el portapeles
+|Boton de enmedio del mouse       | pegar la selección
+|Ctrl + Alt + F1...Fx             | cambia a la consola virtual 'x' (tty)
+|Ctrl + Alt + Del 	              | Reinicia el sistema operativo
 
 ---
 
@@ -761,7 +763,7 @@ Con la filosofía de Linux de usar programas interconectados, las aplicaciones s
 - Descargar videos de Youtube: [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 - Respaldos: [timeshift](https://github.com/linuxmint/timeshift) ([rsync](https://rsync.samba.org/), [btrfs snapshots](https://wiki.gentoo.org/wiki/Btrfs/snapshots)) y [git](https://git-scm.com/)
 - Android en Linux: [waydorid](https://waydro.id/)
--   : [cowsay](https://itsfoss.com/cowsay/), [fortune](https://www.shlomifish.org/open-source/projects/fortune-mod/), [lolcat](https://github.com/jaseg/lolcat), [asciiquarium](https://robobunny.com/projects/asciiquarium/), [sl](https://github.com/eyJhb/sl), [nms](https://github.com/bartobri/no-more-secrets), [cbonsai](https://gitlab.com/jallbrit/cbonsai), [cmatrix](https://github.com/abishekvashok/cmatrix) ,[pfetch](https://github.com/dylanaraps/pfetch), [figlet](http://www.figlet.org/), [espeak](https://espeak.sourceforge.net/), [aafire](https://aa-project.sourceforge.net/aalib/)
+-  Extra: [cowsay](https://itsfoss.com/cowsay/), [fortune](https://www.shlomifish.org/open-source/projects/fortune-mod/), [lolcat](https://github.com/jaseg/lolcat), [asciiquarium](https://robobunny.com/projects/asciiquarium/), [sl](https://github.com/eyJhb/sl), [nms](https://github.com/bartobri/no-more-secrets), [cbonsai](https://gitlab.com/jallbrit/cbonsai), [cmatrix](https://github.com/abishekvashok/cmatrix) ,[pfetch](https://github.com/dylanaraps/pfetch), [figlet](http://www.figlet.org/), [espeak](https://espeak.sourceforge.net/), [aafire](https://aa-project.sourceforge.net/aalib/).
 ---
 
 # **8. Hardware**
@@ -816,7 +818,9 @@ Es una familia de procesadores con arquitectura  RISC, con un ISA open-source, p
 
 # 8.4 GPUs
 
-Las GPU modernas que recomiendo para linux son las de AMD ya que estas tienen drivers open-source que son compatibles con la libreria grafica [Mesa 3D](https://www.mesa3d.org/).
+Hay tres fabricantes principales de GPUs: AMD, Nvidia e Intel. AMD e Intel tienen drivers open-source oficiales mientras que Nvidia tiene uno no oficial, hay dos drivers close-source oficiales [AMDGPU PRO](https://wiki.archlinux.org/title/AMDGPU_PRO) y los de [Nvidia](https://wiki.archlinux.org/title/NVIDIA).
+
+Las GPU modernas con buen rendimiendo que recomiendo para linux son las de AMD ya que estas tienen drivers open-source que son compatibles con la libreria grafica [Mesa 3D](https://www.mesa3d.org/).
 
 las laptops "gamers" usualmente tienen GPUs integradas y dedicadas, si quieres elegir entre una o ambas se puede hacer con [EnvyControl](https://github.com/bayasdev/envycontrol).
 
@@ -869,7 +873,7 @@ Acceso remoto:
     - servers: [wayvnc](https://github.com/any1/wayvnc), [x11vnc](https://github.com/LibVNC/x11vnc) y [tigervnc](https://tigervnc.org/).
 - RDP: Remote Desktop Protocol, es un protocolo originalmente de Microsoft, 
     - server: [xrdp](https://www.xrdp.org/) y [freeRDP](https://www.freerdp.com/)
-- clientes VNC y RDP: Gnome Connections, KRDC .
+- clientes VNC y RDP: [Gnome Connections](https://apps.gnome.org/app/org.gnome.Connections/), [KRDC](https://apps.kde.org/krdc/) y [Remmina](https://flathub.org/apps/org.remmina.Remmina) .
 
 
 ---
@@ -896,7 +900,16 @@ Reverse proxy: es un servidor que redirecciona el tráfico al servidor de la pá
 
 Hardware: Se suelen usar discos duros de 3.5" certificados para funcionar 24/7 como los [Segate Ironwolf](https://www.seagate.com/products/nas-drives/ironwolf-hard-drive/) o los [Western Digital Red](https://www.westerndigital.com/solutions/network-attached-storage/NAS-for-heavy-duty-storage), tambien se suele usar ECC RAM para prevenir corrupción de datos, se sulene usar procesadores x64 [Intel XEON](https://www.intel.com/content/www/us/en/products/docs/processors/xeon/server-processor-overview.html) y [AMD EPYC](https://www.amd.com/en/processors/epyc-server-cpu-family).
 
-Server Rack:  
+Server Rack: Son monturas para servidores 
+varias formas: parded, etc
+rack unit (abbreviated U or RU) is a unit of measure defined as 1+3⁄4 inches (44.45 mm
+    EIA 310E
+    UL2416
+    RoHS
+    REACH
+    IBC 2012
+
+---
 
 VPS: Virtual Personal Server, son servidores en la "nube", yo recomiendo [vultr](https://www.vultr.com/), pero hay alternativas gratuitas como [AWS Free tier](https://aws.amazon.com/free/) (por 12 meses) y [Oracle Cloud Free Tier](https://www.oracle.com/cloud/free/) (para siempre).
 

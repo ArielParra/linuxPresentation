@@ -66,8 +66,9 @@ So this image cannot be used in marketing, templates or other products for sale.
 - 6. Specific functions
     - 6.1 Shell functions
     - 6.2 Terminal shortcuts
-    - 6.3 Specific functions of the distro
-    - 6.4 More information about commands
+    - 6.3 General shortcuts
+    - 6.4 Specific functions of the distro
+    - 6.5 More information about commands
 - 7. Applications
     - 7.1 Recommended applications
 - 8. Hardware

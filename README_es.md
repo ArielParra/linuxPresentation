@@ -67,9 +67,10 @@ The background is Svetlanasmirnova's "White rabbit runs and falls into a hole. S
     - 5.8 Comandos extras
 - 6. Funciones especificas
     - 6.1 Funciones de shell 
-    - 6.2 Shortcuts de terminal
-    - 6.3 Funciones especificos de la distro
-    - 6.4 Más informacion acerca de comandos
+    - 6.2 Atajos de terminal
+    - 6.3 Atajos generales
+    - 6.4 Funciones especificos de la distro
+    - 6.5 Más informacion acerca de comandos
 - 7. Aplicaciones
     - 7.1 Aplicaciones recomendadas
 - 8. Hardware
