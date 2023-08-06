@@ -701,6 +701,16 @@ Categorice los comandos que creo más importantes en su función y los marque en
 
 ---
 
+# 6.3 Shortcuts de teclado
+
+ctrl + shift + C = copiar al portapapeles 
+ctrl + shift + V = pegar el portapeles
+shift + insert / mouse 2  = pegar el buffer principal
+
+arch wiki keybord shurtcuts, clipboard
+
+---
+
 # 6.3 Funciones especificos de la distro
 - [WIFI](https://wiki.debian.org/WiFi/HowToUse): NetworkManager, IWD, ConnMan, wpa_supplicant.
 - [Firewalls](https://wiki.archlinux.org/title/Uncomplicated_Firewall): iptables, uwd, firewalld.
