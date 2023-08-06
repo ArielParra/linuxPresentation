@@ -197,7 +197,7 @@ Tambien puedes usar una distrubucion de Linux que ya venga riceada, como [archcr
 - Usa menos memoria [RAM](https://yewtu.be/watch?v=L3d9okxKcjM).
 - Es un sistema operativo [portable](https://www.oreilly.com/library/view/linux-kernel-development/0672327201/ch19.html).
 - Tiene multiples [comunidades](https://www.makeuseof.com/tag/4-helpful-communities-new-linux-users/) para soporte.
-- Tiene GPU drivers open-source oficiales de [AMD](https://gpuopen.com/amd-open-source-driver-for-vulkan/) y no oficiales de [Nvidia](https://nouveau.freedesktop.org/).
+- Tiene GPU drivers open-source de [AMD](https://gpuopen.com/amd-open-source-driver-for-vulkan/), [Intel](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-open-source-graphics-drivers-and-vulkan-graphics-api.html) y [Nvidia](https://nouveau.freedesktop.org/).
 - Puedes ["revivir"](https://itsfoss.com/mystory-linux-13-years-laptop/) laptops antiguas.
 - Promueve el [open-source](https://www.linuxfoundation.org/resources/open-source-guides/participating-in-open-source-communities).
 - Tienes libertad de elección sobre cada componente del sistema operativo.
@@ -547,18 +547,26 @@ Categorice los comandos que creo más importantes en su función y los marque en
 
 ---
 
-<style scoped>table{font-size: 25px;}</style>
 
 # 5.1 Comandosde navegacion de archivos
 |comando    | uso común                          | comando  | uso común
 |-----------|------------------------------------|----------|----------
-|(C) touch  | touch <archivo>                    |(G) gzip  | gzip (-d) <archivo>      
-|(C) cp     | cp <origen> <destino>              |(G) tar   | tar (c/x)zfv <archivo>.tar.gz <dir>
-|(C) ls     | ls <dir>, ls -l -a, ls -la <dir>   |(C) pwd   | pwd
-|(C) rm     | rm <archivo>, rm -r -d -f  <dir>   |(C) cd    | cd <dir>      
-|(C) mkdir  | mkdir <dir>                        |(C) ln    | ln -s <origen> <destino>
-|(C) rmdir  | rmdir <dir>                        |(C) chmod | chmod +x <archivo>   
-|(C) mv     | mv <archivo> <destino>             |(C) chown | chown <usuario>:<grupo> <archivo>
+|(C) touch  | touch \<archivo>                    |(G) gzip  | gzip (-d) \<archivo>      
+|(C) cp     | cp \<origen> \<destino>              |(G) tar   | tar (c/x)zfv \<archivo>.tar.gz <dir>
+|(C) ls     | ls \<dir>, ls -l -a, ls -la <dir>   |(C) pwd   | pwd
+|(C) rm     | rm \<archivo>, rm -r -d -f  <dir>   |(C) cd    | cd \<dir>      
+
+---
+
+
+|comando    | uso común                         
+|-----------|------------------------------------
+|(C) mkdir  | mkdir \<dir>                        
+|(C) ln     | ln -s \<origen> \<destino>
+|(C) rmdir  | rmdir \<dir>                        
+|(C) chmod  | chmod +x \<archivo>   
+|(C) mv     | mv \<archivo> \<destino>             
+|(C) chown  | chown \<usuario>:\<grupo> \<archivo>
 
 ---
 
@@ -566,10 +574,10 @@ Categorice los comandos que creo más importantes en su función y los marque en
 
 |comando     | uso  común     | comando | uso común
 |------------|----------------|---------|----------
-|(C) cat     | cat <archivo>  |(G) sed  | sed -i 's/este/por-este/' <archivo>
-|(G) less    | less <archivo> |(G) awk  | <comando> \| awk '{print $1,$4}'
-|(C) head    | head <archivo> |(O) vi   | vi <archivo>
-|(C) tail    | tail <archivo> |(C) sort | sort <archivo> 
+|(C) cat     | cat \<archivo>  |(G) sed  | sed -i 's/este/por-este/' <archivo>
+|(G) less    | less \<archivo> |(G) awk  | \<comando> \| awk '{print $1,$4}'
+|(C) head    | head \<archivo> |(O) vi   | vi \<archivo>
+|(C) tail    | tail \<archivo> |(C) sort | sort \<archivo> 
 
 ---
 
@@ -577,9 +585,9 @@ Categorice los comandos que creo más importantes en su función y los marque en
 
 |comando     | uso común   | comando    | uso común
 |------------|-------------|------------|----------
-|(S) jobs    | jobs        |(U) kill    | kill <pid>
-|(S) bg      | bg <job id> |(N) killall | killall <app>
-|(S) fg      | fg <job id> |(P) pkill   | pkill <app>
+|(S) jobs    | jobs        |(U) kill    | kill \<pid>
+|(S) bg      | bg \<job id> |(N) killall | killall \<app>
+|(S) fg      | fg \<job id> |(P) pkill   | pkill \<app>
 |(P) ps      | ps, ps aux  |(O) top     | top
 |(O) pstree  | pstree      |(O) htop    | htop
  
@@ -589,12 +597,12 @@ Categorice los comandos que creo más importantes en su función y los marque en
 
 |comando     | uso  común
 |------------|-----------
-|(G) find    | find <archivo>
+|(G) find    | find \<archivo>
 |(S) history | history 
-|(G) grep    | <comando> \| grep <string>
-|(O) pgrep   | pgrep <comando>  
-|(O) locate  | locate <archivo>
-|(U) wheris  | wheris <archivo>   
+|(G) grep    | \<comando> \| grep \<string>
+|(O) pgrep   | pgrep \<comando>  
+|(O) locate  | locate \<archivo>
+|(U) wheris  | wheris \<archivo>   
 
 ---
 
@@ -602,10 +610,10 @@ Categorice los comandos que creo más importantes en su función y los marque en
 
 |comando    | uso común         | comando   | uso  común     
 |-----------|-------------------|-----------|-----------
-|(C) df     |  df               |(U) mount  | mount -t ntfs-3g <dev> <destino>
-|(C) du     |  du -h <archivo>  |(U) umount | umount <destino>
-|(U) fsck   |  fsck -y <dev>    |(U) lsblk  | lsblk
-|(U) fdisk  |  -l <dev>         |(U) blkid  | blkid
+|(C) df     |  df               |(U) mount  | mount -t ntfs-3g \<dev> \<destino>
+|(C) du     |  du -h \<archivo>  |(U) umount | umount \<destino>
+|(U) fsck   |  fsck -y \<dev>    |(U) lsblk  | lsblk
+|(U) fdisk  |  -l \<dev>         |(U) blkid  | blkid
 |(G) cfdisk |  cfdisk           |           |
 
 ---
@@ -615,7 +623,7 @@ Categorice los comandos que creo más importantes en su función y los marque en
 |comando | uso común                           | equivalente a net-tools  | 
 |--------|-------------------------------------|--------------------------|
 |(I) ip  | ip address, ip a                    | ifconfig                 |
-|        | ip link set/add/remove <interfaz>   | ifconfig                 |          
+|        | ip link set/add/remove \<interfaz>   | ifconfig                 |          
 |        | ip route                            | route, netstat           |
 |        | ip neigh                            | arp                      |
 |(I) ss  | ss                                  | netstat                  |
@@ -624,10 +632,10 @@ Categorice los comandos que creo más importantes en su función y los marque en
 
 |comando        | uso común                            |comando    | uso común      
 |---------------|--------------------------------------|-----------|----------
-|(I) traceroute | traceroute <página web>              |(O) wget   | wget <página web>
-|(I) ping       | ping <página web>                    |(O) curl   | curl -o <archivo> <página web>
-|(O) ssh        | ssh <usario>@<ip>                    |(O) git    | git clone <servidor.git>
-|(O) scp        | scp <origen> <usario>@<ip>:<destino> |(U) rfkill | rfkill (un)block all
+|(I) traceroute | traceroute \<página web>              |(O) wget   | wget \<página web>
+|(I) ping       | ping \<página web>                    |(O) curl   | curl -o \<archivo> \<página web>
+|(O) ssh        | ssh \<usario>@\<ip>                    |(O) git    | git clone \<servidor.git>
+|(O) scp        | scp \<origen> \<usario>@\<ip>:\<destino> |(U) rfkill | rfkill (un)block all
 
 ---
 
@@ -637,10 +645,10 @@ Categorice los comandos que creo más importantes en su función y los marque en
 
 |comando       | uso común       |comando    | uso común  
 |--------------|-----------------|-----------|----------
-|(U) dmesg     | dmesg -t        |(O) which  | which <comando>
+|(U) dmesg     | dmesg -t        |(O) which  | which \<comando>
 |(O) neofetch  | noefetch        |(C) whoami | whoami
 |(C) uname     | uname           |(C) who    | who 
-|(G) time      | time <programa> |(C) uptime | uptime
+|(G) time      | time \<programa> |(C) uptime | uptime
 |(G) date      | date +"%D"      |(O) lsusb  | lsusb
 |(C) hostname  | hostname        |(U) lscpu  | lscpu
 |(P) free      | free -h         |(O) xinput | xinput list
@@ -654,12 +662,12 @@ Categorice los comandos que creo más importantes en su función y los marque en
 
 |comando    | uso común                              |comando       | uso común      
 |-----------|----------------------------------------|--------------|----------
-|(O) man    | man <comando>                          |(U) su        | su, su <usuario>
-|(O) whatis | whatis <comando>                       |(C) wc        | wc <archivo>
-|(C) echo   | echo '<string>', echo \$<variable>     |(G) diff      | diff <archivo> <archivo> 
+|(O) man    | man \<comando>                          |(U) su        | su, su \<usuario>
+|(O) whatis | whatis \<comando>                       |(C) wc        | wc \<archivo>
+|(C) echo   | echo '\<string>', echo \$<variable>     |(G) diff      | diff \<archivo> \<archivo> 
 |(S) exit   | exit                                   |(O) xclip     | xclip -sel clip
-|(C) printf | printf "entero: %i" "\$<variable> \n"  |(G) gpg       | gpg --verify <archivo>.sig/.gpg 
-|(O) sudo   | sudo <comando>                         |(C) sha512sum | sha512sum -c <archivo>.sha512sum
+|(C) printf | printf "entero: %i" "\$<variable> \n"  |(G) gpg       | gpg --verify \<archivo>.sig/.gpg 
+|(O) sudo   | sudo \<comando>                         |(C) sha512sum | sha512sum -c \<archivo>.sha512sum
 
 ---
 
@@ -671,8 +679,8 @@ Categorice los comandos que creo más importantes en su función y los marque en
 
 |función | ejemplo de uso     | función  | ejemplo de uso       
 |--------|--------------------|----------|------------
-|*       | find /*            |!         | !<num>  
-|=       | <variable>=<valor> |!!        | !!  
+|*       | find /*            |!         | !\<num>  
+|=       | \<variable>=\<valor> |!!        | !!  
 |\$()    | cowsay $(fortune)  | \|       | fortune \| cowsay
 |{}      | echo {1..10}       | \|\|     | echo 'try' \|\| echo 'catch'
 
@@ -680,9 +688,9 @@ Categorice los comandos que creo más importantes en su función y los marque en
 
 |función           | ejemplo de uso              | función | ejemplo de uso                                    
 |------------------|-----------------------------|---------|---------------
-|&                 | <comando> &                 |&&       | <comado> && <comando>
-|>                 | echo "ola" > <archivo>      |;        | <comando> ; <comando>
-|>>                | echo "ola" >> <archivo>     |alias    |alias nombre=<comando>
+|&                 | \<comando> &                 |&&       | \<comado> && \<comando>
+|>                 | echo "ola" > \<archivo>      |;        | \<comando> ; \<comando>
+|>>                | echo "ola" >> \<archivo>     |alias    |alias nombre=\<comando>
 |2>&1              | firefox >>/dev/null 2>&1 &  |export   |export
 
 ---
@@ -726,6 +734,9 @@ Con la filosofía de Linux de usar programas interconectados, las aplicaciones s
 
 ---
 
+<style scoped>ul {columns: 2; text-align: left} </style>
+
+
 # 7.1 Aplicaciones recomendadas
 
 - Editor de texto/codigo: [vim](https://www.vim.org/), [vscodium](https://vscodium.com/)
@@ -740,7 +751,7 @@ Con la filosofía de Linux de usar programas interconectados, las aplicaciones s
 - Descargar videos de Youtube: [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 - Respaldos: [timeshift](https://github.com/linuxmint/timeshift) ([rsync](https://rsync.samba.org/), [btrfs snapshots](https://wiki.gentoo.org/wiki/Btrfs/snapshots)) y [git](https://git-scm.com/)
 - Android en Linux: [waydorid](https://waydro.id/)
-
+-   : [cowsay](https://itsfoss.com/cowsay/), [fortune](https://www.shlomifish.org/open-source/projects/fortune-mod/), [lolcat](https://github.com/jaseg/lolcat), [asciiquarium](https://robobunny.com/projects/asciiquarium/), [sl](https://github.com/eyJhb/sl), [nms](https://github.com/bartobri/no-more-secrets), [cbonsai](https://gitlab.com/jallbrit/cbonsai), [cmatrix](https://github.com/abishekvashok/cmatrix) ,[pfetch](https://github.com/dylanaraps/pfetch), [figlet](http://www.figlet.org/), [espeak](https://espeak.sourceforge.net/), [aafire](https://aa-project.sourceforge.net/aalib/)
 ---
 
 # **8. Hardware**
@@ -751,7 +762,7 @@ Con la filosofía de Linux de usar programas interconectados, las aplicaciones s
 
 # 8.1 Procesadores x86 (i686)/x64 (x86_64, amd64)
 
-Es una familia de procesadores con arquitectura  CISC (complex instruction set computing), creados originalmente por intel en 1978. Tienen un ISA (Instruction Set Architecture) close source. En cuestión de Linux estos suelen necesitar de un microcode para un mejor rendimiento del procesador.
+Es una familia de procesadores con arquitectura  CISC (complex instruction set computing), creados originalmente por intel en 1978. Tienen un ISA (Instruction Set Architecture) close-source. En cuestión de Linux estos suelen necesitar de un microcode para un mejor rendimiento del procesador.
 Estos son los tipos procesadores más [usados](https://www.cpubenchmark.net/market_share.html) en computadoras de escritorio, laptops y servidores. 
 
 los procesadores de las laptops pueden alcanzar altas temperaturas y para mitigar esto se solía hacer undervolting, pero es una [vulnerabilidad](https://plundervolt.com/), por lo que se recomienda utilizar [frequency scaling](https://wiki.archlinux.org/title/CPU_frequency_scaling) y desactivar [Turbo Boost](https://www.intel.com/content/www/us/en/gaming/resources/turbo-boost.html).
@@ -781,7 +792,7 @@ CPU secuirity rings. Imagen recuperada de [RealWorldCyberSecurity](https://mediu
 
 # 8.2 Procesadores arm
 
-Es una familia de procesadores con arquitectura  RISC (Reduce instruction set computing) con un ISA close source; este tiene un TEE (Trusted Execution Environment) close source llamado TrustZone la cual puede tener [vulnerabilidades](https://blog.quarkslab.com/attacking-the-arms-trustzone.html)
+Es una familia de procesadores con arquitectura  RISC (Reduce instruction set computing) con un ISA close-source; este tiene un TEE (Trusted Execution Environment) close-source llamado TrustZone la cual puede tener [vulnerabilidades](https://blog.quarkslab.com/attacking-the-arms-trustzone.html)
 
 Es el procesador más usado en el [mundo](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/worldwide) ya que este se encuentra en los celulares, aunque también se pueden encontrar en laptops, computadoras de escritorios, servidores y single board computers. La razón de esto es su eficiencia energética.
 
@@ -789,11 +800,20 @@ Es el procesador más usado en el [mundo](https://gs.statcounter.com/platform-ma
 
 # 8.3 Procesadores Risc-V
 
-Es una familia de procesadores con arquitectura  RISC, con un ISA open-source, por el momento estos tienen menor potencia computacional que arm por lo que hay menos [usos](https://www.makeuseof.com/what-is-a-risc-v-sbc/); este también tiene un TEE llamado keystone, la diferencia es que este es open-source.
+Es una familia de procesadores con arquitectura  RISC, con un ISA open-source, por el momento estos tienen menor potencia computacional que arm por lo que hay menos [usos](https://www.makeuseof.com/what-is-a-risc-v-sbc/); Este también tiene un TEE llamado [keystone](https://keystone-enclave.org/), la diferencia y principal ventaja es que este es open-source.
 
 ---
 
-# 8.4 Hardware recomendado
+# 8.4 GPUs
+
+Las GPU modernas que recomiendo para linux son las de AMD ya que estas tienen drivers open-source que son compatibles con la libreria grafica [Mesa 3D](https://www.mesa3d.org/).
+
+las laptops "gamers" usualmente tienen GPUs integradas y dedicadas, si quieres elegir entre una o ambas se puede hacer con [EnvyControl](https://github.com/bayasdev/envycontrol).
+
+
+---
+
+# 8.5 Hardware recomendado
 
 Linux es compatible con la mayoría de hardware, pero es recomendado usar hardware especializado para tener una compatibilidad perfecta con Linux donde se respete tu privacidad y libertad de uso.
 
@@ -834,7 +854,7 @@ RAID: Redundant Array of Independent Disks,storage, los discos duros son más ba
 Antivirus: [ClamAV](www.clamav.net) es el unico antivirus open-source actualizado constantemente.
 
 Acceso remoto: 
-- [ssh X11 forwarding](https://wiki.archlinux.org/title/OpenSSH#X11_forwarding): ssh -X <usuario>@<ip>, ssh -Y <usuario>@<ip>
+- [ssh X11 forwarding](https://wiki.archlinux.org/title/OpenSSH#X11_forwarding): ssh -X \<usuario>@\<ip>, ssh -Y \<usuario>@\<ip>
 - VNC: Virtual Network Computing
     - servers: [wayvnc](https://github.com/any1/wayvnc), [x11vnc](https://github.com/LibVNC/x11vnc) y [tigervnc](https://tigervnc.org/).
 - RDP: Remote Desktop Protocol, es un protocolo originalmente de Microsoft, 
@@ -972,7 +992,6 @@ Soluciones/actualizaciones: [USB en vez de microSD para SBCs](https://cdn-learn.
 - GNU. (s.f). *What is Free Software?*. https://www.gnu.org/philosophy/free-sw.html
 - IEEE. (2017). *IEEE Std 1003.1™-2017*. https://pubs.opengroup.org/onlinepubs/9699919799/
 - Intel. (2017). *What is Intel® Management Engine?*. https://www.intel.com/content/www/us/en/support/articles/000008927/software/chipset-software.html
-- Keystone. (2021). *What is Keystone Enclave?*. https://keystone-enclave.org/
 - Libreboot. (s.f.). *Intel Management Engine (ME)*. https://libreboot.org/faq.html#intelme
 - Linus Torvalds. (1997). *Linux: a Portable Operating System*. https://www.cs.helsinki.fi/u/kutvonen/index_files/linus.pdf
 - Linux Foundation. (2015). *Filesystem Hierarchy Standard*. https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.html
@@ -998,4 +1017,8 @@ Soluciones/actualizaciones: [USB en vez de microSD para SBCs](https://cdn-learn.
 - The Open Group. (2008). *The Single UNIX Specification, Version 4*. https://unix.org/version4/overview.html
 - University of Pittsburgh. (2022). *Copyright and Intellectual Property Toolkit*. https://pitt.libguides.com/copyright/licenses
 - Westerndigital. (s.f.). *RAID Storage*. https://www.westerndigital.com/solutions/raid
-- Wheeler, D. (2003). *History of Unix, Linux, and Open Source / Free Software*. https://tldp.org/HOWTO/Secure-Programs-HOWTO/history.html
+- Wheeler, D. (2003). *History of Unix, Linux, and Open Source / Free Software*.  https://tldp.org/HOWTO/Secure-Programs-HOWTO/history.html
+
+- Vertiv. (s.f.). *What Is a Server Rack?*. https://www.vertiv.com/en-us/about/news-and-insights/articles/educational-articles/what-is-a-server-rack/
+- TRIPP LITE. (s.f.). *Server Racks Explained*. https://tripplite.eaton.com/products/server-racks-explained
+- Rack Solutions. (2020). *Server Rack Sizes: Understanding the Differences*. https://www.racksolutions.com/news/blog/server-rack-sizes/

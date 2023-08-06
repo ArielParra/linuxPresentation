@@ -196,7 +196,7 @@ You can also use a Linux distrubucion that already comes riced, such as [archcra
 - Uses less memory [RAM](https://yewtu.be/watch?v=L3d9okxKcjM).
 - It is a [portable](https://www.oreilly.com/library/view/linux-kernel-development/0672327201/ch19.html) operating system.
 - It has multiple [communities](https://www.makeuseof.com/tag/4-helpful-communities-new-linux-users/) for support.
-- It has official open-source GPU drivers for [AMD](https://gpuopen.com/amd-open-source-driver-for-vulkan/) and non-official [Nvidia](https://nouveau.freedesktop.org/).
+- It has open-source GPU drivers for [AMD](https://gpuopen.com/amd-open-source-driver-for-vulkan/), [Intel](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-open-source-graphics-drivers-and-vulkan-graphics-api.html) and [Nvidia](https://nouveau.freedesktop.org/).
 - You can ["revive"](https://itsfoss.com/mystory-linux-13-years-laptop/) old laptops.
 - Promotes [open source](https://www.linuxfoundation.org/resources/open-source-guides/participating-in-open-source-communities).
 - You have freedom of choice over each component of the operating system.
