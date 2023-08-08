@@ -763,7 +763,7 @@ Con la filosofía de Linux de usar programas interconectados, las aplicaciones s
 - Descargar videos de Youtube: [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 - Respaldos: [timeshift](https://github.com/linuxmint/timeshift) ([rsync](https://rsync.samba.org/), [btrfs snapshots](https://wiki.gentoo.org/wiki/Btrfs/snapshots)) y [git](https://git-scm.com/)
 - Android en Linux: [waydorid](https://waydro.id/)
--  Extra: [cowsay](https://itsfoss.com/cowsay/), [fortune](https://www.shlomifish.org/open-source/projects/fortune-mod/), [lolcat](https://github.com/jaseg/lolcat), [asciiquarium](https://robobunny.com/projects/asciiquarium/), [sl](https://github.com/eyJhb/sl), [nms](https://github.com/bartobri/no-more-secrets), [cbonsai](https://gitlab.com/jallbrit/cbonsai), [cmatrix](https://github.com/abishekvashok/cmatrix) ,[pfetch](https://github.com/dylanaraps/pfetch), [figlet](http://www.figlet.org/), [espeak](https://espeak.sourceforge.net/), [aafire](https://aa-project.sourceforge.net/aalib/).
+-  Extra: [cowsay](https://itsfoss.com/cowsay/), [fortune](https://www.shlomifish.org/open-source/projects/fortune-mod/), [lolcat](https://github.com/jaseg/lolcat), [asciiquarium](https://robobunny.com/projects/asciiquarium/), [sl](https://github.com/eyJhb/sl), [nms](https://github.com/bartobri/no-more-secrets), [cbonsai](https://gitlab.com/jallbrit/cbonsai), [cmatrix](https://github.com/abishekvashok/cmatrix) , [hollywood](https://github.com/dustinkirkland/hollywood), [pfetch](https://github.com/dylanaraps/pfetch), [figlet](http://www.figlet.org/), [espeak](https://espeak.sourceforge.net/), [aafire](https://aa-project.sourceforge.net/aalib/).
 ---
 
 # **8. Hardware**
@@ -927,7 +927,7 @@ Ventajas de usar laptops, SBCs y AIOs: Tamaños pequeños, bajos db de ruido, pr
 
 ---
 
-Desventajas: puertos limitados, los gráficos integrados pueden no ser óptimos para media servers, los SBC suelen usar tarjetas micro SD que tienen [bajas velocidades de lecto-escritura](https://www.kingston.com/en/blog/personal-storage/memory-card-speed-classes) y son propensas a [corrupción de datos](https://wildlabs.net/discussion/sd-cards-and-reliability).
+Desventajas: puertos limitados, los gráficos integrados pueden no ser óptimos para media servers, los puertos usb tienen limites de [energia](https://superuser.com/questions/1317564/will-a-single-usb-3-0-port-power-two-2-5-hard-drives), los SBC suelen usar tarjetas micro SD que tienen [bajas velocidades de lecto-escritura](https://www.kingston.com/en/blog/personal-storage/memory-card-speed-classes) y son propensas a [corrupción de datos](https://wildlabs.net/discussion/sd-cards-and-reliability).
 
 Soluciones/actualizaciones: [USB en vez de microSD para SBCs](https://cdn-learn.adafruit.com/downloads/pdf/external-drive-as-raspberry-pi-root.pdf), no break como respaldo de energia, clusters, load balancer, USB 2.5gb Ethernet Adapter, adaptadores sata a USB, USB hub con energia externa, HDD/SSD en el puerto de DVD de laptops, puertos de tarjeta red (M.2 key/mini PCIe) o express card de laptop: eGPU, ethernet card, usb 3.0, sata hub, ssd.
 
@@ -1045,3 +1045,4 @@ Soluciones/actualizaciones: [USB en vez de microSD para SBCs](https://cdn-learn.
 - Vertiv. (s.f.). *What Is a Server Rack?*. https://www.vertiv.com/en-us/about/news-and-insights/articles/educational-articles/what-is-a-server-rack/
 - TRIPP LITE. (s.f.). *Server Racks Explained*. https://tripplite.eaton.com/products/server-racks-explained
 - Rack Solutions. (2020). *Server Rack Sizes: Understanding the Differences*. https://www.racksolutions.com/news/blog/server-rack-sizes/
+- Dominic Humphries. (2006).  *Linux is Not Windows*. https://linux.oneandoneis2.org/LNW.htm
