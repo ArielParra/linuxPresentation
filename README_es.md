@@ -1,7 +1,7 @@
 ![bg](./img/rabithole.png)
 # linux rabit hole
-## curso completo de linux y los temas que lo rodean
-### por Ariel Parra
+## Curso de linux y los temas que lo rodean
+### Por Ariel Parra
 
 ---
 

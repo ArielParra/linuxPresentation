@@ -4,6 +4,17 @@ title: Linux rabit hole
 theme: default
 paginate: true
 ---
+<!-- HTML Enabled in Marp Markdown-->
+
+<style scoped>h1, h2, h3 {color: #3b4252;}</style>
+
+![bg opacity:.3](./img/rabithole.png)
+
+# <!--fit--> Linux rabit hole
+## A course about Linux and the topics surrounding it
+### By Ariel Parra.
+
+---
 
 <!-- theme -->
 <style>
@@ -17,19 +28,8 @@ img[alt~="center"] {display: block;margin: 0 auto;}
 table {text-align: center; margin-left: auto; margin-right: auto;} 
 th { background-color: #81a1c1; color: #e5e9f0}
 td { background-color: #e5e9f0;}
+mark {background-color: rgb(129 161 193 / 0.3)};
 </style>
-
-<!-- Title page -->
-
-<style scoped>h1, h2, h3 {color: #3b4252;}</style>
-
-![bg opacity:.3](./img/rabithole.png)
-
-# <!--fit--> Linux rabit hole
-## Full course of Linux and the topics surrounding it
-### By Ariel Parra.
-
----
 
 # **1. What is Linux?**
 
@@ -41,9 +41,11 @@ It is an open-source monolithic kernel with GNU GPL v2 licence, used as the base
 
 ---
 
-- What is a monolithic kernel? The kernel is software that has hardware control, manages and optimizes system resources such as RAM allocation, CPU processes, drivers, etc. Acting as a bridge between applications and hardware. It is monolithic when all system services operate in the system’s kernel with syscalls.
-- What is open-source? It is software where anyone can see, analyze and therefore modify the source code.
-- What's the GPLv2 license? It is a software license where any modification to the code must have the same license and for every binary file that is distributed, there has to be available source code.
+<mark>What is a monolithic kernel?</mark> The kernel is software that has hardware control, manages and optimizes system resources such as RAM allocation, CPU processes, drivers, etc. Acting as a bridge between applications and hardware. It is monolithic when all system services operate in the system’s kernel with syscalls.
+
+<mark>What is open-source?</mark> It is software where anyone can see, analyze and therefore modify the source code.
+
+<mark>What's the GPLv2 license?</mark> It is a software license where any modification to the code must have the same license and for every binary file that is distributed, there has to be available source code.
 
 ---
 
@@ -65,6 +67,7 @@ Linux operating systems often use the Filesystem Hierarchy Standard of linux.
 ---
 
 <style scoped>p {text-align: center; font-size: 20px}</style>
+<style scoped>p {text-align: center; font-size: 20px}</style><!-- Doesn't load right without it -->
 
 # 1.4 Linux Filesystem Hierarchy Standard
 
@@ -91,10 +94,14 @@ Image recovered from [wikipedia](https://en.wikipedia.org/wiki/Template%3ALinux_
 # 2.1 UNIX
 
 UNIX is an operating system created at the beginning of the 70s in AT&T by Dennis Ritchie (C language creator) and Ken Thompson (B language creator).
-- POSIX: "Portable Operating System Interface", are a series of standards of use, given by the IEEE (Institute of Electrical and Electronics Engineers) which includes the I/O, the terminal, commands and networking. These standards are usually used to make shells compatibility scripts with many operating systems.
-- Single UNIX Specification: It is a standard for operating systems to use the UNIX tredemark, with interfaces for C language, shell and commands.
-- UNIX filosofy (Doug McIlroy): Write programs that do one thing very good, that work together (input is the output of another) and that handle streams (bytes strings for I/O), because they are a universal interface.
-- Everything is a file, devices, keyboards, hard drives, etc. these are managed with streams and stored in the /dev folder.
+
+<mark>POSIX:</mark> "Portable Operating System Interface", are a series of standards of use, given by the IEEE (Institute of Electrical and Electronics Engineers) which includes the I/O, the terminal, commands and networking. These standards are usually used to make shells compatibility scripts with many operating systems.
+
+<mark>Single UNIX Specification:</mark> It is a standard for operating systems to use the UNIX tredemark, with interfaces for C language, shell and commands.
+
+<mark>UNIX filosofy (Doug McIlroy):</mark> Write programs that do one thing very good, that work together (input is the output of another) and that handle streams (bytes strings for I/O), because they are a universal interface.
+
+Everything is a file, devices, keyboards, hard drives, etc. these are managed with streams and stored in the /dev folder.
 
 ---
 
@@ -104,15 +111,15 @@ UNIX is an operating system created at the beginning of the 70s in AT&T by Denni
 
 Licences are licenses given by those who have the copyrght of the content, licenses can give you certain use permits depending on the licenses.
 
-Copyright: Is a type of intellectual property that protects the original work of the author, giving the freedom to choose what can and can't be done with his work.
+<mark>Copyright:</mark> Is a type of intellectual property that protects the original work of the author, giving the freedom to choose what can and can't be done with his work.
 
-Copyleft: It is a strategy to use copyright to encourage the right to copy, share, modify and improve works under this license.
+<mark>Copyleft:</mark> It is a strategy to use copyright to encourage the right to copy, share, modify and improve works under this license.
 
-Public Domain: (No Rights Reserved) ![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png) is a license to opt out copyright.
+<mark>Public Domain:</mark> (No Rights Reserved) ![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png) is a license to opt out copyright.
 
 ---
 
-Creative commons: they are free use licenses but with mandatory attribute, commonly used for images, videos and articles. ![CC BY](https://licensebuttons.net/l/by/3.0/88x31.png), ![CC BY-SA](https://licensebuttons.net/l/by-sa/3.0/88x31.png), ![CC BY-ND](https://licensebuttons.net/l/by-nd/3.0/88x31.png), ![CC BY-NC](https://licensebuttons.net/l/by-nc/3.0/88x31.png), ![CC BY-NC-SA](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png) and ![CC BY-NC-ND](https://licensebuttons.net/l/by-nc-nd/3.0/88x31.png).
+<mark>Creative commons:</mark> they are free use licenses but with mandatory attribute, commonly used for images, videos and articles. ![CC BY](https://licensebuttons.net/l/by/3.0/88x31.png), ![CC BY-SA](https://licensebuttons.net/l/by-sa/3.0/88x31.png), ![CC BY-ND](https://licensebuttons.net/l/by-nd/3.0/88x31.png), ![CC BY-NC](https://licensebuttons.net/l/by-nc/3.0/88x31.png), ![CC BY-NC-SA](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png) and ![CC BY-NC-ND](https://licensebuttons.net/l/by-nc-nd/3.0/88x31.png).
 
 
 Open source licenses:
@@ -135,8 +142,8 @@ The Free/Libre software philosophy is related to Richard Stallman and his GNU pr
 Berkeley Software Distribution, is an operating system created at the University of Berkeley in California, it is open source and originally was an extension of AT&T’s Research UNIX, unlike Linux this has the BSD C library, although they can share certain GNU utilities.
 
 The two most important forks are:
-- FreeBSD: is a ["large"](https://svnweb.freebsd.org/base/stable/12/) project with many forked operating systems departing from it, such as FreeNAS, pfsense, etc.
-- OpenBSD: is a relatively more ["small"](https://cvsweb.openbsd.org/src/) than freebsd, it is [innovative](https://www.openbsd.org/innovations.html
+- <mark>FreeBSD</mark>: is a ["large"](https://svnweb.freebsd.org/base/stable/12/) project with many forked operating systems departing from it, such as FreeNAS, pfsense, etc.
+- <mark>OpenBSD:</mark> is a relatively more ["small"](https://cvsweb.openbsd.org/src/) than freebsd, it is [innovative](https://www.openbsd.org/innovations.html
 ) and creates new tools used throughout the unix community like ssh, while being one of the safest operating systems.
 
 These may have certain [advantages and disadvantages](https://serverfault.com/questions/5267/what-is-good-about-the-bsds/5352#5352) regarding Linux.
@@ -164,8 +171,8 @@ I recommend this security [guide](https://wiki.archlinux.org/title/security) fro
 # 2.7 Minimalism
 
 Minimalism regarding Linux, is about using and writing simple programs following the principles of UNIX and KISS, two ideas of minimalism are:
-- Gnuless: some GNU programs may not be the most efficient or minimalist, a video about the theme: [Luke Smith: GNU is bloated!](https://yewtu.be/watch?v=nTCHapo8QFM), where he also talks about [harmfull cat -v](https://harmful.cat-v.org/software/) website which has extreme ideas regarding this topic.
-- [Init freedom](https://www.devuan.org/os/init-freedom): systemd is the most used init system, but this does not follow the unix philosophy since systemd is not only the init system, since it has many other [functions](https://systemd-free.artixlinux.org/why.php) and tools, so using [alternatives](https://without-systemd.org/wiki/index_php/Main_Page/#other_UNIX-like) is [recommended](https://nosystemd.org/).
+- <mark>Gnuless:</mark> some GNU programs may not be the most efficient or minimalist, a video about the theme: [Luke Smith: GNU is bloated!](https://yewtu.be/watch?v=nTCHapo8QFM), where he also talks about [harmfull cat -v](https://harmful.cat-v.org/software/) website which has extreme ideas regarding this topic.
+- <mark>[Init freedom](https://www.devuan.org/os/init-freedom):</mark> systemd is the most used init system, but this does not follow the unix philosophy since systemd is not only the init system, since it has many other [functions](https://systemd-free.artixlinux.org/why.php) and tools, so using [alternatives](https://without-systemd.org/wiki/index_php/Main_Page/#other_UNIX-like) is [recommended](https://nosystemd.org/).
 
 Websites that recommend minimalist software: [lukesmith](https://lukesmith.xyz/programs/) and [suckless.org](https://suckless.org/rocks/).
 
@@ -289,7 +296,7 @@ You can also use a Linux distrubucion that already comes riced, such as [archcra
 
 ---
 
-# **10. Aprender más acerca de Linux**
+# **10. Learn more about Linux**
 
 ---
 

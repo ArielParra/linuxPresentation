@@ -11,7 +11,7 @@ paginate: true
 ![bg opacity:.3](./img/rabithole.png)
 
 # <!--fit--> Linux rabit hole
-## Curso completo de Linux y los temas que lo rodean
+## Curso de Linux y los temas que lo rodean
 ### Por Ariel Parra.
 
 ---
@@ -42,7 +42,9 @@ Es un kernel monolítico de código abierto con licencia GNU GPL v2, usado como 
 ---
 
 <mark>¿Qué es un kernel monolítico?</mark> El kernel es software que tiene el control del hardware, administra y optimiza los recursos del sistema como asignación de memoria RAM, procesos del CPU, drivers, etc. Actuando, así como un puente entre aplicaciones y el hardware. Este es monolítico cuando todos los servicios del sistema operan en el kernel atreves de system calls. 
+
 <mark>¿Qué es el código abierto?</mark> Es software donde cualquier persona puede ver, analizar y por ende modificar el código fuente.
+
 <mark>¿Cuál es la licencia GPLv2?</mark> Es una licencia de software donde cualquier modificación al código debe tener la misma licencia y también que por cada archivo binario que sea distribuido tiene que estar disponible su código fuente. 
 
 ---
@@ -64,7 +66,7 @@ Linux tiene estándares como el LSB (Linux Standard Base) que define system inte
 ---
 
 <style scoped>p {text-align: center; font-size: 20px}</style>
-<style scoped>p {text-align: center; font-size: 20px}</style>
+<style scoped>p {text-align: center; font-size: 20px}</style><!-- no carga correctamente sin esto -->
 
 # 1.4 Linux Filesystem Hierarchy Standard
 
@@ -91,10 +93,14 @@ Imagen recuperada de [wikipedia](https://en.wikipedia.org/wiki/Template%3ALinux_
 # 2.1 UNIX
 
 UNIX es un sistema operativo creado a principios de los 70s en AT&T por Dennis Ritchie (creador del lenguaje C) y Ken Thompson (creador del lenguaje B).
-- POSIX: "Portable Operating System Interface", son una serie de estándares de uso, impuestos por el IEEE (Institute of Electrical and Electronics Engineers) que incluye el I/O, la terminal, comandos y redes. Estos estandares se suele usar para hacer shell scripts compatibiles con muchos sistemas operativos.
-- Single UNIX Specification: Es un estándar para sistemas operativos para usar el tredemark de UNIX , con interfaces para el lenguaje C, el shell y comandos.
-- UNIX filosofy (Doug McIlroy): Escribe programas que hagan una cosa muy bien, que trabajen juntos (input de uno es el output de otro) y que manejen streams (serie de bytes para I/O), porque son  una interfaz universal.
-- Todo es un archivo, los dispositivos, teclados, discos duros, etc. estos son manejados con streams y almacenados en la carpeta /dev .
+
+<mark>POSIX:</mark> "Portable Operating System Interface", son una serie de estándares de uso, impuestos por el IEEE (Institute of Electrical and Electronics Engineers) que incluye el I/O, la terminal, comandos y redes. Estos estandares se suele usar para hacer shell scripts compatibiles con muchos sistemas operativos.
+
+<mark>Single UNIX Specification:</mark> Es un estándar para sistemas operativos para usar el tredemark de UNIX , con interfaces para el lenguaje C, el shell y comandos.
+
+<mark>UNIX filosofy (Doug McIlroy):</mark> Escribe programas que hagan una cosa muy bien, que trabajen juntos (input de uno es el output de otro) y que manejen streams (serie de bytes para I/O), porque son  una interfaz universal.
+
+Todo es un archivo, los dispositivos, teclados, discos duros, etc. estos son manejados con streams y almacenados en la carpeta /dev .
 
 ---
 
@@ -407,45 +413,45 @@ Una distribución (distro) de Linux es un sistema operativo completo con muchos 
 # 4.2 Componentes de una distrubucion de Linux
 
 Los componentes y características que construyen a una distribución de linux son: 
-- Filosofia: KISS/minimalismo, free/libre, bsd userspace, compilación, etc.
-- Uso: juegos, media, privacidad, seguridad, escolar, etc.
-- Release model: fix, rolling release, lts, bleeding edge
-- Boot Loader: GRUB, Syslinux, LILO, systemd-boot, etc.
-- Tipo de kernel: Stable (vanilla), zen, libre, LTS, Realtime, etc.
-- Init system / daemon manager: runit, OpenRC, systemd, SysVinit, s6, dinit, etc.
-- Sistema de archivos (File system): ext2/3/4, Btrfs, XFS, ZFS, etc. 
-- Jerarquia de archivos: Linux File Hierarchy Structure o modificacion de este. 
-- Librería de c: glibc, musl, uClibc, etc.
-- Utilidades básicas: gnu core utils, busybox, util-linux, bin-utils, lspci-utils, etc.
+- <mark>Filosofia:</mark> KISS/minimalismo, free/libre, bsd userspace, compilar, etc.
+- <mark>Uso:</mark> juegos, media, privacidad, seguridad, escolar, etc.
+- <mark>Release model:</mark> fix, rolling release, lts, bleeding edge.
+- <mark>Boot Loader:</mark> GRUB, Syslinux, LILO, systemd-boot, etc.
+- <mark>Tipo de kernel:</mark> Stable (vanilla), zen, libre, LTS, Realtime, etc.
+- <mark>Init system / daemon manager:</mark> runit, OpenRC, systemd, SysVinit, s6, dinit, etc.
+- <mark>Sistema de archivos (File system):</mark> ext2/3/4, Btrfs, XFS, ZFS, etc. 
+- <mark>Jerarquia de archivos:</mark> usa el LFHS o usa una modificacion de este. 
+- <mark>Librería de c:</mark> glibc, musl, uClibc, bionic, etc.
+- <mark>Utilidades básicas:</mark> gnu core utils, busybox, util-linux, bin-utils, lspci-utils, etc.
 
 ---
 
-- Interfaz de shell: bash, zsh, fish, dash, ash, etc.
-- Servidor grafico: Xorg (X11) / protocolo grafico: Wayland.
-- Tecnología de audio: ALSA, pulseaudio, Jackaudio, Pipewire.
-- Login/Display manager: ssdm (KDE), GDM (GNOME), LightDM, etc.
-- Window manager: dwm, sway, i3, xmonad, Hyprland, etc.    
-- Desktop environment: Gnome, Plasma, xfce4, etc. 
-- Graphics Toolkits: GTK+ , Qt, etc.
-- Gestor de paquetes (package manager): apt, DNF, pacman, portage, yay, etc.
-- Formato de paquetes: .deb, .rpm, .pkg.tar.zst, source code, install scripts, etc.
+- <mark>Interfaz de shell:</mark> bash, zsh, fish, dash, ash, etc.
+- <mark>Servidor grafico:</mark> Xorg (X11) / protocolo grafico: Wayland.
+- <mark>Tecnología de audio:</mark> ALSA, pulseaudio, Jackaudio, Pipewire.
+- <mark>Login/Display manager:</mark> ssdm (KDE), GDM (GNOME), LightDM, etc.
+- <mark>Window manager:</mark> dwm, sway, i3, xmonad, Hyprland, etc.    
+- <mark>Desktop environment:</mark> Gnome, Plasma, xfce4, Unity, MATE etc. 
+- <mark>Graphics Toolkits:</mark> GTK+ , Qt, etc.
+- <mark>Gestor de paquetes (package manager):</mark> apt, DNF, pacman, portage, yay, etc.
+- <mark>Formato de paquetes:</mark> .deb, .rpm, .pkg.tar.zst, source code, install scripts, etc.
 
 ---
 
-- Repositorio de paquetes de la distribución.
-- Aplicaciones incluidas: 
-    - Terminal (CLI/TUI):
-        - Editor de textos: nano, vim, neovim, emacs, etc.
-        - Información: neofetch, htop, etc.
-        - Etc.
-    - Graficas (GUI):
-        - Navegador: Firefox, Librewolf, Chromium, etc.
-        - Office Suite: Libreoffice, Onlyoffice, Calligra etc.
-        - Emulador de terminal: konsole, gnome-terminal, alacritty, kitty, st, etc. 
-        - Editor de textos: kate, Gnome text editor, gvim, etc.
-        - Explorador de archivos: nautilus (gnome), dolphin (KDE)
-        - Visualizador de imágenes: feh, gwenviwer, etc.
-        - Etc.
+- <mark>Repositorio de paquetes de la distribución.</mark>
+- <mark>Aplicaciones incluidas:</mark> 
+    - <mark>Terminal (CLI/TUI):</mark>
+        - <mark>Editor de textos:</mark> nano, vim, neovim, emacs, ed etc.
+        - <mark>Información:</mark> neofetch, htop, btop, etc.
+        - [Etc.](https://wiki.archlinux.org/title/list_of_applications)
+    - <mark>Graficas (GUI):</mark>
+        - <mark>Navegador:</mark> Firefox, Librewolf, Brave, Chromium, etc.
+        - <mark>Office Suite:</mark> Libreoffice, Onlyoffice, Calligra, etc.
+        - <mark>Emulador de terminal:</mark> konsole, gnome-terminal, alacritty, kitty, etc. 
+        - <mark>Editor de textos:</mark> kate, Gnome text editor, gvim, etc.
+        - <mark>Explorador de archivos:</mark> nautilus (gnome), dolphin (KDE)
+        - <mark>Visualizador de imágenes:</mark> feh, gwenviwer, eog, Sxiv etc.
+        - [Etc.](https://wiki.gentoo.org/wiki/Recommended_applications)
 
 ---
 
@@ -453,23 +459,23 @@ Los componentes y características que construyen a una distribución de linux s
 
 Hay distribuciones hechas con un uso especifico estas pueden ser conjuntos de programas y configuraciones que adecuan el sistema a ese uso, aunque sigues teniendo la libertad de poder modificarlo a tu gusto:
 
-- Juegos: SteamOS, ChimeraOS, popOS, Fedora Games spin, etc.
-- Routing: openWRT, LibreCMC, ipfire, alpine, etc.
-- Media: Ubuntu Studio, Fedora Design Suite, etc.
-- Escolar: Uaabuntu, Edubuntu, Zorin OS 16 Education, etc.
-- Privacidad/Seguridad: Whonix y/o Qubes, Tails, etc. 
+- <mark>Juegos:</mark> SteamOS, ChimeraOS, popOS, Fedora Games spin, etc.
+- <mark>Routing:</mark> openWRT, LibreCMC, ipfire, alpine, etc.
+- <mark>Multimedios:</mark> Ubuntu Studio, Fedora Design Suite, etc.
+- <mark>Escolar:</mark> Uaabuntu, Edubuntu, Zorin OS 16 Education, etc.
+- <mark>Privacidad/Seguridad:</mark> Whonix y/o Qubes, Tails, etc. 
 
 Hay dos grandes categorías de distribuciones:
-- Independientes: tienen su propio package manager y repositorio
-- Derivados: tienen compatibilidad con quien se derivaron y pueden crear una sinergia: debian <-> ubuntu, SUSE <-> openSUSE, RHEL <-> fedora.
+- <mark>Independientes:</mark> tienen su propio package manager y repositorio
+- <mark>Derivados:</mark> tienen compatibilidad con quien se derivaron y pueden crear una sinergia: debian <-> ubuntu, SUSE <-> openSUSE, RHEL <-> fedora.
   
 ---
  
-- Tipos de distribuciones derivadas: 
-- Flavour: con otros escritorios, temas, y/o aplicaciones, siendo reconocidas por la distribución, por ejemplo, para Ubuntu hay flavours como: edubuntu,ubuntu,lubuntu, etc. 
-- Remix/Respin: modificación ofreciendo algo nuevo, pero sin ser reconocidos por la distribución. 
-- Fork: hacen cambios grandes, cambiando el uso, filosofía, etc. 
-- Clone/Repackage: copian el código y tienen otra infraestructura para la distribución, por ejemplo, para RHEL hay repackages como Rocky linux, Oracle Linux, etc. 
+Tipos de distribuciones derivadas: 
+- <mark>Flavour:</mark> con otros escritorios, temas, y/o aplicaciones, siendo reconocidas por la distribución, por ejemplo, para Ubuntu hay flavours como: edubuntu,ubuntu,lubuntu, etc. 
+- <mark>Remix/Respin:</mark> modificación ofreciendo algo nuevo, pero sin ser reconocidos por la distribución. 
+- <mark>Fork:</mark> hacen cambios grandes, cambiando el uso, filosofía, etc. 
+- <mark>Clone/Repackage:</mark> copian el código y tienen otra infraestructura para la distribución, por ejemplo, para RHEL hay repackages como Rocky linux, Oracle Linux, etc. 
 
 Hay muchísimas [distribuciones](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg) para elegir, pero hay cuatro componentes principales que diferencian a una distribución de linux, estos son: el sistema de arranque (init system/daemon), gestor de paquetes (package manager), la librería de c y las core utils.
 
@@ -714,13 +720,13 @@ Categorice los comandos que creo más importantes en su función y los marque en
 ---
 
 # 6.3 Funciones especificos de la distro
-- [WIFI](https://wiki.debian.org/WiFi/HowToUse): NetworkManager, IWD, ConnMan, wpa_supplicant.
-- [Firewalls](https://wiki.archlinux.org/title/Uncomplicated_Firewall): iptables, uwd, firewalld.
-- Package Manager: [apt](https://wiki.debian.org/DebianPackageManagement), [pacman](https://wiki.archlinux.org/title/Pacman/Tips_and_tricks), [portage](https://wiki.gentoo.org/wiki/Portage), [YUM](https://www.redhat.com/sysadmin/how-manage-packages), [Zypper](https://en.opensuse.org/SDB:Zypper_usage) etc.
-- Init system: poweroff, shutdown, poweroff, halt.
-    - daemon management: [systemctl](https://wiki.archlinux.org/title/systemd), [sv](https://docs.voidlinux.org/config/services/index.html), [rc-service](https://github.com/OpenRC/openrc/blob/master/user-guide.md), etc.
-- [Cron jobs](https://wiki.gentoo.org/wiki/Cron): cronie, fcron, dcron, etc. 
-- shell scripts: [Shebang](https://bash.cyberciti.biz/guide/Shebang), [compatibilidad](https://www.baeldung.com/linux/test-posix-compliance-shell-scripts) [posix](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html).
+- <mark>[WIFI](https://wiki.debian.org/WiFi/HowToUse):</mark> NetworkManager, IWD, ConnMan, wpa_supplicant.
+- <mark>[Firewalls](https://wiki.archlinux.org/title/Uncomplicated_Firewall):</mark> iptables, uwd, firewalld.
+- <mark>Package Manager:</mark> [apt](https://wiki.debian.org/DebianPackageManagement), [pacman](https://wiki.archlinux.org/title/Pacman/Tips_and_tricks), [portage](https://wiki.gentoo.org/wiki/Portage), [YUM](https://www.redhat.com/sysadmin/how-manage-packages), [Zypper](https://en.opensuse.org/SDB:Zypper_usage) etc.
+- <mark>Init system:</mark> poweroff, shutdown, poweroff, halt.
+    - <mark>daemon management:</mark> [systemctl](https://wiki.archlinux.org/title/systemd), [sv](https://docs.voidlinux.org/config/services/index.html), [rc-service](https://github.com/OpenRC/openrc/blob/master/user-guide.md), etc.
+- <mark>[Cron jobs](https://wiki.gentoo.org/wiki/Cron):</mark> cronie, fcron, dcron, etc. 
+- <mark>shell scripts:</mark> [Shebang](https://bash.cyberciti.biz/guide/Shebang), [compatibilidad](https://www.baeldung.com/linux/test-posix-compliance-shell-scripts) [posix](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html), [bash](https://en.wikibooks.org/wiki/Bash_Shell_Scripting#Beginning_Bash), etc.
 
 ---
 
@@ -806,7 +812,7 @@ CPU secuirity rings. Imagen recuperada de [RealWorldCyberSecurity](https://mediu
 
 Es una familia de procesadores con arquitectura  RISC (Reduce instruction set computing) con un ISA close-source; este tiene un TEE (Trusted Execution Environment) close-source llamado TrustZone la cual puede tener [vulnerabilidades](https://blog.quarkslab.com/attacking-the-arms-trustzone.html)
 
-Es el procesador más usado en el [mundo](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/worldwide) ya que este se encuentra en los celulares, aunque también se pueden encontrar en laptops, computadoras de escritorios, servidores y single board computers. La razón de esto es su eficiencia energética.
+Es el procesador más usado en el [mundo](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/worldwide) ya que este se encuentra en los celulares, siendo Android un sistema operativo basado en linux donde incluso puedes tener un gestor de paquetes y un emulador de terminal no oficial con [termux](https://termux.dev/en/); aunque también este procesador puede ser  encontrado en laptops, computadoras de escritorios, servidores y single board computers. La razón de esto es su eficiencia energética y por ende su baja producción de calor.
 
 ---
 
@@ -854,26 +860,26 @@ Las distribuciones [más usadas](https://w3techs.com/technologies/details/os-lin
 
 Los file systems más usados son ZFS (openZFS) o XFS, pero recomiendo este [video](https://yewtu.be/watch/?v=HdEozE2gN9I) de Chris Titus para elegir el file system para tu servidor.
 
-conteiners: permiten la agrupación y aislamiento de aplicaciones con todo su entorno de ejecución, para mantener la funcionalidad. Los soluciones más usadas son [Docker](https://www.docker.com/), [Podman](https://podman.io/), [Skopeo](https://github.com/containers/skopeo), [Buildah](https://buildah.io/) y [Conteinerd](https://containerd.io/).
+<mark>conteiners:</mark> permiten la agrupación y aislamiento de aplicaciones con todo su entorno de ejecución, para mantener la funcionalidad. Los soluciones más usadas son [Docker](https://www.docker.com/), [Podman](https://podman.io/), [Skopeo](https://github.com/containers/skopeo), [Buildah](https://buildah.io/) y [Conteinerd](https://containerd.io/).
 
-Conteiner Helpers: [Kubernetes](https://kubernetes.io/), [Porteiner](https://www.portainer.io/), [Rancher](https://rancherdesktop.io/), [Yatch](https://yacht.sh/), [LazyDocker](https://github.com/jesseduffield/lazydocker) y [CasaOS](https://casaos.io/).
+<mark>Conteiner Helpers:</mark> [Kubernetes](https://kubernetes.io/), [Porteiner](https://www.portainer.io/), [Rancher](https://rancherdesktop.io/), [Yatch](https://yacht.sh/), [LazyDocker](https://github.com/jesseduffield/lazydocker) y [CasaOS](https://casaos.io/).
 
 El web server más usado es nginx con el [34.4%](https://w3techs.com/technologies/overview/web_server) del total de páginas web y este tiene [ventajas](https://www.digitalocean.com/community/tutorials/apache-vs-nginx-practical-considerations) sobre Apache en varios aspectos.
 
 ---
 
-RAID: Redundant Array of Independent Disks,storage, los discos duros son más baratos que los ssd pero estos pueden fallar y ser más lentos, las soluciones que hay son: [RAIDZ](https://openzfs.github.io/openzfs-docs/Basic%20Concepts/RAIDZ.html) con ZFS o [MergerFS](https://github.com/trapexit/mergerfs) + [SnapRAID](https://www.snapraid.it/manual), RAID5, RAID6, RAID10, etc.
+<mark>RAID:</mark> Redundant Array of Independent Disks,storage, los discos duros son más baratos que los ssd pero estos pueden fallar y ser más lentos, las soluciones que hay son: [RAIDZ](https://openzfs.github.io/openzfs-docs/Basic%20Concepts/RAIDZ.html) con ZFS o [MergerFS](https://github.com/trapexit/mergerfs) + [SnapRAID](https://www.snapraid.it/manual), RAID5, RAID6, RAID10, etc.
 
 
-Antivirus: [ClamAV](www.clamav.net) es el unico antivirus open-source actualizado constantemente.
+<mark>Antivirus:</mark> [ClamAV](www.clamav.net) es el antivirus open-source más popular y actualizado.
 
-Acceso remoto: 
-- [ssh X11 forwarding](https://wiki.archlinux.org/title/OpenSSH#X11_forwarding): ssh -X \<usuario>@\<ip>, ssh -Y \<usuario>@\<ip>
-- VNC: Virtual Network Computing
+<mark>Acceso remoto:</mark>
+- <mark>[ssh X11 forwarding](https://wiki.archlinux.org/title/OpenSSH#X11_forwarding):</mark> ssh -X \<usuario>@\<ip>, ssh -Y \<usuario>@\<ip>
+- <mark>VNC:</mark> Virtual Network Computing
     - servers: [wayvnc](https://github.com/any1/wayvnc), [x11vnc](https://github.com/LibVNC/x11vnc) y [tigervnc](https://tigervnc.org/).
-- RDP: Remote Desktop Protocol, es un protocolo originalmente de Microsoft, 
+- <mark>RDP:</mark> Remote Desktop Protocol, es un protocolo originalmente de Microsoft, 
     - server: [xrdp](https://www.xrdp.org/) y [freeRDP](https://www.freerdp.com/)
-- clientes VNC y RDP: [Gnome Connections](https://apps.gnome.org/app/org.gnome.Connections/), [KRDC](https://apps.kde.org/krdc/) y [Remmina](https://flathub.org/apps/org.remmina.Remmina) .
+- <mark>Clientes VNC y RDP:</mark> [Gnome Connections](https://apps.gnome.org/app/org.gnome.Connections/), [KRDC](https://apps.kde.org/krdc/) y [Remmina](https://flathub.org/apps/org.remmina.Remmina) .
 
 
 ---
@@ -900,16 +906,7 @@ Reverse proxy: es un servidor que redirecciona el tráfico al servidor de la pá
 
 Hardware: Se suelen usar discos duros de 3.5" certificados para funcionar 24/7 como los [Segate Ironwolf](https://www.seagate.com/products/nas-drives/ironwolf-hard-drive/) o los [Western Digital Red](https://www.westerndigital.com/solutions/network-attached-storage/NAS-for-heavy-duty-storage), tambien se suele usar ECC RAM para prevenir corrupción de datos, se sulene usar procesadores x64 [Intel XEON](https://www.intel.com/content/www/us/en/products/docs/processors/xeon/server-processor-overview.html) y [AMD EPYC](https://www.amd.com/en/processors/epyc-server-cpu-family).
 
-Server Rack: Son monturas para servidores 
-varias formas: parded, etc
-rack unit (abbreviated U or RU) is a unit of measure defined as 1+3⁄4 inches (44.45 mm
-    EIA 310E
-    UL2416
-    RoHS
-    REACH
-    IBC 2012
-
----
+Server Rack: Son monturas para servidores, en muchas formas: gabinetes cerrados y abiertos, verticales, etc. Estos usualmente tienen una longitud de 19", profundidad hasta 50" y una altura de 42U o 45U usando los rack units (1.75").
 
 VPS: Virtual Personal Server, son servidores en la "nube", yo recomiendo [vultr](https://www.vultr.com/), pero hay alternativas gratuitas como [AWS Free tier](https://aws.amazon.com/free/) (por 12 meses) y [Oracle Cloud Free Tier](https://www.oracle.com/cloud/free/) (para siempre).
 
@@ -988,6 +985,7 @@ Soluciones/actualizaciones: [USB en vez de microSD para SBCs](https://cdn-learn.
 <style scoped>{font-size: 21px;}</style>
 
 - Adekotujo, A., Odumabo, A., Adedokun, A., & Aiyeniko, O. (2020). *A Comparative Study of Operating Systems: Case of Windows, UNIX, Linux, Mac, Android and iOS*. https://www.researchgate.net/profile/Adedoyin-Odumabo/publication/343013056_A_Comparative_Study_of_Operating_Systems_Case_of_Windows_UNIX_Linux_Mac_Android_and_iOS/links/61f2b50a9a753545e2fe8300/A-Comparative-Study-of-Operating-Systems-Case-of-Windows-UNIX-Linux-Mac-Android-and-iOS.pdf
+- Android. (2023). * Platform architecture*. https://developer.android.com/guide/platform
 - arm. (s.f.). *     CPU Architecture: A Foundation for Computing Everywhere*. https://www.arm.com/architecture/cpu
 - arm. (s.f.). *TrustZone for Cortex-A*. https://www.arm.com/technologies/trustzone-for-cortex-a
 - Boschs, P. (2019) *Introduction to the Intel Management Engine OS (Part 1)*. https://pbx.sh/intelme-sw1/#hasarfaty_2019
@@ -996,6 +994,11 @@ Soluciones/actualizaciones: [USB en vez de microSD para SBCs](https://cdn-learn.
 - Cloudflare. (s.f.). *What is dynamic DNS (DDNS)?*. https://www.cloudflare.com/learning/dns/glossary/dynamic-dns/
 - copyright.gov. (s.f.). *What is Copyright?*. https://www.copyright.gov/what-is-copyright/
 - copyright.org. (s.f.). *What is copyleft?*. https://copyleft.org/
+
+---
+
+<style scoped>{font-size: 21px;}</style>
+
 - coreboot. (2017). *1. AMD Platform Security Processor (PSP) Firmware Integration Guide*. https://doc.coreboot.org/soc/amd/psp_integration.html#platform-security-processor-psp-overview  
 - Cray. (2016). *The final ISA showdown: Is ARM, x86, or MIPS intrinsically more power efficient?*. https://community.arm.com/arm-community-blogs/b/architectures-and-processors-blog/posts/the-final-isa-showdown-is-arm-x86-or-mips-intrinsically-more-power-efficient
 - creativecommons. (s.f). *About The Licenses*. https://creativecommons.org/licenses/
@@ -1003,9 +1006,16 @@ Soluciones/actualizaciones: [USB en vez de microSD para SBCs](https://cdn-learn.
 - David Both. (2014). *The impact of the Linux philosophy*.https://opensource.com/business/14/12/linux-philosophy
 - Dayzerosec. (2023). *Reversing the AMD Secure Processor (PSP) - Part 1: Design and Overview*. https://dayzerosec.com/blog/2023/04/17/reversing-the-amd-secure-processor-psp.html
 - Dodge, C., Irvine, C., & Nguyen, T. (2005). *A study of initialization in Linux and OpenBSD*. https://core.ac.uk/download/pdf/36700709.pdf
+- Dominic Humphries. (2006).  *Linux is Not Windows*. https://linux.oneandoneis2.org/LNW.htm
 - Eric Steven Raymond. (2003). *Basics of the Unix Philosophy*. http://www.catb.org/~esr/writings/taoup/html/ch01s06.html
 - ExplainingComputers. (2022). *Explaining RISC-V: An x86 & ARM Alternative* [Video]. https://yewtu.be/watch?v=Ps0JFsyX2fU
 - ezeelinux. (2018). *Linux Distributions Deconstructed*. https://www.ezeelinux.com/news/linux-distributions-deconstructed/
+
+
+---
+
+<style scoped>{font-size: 21px;}</style>
+
 - Fireship. (2022). *Linux in 100 Seconds* [Video]. YouTube. https://yewtu.be/watch?v=rrB13utjYV4
 - freeBSD. (2023). *Explaining BSD*. https://docs.freebsd.org/en/articles/explaining-bsd/
 - freundschafter. (2018). *About AMD TrustZone, AMD Platform Security Processor (PSP), AMD Secure Technology*. https://freundschafter.com/research/about-amd-trustzone-amd-platform-security-processor-psp-amd-secure-technology/
@@ -1019,6 +1029,12 @@ Soluciones/actualizaciones: [USB en vez de microSD para SBCs](https://cdn-learn.
 - Linus Torvalds. (1997). *Linux: a Portable Operating System*. https://www.cs.helsinki.fi/u/kutvonen/index_files/linus.pdf
 - Linux Foundation. (2015). *Filesystem Hierarchy Standard*. https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.html
 - Linux Foundation. (2015). *Linux Standard Base*. https://refspecs.linuxfoundation.org/lsb.shtml
+
+
+---
+
+<style scoped>{font-size: 21px;}</style>
+
 - Machtelt Garrels. (2008). *Introduction to Linux*. https://tldp.org/LDP/intro-linux/intro-linux.pdf
 - Michael Tunnell. (2023). *Explaining Linux Family Trees: Why Are There So Many Linux Distros?* [Video]. https://yewtu.be/watch?v=kF8CRt05s6A
 - NGINX. (s.f). *What Is a Reverse Proxy Server?*. https://www.nginx.com/resources/glossary/reverse-proxy-server/
@@ -1027,6 +1043,7 @@ Soluciones/actualizaciones: [USB en vez de microSD para SBCs](https://cdn-learn.
 - Opensource.com. (s.f). *What is open source?*.https://opensource.com/resources/what-open-source
 - Open Source Initiative. (2007). *The Open Source Definition*. https://opensource.org/osd/
 - Open source initiative. (s.f). *OSI Approved Licenses*. https://opensource.org/licenses/
+- Rack Solutions. (2020). *Server Rack Sizes: Understanding the Differences*. https://www.racksolutions.com/news/blog/server-rack-sizes/
 - Red Hat. (2019). *What is the Linux kernel?*. https://www.redhat.com/en/topics/linux/what-is-the-linux-kernel
 - Red Hat. (2023). *Understanding containers*. https://www.redhat.com/en/topics/containers
 - Roch, B. (2004). *Monolithic kernel vs. Microkernel*. https://web.cs.wpi.edu/~cs3013/c12/Papers/Roch_Microkernels.pdf 
@@ -1034,15 +1051,18 @@ Soluciones/actualizaciones: [USB en vez de microSD para SBCs](https://cdn-learn.
 - SUSE. (s.f.). *Linux Distribution*. https://www.suse.com/suse-defines/definition/linux-distribution/ 
 - The Linux Experiment. (2018). *Linux DISTRIBUTION: explained* [Video]. https://yewtu.be/watch?v=6gqLWTSz6ck
 - The Linux Information Project. (2005). *Flavors of UNIX Definition*. http://www.linfo.org/flavors.html
+
+
+---
+
+<style scoped>{font-size: 21px;}</style>
+
 - The Linux Information Project. (2006). *What is Linux?*. http://www.linfo.org/newbies.html
 - The Linux Kernel Organization. (2019). *About Linux Kernel*. https://www.kernel.org/linux.html
 - The Linux Kernel Organization. (2019). *Is Linux Kernel Free Software?*. https://www.kernel.org/category/faq.html
 - The Open Group. (2008). *The Single UNIX Specification, Version 4*. https://unix.org/version4/overview.html
+- TRIPP LITE. (s.f.). *Server Racks Explained*. https://tripplite.eaton.com/products/server-racks-explained
 - University of Pittsburgh. (2022). *Copyright and Intellectual Property Toolkit*. https://pitt.libguides.com/copyright/licenses
+- Vertiv. (s.f.). *What Is a Server Rack?*. https://www.vertiv.com/en-us/about/news-and-insights/articles/educational-articles/what-is-a-server-rack/
 - Westerndigital. (s.f.). *RAID Storage*. https://www.westerndigital.com/solutions/raid
 - Wheeler, D. (2003). *History of Unix, Linux, and Open Source / Free Software*.  https://tldp.org/HOWTO/Secure-Programs-HOWTO/history.html
-
-- Vertiv. (s.f.). *What Is a Server Rack?*. https://www.vertiv.com/en-us/about/news-and-insights/articles/educational-articles/what-is-a-server-rack/
-- TRIPP LITE. (s.f.). *Server Racks Explained*. https://tripplite.eaton.com/products/server-racks-explained
-- Rack Solutions. (2020). *Server Rack Sizes: Understanding the Differences*. https://www.racksolutions.com/news/blog/server-rack-sizes/
-- Dominic Humphries. (2006).  *Linux is Not Windows*. https://linux.oneandoneis2.org/LNW.htm

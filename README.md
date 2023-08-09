@@ -1,6 +1,6 @@
 ![bg](./img/rabithole.png)
 # Linux rabit hole
-## Full course of Linux and the topics surrounding it
+## A course about Linux and the topics surrounding it
 ### By Ariel Parra.
 ---
 
