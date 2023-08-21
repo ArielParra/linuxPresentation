@@ -158,6 +158,8 @@ Recominedo esta [guia](https://www.privacyguides.org/en/) de privacidad o tambie
 - Las VPN no te dan [privacidad](https://gist.github.com/joepie91/5a9909939e6ce7d09e29).
 - La gente esta [desinformada](https://www.whonix.org/wiki/Tor_Myths_and_Misconceptions) acerca de tor.
 
+---
+
 # 2.6 Seguridad
 
 Recomiendo esta [guia](https://wiki.archlinux.org/title/security) de seguridad de la arch wiki.
@@ -201,6 +203,9 @@ Tambien puedes usar una distrubucion de Linux que ya venga riceada, como [archcr
 - Tiempos menores de [compilacion](https://medium.com/aedm/windows-wsl-and-linux-a-build-time-benchmark-for-java-rust-go-and-node-43188a9c77d6)
 - Mejores resultados en [geekbench](https://yewtu.be/watch?v=7BreeFlhP78).
 - Usa menos memoria [RAM](https://yewtu.be/watch?v=L3d9okxKcjM).
+
+---
+
 - Es un sistema operativo [portable](https://www.oreilly.com/library/view/linux-kernel-development/0672327201/ch19.html).
 - Tiene multiples [comunidades](https://www.makeuseof.com/tag/4-helpful-communities-new-linux-users/) para soporte.
 - Tiene GPU drivers open-source de [AMD](https://gpuopen.com/amd-open-source-driver-for-vulkan/), [Intel](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-open-source-graphics-drivers-and-vulkan-graphics-api.html) y [Nvidia](https://nouveau.freedesktop.org/).
@@ -229,6 +234,9 @@ Tambien puedes usar una distrubucion de Linux que ya venga riceada, como [archcr
 - No puedes correr ciertas aplicaciones: [Adobe Photoshop](https://appdb.winehq.org/objectManager.php?sClass=application&iId=17), [MS Office](https://appdb.winehq.org/objectManager.php?sClass=application&iId=31), [etc](https://appdb.winehq.org/).
 - Problemas con [impresoras](https://opensource.com/article/21/8/add-printer-linux).
 - Sin soporte para [HDR](https://wiki.archlinux.org/title/HDR_monitor_support).
+
+---
+
 - Problemas con [variable refresh rate](https://wiki.archlinux.org/title/Variable_refresh_rate).
 - Problemas con [fractional scaling](https://wiki.archlinux.org/title/HiDPI).
 - Screen tearing en [X11 (xorg)](https://christitus.com/fix-screen-tearing-linux/).
@@ -246,6 +254,9 @@ Tambien puedes usar una distrubucion de Linux que ya venga riceada, como [archcr
 - Juegos nativos como [roblox](https://www.roblox.com/download) o juegos de Blizzard como [WOW](https://www.blizzard.com/en-sg/download?platform=macos).
 - Aplicaciones nativas como [Adobe Photoshop](https://helpx.adobe.com/support/photoshop.html), [MS Office](https://www.microsoft.com/en-us/microsoft-365/mac/microsoft-365-for-mac), [FL Studio](https://www.image-line.com/), etc.
 - Compatibilidad y uso de [heic/hecv](https://support.apple.com/en-us/HT207022) integrado al sistema.
+
+---
+
 - Tienen el [ecosistema de apple](https://www.apple.com/macos/continuity/).
 - Tienen de los mejores [procesadores arm](https://www.techspot.com/review/2499-apple-m2/) para escritorio y soporte de aplicaciones de iOS.
 - Soporte de [HDR](https://support.apple.com/en-us/HT210980).
@@ -262,6 +273,9 @@ Tambien puedes usar una distrubucion de Linux que ya venga riceada, como [archcr
 - Hardware [oficial](https://everymac.com/systems/apple/index-apple-specs-applespec.html) y [no oficial](https://hackintosh.com/#hackintosh_compatible) limitados.
 - Las computadoras Mac son [costosas](https://everymac.com/global-mac-prices/mac-prices-mexico-mx.html).
 - La existencia de [OCSP](https://blog.jacopo.io/en/post/apple-ocsp/).
+
+---
+
 - Múltiples  problemas de [privacidad](https://sneak.berlin/20201112/your-computer-isnt-yours/).
 - [Contratos de licencia de software](https://www.apple.com/legal/sla/) restrictivos.
 - Posibles conexiones con NSA e implicación con [PRISM](https://www.washingtonpost.com/investigations/us-intelligence-mining-data-from-nine-us-internet-companies-in-broad-secret-program/013/06/06/3a0c0da8-cebf-11e2-8845-d970ccb04497_story.html).
@@ -290,7 +304,8 @@ Tambien puedes usar una distrubucion de Linux que ya venga riceada, como [archcr
 - Soporte de [HDR](https://support.microsoft.com/en-us/windows/hdr-settings-in-windows-2d767185-38ec-7fdc-6f97-bbc6c5ef24e6). 
 - Grabar clips con [Game DVR](https://support.microsoft.com/en-us/windows/record-a-game-clip-on-your-pc-with-xbox-game-bar-2f477001-54d4-1276-9144-b0416a307f3c)
 - Windows Subsystem for Linux [(WSL)](https://learn.microsoft.com/en-us/windows/wsl/about) y Windows Subsystem for Android [(WSA)](https://learn.microsoft.com/en-us/windows/android/wsa/). 
- 
+- Compatibilidad completa con [MiraCast](https://support.microsoft.com/en-au/windows/connect-your-windows-pc-to-an-external-display-that-supports-miracast-765f5cfc-6ef3-fba7-98da-c8267b001a5a#ID0EDD=Windows_10).
+
 ---
 
 # 3.8 Desventajas de Windows
@@ -300,14 +315,20 @@ Tambien puedes usar una distrubucion de Linux que ya venga riceada, como [archcr
 ## 3.8.1 Desarrollador
 
 - [Java updater](https://www.java.com/en/download/help/java_update.html) esta siempre activo en segundo plano.
+- Tienes que agregar JavaHome al Path manualmente.
+- Problemas al instalar el compilador de C/C++ en VScode.
 - Ejecuta programas de manera lenta (a tirones) aunque sea con powershell.
 - Hyper-V, Windows hypervisor platform, BitLocker, Group Policy Editor y Remote Desktop solo estan disponibles para [Windows Pro](https://www.microsoft.com/en-us/windows/compare-windows-10-home-vs-pro).
 - Virtual Machine Platform, Hyper-V, Windows hypervisor platform y WSL2 interfieren con aplicaciones: [dell alienware control](https://www.dell.com/community/Alienware-Desktops/AWCC-OC-Controls-incompatible-with-Virtual-Machine-Platform/m-p/8239494#M60811), [throttle stop](https://www.techpowerup.com/forums/threads/throttlestop-dead-on-windows-11.284102/), etc.
+
+---
+
 - Los hosts en Windows son [read-only](https://superuser.com/questions/958991/windows-10-cant-edit-hosts-file) y modificarlo puede alertar al [antivirus](https://support.microsoft.com/en-au/topic/hosts-file-is-detected-as-malware-in-windows-defender-4320fa8b-0d54-1129-db85-61f095144521).
 - Para correr un ["hello world!"](https://stackoverflow.com/questions/55603111/unable-to-compile-rust-hello-world-on-windows-linker-link-exe-not-found) de rust ocupas que descargar visual studio community junto con 1gb para los c++ build tools y el Windows SDK.
 - Visual studio community usa como [10gb](https://developercommunity.visualstudio.com/t/visual-studio-uses-too-disk-much-space/145475) o [más](https://developercommunity.visualstudio.com/t/hard-disk-space-loss/585904).
 - Problemas con librerías, a veces tienes que compilarlas manualmente como [pycripto](https://old.reddit.com/r/webdev/comments/132eql/owhy_many_people_dislike_windows_as_an_development/) o en mi caso librespot de rust.
 - Problemas de velocidad con [I/O y ntfs](https://github.com/Microsoft/WSL/issues/873).
+- RDP tiene [limitaciones](https://superuser.com/questions/1352039/how-do-i-prevent-lock-screen-of-remote-computer-when-remote-rdp-connection-into) en la versión Home de Windows.
 
 ---
 
@@ -316,20 +337,25 @@ Tambien puedes usar una distrubucion de Linux que ya venga riceada, como [archcr
 - Las apps por defecto se actualizan individualmente ya sea abriendo la aplicación o teniendo que descargar la nueva versión de la página del creador.
 - Para usar winget ocupas una cuenta Microsoft para descargar [App-Installer](https://apps.microsoft.com/store/detail/appinstaller/9NBLGGH4NNS1?hl=de-at&gl=at&rtc=1) de la microsoft store y para usarlo ocupas constantemente aceptar los [UAC](https://learn.microsoft.com/en-us/windows/package-manager/winget/) prompts, aparte de aceptar la [CLA](https://opensource.microsoft.com/cla/).
 - No puedes nombrar archivos con ciertos [nombres](https://yewtu.be/watch?v=bC6tngl0PTI).
+- La busqueda de archivos en el explorador de archivos es lenta.
+- El buscador de Windows da resultados de bing por defecto.
+
+---
+
 - Windows pro cuesta [$6399](https://www.microsoft.com/es-mx/d/windows-11-pro/dg7gmgf0d8h4) pesos MXN.
 - windows 11 [requiere](https://learn.microsoft.com/en-us/windows/whats-new/windows-11-requirements) a tener una cuenta Microsoft y usarla en tu sistema.
 - El sistema operativo se expande hasta más de [40gb](https://superuser.com/questions/1467359/windows-takes-up-40gb-of-disk-space).
 - El buscador de windows es [ineficiente](https://computerinfobits.com/why-is-windows-10-search-so-bad/).
 - Prefetch y superfetch (SysMain), suelen tener el disco duro al [100%](https://yewtu.be/watch?v=MmH4tjH2yMc) de uso.
-
----
-
 - Suele haber más [virus](https://www.howtogeek.com/141944/htg-explains-why-windows-has-the-most-viruses/) que macOS o Linux  
 - aplicaciones freeware pueden tener virus como [atubecatcher](https://old.reddit.com/r/antivirus/comments/snqipr/is_atube_catcher_a_virus/), etc. 
 - La Microsoft store tiene aplicaciones más aplicaciones [.appx](https://learn.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/schema-root) que .exe 
 - Tienes que pagar para poder usar archivos [HEVC](https://apps.microsoft.com/store/detail/hevc-video-extensions/9NMZLZ57R3T7?hl=en-us&gl=us&activetab=pivot%3Aoverviewtab) 
+
+---
+
 - Windows incluye [bloatware](https://www.digitalcitizen.life/windows-10-bloatware/) 
-- Los antivirus pueden bloquear aplicaciones/servicios en el [firewall](https://www.mcafee.com/support/?locale=en-US&articleId=TS102946&page=shell&shell=article-view)  
+- Los antivirus pueden bloquear aplicaciones/servicios en el [firewall](https://www.mcafee.com/support/?locale=en-US&articleId=TS102946&page=shell&shell=article-view)
 - Windows Antimalware Service puede usar [100%](https://answers.microsoft.com/en-us/windows/forum/all/high-cpu-usage-by-antimalware-service-executable/4f6f635a-b3ad-444c-8cd0-68fb1e9f4bfa) del CPU 
 - Problemas en pantallas con [high dpi](https://support.microsoft.com/en-gb/topic/windows-scaling-issues-for-high-dpi-devices-508483cd-7c59-0d08-12b0-960b99aa347d) dando lugar a [apps borrosas](https://support.microsoft.com/en-us/windows/fix-apps-that-appear-blurry-in-windows-10-e9fe34ab-e7e7-bc6f-6695-cb169b51de0f) 
 - La solución a la mayoria de errores es [reinstalar](https://answers.microsoft.com/en-us/windows/forum/all/windows-update-system-restore-and-repair-failed/aaf28405-55c0-4ee2-b4b4-f13571680b32) el sistema operativo 
@@ -346,6 +372,8 @@ Tambien puedes usar una distrubucion de Linux que ya venga riceada, como [archcr
 - Los discos duros con NTFS tienen que [defragmentarse](https://learn.microsoft.com/en-us/previous-versions/cc767961(v=technet.10)).
 - Los drivers oficiales de Nvidia tienen [telemetría](https://www.geeks3d.com/20161107/nvidia-telemetry-in-geforce-drivers/).
 - No suele haber drivers open-source.
+- No puedes instalar Windows oficialmente USB o SD.
+- No puedes desabilitar oficialmente a Cortana en Windows 10.
 
 ---
 
@@ -354,7 +382,7 @@ Tambien puedes usar una distrubucion de Linux que ya venga riceada, como [archcr
 - Descargas [muchas versiones](https://www.howtogeek.com/256245/why-are-there-so-many-microsoft-visual-c-redistributables-installed-on-my-pc/) de microsoft visual c++ redistributable por juego.
 - Los juegos de la microsoft store (xbox app) suelen correr [peor](https://old.reddit.com/r/techsupport/comments/v4nhaf/so_ive_been_wondering_if_its_just_me_or_windows/) o dar [input lag](https://www.reddit.com/r/roblox/comments/oahvsf/roblox_player_vs_microsoft_store_app_input_lag/).
 - No puedes acceder a las [carpetas](https://www.makeuseof.com/windows-access-windowsapps-folder/) de juegos de la microsoft store (xbox app) aun siendo administrador.
-- Juegos antiguos en discos no [funcionan](https://answers.microsoft.com/en-us/windows/forum/all/older-disc-games-wont-work-on-windows-10/1ffb7eb3-b634-418a-a2f5-1b0055b6bbf7).
+- Juegos antiguos en discos fisicos no [funcionan](https://answers.microsoft.com/en-us/windows/forum/all/older-disc-games-wont-work-on-windows-10/1ffb7eb3-b634-418a-a2f5-1b0055b6bbf7).
 
 ---
 
@@ -391,11 +419,14 @@ Tambien puedes usar una distrubucion de Linux que ya venga riceada, como [archcr
 - Si usas Windows en una vm con NAT usa [WinApps](https://github.com/Fmstrat/winapps).
 - Si usas una gráfica Nvidia, instala drivers sin telemetría con [nvcleanstall](https://www.techpowerup.com/download/techpowerup-nvcleanstall/).
 - Si es para jugar, preinstala todos los Visual C++ desde [techpowerup](https://www.techpowerup.com/download/visual-c-redistributable-runtime-package-all-in-one/).
+
+---
+
 - Usa [Chris Titus Tech's Windows Utility](https://github.com/ChrisTitusTech/winutil) para desactivar fácilemente telemetría o también para activar UTC si se usa Windows en dual-boot.
 - Bloquea las direcciones a donde se envian telemetrias en el archivo de [hosts](https://gist.github.com/VirtuBox/f09968a2d27bc00ba58b3617c61dc54e).
 - Prueba que el software descargado de internet no tenga virus con [virustotal](https://www.virustotal.com/gui/).
 - Usa aplicaciones con posibles virus en [sandboxie plus](https://sandboxie-plus.com/)
-- [autoruns](https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns) para desactivar apps/servicios al inicio del sistema.
+- Usa [autoruns](https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns) para desactivar apps/servicios al inicio del sistema.
 - Usa [alacritty](https://alacritty.org/) como emulador terminal y usa [scoop](https://scoop.sh/) como package manager.
 
 ---
@@ -652,13 +683,23 @@ Categorice los comandos que creo más importantes en su función y los marque en
 |comando       | uso común       |comando    | uso común  
 |--------------|-----------------|-----------|----------
 |(U) dmesg     | dmesg -t        |(O) which  | which \<comando>
-|(O) neofetch  | noefetch        |(C) whoami | whoami
+|(O) xinput    | xinput list     |(C) whoami | whoami
 |(C) uname     | uname           |(C) who    | who 
-|(G) time      | time \<programa> |(C) uptime | uptime
+|(G) time      | time \<programa>|(O) lshw   | lshw
 |(G) date      | date +"%D"      |(O) lsusb  | lsusb
-|(C) hostname  | hostname        |(U) lscpu  | lscpu
-|(P) free      | free -h         |(O) xinput | xinput list
-|(O) lscpi     | lspci           |(C) env    | env
+
+
+---
+
+|comando       | uso común       |comando      | uso común  
+|--------------|-----------------|-------------|----------
+|(C) hostname  | hostname        |(U) lscpu    | lscpu
+|(P) free      | free -h         |(O) lscpi    | lspci
+|(C) env       | env             |(C) uptime   | uptime
+|(O) nofetch   | neofetch        |(O) uwufetch | uwufetch
+|(O) cpufetch  | cpufetch        |(O) ramfetch | ramfetch
+
+
 
 ---
 
@@ -698,7 +739,7 @@ Categorice los comandos que creo más importantes en su función y los marque en
 |>                 | echo "ola" > \<archivo>      |;        | \<comando> ; \<comando>
 |>>                | echo "ola" >> \<archivo>     |alias    |alias nombre=\<comando>
 |2>&1              | firefox >>/dev/null 2>&1 &  |export   |export
-
+|~/                | cd ~/                       | ./      | ./a.out
 ---
 
 # 6.2 Atajos de terminal
@@ -735,9 +776,6 @@ Categorice los comandos que creo más importantes en su función y los marque en
 - [arch wik: core utilities](https://wiki.archlinux.org/title/core_utilities)
 - [decoded gnu core utils](https://www.maizure.org/projects/decoded-gnu-coreutils/)
 - [Gentoo wiki: util-linux](https://wiki.gentoo.org/wiki/Util-linux), [procps](https://gitlab.com/procps-ng/procps)
-- [iproute2](https://wiki.linuxfoundation.org/networking/iproute2)
-- [iputils](https://wiki.linuxfoundation.org/networking/iputils)
-- [net-tools](https://net-tools.sourceforge.io/).
 - [Learn Linux: Linux Commands for Beginners](https://yewtu.be/playlist?list=PLT98CRl2KxKHaKA9-4_I38sLzK134p4GJ)
 - [freeCodeCamp.org: The 50 Most Popular Linux & Terminal Commands - Full Course for Beginners](https://yewtu.be/watch?v=ZtqBQ68cfJc)
 - [NetworkChuck: 60 Linux Commands you NEED to know (in 10 minutes)](https://yewtu.be/watch?v=gd7BXuUQ91w)
@@ -789,11 +827,11 @@ los procesadores de las laptops pueden alcanzar altas temperaturas y para mitiga
 
 Hay dos grandes [vulnerabilidades](https://i.blackhat.com/us-18/Thu-August-9/us-18-Domas-God-Mode-Unlocked-Hardware-Backdoors-In-x86-CPUs-wp.pdf) para este tipo de arquitecturas que actúan desde la capa -3 de la seguridad del procesador: Intel ME y AMD PSP.
 
-Intel ME es un sistema operativo que siempre esta activo mientras la placa madre tenga corriente, este puede acceder a la tarjeta de red, lo que lo convierte en una gran [backdoor](https://www.blackhat.com/docs/eu-17/materials/eu-17-Goryachy-How-To-Hack-A-Turned-Off-Computer-Or-Running-Unsigned-Code-In-Intel-Management-Engine-wp.pdf). Este se puede deshabilitar en una gran parte con [me_cleaner](https://github.com/system76/coreboot/tree/8c9e6ad9833bfdc522917200e0101c84fe0784c2/util/me_cleaner). Pero si se deshabilita Intel ME en procesadores de la 11 generación (Tiger-Lake) en adelante, se usa el [triple de energia](https://github.com/system76/firmware-open/blob/master/docs/intel-me.md#tiger-lake-u) en estado de suspensión.
+<mark>Intel ME:</mark> Es un sistema operativo que siempre esta activo mientras la placa madre tenga corriente, este puede acceder a la tarjeta de red, lo que lo convierte en una gran [backdoor](https://www.blackhat.com/docs/eu-17/materials/eu-17-Goryachy-How-To-Hack-A-Turned-Off-Computer-Or-Running-Unsigned-Code-In-Intel-Management-Engine-wp.pdf). Este se puede deshabilitar en una gran parte con [me_cleaner](https://github.com/system76/coreboot/tree/8c9e6ad9833bfdc522917200e0101c84fe0784c2/util/me_cleaner). Pero si se deshabilita Intel ME en procesadores de la 11 generación (Tiger-Lake) en adelante, se usa el [triple de energia](https://github.com/system76/firmware-open/blob/master/docs/intel-me.md#tiger-lake-u) en estado de suspensión.
 
-AMD PSP: Es un procesador arm independiente del procesador x86, el cual ejecuta su propio firmware y este puede llegar a tener [vulnerabilidades](https://www.techspot.com/news/91322-millions-amd-pcs-affected-new-cpu-flaw-need.html). Se pueden deshabilitar ciertos módulos en algunas [motherboards](https://www.phoronix.com/news/AMD-PSP-Disable-Option)
+<mark>AMD PSP:</mark> Es un procesador arm independiente del procesador x86, el cual ejecuta su propio firmware y este puede llegar a tener [vulnerabilidades](https://www.techspot.com/news/91322-millions-amd-pcs-affected-new-cpu-flaw-need.html). Se pueden deshabilitar ciertos módulos en algunas [motherboards](https://www.phoronix.com/news/AMD-PSP-Disable-Option)
 
-La mejor forma de usar un procesador con esta arquitectura es con un BIOS/UEFI parchado con [Libreboot](https://libreboot.org/) o [Coreboot](https://coreboot.org/) ya que estos te permiten mitigar los efectos de Intel ME o AMD PSP.
+La mejor forma de usar un procesador con esta arquitectura es con un BIOS/UEFI parchado con [Libreboot](https://libreboot.org/) o [Coreboot](https://coreboot.org/) ya que estos te permiten mitigar estos efectos.
 
 ---
 
@@ -818,7 +856,7 @@ Es el procesador más usado en el [mundo](https://gs.statcounter.com/platform-ma
 
 # 8.3 Procesadores Risc-V
 
-Es una familia de procesadores con arquitectura  RISC, con un ISA open-source, por el momento estos tienen menor potencia computacional que arm por lo que hay menos [usos](https://www.makeuseof.com/what-is-a-risc-v-sbc/); Este también tiene un TEE llamado [keystone](https://keystone-enclave.org/), la diferencia y principal ventaja es que este es open-source.
+Es una familia de procesadores con arquitectura  RISC, con un ISA open-source, por lo que es muy popular con los que adopatan la filosofia de software libre,ya que ahora puedes conocer hasta como interactua un programa con las instrucciónes open-source del procesador. Por el momento estos suelen tener una menor potencia computacional que arm, por lo que hay menos [usos](https://www.makeuseof.com/what-is-a-risc-v-sbc/); Este también tiene un TEE llamado [keystone](https://keystone-enclave.org/), la diferencia y principal ventaja es que este es open-source.
 
 ---
 
@@ -876,7 +914,7 @@ El web server más usado es nginx con el [34.4%](https://w3techs.com/technologie
 <mark>Acceso remoto:</mark>
 - <mark>[ssh X11 forwarding](https://wiki.archlinux.org/title/OpenSSH#X11_forwarding):</mark> ssh -X \<usuario>@\<ip>, ssh -Y \<usuario>@\<ip>
 - <mark>VNC:</mark> Virtual Network Computing
-    - servers: [wayvnc](https://github.com/any1/wayvnc), [x11vnc](https://github.com/LibVNC/x11vnc) y [tigervnc](https://tigervnc.org/).
+    - servers: [wayvnc](https://github.com/any1/wayvnc), [x11vnc](https://github.com/LibVNC/x11vnc), [tightvnc](https://www.tightvnc.com/) y [tigervnc](https://tigervnc.org/).
 - <mark>RDP:</mark> Remote Desktop Protocol, es un protocolo originalmente de Microsoft, 
     - server: [xrdp](https://www.xrdp.org/) y [freeRDP](https://www.freerdp.com/)
 - <mark>Clientes VNC y RDP:</mark> [Gnome Connections](https://apps.gnome.org/app/org.gnome.Connections/), [KRDC](https://apps.kde.org/krdc/) y [Remmina](https://flathub.org/apps/org.remmina.Remmina) .
@@ -890,43 +928,44 @@ Guía de seguridad para servidores por [LiveOverflow ](https://yewtu.be/watch?v=
 
 Página web sin servidor ni dominio: [Github Pages](https://pages.github.com/) y [neocities](https://neocities.org/).
 
-DDNS: los ISP pueden cambiar tu direccion ip publica en cualquier momento, las soluciones a esto que recomiendo son: [cloudflare API](https://github.com/K0p1-Git/cloudflare-ddns-updater), [duckDNS](https://www.duckdns.org/) y [freeDNS](https://freedns.afraid.org/).
+<mark>DDNS:</mark> los ISP pueden cambiar tu direccion ip publica en cualquier momento, las soluciones a esto que recomiendo son: [cloudflare API](https://github.com/K0p1-Git/cloudflare-ddns-updater), [duckDNS](https://www.duckdns.org/) y [freeDNS](https://freedns.afraid.org/).
 
-Dominios web gratis: [.ga, .tk, .ml, .cf, .cq](https://www.freenom.com), [.c1.biz](https://www.biz.nf/), [.co.nr](https://www.freedomain.pro/); con [GitHub Student Developer Pack](https://education.github.com/pack): [.tech](https://get.tech/github-student-developer-pack), [.me](https://nc.me/landing/github), [.engenieer, .software, .live etc.](https://www.name.com/partner/github-students).
+<mark>Dominios web gratis:</mark> [.ga, .tk, .ml, .cf, .cq](https://www.freenom.com), [.c1.biz](https://www.biz.nf/), [.co.nr](https://www.freedomain.pro/); con [GitHub Student Developer Pack](https://education.github.com/pack): [.tech](https://get.tech/github-student-developer-pack), [.me](https://nc.me/landing/github), [.engenieer, .software, .live etc.](https://www.name.com/partner/github-students).
 
-Dominios web baratos: [wordpress](https://wordpress.com/domains/), [Rebel.com](https://www.rebel.com/), [name cheap](https://www.namecheap.com/), [hostinger](https://www.hostinger.com/cheap-domain-names), [Ionos](https://www.ionos.com/).
+<mark>Dominios web baratos:</mark> [wordpress](https://wordpress.com/domains/), [Rebel.com](https://www.rebel.com/), [name cheap](https://www.namecheap.com/), [hostinger](https://www.hostinger.com/cheap-domain-names), [Ionos](https://www.ionos.com/).
 
-Certificados SSL: son los certificados que te hacen que una página web tenga https, yo recomiendo [Let's Encrypt](https://letsencrypt.org/getting-started/).
+<mark>Certificados SSL:</mark> son los certificados que te hacen que una página web tenga https, yo recomiendo [Let's Encrypt](https://letsencrypt.org/getting-started/).
 
-Reverse proxy: es un servidor que redirecciona el tráfico al servidor de la página web, con mayor seguridad y velocidad. Las soluciones que recomiendo son: [cloudflare tunnels](https://www.cloudflare.com/products/tunnel/) y [Nginx Proxy Manager](https://nginxproxymanager.com/).
+<mark>Reverse proxy:</mark> es un servidor que redirecciona el tráfico al servidor de la página web, con mayor seguridad y velocidad. Las soluciones que recomiendo son: [cloudflare tunnels](https://www.cloudflare.com/products/tunnel/) y [Nginx Proxy Manager](https://nginxproxymanager.com/).
 
 ---
 
 # 9.3 Servidores Profesionales
 
-Hardware: Se suelen usar discos duros de 3.5" certificados para funcionar 24/7 como los [Segate Ironwolf](https://www.seagate.com/products/nas-drives/ironwolf-hard-drive/) o los [Western Digital Red](https://www.westerndigital.com/solutions/network-attached-storage/NAS-for-heavy-duty-storage), tambien se suele usar ECC RAM para prevenir corrupción de datos, se sulene usar procesadores x64 [Intel XEON](https://www.intel.com/content/www/us/en/products/docs/processors/xeon/server-processor-overview.html) y [AMD EPYC](https://www.amd.com/en/processors/epyc-server-cpu-family).
+<mark>Hardware:</mark> Se suelen usar discos duros de 3.5" certificados para funcionar 24/7 como los [Segate Ironwolf](https://www.seagate.com/products/nas-drives/ironwolf-hard-drive/) o los [Western Digital Red](https://www.westerndigital.com/solutions/network-attached-storage/NAS-for-heavy-duty-storage), tambien se suele usar ECC RAM para prevenir corrupción de datos, se sulene usar procesadores x64 [Intel XEON](https://www.intel.com/content/www/us/en/products/docs/processors/xeon/server-processor-overview.html) y [AMD EPYC](https://www.amd.com/en/processors/epyc-server-cpu-family).
 
-Server Rack: Son monturas para servidores, en muchas formas: gabinetes cerrados y abiertos, verticales, etc. Estos usualmente tienen una longitud de 19", profundidad hasta 50" y una altura de 42U o 45U usando los rack units (1.75").
+<mark>Server Rack:</mark> Son monturas para servidores, en muchas formas: gabinetes cerrados y abiertos, verticales, etc. Estos usualmente tienen una longitud de 19", profundidad hasta 50" y una altura de 42U o 45U usando los rack units (1.75").
 
-VPS: Virtual Personal Server, son servidores en la "nube", yo recomiendo [vultr](https://www.vultr.com/), pero hay alternativas gratuitas como [AWS Free tier](https://aws.amazon.com/free/) (por 12 meses) y [Oracle Cloud Free Tier](https://www.oracle.com/cloud/free/) (para siempre).
+<mark>VPS:</mark> Virtual Personal Server, son servidores en la "nube", yo recomiendo [vultr](https://www.vultr.com/), pero hay alternativas gratuitas como [AWS Free tier](https://aws.amazon.com/free/) (por 12 meses) y [Oracle Cloud Free Tier](https://www.oracle.com/cloud/free/) (para siempre).
 
-NAS: Network Attached Storage, es una forma de acceder a discos duros atraves de una red ya sea en o fuera de casa, hay vendedores de NAS como [synology](https://www.synology.com/en-global/products?product_line=ds_j%2Cds_plus%2Cds_value%2Cds_xs) con [DSM](https://www.synology.com/en-global/dsm), pero recomiendo hacer tu propio NAS con [openmediavault](https://www.openmediavault.org/).
+<mark>NAS:</mark> Network Attached Storage, es una forma de acceder a discos duros atraves de una red ya sea en o fuera de casa, hay vendedores de NAS como [synology](https://www.synology.com/en-global/products?product_line=ds_j%2Cds_plus%2Cds_value%2Cds_xs) con [DSM](https://www.synology.com/en-global/dsm), pero recomiendo hacer tu propio NAS con [openmediavault](https://www.openmediavault.org/).
 
 ---
 
 # 9.4 Servidores caseros
 
-Laptops: thinkpads (series [T](https://en.wikipedia.org/wiki/ThinkPad_T_series)/[X](https://en.wikipedia.org/wiki/ThinkPad_X_series)), cualquiera  que tengas disponible.
+<mark>Laptops:</mark> thinkpads (series [T](https://en.wikipedia.org/wiki/ThinkPad_T_series)/[X](https://en.wikipedia.org/wiki/ThinkPad_X_series)), cualquiera  que tengas disponible.
 All in One (AIO)/Mini PCs: [Dell OptiPlex](https://en.wikipedia.org/wiki/Dell_OptiPlex), [HP elitedesk](https://en.wikipedia.org/wiki/HP_business_desktops), [ThinkCentre M series](https://en.wikipedia.org/wiki/ThinkCentre_M_series), [Beelink Mini](https://www.bee-link.com/computer-73493777), [ZimaBoard](https://www.zimaboard.com/), etc.
-Single Board Computers (SBC) con arm: la [FSF](https://www.fsf.org/resources/hw/single-board-computers) recomienda procesadores Rockchip, FreeScale y Allwinner. Yo recomiendo los procesadores Rokchip con 4 nucleos o más: [orange Pi 5 Plus](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-5-plus.html), [orange pi 5](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-5.html), [ROCKPro64](https://www.pine64.org/rockpro64/) y [Quartz64 Model A](https://www.pine64.org/quartz64a/).
 
-Ventajas de usar laptops, SBCs y AIOs: Tamaños pequeños, bajos db de ruido, precios accesibles en primera y segunda mano, suelen tener un bajo consumo energético, las laptops tienen pantallas y teclados para mantenimiento y pueden usar sus baterías en caso de un corte de luz, los AIO pueden usar ECC RAM y/o tarjetas gráficas y los SBC tienen GPIO (General-purpose input/output) pin headers, los discos duros de 2.5" consumen menos energia.
+<mark>Single Board Computers (SBC) con arm:</mark> la [FSF](https://www.fsf.org/resources/hw/single-board-computers) recomienda procesadores Rockchip, FreeScale y Allwinner. Yo recomiendo los procesadores Rokchip con 4 nucleos o más: [orange Pi 5 Plus](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-5-plus.html), [orange pi 5](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-5.html), [ROCKPro64](https://www.pine64.org/rockpro64/) y [Quartz64 Model A](https://www.pine64.org/quartz64a/).
+
+<mark>Ventajas de usar laptops, SBCs y AIOs:</mark> Tamaños pequeños, bajos db de ruido, precios accesibles en primera y segunda mano, suelen tener un bajo consumo energético, las laptops tienen pantallas y teclados para mantenimiento y pueden usar sus baterías en caso de un corte de luz, los AIO pueden usar ECC RAM y/o tarjetas gráficas y los SBC tienen GPIO (General-purpose input/output) pin headers, los discos duros de 2.5" consumen menos energia.
 
 ---
 
-Desventajas: puertos limitados, los gráficos integrados pueden no ser óptimos para media servers, los puertos usb tienen limites de [energia](https://superuser.com/questions/1317564/will-a-single-usb-3-0-port-power-two-2-5-hard-drives), los SBC suelen usar tarjetas micro SD que tienen [bajas velocidades de lecto-escritura](https://www.kingston.com/en/blog/personal-storage/memory-card-speed-classes) y son propensas a [corrupción de datos](https://wildlabs.net/discussion/sd-cards-and-reliability).
+<mark>Desventajas:</mark> puertos limitados, los gráficos integrados pueden no ser óptimos para media servers, los puertos usb tienen limites de [energia](https://superuser.com/questions/1317564/will-a-single-usb-3-0-port-power-two-2-5-hard-drives), los SBC suelen usar tarjetas micro SD que tienen [bajas velocidades de lecto-escritura](https://www.kingston.com/en/blog/personal-storage/memory-card-speed-classes) y son propensas a [corrupción de datos](https://wildlabs.net/discussion/sd-cards-and-reliability).
 
-Soluciones/actualizaciones: [USB en vez de microSD para SBCs](https://cdn-learn.adafruit.com/downloads/pdf/external-drive-as-raspberry-pi-root.pdf), no break como respaldo de energia, clusters, load balancer, USB 2.5gb Ethernet Adapter, adaptadores sata a USB, USB hub con energia externa, HDD/SSD en el puerto de DVD de laptops, puertos de tarjeta red (M.2 key/mini PCIe) o express card de laptop: eGPU, ethernet card, usb 3.0, sata hub, ssd.
+<mark>Soluciones/actualizaciones:</mark> [USB en vez de microSD para SBCs](https://cdn-learn.adafruit.com/downloads/pdf/external-drive-as-raspberry-pi-root.pdf), no break como respaldo de energia, clusters, load balancer, USB 2.5gb Ethernet Adapter, adaptadores sata a USB, USB hub con energia externa, HDD/SSD en el puerto de DVD de laptops, puertos de tarjeta red (M.2 key/mini PCIe) o express card de laptop: eGPU, ethernet card, usb 3.0, sata hub, ssd.
 
 ---
 
