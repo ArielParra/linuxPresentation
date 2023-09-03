@@ -23,7 +23,8 @@ The background is Svetlanasmirnova's "White rabbit runs and falls into a hole. S
     - 1.2 Historia
     - 1.3 Filosofia de Linux
     - 1.4 Linux Filesystem Hierarchy Standard
-    - 1.5 las capas de Linux
+    - 1.5 Las capas de Linux
+    - 1.6 Plataformas donde usar linux
 - 2. temas relacionadas
     - 2.1 UNIX
     - 2.2 Licencias 
@@ -55,9 +56,9 @@ The background is Svetlanasmirnova's "White rabbit runs and falls into a hole. S
     - 4.3 Categorias de las distribuciones
         - 4.3.1 Distribuciones independentes 
         - 4.3.2 Distribuciones Derivadas 
-        - 4.3.3 Recomendadas por la FSF 
+        - 4.3.3 Recomendadas por la FSF
 - 5. Comandos
-    - 5.1 Comandosde navegacion de archivos
+    - 5.1 Comandos de navegacion de archivos
     - 5.2 Comandos de Lecto-escritura de archivos 
     - 5.3 Comandos acerca de procesos
     - 5.4 Comandos para encontrar cosas

@@ -37,21 +37,25 @@ mark {background-color: rgb(129 161 193 / 0.3)};
 
 # 1.1 Definición
 
-Es un kernel monolítico de código abierto con licencia GNU GPL v2, usado como base de sistemas operativos.
-
+Es un kernel monolítico de código abierto con licencia GNU GPL v2, usado como base de sistemas operativos. (Usualmente se le dice sistema operativo Linux al user space).
+ 
 ---
 
 <mark>¿Qué es un kernel monolítico?</mark> El kernel es software que tiene el control del hardware, administra y optimiza los recursos del sistema como asignación de memoria RAM, procesos del CPU, drivers, etc. Actuando, así como un puente entre aplicaciones y el hardware. Este es monolítico cuando todos los servicios del sistema operan en el kernel atreves de system calls. 
 
 <mark>¿Qué es el código abierto?</mark> Es software donde cualquier persona puede ver, analizar y por ende modificar el código fuente.
 
+---
+
 <mark>¿Cuál es la licencia GPLv2?</mark> Es una licencia de software donde cualquier modificación al código debe tener la misma licencia y también que por cada archivo binario que sea distribuido tiene que estar disponible su código fuente. 
+
+<mark>¿Qué es el user space?</mark> User space, userland o user mode, se refiere a todas las funciones y aplicaciones fuera del núcleo del sistema operativo, con lo que el usuario interactua directa o inderectamente.
 
 ---
 
 # 1.2 Historia 
 
-Fue creado en 1991 por el estudiante de la universidad de Helsinki Linus Torvalds, al mismo tiempo Richard Stallman junto con su proyecto GNU de la fundación de software libre (FSF) ya habían creado las aplicaciones y utilidades de un sistema operativo. Estas aplicaciones y utilidades fueron agregadas al Linux kernel para crear un systema completo llamado GNU/Linux.
+Fue creado en 1991 por el estudiante de la universidad de Helsinki Linus Torvalds, al mismo tiempo Richard Stallman junto con su proyecto GNU de la fundación de software libre (FSF) ya habían creado las aplicaciones y utilidades de un sistema operativo. Estas aplicaciones y utilidades fueron agregadas al Linux kernel para crear un sistema completo llamado GNU/Linux.
 
 ---
 
@@ -76,13 +80,44 @@ Imagen recuperada de [wikimedia](https://commons.wikimedia.org/wiki/File:Standar
 
 ---
 
-<style scoped>p {text-align: center; font-size: 20px}</style>
+<style scoped>p {text-align: center; font-size: 18px}</style>
 
-# 1.5 las capas de Linux
+# 1.5 Las capas de Linux
 
 ![h:600px center](./img/kernel-user_space.png)
 
 Imagen recuperada de [wikipedia](https://en.wikipedia.org/wiki/Template%3ALinux_layers)
+
+---
+
+# 1.6 Plataformas donde usar linux
+
+Hay cuatro formas principales de usar linux en un casi cualquier dispositivo.
+
+<mark>Bare Metal:</mark> Es cuando el sistema operativo esta instalado directamente en el dispositivo que permita instalar sistemas operativos, como las computadoras de escritorio, laptops, netbooks, single board computers como las Raspberry Pi, entre otros tales como:
+- Consolas de videojuegos: [sega Dreamcast](https://linuxdc.sourceforge.net/), [N64](https://github.com/clbr/n64bootloader), [GameCube](www.gc-linux.org/), [Wii](https://neagix.github.io/wii-linux-ngx/), [WiiU](https://gitlab.com/linux-wiiu/linux-wiiu), [Switch](https://switchroot.org/), [PS1](https://en.wikipedia.org/wiki/PSXLinux), [PS2](https://en.wikipedia.org/wiki/Linux_for_PlayStation_2), [PS3](https://en.wikipedia.org/wiki/OtherOS), [PS4](https://github.com/ps4gentoo/ps4gentoo.github.io), [OGXbox](https://en.wikipedia.org/wiki/Xbox_Linux), [Xbox360](https://en.wikipedia.org/wiki/Free60)
+
+- Consolas de videojuegos portatiles: [DS](https://www.dslinux.org/index.html), [3DS](https://github.com/linux-3ds), [PSP](https://psplinux.info/2011/09/how-to-use-uclinux-on-the-psp-jackson-mos-port/), [PSVita](https://github.com/xerpi/vita-linux-loader)
+
+- Smartphones/tablets[iPhone7](https://www.xda-developers.com/apple-iphone-7-ubuntu-linux-checkra1n-project-sandcastle/), [iPad 1](https://github.com/chriskmanx/qmole), [ubuntu touch](https://ubuntu-touch.io/), [postmarketOS](https://postmarketos.org/)
+
+---
+
+<mark>Virtualización:</mark>La virtualización es un proceso en el que un software crea una capa de abstracción del hardware permitiendo dividir sus elementos en maquinas virtuales, teniendo la limitante de la capacidad del procesador para virtualizar y de solo poder virtualizar sistemas operativos para el mismo tipo de procesador. Ejemplos:
+
+[VirtualBox](https://www.virtualbox.org/), [VMware workstation player](https://www.vmware.com/products/workstation-player.html), [Qemu para Android 13](https://www.esper.io/blog/android-dessert-bites-13-virtualization-on-pixel-6-379185), [UTM para MacOS](https://docs.getutm.app/installation/macos/), [Parallels Para MacOS](https://www.parallels.com/products/desktop/) 
+
+<mark>Emulación:</mark> A diferencia de la virtualización este no utiliza todos los recursos del sistema, mayormente utiliza el procesador para simular alguna arquitectura de procesador, aunque esto lo vuelve menos eficiente. Ejemplos:
+
+[UTMSE/UTM para ios](https://docs.getutm.app/installation/ios/), [iSH para ios](https://ish.app/), [JSLinux](https://bellard.org/jslinux/), [copy.sh](https://copy.sh), [QEMU](https://www.qemu.org/)
+
+---
+
+<mark>PRoot/chroot + VNC:</mark> Es un proceso de es usado principalmente en sistemas que tengan el núcleo de linux, usualmente en Android, aparte se utiliza el protocolo de servidor de VNC para poder transmitir la imagen y se usa otra aplicacion como cliente de VNV para ver e interactuar con la interfaz grafica.
+
+- Proot en Android: [termux](https://termux.dev/en/), [termux-desktop](https://github.com/adi1090x/termux-desktop), [UserLand](https://github.com/CypherpunkArmory/UserLAnd), [Linux Deploy](https://github.com/meefik/linuxdeploy), [androidnix](https://github.com/AndronixApp/AndronixOrigin)
+
+- Clientes VNC para Android: [multiVNC](https://github.com/bk138/multivnc/), [avnc](https://github.com/gujjwal00/avnc)
 
 ---
 
@@ -95,6 +130,8 @@ Imagen recuperada de [wikipedia](https://en.wikipedia.org/wiki/Template%3ALinux_
 UNIX es un sistema operativo creado a principios de los 70s en AT&T por Dennis Ritchie (creador del lenguaje C) y Ken Thompson (creador del lenguaje B).
 
 <mark>POSIX:</mark> "Portable Operating System Interface", son una serie de estándares de uso, impuestos por el IEEE (Institute of Electrical and Electronics Engineers) que incluye el I/O, la terminal, comandos y redes. Estos estandares se suele usar para hacer shell scripts compatibiles con muchos sistemas operativos.
+
+---
 
 <mark>Single UNIX Specification:</mark> Es un estándar para sistemas operativos para usar el tredemark de UNIX , con interfaces para el lenguaje C, el shell y comandos.
 
@@ -131,7 +168,7 @@ Licencias open-source más comunes:
 
 # 2.3 Filosofia de software libre
  
-La filosofía de software libre tiene relación con Richard Stallman y su proyecto GNU, esta dice que software debe respetar la libertad del usuario, la libertad de distribución, la libertad de uso, la libertad de estudio, etc. Yendo en contra del software privado y con código cerrado, los blobs binarios, las licencias y EULAs no permisivas y el DRM. 
+La filosofía de software libre tiene relación con Richard Stallman, la Fundación de Software Libre (FSF) y el proyecto GNU, esta dice que el software debe respetar la libertad del usuario, la libertad de distribución, la libertad de uso, la libertad de estudio, etc. Yendo en contra del software privado y con código cerrado, los blobs binarios, el DRM, las licencias y EULAs no permisivas.
 
 ---
 
@@ -154,7 +191,7 @@ Estos pueden tener ciertas [ventajas y desventajas](https://serverfault.com/ques
 
 Recominedo esta [guia](https://www.privacyguides.org/en/) de privacidad o tambien a la youtuber [Naomi Brockwell](https://yewtu.be/channel/UCSuHzQ3GrHSzoBbwrIq3LLA).
 - [Duckduckgo](https://seonorth.ca/news/why-duckduckgo-is-bad/) no es bueno.
-- [Proton](https://techcrunch.com/2021/09/06/protonmail-logged-ip-address-of-french-activist-after-order-by-swiss-authorities/) no es confiable.
+- [Proton](https://techcrunch.com/2021/09/06/protonmail-logged-ip-address-of-french-activist-after-order-by-swiss-authorities/) ha obtenido mala fama.
 - Las VPN no te dan [privacidad](https://gist.github.com/joepie91/5a9909939e6ce7d09e29).
 - La gente esta [desinformada](https://www.whonix.org/wiki/Tor_Myths_and_Misconceptions) acerca de tor.
 
@@ -234,6 +271,8 @@ Tambien puedes usar una distrubucion de Linux que ya venga riceada, como [archcr
 - No puedes correr ciertas aplicaciones: [Adobe Photoshop](https://appdb.winehq.org/objectManager.php?sClass=application&iId=17), [MS Office](https://appdb.winehq.org/objectManager.php?sClass=application&iId=31), [etc](https://appdb.winehq.org/).
 - Problemas con [impresoras](https://opensource.com/article/21/8/add-printer-linux).
 - Sin soporte para [HDR](https://wiki.archlinux.org/title/HDR_monitor_support).
+- Puede haber [inconsistencias](https://www.minds.com/FreeToBe/blog/kde-plasma-inconsistencies-part-5-1117668204983709696) de las interfaces de las aplicaciones.
+
 
 ---
 
@@ -282,6 +321,7 @@ Tambien puedes usar una distrubucion de Linux que ya venga riceada, como [archcr
 - No suele haber drivers open-source.
 - La capa de compatibilidad con Windows (wine) puede correr [malware](https://wiki.winehq.org/FAQ#Is_Wine_malware-compatible.3F).
 - No tiene controles de volumen por [aplicación](https://apple.stackexchange.com/questions/381397/is-it-possible-to-set-an-individual-sound-volume-for-each-program-on-a-mac).
+- Hay problemas al instalarlo en una maquina virtual.
 
 ---
 
@@ -305,6 +345,7 @@ Tambien puedes usar una distrubucion de Linux que ya venga riceada, como [archcr
 - Grabar clips con [Game DVR](https://support.microsoft.com/en-us/windows/record-a-game-clip-on-your-pc-with-xbox-game-bar-2f477001-54d4-1276-9144-b0416a307f3c)
 - Windows Subsystem for Linux [(WSL)](https://learn.microsoft.com/en-us/windows/wsl/about) y Windows Subsystem for Android [(WSA)](https://learn.microsoft.com/en-us/windows/android/wsa/). 
 - Compatibilidad completa con [MiraCast](https://support.microsoft.com/en-au/windows/connect-your-windows-pc-to-an-external-display-that-supports-miracast-765f5cfc-6ef3-fba7-98da-c8267b001a5a#ID0EDD=Windows_10).
+- insertar caracteres [ASCII](https://support.microsoft.com/en-us/office/insert-ascii-or-unicode-latin-based-symbols-and-characters-d13f58d3-7bcb-44a7-a4d5-972ee12e50e0) con facilidad.
 
 ---
 
@@ -335,33 +376,34 @@ Tambien puedes usar una distrubucion de Linux que ya venga riceada, como [archcr
 ## 3.8.2 Uso general
 
 - Las apps por defecto se actualizan individualmente ya sea abriendo la aplicación o teniendo que descargar la nueva versión de la página del creador.
-- Para usar winget ocupas una cuenta Microsoft para descargar [App-Installer](https://apps.microsoft.com/store/detail/appinstaller/9NBLGGH4NNS1?hl=de-at&gl=at&rtc=1) de la microsoft store y para usarlo ocupas constantemente aceptar los [UAC](https://learn.microsoft.com/en-us/windows/package-manager/winget/) prompts, aparte de aceptar la [CLA](https://opensource.microsoft.com/cla/).
+- Para usar winget ocupas constantemente aceptar los [UAC](https://learn.microsoft.com/en-us/windows/package-manager/winget/) prompts, aparte de aceptar la [CLA](https://opensource.microsoft.com/cla/) de winget.
 - No puedes nombrar archivos con ciertos [nombres](https://yewtu.be/watch?v=bC6tngl0PTI).
 - La busqueda de archivos en el explorador de archivos es lenta.
-- El buscador de Windows da resultados de bing por defecto.
+- El buscador de windows es [ineficiente](https://computerinfobits.com/why-is-windows-10-search-so-bad/) y da resultados de bing por defecto.
+
 
 ---
 
-- Windows pro cuesta [$6399](https://www.microsoft.com/es-mx/d/windows-11-pro/dg7gmgf0d8h4) pesos MXN.
+- Windows pro de manera oficial cuesta [$6399](https://www.microsoft.com/es-mx/d/windows-11-pro/dg7gmgf0d8h4) pesos MXN.
 - windows 11 [requiere](https://learn.microsoft.com/en-us/windows/whats-new/windows-11-requirements) a tener una cuenta Microsoft y usarla en tu sistema.
 - El sistema operativo se expande hasta más de [40gb](https://superuser.com/questions/1467359/windows-takes-up-40gb-of-disk-space).
-- El buscador de windows es [ineficiente](https://computerinfobits.com/why-is-windows-10-search-so-bad/).
 - Prefetch y superfetch (SysMain), suelen tener el disco duro al [100%](https://yewtu.be/watch?v=MmH4tjH2yMc) de uso.
 - Suele haber más [virus](https://www.howtogeek.com/141944/htg-explains-why-windows-has-the-most-viruses/) que macOS o Linux  
 - aplicaciones freeware pueden tener virus como [atubecatcher](https://old.reddit.com/r/antivirus/comments/snqipr/is_atube_catcher_a_virus/), etc. 
 - La Microsoft store tiene aplicaciones más aplicaciones [.appx](https://learn.microsoft.com/en-us/uwp/schemas/appxpackage/uapmanifestschema/schema-root) que .exe 
-- Tienes que pagar para poder usar archivos [HEVC](https://apps.microsoft.com/store/detail/hevc-video-extensions/9NMZLZ57R3T7?hl=en-us&gl=us&activetab=pivot%3Aoverviewtab) 
+- Oficialmente tienes que pagar para poder usar archivos [HEVC](https://apps.microsoft.com/store/detail/hevc-video-extensions/9NMZLZ57R3T7?hl=en-us&gl=us&activetab=pivot%3Aoverviewtab) 
 
 ---
 
-- Windows incluye [bloatware](https://www.digitalcitizen.life/windows-10-bloatware/) 
+- Windows incluye [bloatware](https://www.digitalcitizen.life/windows-10-bloatware/).
 - Los antivirus pueden bloquear aplicaciones/servicios en el [firewall](https://www.mcafee.com/support/?locale=en-US&articleId=TS102946&page=shell&shell=article-view)
+
 - Windows Antimalware Service puede usar [100%](https://answers.microsoft.com/en-us/windows/forum/all/high-cpu-usage-by-antimalware-service-executable/4f6f635a-b3ad-444c-8cd0-68fb1e9f4bfa) del CPU 
 - Problemas en pantallas con [high dpi](https://support.microsoft.com/en-gb/topic/windows-scaling-issues-for-high-dpi-devices-508483cd-7c59-0d08-12b0-960b99aa347d) dando lugar a [apps borrosas](https://support.microsoft.com/en-us/windows/fix-apps-that-appear-blurry-in-windows-10-e9fe34ab-e7e7-bc6f-6695-cb169b51de0f) 
 - La solución a la mayoria de errores es [reinstalar](https://answers.microsoft.com/en-us/windows/forum/all/windows-update-system-restore-and-repair-failed/aaf28405-55c0-4ee2-b4b4-f13571680b32) el sistema operativo 
 - Las [apps](https://www.pcmag.com/how-to/stop-windows-10-apps-from-launching-at-startup) se ejecutan al inicio o crean servicios que se ejecutan al inicio 
 - Fondos de pantalla en slidehow puede no [funcionar](https://answers.microsoft.com/en-us/windows/forum/all/background-slideshow-stops-working/acfcabe4-56fb-436a-afc6-42bdd877ca29) 
-- Pocas opciones open-source de [customizacion](https://github.com/Awesome-Windows/Awesome#customization) y algunas opciones privadas cuestan [wallpaperengine](https://store.steampowered.com/app/431960/Wallpaper_Engine/), [taskbarX](https://apps.microsoft.com/store/detail/taskbarx/9PCMZ6BXK8GH?hl=en-us&gl=us), [start11](https://www.stardock.com/products/start11/), etc. 
+- Pocas opciones open-source de [customizacion](https://github.com/Awesome-Windows/Awesome#customization).
 
 ---
 
@@ -850,7 +892,7 @@ CPU secuirity rings. Imagen recuperada de [RealWorldCyberSecurity](https://mediu
 
 Es una familia de procesadores con arquitectura  RISC (Reduce instruction set computing) con un ISA close-source; este tiene un TEE (Trusted Execution Environment) close-source llamado TrustZone la cual puede tener [vulnerabilidades](https://blog.quarkslab.com/attacking-the-arms-trustzone.html)
 
-Es el procesador más usado en el [mundo](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/worldwide) ya que este se encuentra en los celulares, siendo Android un sistema operativo basado en linux donde incluso puedes tener un gestor de paquetes y un emulador de terminal no oficial con [termux](https://termux.dev/en/); aunque también este procesador puede ser  encontrado en laptops, computadoras de escritorios, servidores y single board computers. La razón de esto es su eficiencia energética y por ende su baja producción de calor.
+Es el procesador más usado en el [mundo](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/worldwide) ya que este se encuentra en los celulares, siendo Android un sistema operativo basado en linux; aunque también este procesador puede ser  encontrado también en laptops, computadoras de escritorios, servidores y single board computers. La razón de esto es su eficiencia energética y por ende su baja producción de calor.
 
 ---
 
@@ -946,7 +988,7 @@ Página web sin servidor ni dominio: [Github Pages](https://pages.github.com/) y
 
 <mark>Server Rack:</mark> Son monturas para servidores, en muchas formas: gabinetes cerrados y abiertos, verticales, etc. Estos usualmente tienen una longitud de 19", profundidad hasta 50" y una altura de 42U o 45U usando los rack units (1.75").
 
-<mark>VPS:</mark> Virtual Personal Server, son servidores en la "nube", yo recomiendo [vultr](https://www.vultr.com/), pero hay alternativas gratuitas como [AWS Free tier](https://aws.amazon.com/free/) (por 12 meses) y [Oracle Cloud Free Tier](https://www.oracle.com/cloud/free/) (para siempre).
+<mark>VPS/Cloud:</mark> Virtual Personal Server, son servidores en la "nube", yo recomiendo [vultr](https://www.vultr.com/), pero hay alternativas gratuitas como [Oracle Cloud Free Tier](https://www.oracle.com/cloud/free/) (para siempre), [Google Cloud](https://cloud.google.com/free) ($300 de regalo) ,[AWS Free tier](https://aws.amazon.com/free/) (por 12 meses) o [Microsoft Azure](https://azure.microsoft.com/en-us/pricing/free-services/) (por 12 meses).
 
 <mark>NAS:</mark> Network Attached Storage, es una forma de acceder a discos duros atraves de una red ya sea en o fuera de casa, hay vendedores de NAS como [synology](https://www.synology.com/en-global/products?product_line=ds_j%2Cds_plus%2Cds_value%2Cds_xs) con [DSM](https://www.synology.com/en-global/dsm), pero recomiendo hacer tu propio NAS con [openmediavault](https://www.openmediavault.org/).
 
@@ -954,12 +996,13 @@ Página web sin servidor ni dominio: [Github Pages](https://pages.github.com/) y
 
 # 9.4 Servidores caseros
 
-<mark>Laptops:</mark> thinkpads (series [T](https://en.wikipedia.org/wiki/ThinkPad_T_series)/[X](https://en.wikipedia.org/wiki/ThinkPad_X_series)), cualquiera  que tengas disponible.
-All in One (AIO)/Mini PCs: [Dell OptiPlex](https://en.wikipedia.org/wiki/Dell_OptiPlex), [HP elitedesk](https://en.wikipedia.org/wiki/HP_business_desktops), [ThinkCentre M series](https://en.wikipedia.org/wiki/ThinkCentre_M_series), [Beelink Mini](https://www.bee-link.com/computer-73493777), [ZimaBoard](https://www.zimaboard.com/), etc.
+<mark>Laptops:</mark> thinkpads (series [T](https://en.wikipedia.org/wiki/ThinkPad_T_series)/[X](https://en.wikipedia.org/wiki/ThinkPad_X_series)) o cualquiera  que tengas disponible.
+
+<mark>All in One (AIO)/Mini PCs:</mark> [Dell OptiPlex](https://en.wikipedia.org/wiki/Dell_OptiPlex), [HP elitedesk](https://en.wikipedia.org/wiki/HP_business_desktops), [ThinkCentre M series](https://en.wikipedia.org/wiki/ThinkCentre_M_series), [Beelink Mini](https://www.bee-link.com/computer-73493777), [ZimaBoard](https://www.zimaboard.com/), etc.
 
 <mark>Single Board Computers (SBC) con arm:</mark> la [FSF](https://www.fsf.org/resources/hw/single-board-computers) recomienda procesadores Rockchip, FreeScale y Allwinner. Yo recomiendo los procesadores Rokchip con 4 nucleos o más: [orange Pi 5 Plus](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-5-plus.html), [orange pi 5](http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-5.html), [ROCKPro64](https://www.pine64.org/rockpro64/) y [Quartz64 Model A](https://www.pine64.org/quartz64a/).
 
-<mark>Ventajas de usar laptops, SBCs y AIOs:</mark> Tamaños pequeños, bajos db de ruido, precios accesibles en primera y segunda mano, suelen tener un bajo consumo energético, las laptops tienen pantallas y teclados para mantenimiento y pueden usar sus baterías en caso de un corte de luz, los AIO pueden usar ECC RAM y/o tarjetas gráficas y los SBC tienen GPIO (General-purpose input/output) pin headers, los discos duros de 2.5" consumen menos energia.
+<mark>Ventajas de usar laptops, SBCs y AIOs:</mark> Tamaños pequeños, bajos db de ruido, precios accesibles en primera y segunda mano, bajo consumo energético, las laptops tienen pantallas y teclados para mantenimiento y pueden usar sus baterías como energia de emergenicia en caso de corte, los AIO pueden usar tarjetas gráficas debido al pci port, todos pueden usar discos duros de 2.5" que consumen menos energia y los SBC tienen GPIO (General-purpose input/output) pin headers.
 
 ---
 
@@ -1062,18 +1105,20 @@ All in One (AIO)/Mini PCs: [Dell OptiPlex](https://en.wikipedia.org/wiki/Dell_Op
 - GNU. (2023). *GNU Coreutils*. https://www.gnu.org/software/coreutils/manual/coreutils.pdf
 - GNU. (2023). *GNU General Public License, version 2*. https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 - GNU. (s.f). *What is Free Software?*. https://www.gnu.org/philosophy/free-sw.html
+- IBM. (s.f.). *What is virtualization? *.https://www.ibm.com/topics/virtualization
 - IEEE. (2017). *IEEE Std 1003.1™-2017*. https://pubs.opengroup.org/onlinepubs/9699919799/
 - Intel. (2017). *What is Intel® Management Engine?*. https://www.intel.com/content/www/us/en/support/articles/000008927/software/chipset-software.html
+- Ipadlinux. (2023). *Linux on iPad*. https://ipadlinux.org/
 - Libreboot. (s.f.). *Intel Management Engine (ME)*. https://libreboot.org/faq.html#intelme
 - Linus Torvalds. (1997). *Linux: a Portable Operating System*. https://www.cs.helsinki.fi/u/kutvonen/index_files/linus.pdf
-- Linux Foundation. (2015). *Filesystem Hierarchy Standard*. https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.html
-- Linux Foundation. (2015). *Linux Standard Base*. https://refspecs.linuxfoundation.org/lsb.shtml
 
 
 ---
 
 <style scoped>{font-size: 21px;}</style>
 
+- Linux Foundation. (2015). *Filesystem Hierarchy Standard*. https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.html
+- Linux Foundation. (2015). *Linux Standard Base*. https://refspecs.linuxfoundation.org/lsb.shtml
 - Machtelt Garrels. (2008). *Introduction to Linux*. https://tldp.org/LDP/intro-linux/intro-linux.pdf
 - Michael Tunnell. (2023). *Explaining Linux Family Trees: Why Are There So Many Linux Distros?* [Video]. https://yewtu.be/watch?v=kF8CRt05s6A
 - NGINX. (s.f). *What Is a Reverse Proxy Server?*. https://www.nginx.com/resources/glossary/reverse-proxy-server/
@@ -1082,20 +1127,21 @@ All in One (AIO)/Mini PCs: [Dell OptiPlex](https://en.wikipedia.org/wiki/Dell_Op
 - Opensource.com. (s.f). *What is open source?*.https://opensource.com/resources/what-open-source
 - Open Source Initiative. (2007). *The Open Source Definition*. https://opensource.org/osd/
 - Open source initiative. (s.f). *OSI Approved Licenses*. https://opensource.org/licenses/
+- QEMU. (s.f.). *Emulation*. https://www.qemu.org/docs/master/about/emulation.html
 - Rack Solutions. (2020). *Server Rack Sizes: Understanding the Differences*. https://www.racksolutions.com/news/blog/server-rack-sizes/
 - Red Hat. (2019). *What is the Linux kernel?*. https://www.redhat.com/en/topics/linux/what-is-the-linux-kernel
 - Red Hat. (2023). *Understanding containers*. https://www.redhat.com/en/topics/containers
 - Roch, B. (2004). *Monolithic kernel vs. Microkernel*. https://web.cs.wpi.edu/~cs3013/c12/Papers/Roch_Microkernels.pdf 
 - Seagate. (s.f ). *What is NAS*. https://www.seagate.com/blog/what-is-nas-master-ti/
-- SUSE. (s.f.). *Linux Distribution*. https://www.suse.com/suse-defines/definition/linux-distribution/ 
-- The Linux Experiment. (2018). *Linux DISTRIBUTION: explained* [Video]. https://yewtu.be/watch?v=6gqLWTSz6ck
-- The Linux Information Project. (2005). *Flavors of UNIX Definition*. http://www.linfo.org/flavors.html
 
 
 ---
 
 <style scoped>{font-size: 21px;}</style>
 
+- SUSE. (s.f.). *Linux Distribution*. https://www.suse.com/suse-defines/definition/linux-distribution/ 
+- The Linux Experiment. (2018). *Linux DISTRIBUTION: explained* [Video]. https://yewtu.be/watch?v=6gqLWTSz6ck
+- The Linux Information Project. (2005). *Flavors of UNIX Definition*. http://www.linfo.org/flavors.html
 - The Linux Information Project. (2006). *What is Linux?*. http://www.linfo.org/newbies.html
 - The Linux Kernel Organization. (2019). *About Linux Kernel*. https://www.kernel.org/linux.html
 - The Linux Kernel Organization. (2019). *Is Linux Kernel Free Software?*. https://www.kernel.org/category/faq.html
