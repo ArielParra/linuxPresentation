@@ -105,11 +105,11 @@ Hay cuatro formas principales de usar linux en un casi cualquier dispositivo.
 
 <mark>Virtualización:</mark>La virtualización es un proceso en el que un software crea una capa de abstracción del hardware permitiendo dividir sus elementos en maquinas virtuales, teniendo la limitante de la capacidad del procesador para virtualizar y de solo poder virtualizar sistemas operativos para el mismo tipo de procesador. Ejemplos:
 
-[VirtualBox](https://www.virtualbox.org/), [VMware workstation player](https://www.vmware.com/products/workstation-player.html), [Qemu para Android 13](https://www.esper.io/blog/android-dessert-bites-13-virtualization-on-pixel-6-379185), [UTM para MacOS](https://docs.getutm.app/installation/macos/), [Parallels Para MacOS](https://www.parallels.com/products/desktop/) 
+- [VirtualBox](https://www.virtualbox.org/), [VMware workstation player](https://www.vmware.com/products/workstation-player.html), [Qemu para Android 13](https://www.esper.io/blog/android-dessert-bites-13-virtualization-on-pixel-6-379185), [UTM para MacOS](https://docs.getutm.app/installation/macos/), [Parallels Para MacOS](https://www.parallels.com/products/desktop/) 
 
 <mark>Emulación:</mark> A diferencia de la virtualización este no utiliza todos los recursos del sistema, mayormente utiliza el procesador para simular alguna arquitectura de procesador, aunque esto lo vuelve menos eficiente. Ejemplos:
 
-[UTMSE/UTM para ios](https://docs.getutm.app/installation/ios/), [iSH para ios](https://ish.app/), [JSLinux](https://bellard.org/jslinux/), [copy.sh](https://copy.sh), [QEMU](https://www.qemu.org/)
+- [UTMSE/UTM para ios](https://docs.getutm.app/installation/ios/), [iSH para ios](https://ish.app/), [JSLinux](https://bellard.org/jslinux/), [copy.sh](https://copy.sh), [QEMU](https://www.qemu.org/)
 
 ---
 
@@ -380,6 +380,7 @@ Tambien puedes usar una distrubucion de Linux que ya venga riceada, como [archcr
 - No puedes nombrar archivos con ciertos [nombres](https://yewtu.be/watch?v=bC6tngl0PTI).
 - La busqueda de archivos en el explorador de archivos es lenta.
 - El buscador de windows es [ineficiente](https://computerinfobits.com/why-is-windows-10-search-so-bad/) y da resultados de bing por defecto.
+- El las carpetas de usuario estan por defecto en One drive ("C:\").
 
 
 ---
@@ -414,7 +415,8 @@ Tambien puedes usar una distrubucion de Linux que ya venga riceada, como [archcr
 - Los discos duros con NTFS tienen que [defragmentarse](https://learn.microsoft.com/en-us/previous-versions/cc767961(v=technet.10)).
 - Los drivers oficiales de Nvidia tienen [telemetría](https://www.geeks3d.com/20161107/nvidia-telemetry-in-geforce-drivers/).
 - No suele haber drivers open-source.
-- No puedes instalar Windows oficialmente USB o SD.
+- No puedes instalar Windows con todas sus funcionalidades en una USB o SD.
+- Windows to go tiene muchas limitaciones.
 - No puedes desabilitar oficialmente a Cortana en Windows 10.
 
 ---
@@ -538,9 +540,11 @@ Hay distribuciones hechas con un uso especifico estas pueden ser conjuntos de pr
 - <mark>Escolar:</mark> Uaabuntu, Edubuntu, Zorin OS 16 Education, etc.
 - <mark>Privacidad/Seguridad:</mark> Whonix y/o Qubes, Tails, etc. 
 
+---
+
 Hay dos grandes categorías de distribuciones:
 - <mark>Independientes:</mark> tienen su propio package manager y repositorio
-- <mark>Derivados:</mark> tienen compatibilidad con quien se derivaron y pueden crear una sinergia: debian <-> ubuntu, SUSE <-> openSUSE, RHEL <-> fedora.
+- <mark>Derivados:</mark> tienen compatibilidad con quien se derivaron y pueden crear una sinergia: Debian <-> Ubuntu, SLSf <-> OpenSUSE, RHEL <-> Fedora.
   
 ---
  
@@ -550,7 +554,11 @@ Tipos de distribuciones derivadas:
 - <mark>Fork:</mark> hacen cambios grandes, cambiando el uso, filosofía, etc. 
 - <mark>Clone/Repackage:</mark> copian el código y tienen otra infraestructura para la distribución, por ejemplo, para RHEL hay repackages como Rocky linux, Oracle Linux, etc. 
 
-Hay muchísimas [distribuciones](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg) para elegir, pero hay cuatro componentes principales que diferencian a una distribución de linux, estos son: el sistema de arranque (init system/daemon), gestor de paquetes (package manager), la librería de c y las core utils.
+---
+
+Hay muchísimas [distribuciones](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg) para elegir, pero hay cuatro componentes principales que diferencian a una distribución de linux, estos son: el sistema de arranque (init system/daemon), gestor de paquetes (package manager), la librería de c y las core utils. 
+
+Estos puntos definen a la distribución y cualquier otra modificación es más fácil que al sistema no afectan de manera importante el uso del sistema,
 
 ---
 
