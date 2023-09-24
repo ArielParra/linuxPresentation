@@ -518,7 +518,7 @@ Los componentes y características que construyen a una distribución de linux s
     - <mark>Terminal (CLI/TUI):</mark>
         - <mark>Editor de textos:</mark> nano, vim, neovim, emacs, ed etc.
         - <mark>Información:</mark> neofetch, htop, btop, etc.
-        - [Etc.](https://wiki.archlinux.org/title/list_of_applications)
+        - Etc.
     - <mark>Graficas (GUI):</mark>
         - <mark>Navegador:</mark> Firefox, Librewolf, Brave, Chromium, etc.
         - <mark>Office Suite:</mark> Libreoffice, Onlyoffice, Calligra, etc.
@@ -526,7 +526,7 @@ Los componentes y características que construyen a una distribución de linux s
         - <mark>Editor de textos:</mark> kate, Gnome text editor, gvim, etc.
         - <mark>Explorador de archivos:</mark> nautilus (gnome), dolphin (KDE)
         - <mark>Visualizador de imágenes:</mark> feh, gwenviwer, eog, Sxiv etc.
-        - [Etc.](https://wiki.gentoo.org/wiki/Recommended_applications)
+        - Etc.
 
 ---
 
@@ -543,8 +543,13 @@ Hay distribuciones hechas con un uso especifico estas pueden ser conjuntos de pr
 ---
 
 Hay dos grandes categorías de distribuciones:
-- <mark>Independientes:</mark> tienen su propio package manager y repositorio
-- <mark>Derivados:</mark> tienen compatibilidad con quien se derivaron y pueden crear una sinergia: Debian <-> Ubuntu, SLSf <-> OpenSUSE, RHEL <-> Fedora.
+
+- <mark>Independientes:</mark> 
+tienen su propia infraestructura donde albergan sus repositorios de paquetes, usualmente crean un formato de paquetes o su propio gestor de paquetes.
+
+- <mark>Derivados:</mark>
+ Estos basan su sistema operativo en otro, compartiendo usualmente el gestor de paquetes aunque no necesariamente los repositorios, al ser deribados estos tienen compatibilidad con quien se derivaron y pueden crear una sinergia: 
+ Debian <-> Ubuntu, SUSE LE <-> OpenSUSE, RHEL <-> Fedora.
   
 ---
  
@@ -556,9 +561,9 @@ Tipos de distribuciones derivadas:
 
 ---
 
-Hay muchísimas [distribuciones](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg) para elegir, pero hay cuatro componentes principales que diferencian a una distribución de linux, estos son: el sistema de arranque (init system/daemon), gestor de paquetes (package manager), la librería de c y las core utils. 
+Hay muchísimas [distribuciones](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg) para elegir, pero para mi hay cuatro componentes principales que diferencian a una distribución de linux, estos son: el sistema de arranque (init system/daemon), gestor de paquetes (package manager), la librería de c y las core utils. 
 
-Estos puntos definen a la distribución y cualquier otra modificación es más fácil que al sistema no afectan de manera importante el uso del sistema,
+Estos componentes definen a la distribución ya sea independiente o derivada, cualquier modificación o cambio a otro componente es más fácil, ya sea el escritorio, servicio de audio, shell, etc. 
 
 ---
 
@@ -630,10 +635,9 @@ Estos puntos definen a la distribución y cualquier otra modificación es más f
 
 A las aplicaciones con CLI/TUI (Command Line Interface/ Terminal User Interface) y utilidades de terminal se les llama comandos, estos como en las funciones de programación, tienen argumentos y/o parámetros con los que se usan, siendo los argumentos los archivos o directorios usados y los parámetros las opciones del comando. 
 
-Categorice los comandos que creo más importantes en su función y los marque en funcion del conjunto de utilidades con seis letras mayúsculas siendo C de "GNU core utils", U de "Util-linux", G de "GNU Software", P de "procps", I de "iproute2 o iputils", S de "SHELL" y O de "Otros". 
+Categorice los comandos que creo más importantes en su función y dependiendo de que conjunto de utilidades son, los marque con seis letras mayúsculas siendo C de "GNU core utils", U de "Util-linux", G de "GNU Software", P de "procps", I de "iproute2 o iputils", S de "SHELL" y O de "Otros". 
 
 ---
-
 
 # 5.1 Comandosde navegacion de archivos
 |comando    | uso común                          | comando  | uso común
@@ -836,39 +840,70 @@ Categorice los comandos que creo más importantes en su función y los marque en
 
 ---
 
-Con la filosofía de Linux de usar programas interconectados, las aplicaciones suelen depender de otros programas llamados dependencias, los encargados de manternar las relaciones entre aplicaciones y dependencias son los Package Managers. Aun así las aplicaciones pueden llegar a tener problemas de compatibilidad si la aplicación o la dependencia esta desactualizada, para solucionar este problema se han creado formatos de paquetes que son portables, donde la aplicación es distribuida junto con la dependencias, esto puede ocasionar tamaños de aplicaciones más grandes, a costa de una mayor "estabilidad", los tres grandes distribuidores de aplicaciones portables son: [AppImage](https://appimage.org/), [flatpak](https://flatpak.org/) y [Snapcraft](https://snapcraft.io/).
+Con la filosofía de Linux de usar programas interconectados, las aplicaciones suelen depender de otros programas llamados dependencias, los encargados de manternar las relaciones entre aplicaciones y dependencias son los Package Managers. 
+
+Conforme a los formatos de paquetes de aplicaciones hay dos principales que suelen utulizar los desarrolladores de aplicaciones que no suelen proporcionar el codigo fuente, estos son .deb y .rpm, siendo para el uso en distribuciones basadas en Debian y RHEL respectivamente, el problema de estos es que asumen los directorios y librerias especificas de estos sistemas, aunque otros sistemas pueden utilizarlos con scripts que adapten la instalación a otros sistemas.
+
+---
+
+Las aplicaciones pueden llegar a tener problemas de compatibilidad si la aplicación o la dependencia esta desactualizada, para solucionar este problema se han creado formatos de paquetes que son portables, donde la aplicación es distribuida junto con la dependencias, esto puede ocasionar tamaños de aplicaciones más grandes, a costa de una mayor "estabilidad", los tres grandes formatos: 
+- [AppImage](https://appimage.org/): Este formato suele ser distribuido por el desarrollador de la app, el front end más usado es AppImagePool que usa el repositorio https://www.appimagehub.com, también hay otros repositorios como https://appimage.github.io/apps/.
+- [Flatpak](https://flatpak.org/): Este es el más popular, hay dos front ends principales siendo Discover de KDE y GNOME Software Center, el repositorio oficial es https://flathub.org .
+- [Snap](https://snapcraft.io/): Este es el formato de Ubuntu, pero es famoso por ser lento, es compatible con Discover y Gnome Software Center pero tiene su propio front end llamado Snap Store, el repositiorio oficial puede consultarse en https://snapcraft.io/ .
 
 ---
 
 # 7.1 Ofimática
 
-presentaciones con [marp](https://marp.app/)
- documentos con [pandoc](https://pandoc.org/)
-onlyoffice
-libreoffice
-okular
+Onlyoffice: Es mi recomendación al cambio a linux, la interfaz es muy similar a MS Office, la unica desventaja es que archivos echos con MS Office puede que ciertos textos o imagenes se vean movidas.
+
+Libreoffice: Este es más compatible con archivos de MS Office, pero su interfaz es distinta.
+
+Okular y zathura: son mis elecciones favoritas de visualización de PDFs.
+
+Aunque yo ya no uso estas aplicaciones, en cambio utilizo Markdown para después convertirlos a presentaciónes PDF a travez de la extensión de VScode [marp](https://marp.app/), también convierto mis archivos de Markdown a otros tipos de documentos con [pandoc](https://pandoc.org/).
 
 ---
 
 # 7.2 Multimedios
 
 - Visualizador de imágenes: [feh](https://feh.finalrewind.org/)
-- Reproductor de video: [mpv](https://mpv.io/)
+- Reproductor de videos: [mpv](https://mpv.io/)
 - Descargar videos de Youtube: [yt-dlp](https://github.com/yt-dlp/yt-dlp)
+ 
 tenacity/audacity
+
+kdnlive
+
+
+
+Algunas versiones antiguas de Software de Adobe son compatibles con la capa de compatibilidad con windows Wine, si ocupas el ultimo software recomiendo usarlos en una maquina virtual.
+
 ---
 
 # 7.3 Ingenieria
 
-CADS
+En casos de software utilizados en la industria como Autocad, Proteus y multisim, es recomendado utilizarlos en maquinas virtuales de Windows.
+
+CAD:
+
+Freecad
+librecad
+
+EDA: 
+
+Qucs-s
 kicad
 
 ---
 
 # 7.4 Juegos
 
----
+Para los juegos Steam es la solución más facil en linux, este incluye su propia adaptación de Wine para juegos llamada Proton.
 
+Lutris, es mi elección para jugar juegos en linux, ya que esta plataforma se conecta con juegos que se tengan en la misma computadora, retro arch, y tiendas de juegos como steam, gog, epic games y amazon games, mientras que a la vez incluye la opcion de usar Proton GE una versión más optimizada a la de Steam. 
+
+---
 
 <style scoped>ul {columns: 2; text-align: left} </style>
 
@@ -883,6 +918,15 @@ kicad
 - Respaldos: [timeshift](https://github.com/linuxmint/timeshift) ([rsync](https://rsync.samba.org/), [btrfs snapshots](https://wiki.gentoo.org/wiki/Btrfs/snapshots)) y [git](https://git-scm.com/)
 - Android en Linux: [waydorid](https://waydro.id/)
 -  Extra: [cowsay](https://itsfoss.com/cowsay/), [fortune](https://www.shlomifish.org/open-source/projects/fortune-mod/), [lolcat](https://github.com/jaseg/lolcat), [asciiquarium](https://robobunny.com/projects/asciiquarium/), [sl](https://github.com/eyJhb/sl), [nms](https://github.com/bartobri/no-more-secrets), [cbonsai](https://gitlab.com/jallbrit/cbonsai), [cmatrix](https://github.com/abishekvashok/cmatrix) , [hollywood](https://github.com/dustinkirkland/hollywood), [pfetch](https://github.com/dylanaraps/pfetch), [figlet](http://www.figlet.org/), [espeak](https://espeak.sourceforge.net/), [aafire](https://aa-project.sourceforge.net/aalib/).
+
+---
+
+# 7.6 Más software
+
+https://wiki.archlinux.org/title/List_of_applications
+https://wiki.gentoo.org/wiki/Recommended_applications
+https://alternativeto.net/
+
 ---
 
 # **8. Hardware**
