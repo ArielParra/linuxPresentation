@@ -380,7 +380,7 @@ Tambien puedes usar una distrubucion de Linux que ya venga riceada, como [archcr
 - No puedes nombrar archivos con ciertos [nombres](https://yewtu.be/watch?v=bC6tngl0PTI).
 - La busqueda de archivos en el explorador de archivos es lenta.
 - El buscador de windows es [ineficiente](https://computerinfobits.com/why-is-windows-10-search-so-bad/) y da resultados de bing por defecto.
-- El las carpetas de usuario estan por defecto en One drive ("C:\").
+- Las carpetas de usuario estan por defecto en la ruta de One drive ("C:\Users\usuario\OneDrive\.").
 
 
 ---
@@ -840,21 +840,46 @@ Con la filosofía de Linux de usar programas interconectados, las aplicaciones s
 
 ---
 
+# 7.1 Ofimática
+
+presentaciones con [marp](https://marp.app/)
+ documentos con [pandoc](https://pandoc.org/)
+onlyoffice
+libreoffice
+okular
+
+---
+
+# 7.2 Multimedios
+
+- Visualizador de imágenes: [feh](https://feh.finalrewind.org/)
+- Reproductor de video: [mpv](https://mpv.io/)
+- Descargar videos de Youtube: [yt-dlp](https://github.com/yt-dlp/yt-dlp)
+tenacity/audacity
+---
+
+# 7.3 Ingenieria
+
+CADS
+kicad
+
+---
+
+# 7.4 Juegos
+
+---
+
+
 <style scoped>ul {columns: 2; text-align: left} </style>
 
-
-# 7.1 Aplicaciones recomendadas
+# 7.5 Aplicaciones recomendadas
 
 - Editor de texto/codigo: [vim](https://www.vim.org/), [vscodium](https://vscodium.com/)
-- Ofimática en markdown: presentaciones con [marp](https://marp.app/), documentos con [pandoc](https://pandoc.org/)
 - Navegador: [Librewolf](https://librewolf.net/)/[Firefox](https://www.mozilla.org/en-US/firefox/new/) + [Arkenfox.js](https://github.com/arkenfox/user.js/) o [ungoogled-chromium](https://github.com/ungoogled-software/ungoogled-chromium)
 - Extensiones de navegador: [uBlock origin](https://github.com/gorhill/uBlock), [bitwarden](https://bitwarden.com/), [libRedirect](https://libredirect.github.io/), [decentraleyes](https://decentraleyes.org/), [ClearURLs](https://github.com/ClearURLs/Addon) 
 - Motor de búsqueda: [SearXNG](https://searx.space/#)
 - Emulador de terminal: [Alacritty](https://alacritty.org/) o [st](https://st.suckless.org/)
 - Monitor de recursos: [btop](https://github.com/aristocratos/btop)
-- Visualizador de imágenes: [feh](https://feh.finalrewind.org/)
-- Reproductor de video: [mpv](https://mpv.io/)
-- Descargar videos de Youtube: [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 - Respaldos: [timeshift](https://github.com/linuxmint/timeshift) ([rsync](https://rsync.samba.org/), [btrfs snapshots](https://wiki.gentoo.org/wiki/Btrfs/snapshots)) y [git](https://git-scm.com/)
 - Android en Linux: [waydorid](https://waydro.id/)
 -  Extra: [cowsay](https://itsfoss.com/cowsay/), [fortune](https://www.shlomifish.org/open-source/projects/fortune-mod/), [lolcat](https://github.com/jaseg/lolcat), [asciiquarium](https://robobunny.com/projects/asciiquarium/), [sl](https://github.com/eyJhb/sl), [nms](https://github.com/bartobri/no-more-secrets), [cbonsai](https://gitlab.com/jallbrit/cbonsai), [cmatrix](https://github.com/abishekvashok/cmatrix) , [hollywood](https://github.com/dustinkirkland/hollywood), [pfetch](https://github.com/dylanaraps/pfetch), [figlet](http://www.figlet.org/), [espeak](https://espeak.sourceforge.net/), [aafire](https://aa-project.sourceforge.net/aalib/).
@@ -962,6 +987,7 @@ El web server más usado es nginx con el [34.4%](https://w3techs.com/technologie
 <mark>Antivirus:</mark> [ClamAV](www.clamav.net) es el antivirus open-source más popular y actualizado.
 
 <mark>Acceso remoto:</mark>
+- <mark>[Rustdesk](https://rustdesk.com/)</mark>: alternativa open-source de TeamViewer
 - <mark>[ssh X11 forwarding](https://wiki.archlinux.org/title/OpenSSH#X11_forwarding):</mark> ssh -X \<usuario>@\<ip>, ssh -Y \<usuario>@\<ip>
 - <mark>VNC:</mark> Virtual Network Computing
     - servers: [wayvnc](https://github.com/any1/wayvnc), [x11vnc](https://github.com/LibVNC/x11vnc), [tightvnc](https://www.tightvnc.com/) y [tigervnc](https://tigervnc.org/).
