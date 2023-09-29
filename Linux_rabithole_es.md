@@ -183,9 +183,7 @@ Los dos forks más importantes son:
 
 Estos pueden tener ciertas [ventajas y desventajas](https://serverfault.com/questions/5267/what-is-good-about-the-bsds/5352#5352) respecto a Linux.
 
-
 ---
-
 
 # 2.5 Privacidad 
 
@@ -272,7 +270,6 @@ Tambien puedes usar una distrubucion de Linux que ya venga riceada, como [archcr
 - Problemas con [impresoras](https://opensource.com/article/21/8/add-printer-linux).
 - Sin soporte para [HDR](https://wiki.archlinux.org/title/HDR_monitor_support).
 - Puede haber [inconsistencias](https://www.minds.com/FreeToBe/blog/kde-plasma-inconsistencies-part-5-1117668204983709696) de las interfaces de las aplicaciones.
-
 
 ---
 
@@ -530,7 +527,19 @@ Los componentes y características que construyen a una distribución de linux s
 
 ---
 
-# 4.3 Categorias de las distribuciones
+# 4.3 Escritorios (Desktop Environments)
+
+Los dos principales Escritorios de sistemas operativos Linux son GNOME y KDE.
+
+https://itsfoss.com/kde-vs-gnome/
+
+GNOME: Tiene aplicaciones 
+
+KDE: por defecto tiene una barra de tareas similar a Windows
+
+--- 
+
+# 4.4 Categorias de las distribuciones
 
 Hay distribuciones hechas con un uso especifico estas pueden ser conjuntos de programas y configuraciones que adecuan el sistema a ese uso, aunque sigues teniendo la libertad de poder modificarlo a tu gusto:
 
@@ -569,7 +578,7 @@ Estos componentes definen a la distribución ya sea independiente o derivada, cu
 
 <style scoped>table {font-size: 25px;}</style>
 
-## 4.3.1 Distribuciones independentes 
+## 4.4.1 Distribuciones independentes 
 
 | Logo                     | distribucion                                                                   | init           | pkg manager | libreria c | core utils  |  
 |--------------------------|--------------------------------------------------------------------------------|----------------|-------------|------------|-------------|
@@ -593,7 +602,7 @@ Estos componentes definen a la distribución ya sea independiente o derivada, cu
 
 ---
 
-## 4.3.2 Distribuciones Derivadas 
+## 4.4.2 Distribuciones Derivadas 
 
 | Logo                    | distribucion                          | init               | basado en   | libreria c | core utils  |  
 |-------------------------|---------------------------------------|--------------------|-------------|------------|-------------|
@@ -621,7 +630,7 @@ Estos componentes definen a la distribución ya sea independiente o derivada, cu
 
 <style scoped>table {font-size: 25px;}</style>
 
-## 4.3.3 Recomendadas por la FSF (linux-libre kernel)
+## 4.4.3 Recomendadas por la FSF (linux-libre kernel)
 | Logo                    | distribucion                            | init               | basado en     | pkg manager | libreria c | core utils  |  
 |-------------------------|-----------------------------------------|--------------------|---------------|-------------|------------|-------------|
 | ![](logos/parabola.png) | [Parabola](https://www.parabola.nu/)    | systemd/OpenRC/etc.| arch          | pacman      | glibc      | gnu         |
@@ -870,11 +879,10 @@ Aunque yo ya no uso estas aplicaciones, en cambio utilizo Markdown para después
 - Visualizador de imágenes: [feh](https://feh.finalrewind.org/)
 - Reproductor de videos: [mpv](https://mpv.io/)
 - Descargar videos de Youtube: [yt-dlp](https://github.com/yt-dlp/yt-dlp)
- 
-tenacity/audacity
-
-kdnlive
-
+- dibujos rapidos: pinta
+- editor de audio: tenacity/audacity
+- editor de videos: kdnlive
+- editor de imagenes: PhotoGIMP
 
 
 Algunas versiones antiguas de Software de Adobe son compatibles con la capa de compatibilidad con windows Wine, si ocupas el ultimo software recomiendo usarlos en una maquina virtual.
@@ -886,12 +894,10 @@ Algunas versiones antiguas de Software de Adobe son compatibles con la capa de c
 En casos de software utilizados en la industria como Autocad, Proteus y multisim, es recomendado utilizarlos en maquinas virtuales de Windows.
 
 CAD:
-
 Freecad
 librecad
 
 EDA: 
-
 Qucs-s
 kicad
 
@@ -901,7 +907,11 @@ kicad
 
 Para los juegos Steam es la solución más facil en linux, este incluye su propia adaptación de Wine para juegos llamada Proton.
 
-Lutris, es mi elección para jugar juegos en linux, ya que esta plataforma se conecta con juegos que se tengan en la misma computadora, retro arch, y tiendas de juegos como steam, gog, epic games y amazon games, mientras que a la vez incluye la opcion de usar Proton GE una versión más optimizada a la de Steam. 
+Lutris, es mi elección para jugar juegos en linux, ya que esta plataforma se conecta con juegos que se tengan en la misma computadora, RetroArch y tiendas de juegos como steam, gog, epic games y amazon games, mientras que a la vez incluye la opcion de usar Proton GE una versión más optimizada a la de Steam.
+
+Para perifericos con luces RGB recomiendo [OpenRGB](https://openrgb.org/)
+Para Dispositivos Corsair Recomiendo [ckb-next](https://github.com/ckb-next/ckb-next)
+Para dispositivos Logitech Recomiendo [Piper](https://github.com/libratbag/piper)
 
 ---
 
